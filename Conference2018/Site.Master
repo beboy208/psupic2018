@@ -11,7 +11,7 @@
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
@@ -40,21 +40,40 @@
 
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
-                <div class="navbar-header">
+                <div class="navbar-header" style="float: none">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                    <div class="navbar-header shareContainer" style="position: relative; float: right">
+                        <div id="ShareInContent_fbsharebutton" class="fb-share-button fb-like-share navbar-brand" data-type="button_count" data-href="http://www.conference.phuket.psu.ac.th" data-url="http://www.conference.phuket.psu.ac.th"></div>
+                        <div class=" navbar-brand">
+                            <div id="ShareInContent_gplussharebutton" class="g-plus g-plus-share" data-action="share" data-annotation="bubble" data-href="http://www.conference.phuket.psu.ac.th" data-url="http://www.conference.phuket.psu.ac.th"></div>
+                        </div>
+                        <div class=" navbar-brand">
+                            <a href="https://twitter.com/share" id="ShareInContent_twitsharebutton" class="twitter-share-button navbar-brand" data-hashtags="psupic2015" data-href="http://www.conference.phuket.psu.ac.th" data-url="http://www.conference.phuket.psu.ac.th">Tweet</a>
+                        </div>
+                    </div>
+                    <a class="navbar-brand" runat="server" href="~/">PSU PIC 2018</a>
                 </div>
+
+            </div>
+            <div class="container">
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                        <li><a runat="server" href="~/">Call for papers</a></li>
+                        <li><a runat="server" href="~/">Schedule</a></li>
+                        <li><a runat="server" href="~/">Organisation</a></li>
+                        <li><a runat="server" href="~/">Spekers</a></li>
+                        <li><a runat="server" href="~/">Registration</a></li>
+                        <li><a runat="server" href="~/">Location</a></li>
+                        <%--<li><a runat="server" href="~/">Co-Organizers</a></li>--%>
+                        <%--<li><a runat="server" href="~/">Links</a></li>--%>
                     </ul>
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+
+                    <%--<asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a runat="server" href="~/Account/Register">Register</a></li>
@@ -69,7 +88,7 @@
                                 </li>
                             </ul>
                         </LoggedInTemplate>
-                    </asp:LoginView>
+                    </asp:LoginView>--%>
                 </div>
             </div>
         </div>
@@ -78,9 +97,45 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Left</h4>
+                        <p>asfasfafd</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Mid</h4>
+                        <p>asfasfafd</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Link</h4>
+                        <ul>
+                            <li>xxxxx</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>&copy; <%: DateTime.Now.Year %> - Prince of Songkla University, Phuket Campus</p>
+                </div>
             </footer>
         </div>
     </form>
+
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Google Plus java script -->
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script type="text/javascript" src="https://apis.google.com/js/platform.js"></script>
+
+    <!-- Twitter -->
+    <script>!function (d, s, id)
+{ var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+
 </body>
 </html>
