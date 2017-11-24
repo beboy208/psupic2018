@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %> - PSU PIC 2018</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -14,6 +14,34 @@
     <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
+    <style>
+        @media (min-width: 768px) {
+            .dropdown:hover .dropdown-menu {
+                display: block;
+                margin-top: 0;
+            }
+        }
+
+        .navbar-inverse {
+            background-color: #000000;
+            border-color: #808080;
+        }
+
+        .dropdown-menu {
+            background-color: #000000;
+            border-color: #808080;
+        }
+
+            .dropdown-menu li {
+                background-color: #000000;
+                padding-left: 20px;
+                border-color: yellow;
+            }
+
+                .dropdown-menu li a {
+                    color: whitesmoke;
+                }
+    </style>
 </head>
 <body>
     <form runat="server">
@@ -55,6 +83,8 @@
                             <a href="https://twitter.com/share" id="ShareInContent_twitsharebutton" class="twitter-share-button navbar-brand" data-hashtags="psupic2015" data-href="http://www.conference.phuket.psu.ac.th" data-url="http://www.conference.phuket.psu.ac.th">Tweet</a>
                         </div>
                     </div>
+                    <a class="navbar-brand" runat="server" href="~/">PSU PIC LOGO</a>
+                    <a class="navbar-brand" runat="server" href="www.psu.ac.th">PSU 50 Years LOGO</a>
                     <a class="navbar-brand" runat="server" href="~/">PSU PIC 2018</a>
                 </div>
 
@@ -63,32 +93,33 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/">Call for papers</a></li>
-                        <li><a runat="server" href="~/">Schedule</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Call for papers <span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                            <ul class="nav navbar-nav dropdown-menu">
+                                <li><a runat="server" href="~/">Call for papers</a></li>
+                                <li><a runat="server" href="~/">Paper Submission</a></li>
+                                <li><a runat="server" href="~/">Best paper award and publication</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Important dates <span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                            <ul class="nav navbar-nav dropdown-menu">
+                                <li><a runat="server" href="~/">Important dates</a></li>
+                                <li><a runat="server" href="~/">Open ceremony</a></li>
+                                <li><a runat="server" href="~/">Welcome reception</a></li>
+                                <li><a runat="server" href="~/">Phuket excursion</a></li>
+                                <li><a runat="server" href="~/">Transportation service</a></li>
+                                <li><a runat="server" href="~/">Conference session</a></li>
+                            </ul>
+                        </li>
+
                         <li><a runat="server" href="~/">Organisation</a></li>
                         <li><a runat="server" href="~/">Spekers</a></li>
-                        <li><a runat="server" href="~/">Registration</a></li>
+                        <li><a runat="server" href="~/">Registration Fee</a></li>
                         <li><a runat="server" href="~/">Location</a></li>
                         <%--<li><a runat="server" href="~/">Co-Organizers</a></li>--%>
                         <%--<li><a runat="server" href="~/">Links</a></li>--%>
                     </ul>
-
-                    <%--<asp:LoginView runat="server" ViewStateMode="Disabled">
-                        <AnonymousTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Register">Register</a></li>
-                                <li><a runat="server" href="~/Account/Login">Log in</a></li>
-                            </ul>
-                        </AnonymousTemplate>
-                        <LoggedInTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
-                                <li>
-                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
-                                </li>
-                            </ul>
-                        </LoggedInTemplate>
-                    </asp:LoginView>--%>
                 </div>
             </div>
         </div>

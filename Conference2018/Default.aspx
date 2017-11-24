@@ -9,34 +9,63 @@
     </div>
 
     <div class="row">
+        <div class="col-md-12">
+            <h2>Welcome Message</h2>
+            <p>
+                On behalf of the Committee of PSU Phuket International Conference 2018, we would like to welcome national and international lecturers, scholars, researchers, graduates, and any others who are interested in attending <span class="linetub">the 3rd Annual PSU Phuket International Conference 2014 (PSU PIC 2014).
+The objectives of the 3rd Annual PSU Phuket International Conference 2014 are to provide scholars, researchers, and graduates from various educational institutions with the opportunity to present their research studies, and to stimulate the exchanges of knowledge and experience between researchers leading to mutual understanding and further research collaboration.
+We look forward to welcoming you on November 13 - November 14, 2014 </span>at Prince of Songkla University, Phuket Campus
+The Committee of PSU
+Phuket International
+Conference 2018
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
         <div class="col-md-4">
-            <h2>Getting started</h2>
+            <h2>Call for Papers</h2>
             <p>
                 ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
             A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
             </p>
             <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
+                <a class="btn btn-default" href="">Read more &raquo;</a>
             </p>
         </div>
         <div class="col-md-4">
-            <h2>Get more libraries</h2>
+            <h2>Research Areas</h2>
+            <p>asfasfaasafdas 5 section 99 topics</p>
+            <ul>
+                <li>FHT</li>
+                <li>FIS</li>
+                <li>TE</li>
+                <li>COC</li>
+                <li>CIP</li>
+            </ul>
             <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
+                <a class="btn btn-default" href="">Read more &raquo;</a>
             </p>
         </div>
         <div class="col-md-4">
-            <h2>Web Hosting</h2>
+            <h2>Best Paper award and publication</h2>
             <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
+                The awarded papers will be considered for publication in the Journal of International Studies or KMUTT Research and Development Journal (TCI Database) but conditions apply.
             </p>
             <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
+                <a class="btn btn-default" href="">Read more &raquo;</a>
             </p>
         </div>
     </div>
 
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Follow us</h2>
+            <p>
+                <a href="https://www.facebook.com/The-Annual-PSU-Phuket-International-Conference-179495792106613/" target="facebook">
+                    <img src="https://en.facebookbrand.com/wp-content/uploads/2016/05/FB-fLogo-Blue-broadcast-2.png" width="22" height="22" />
+                </a>
+            </p>
+        </div>
+    </div>
 </asp:Content>
