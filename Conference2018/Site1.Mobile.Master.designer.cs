@@ -10,7 +10,7 @@
 namespace Conference2018 {
     
     
-    public partial class Site_Mobile {
+    public partial class Site1_Mobile {
         
         /// <summary>
         /// HeadContent control.
