@@ -13,15 +13,6 @@ namespace Conference2018 {
     public partial class SiteMaster {
         
         /// <summary>
-        /// psupiclogo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor psupiclogo;
-        
-        /// <summary>
         /// psu50th control.
         /// </summary>
         /// <remarks>

@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - PSU PIC 2018</title>
+    <title>PSU PIC 2018 - <%: Page.Title %></title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -15,6 +15,20 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
     <style>
+        .navbar-inverse {
+            background: white;
+            border-color: transparent;
+        }
+
+        .navbar-brand {
+            height: 68px;
+            padding: 8px;
+        }
+
+        .jumbotron {
+            margin-top: 50px;
+        }
+
         img#jumbotron {
             width: 100%;
         }
@@ -49,10 +63,10 @@
         }
 
         .navbar-main {
-            width: 100%;
-            margin: 0px;
+            /*width: 100%;
+            margin: 0px auto;
             padding-left: 110px;
-            padding-right: 110px;
+            padding-right: 110px;*/
         }
 
             .navbar-main .navbar-nav > li > a,
@@ -66,32 +80,6 @@
             .navbar-main .navbar-nav > .open > a:focus {
                 background-color: #1e376d;
             }
-
-        @media (max-width: 768px) {
-            .navbar-right {
-                float: right !important;
-                margin-right: -15px;
-            }
-
-            .navbar-inverse {
-                background-color: #3b5998;
-            }
-
-            .navbar-brand > a,
-            .navbar-brand > a:hover,
-            .navbar-brand > a:focus {
-                color: ghostwhite;
-                text-decoration: none;
-            }
-
-           .navbar-main {
-               padding: 0px;
-           }
-
-            .navbar-main .navbar-nav > li {
-                margin-right: 50px;
-            }
-        }
 
         @media (min-width: 768px) {
             .dropdown:focus .dropdown-menu {
@@ -120,25 +108,87 @@
             }
         }
 
-        @media (max-width: 500px) {
-            .navbar-right {
-                display: block;
-                float: none !important;
+        @media (max-width: 768px) {
+            .jumbotron {
+                margin-top: 30px;
             }
 
+            .navbar-right {
+                float: right !important;
+                margin-right: -15px;
+            }
+
+            .navbar-inverse {
+                background-color: #3b5998;
+            }
+
+            .navbar-brand > a,
+            .navbar-brand > a:hover,
+            .navbar-brand > a:focus {
+                color: ghostwhite;
+                text-decoration: none;
+            }
+
+            .navbar-main {
+                padding: 0px;
+            }
+
+                .navbar-main .navbar-nav > li {
+                    margin-right: 50px;
+                }
 
             .navbar-toggle {
                 float: right;
             }
 
             #psupiclogo {
+                display: none;
             }
 
             #psu50th {
+                /*display: none;*/
             }
 
             #eventtitle {
+            }
+        }
+
+
+        @media (max-width: 520px) {
+
+            .jumbotron {
+                margin-top: 10px;
+                padding: 10px;
+            }
+
+
+            .navbar-header {
+                /*display: block;
+                float: none !important;*/
+            }
+
+            .navbar-brand {
+                height: auto;
+            }
+
+            .navbar-right {
+                /*display: block;
+                float: none !important;*/
+            }
+
+            .navbar-toggle {
+                float: right;
+            }
+
+            #psupiclogo {
                 display: none;
+            }
+
+            #psu50th {
+                display: none;
+            }
+
+            #eventtitle {
             }
         }
 
@@ -190,8 +240,10 @@
 
                 <div class="navbar-header">
                     <div class="navbar-brand">
-                        <a id="psupiclogo" runat="server" href="~/">PSU PIC LOGO</a>
-                        <a id="psu50th" runat="server" href="www.psu.ac.th">PSU 50 Years LOGO</a>
+                        <%-- <a id="psupiclogo" runat="server" href="~/">
+                            <img src="imgs/c-logo-s.png" alt="PSU PIC" /></a>--%>
+                        <a id="psu50th" runat="server" href="www.psu.ac.th">
+                            <img src="imgs/50th-logo_s60.png" alt="PSU" /></a>
                         <a id="eventtitle" runat="server" href="~/">PSU PIC 2018</a>
                     </div>
                 </div>
@@ -204,28 +256,28 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Call for papers <span class="glyphicon glyphicon-triangle-bottom"></span></a>
                             <ul class="nav navbar-nav dropdown-menu">
-                                <li><a runat="server" href="~/">Call for papers</a></li>
-                                <li><a runat="server" href="~/">Paper Submission</a></li>
-                                <li><a runat="server" href="~/">Best paper award and publication</a></li>
+                                <li><a runat="server" href="call-for-papers.aspx">Call for papers</a></li>
+                                <li><a runat="server" href="call-for-papers.aspx#submission">Paper Submission</a></li>
+                                <li><a runat="server" href="call-for-papers.aspx#publication">Best paper award and publication</a></li>
+                                <li><a runat="server" href="call-for-papers.aspx#fee">Registration Fee</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Important dates <span class="glyphicon glyphicon-triangle-bottom"></span></a>
                             <ul class="nav navbar-nav dropdown-menu">
-                                <li><a runat="server" href="~/">Important dates</a></li>
-                                <li><a runat="server" href="~/">Open ceremony</a></li>
-                                <li><a runat="server" href="~/">Welcome reception</a></li>
-                                <li><a runat="server" href="~/">Phuket excursion</a></li>
-                                <li><a runat="server" href="~/">Transportation service</a></li>
+                                <li><a runat="server" href="important-dates.aspx">Important dates</a></li>
+                                <li><a runat="server" href="important-dates.aspx#ceremony">Open ceremony</a></li>
+                                <li><a runat="server" href="important-dates.aspx#reception">Welcome reception</a></li>
                                 <li><a runat="server" href="~/">Conference session</a></li>
+                                <li><a runat="server" href="~/">Phuket signtseeing</a></li>
+                                <li><a runat="server" href="~/">Transportation service</a></li>
                             </ul>
                         </li>
 
-                        <li><a runat="server" href="~/">Organisation</a></li>
-                        <li><a runat="server" href="~/">Spekers</a></li>
-                        <li><a runat="server" href="~/">Registration Fee</a></li>
-                        <li><a runat="server" href="~/">Location</a></li>
-                        <%--<li><a runat="server" href="~/">Co-Organizers</a></li>--%>
+                        <li><a runat="server" href="organisation.aspx">Organisation</a></li>
+                        <li><a runat="server" href="speakers.aspx">Speakers</a></li>
+                        <li><a runat="server" href="location.aspx">Location</a></li>
+                        <%--<li><a runat="server" href="co-orgs.aspx">Co-Organizers</a></li>--%>
                         <%--<li><a runat="server" href="~/">Links</a></li>--%>
                     </ul>
                 </div>
@@ -240,17 +292,30 @@
             <footer>
                 <div class="row">
                     <div class="col-md-4">
-                        <h4>Left</h4>
-                        <p>asfasfafd</p>
+                        <h4>Document</h4>
+                        <ul>
+                            <li>Manuscript Guidelines <a href="http://www.conference.phuket.psu.ac.th/conference2014/Download/manuscript_guidelines_update-1.pdf" target="_blank">PDF</a>
+                                | <a href="http://www.conference.phuket.psu.ac.th/conference2014/Download/manuscript_submission_update-1.doc" target="_blank">Doc</a>
+                            </li>
+                            <li><a href="https://easychair.org/conferences/?conf=psupic2018" target="_blank">Submission via Eashchair</a></li>
+                        </ul>
                     </div>
                     <div class="col-md-4">
-                        <h4>Mid</h4>
-                        <p>asfasfafd</p>
+                        <h4>Other</h4>
+                        <ul>
+                            <li><a href="https://www.google.com/maps/d/u/0/edit?mid=16S0JRzSSQZ4x_KU98dXiASLmykY&ll=7.896923548436714%2C98.37455105605125&z=15" target="_blank">View on Google Map</a></li>
+                            <li><a href="" target="_blank">Map to PSU, Phuket</a></li>
+                            <li><a href="" target="_blank">PSU, Phuket Diagram</a></li>
+                            <li><a href="" target="_blank">Recommended accommodation</a></li>
+                            <li><a href="" target="_blank"></a>All about Phuket</li>
+                        </ul>
                     </div>
                     <div class="col-md-4">
                         <h4>Link</h4>
                         <ul>
-                            <li>xxxxx</li>
+                            <li><a href="http://www.psu.ac.th" target="_blank">Prince of Songkla University (PSU)</a></li>
+                            <li><a href="http://www.psu50years.psu.ac.th" target="_blank">50<sup>th</sup> Anniversary PSU</a></li>
+                            <li><a href="http://www.phuket.psu.ac.th" target="_blank">PSU, Phuket Campus</a></li>
                         </ul>
                     </div>
                 </div>
