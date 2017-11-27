@@ -23,30 +23,30 @@ Conference 2018
         </div>
     </div>
 
-    <div class="row">
+   <%-- <div class="row">
         <div class="col-md-4">
             <h2>Call for Papers</h2>
             <p>
                 ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
             A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
             </p>
-            <p>
-                <a class="btn btn-default" href="">Read more &raquo;</a>
-            </p>
+            <a class="btn btn-default" href="call-for-papers.aspx">Call for papers &raquo;</a>
         </div>
         <div class="col-md-4">
             <h2>Research Areas</h2>
-            <p>asfasfaasafdas 5 section 99 topics</p>
+            <p></p>
             <ul>
-                <li>FHT</li>
-                <li>FIS</li>
-                <li>TE</li>
-                <li>COC</li>
-                <li>CIP</li>
+                <li>
+                    <asp:Literal runat="server" Text="<%$ Resources:Resource, Area1 %>" /></li>
+                <li>
+                    <asp:Literal runat="server" Text="<%$ Resources:Resource, Area2 %>" /></li>
+                <li>
+                    <asp:Literal runat="server" Text="<%$ Resources:Resource, Area3 %>" /></li>
+                <li>
+                    <asp:Literal runat="server" Text="<%$ Resources:Resource, Area4 %>" /></li>
+                <li>
+                    <asp:Literal runat="server" Text="<%$ Resources:Resource, Area5 %>" /></li>
             </ul>
-            <p>
-                <a class="btn btn-default" href="">Read more &raquo;</a>
-            </p>
         </div>
         <div class="col-md-4">
             <h2>Best Paper award and publication</h2>
@@ -57,7 +57,7 @@ Conference 2018
                 <a class="btn btn-default" href="">Read more &raquo;</a>
             </p>
         </div>
-    </div>
+    </div>--%>
 
     <div class="row">
         <div class="col-md-12">
