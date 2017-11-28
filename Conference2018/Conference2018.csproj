@@ -225,6 +225,11 @@
     <Content Include="imgs\c-logo-s.png" />
     <Content Include="imgs\jumbotron.png" />
     <Content Include="imgs\jumbotron2.png" />
+    <Content Include="imgs\nuwan.png" />
+    <Content Include="imgs\org.PNG" />
+    <Content Include="imgs\prathana.png" />
+    <Content Include="imgs\pun.png" />
+    <Content Include="imgs\rattana.png" />
     <Content Include="imgs\worawut.png" />
     <Content Include="important-dates.aspx" />
     <Content Include="location.aspx" />
