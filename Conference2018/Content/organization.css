@@ -91,6 +91,8 @@
         counter-increment: line;
         content: counter(line) ") ";
         display: inline-block;
+        width: 40px;
+        text-align: right;
         vertical-align: top;
     }
 
