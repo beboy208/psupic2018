@@ -22,12 +22,16 @@
         committees.Add(new committee { css = "sinchai", imgsrc = "", name = "Sinchai Kamolphiwong", otherInfo = "PSU, Thailand", types = new string[] { "steering" } });
         committees.Add(new committee { css = "rattana", imgsrc = "", name = "Rattana  Wetprasit", otherInfo = "PSU, Thailand", types = new string[] { "steering" } });
 
+        committees.Add(new committee { css = "alban", imgsrc = "", name = "Alban Rousset ", otherInfo = "Uni.lu, Luxembourg", types = new string[] { "pc" } });
         committees.Add(new committee { css = "alfredo", imgsrc = "", name = "Alfredo Huete", otherInfo = "UTS, Australia", types = new string[] { "pc" } });
         committees.Add(new committee { css = "aziz", imgsrc = "", name = "Aziz Nanthaamornphong", otherInfo = "PSU, Thailand", types = new string[] { "pc" } });
-        committees.Add(new committee { css = "jirameth", imgsrc = "", name = "Jirameth  Rungruang", otherInfo = "PSU, Thailand", types = new string[] { "pc" } });
-        committees.Add(new committee { css = "kwankamon", imgsrc = "", name = "Kwankamon Dittakan", otherInfo = "PSU, Thailand", types = new string[] { "pc" } });
         committees.Add(new committee { css = "ilian", imgsrc = "", name = "Ilian Assenov", otherInfo = "PSU, Thailand", types = new string[] { "pc" } });
         committees.Add(new committee { css = "intan", imgsrc = "", name = "Intan Hashimah Mohd", otherInfo = "USM, Malaysia", types = new string[] { "pc" } });
+        committees.Add(new committee { css = "jirameth", imgsrc = "", name = "Jirameth  Rungruang", otherInfo = "PSU, Thailand", types = new string[] { "pc" } });
+        committees.Add(new committee { css = "kichan", imgsrc = "", name = "Kichan Park ", otherInfo = "PSU, Thailand", types = new string[] { "pc" } });
+        committees.Add(new committee { css = "kwankamon", imgsrc = "", name = "Kwankamon Dittakan", otherInfo = "PSU, Thailand", types = new string[] { "pc" } });
+        committees.Add(new committee { css = "lemia", imgsrc = "", name = "Lemia Louail", otherInfo = "University of Sétif 1, Algeria", types = new string[] { "pc" } });
+        committees.Add(new committee { css = "marie", imgsrc = "", name = "Marie Laure Betbeder", otherInfo = "UBFC, France", types = new string[] { "pc" } });
         committees.Add(new committee { css = "sham", imgsrc = "", name = "Mohd Sham Othman", otherInfo = "USM, Malaysia", types = new string[] { "pc" } });
         committees.Add(new committee { css = "noppon", imgsrc = "", name = "Noppon Lertchuwongsa", otherInfo = "PSU, Thailand", types = new string[] { "pc" } });
         committees.Add(new committee { css = "nuannut", imgsrc = "", name = "Nuannut Khieowan", otherInfo = "PSU, Thailand", types = new string[] { "pc" } });
@@ -55,7 +59,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumbotron">
-        <img id="jumbotron" src="imgs/jumbotron2.png" height="100" />
+        <img id="jumbotron" src="imgs/jumbotron3.png" />
     </div>
     <div class="row">
         <div class="col-md-12">
@@ -72,7 +76,7 @@
                     <ItemTemplate>
                         <div class="col-md-6">
                             <div class="org-member">
-                                <img src="<%# Eval("imgsrc") %>" class="<%# Eval("css") %>" />
+                                <span class="img <%# Eval("css") %>"></span>
                                 <div class="content">
                                     <strong><%# Eval("name") %></strong>
                                     <p><%# Eval("otherInfo") %></p>
@@ -103,7 +107,7 @@
                     <ItemTemplate>
                         <div class="col-md-6">
                             <div class="org-member">
-                                <img src="<%# Eval("imgsrc") %>" class="<%# Eval("css") %>" />
+                                <span class="img <%# Eval("css") %>"></span>
                                 <div class="content">
                                     <strong><%# Eval("name") %></strong>
                                     <p><%# Eval("otherInfo") %></p>
@@ -129,12 +133,12 @@
             <div class="container">
                 <asp:Repeater ID="rptPCChair" runat="server">
                     <HeaderTemplate>
-                        <div class="row">
+                        <div class="row" style="counter-reset: line;">
                     </HeaderTemplate>
                     <ItemTemplate>
                         <div class="col-md-12">
                             <div class="org-member-list">
-                                <img src="<%# Eval("imgsrc") %>" class="<%# Eval("css") %>" />
+                                <span class="img <%# Eval("css") %>"></span>
                                 <div class="content">
                                     <strong><%# Eval("name") %></strong>
                                     <p><%# Eval("otherInfo") %></p>
@@ -174,12 +178,12 @@
             <div class="container">
                 <asp:Repeater ID="rptOrganising" runat="server">
                     <HeaderTemplate>
-                        <div class="row">
+                        <div class="row" style="counter-reset: line;">
                     </HeaderTemplate>
                     <ItemTemplate>
                         <div class="col-md-12">
                             <div class="org-member-list">
-                                <img src="<%# Eval("imgsrc") %>" class="<%# Eval("css") %>" />
+                                <span class="img <%# Eval("css") %>"></span>
                                 <div class="content">
                                     <strong><%# Eval("name") %></strong>
                                     <p><%# Eval("otherInfo") %></p>
