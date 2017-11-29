@@ -78,7 +78,7 @@
                             <ul class="nav navbar-nav dropdown-menu">
                                 <li><a runat="server" href="call-for-papers.aspx">Call for papers</a></li>
                                 <li><a runat="server" href="call-for-papers.aspx#submission">Paper Submission</a></li>
-                                <li><a runat="server" href="call-for-papers.aspx#publication">Best paper award and publication</a></li>
+                                <%--<li><a runat="server" href="call-for-papers.aspx#publication">Best paper award and publication</a></li>--%>
                                 <li><a runat="server" href="call-for-papers.aspx#fee">Registration Fee</a></li>
                             </ul>
                         </li>

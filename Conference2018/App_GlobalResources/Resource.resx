@@ -117,20 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Area1" xml:space="preserve">
+  <data name="Area3" xml:space="preserve">
     <value>Hospitality and Tourism</value>
   </data>
-  <data name="Area2" xml:space="preserve">
+  <data name="Area1" xml:space="preserve">
     <value>Environmental Technology and Management</value>
   </data>
-  <data name="Area3" xml:space="preserve">
+  <data name="Area4" xml:space="preserve">
     <value>International Business</value>
   </data>
-  <data name="Area4" xml:space="preserve">
-    <value>Information Technology</value>
+  <data name="Area2" xml:space="preserve">
+    <value>Computing Theory and Technology</value>
+    <comment>old:Information Technology</comment>
   </data>
   <data name="Area5" xml:space="preserve">
-    <value>International Language and Culture Teaching</value>
+    <value>International Language and Culture</value>
+    <comment>old:nternational Language and Culture Teaching</comment>
   </data>
   <data name="lbSchedule1" xml:space="preserve">
     <value>Call for Submission</value>

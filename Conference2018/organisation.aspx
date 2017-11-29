@@ -30,7 +30,7 @@
         committees.Add(new committee { css = "jirameth", imgsrc = "", name = "Jirameth  Rungruang", otherInfo = "PSU, Thailand", types = new string[] { "pc" } });
         committees.Add(new committee { css = "kichan", imgsrc = "", name = "Kichan Park ", otherInfo = "PSU, Thailand", types = new string[] { "pc" } });
         committees.Add(new committee { css = "kwankamon", imgsrc = "", name = "Kwankamon Dittakan", otherInfo = "PSU, Thailand", types = new string[] { "pc" } });
-        committees.Add(new committee { css = "lemia", imgsrc = "", name = "Lemia Louail", otherInfo = "University of Sétif 1, Algeria", types = new string[] { "pc" } });
+        committees.Add(new committee { css = "lemia", imgsrc = "", name = "Lemia Louail", otherInfo = "UFAS, Algeria", types = new string[] { "pc" } });
         committees.Add(new committee { css = "marie", imgsrc = "", name = "Marie Laure Betbeder", otherInfo = "UBFC, France", types = new string[] { "pc" } });
         committees.Add(new committee { css = "sham", imgsrc = "", name = "Mohd Sham Othman", otherInfo = "USM, Malaysia", types = new string[] { "pc" } });
         committees.Add(new committee { css = "noppon", imgsrc = "", name = "Noppon Lertchuwongsa", otherInfo = "PSU, Thailand", types = new string[] { "pc" } });

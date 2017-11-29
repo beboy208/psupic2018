@@ -61,7 +61,7 @@ namespace Conference2018.App_GlobalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hospitality and Tourism.
+        ///   Looks up a localized string similar to Environmental Technology and Management.
         /// </summary>
         public static string Area1 {
             get {
@@ -70,7 +70,7 @@ namespace Conference2018.App_GlobalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Environmental Technology and Management.
+        ///   Looks up a localized string similar to Computing Theory and Technology.
         /// </summary>
         public static string Area2 {
             get {
@@ -79,7 +79,7 @@ namespace Conference2018.App_GlobalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to International Business.
+        ///   Looks up a localized string similar to Hospitality and Tourism.
         /// </summary>
         public static string Area3 {
             get {
@@ -88,7 +88,7 @@ namespace Conference2018.App_GlobalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Information Technology.
+        ///   Looks up a localized string similar to International Business.
         /// </summary>
         public static string Area4 {
             get {
@@ -97,7 +97,7 @@ namespace Conference2018.App_GlobalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to International Language and Culture Teaching.
+        ///   Looks up a localized string similar to International Language and Culture.
         /// </summary>
         public static string Area5 {
             get {
