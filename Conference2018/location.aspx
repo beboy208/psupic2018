@@ -30,7 +30,7 @@
             <h2>All about Phuket</h2>
             <div class="container">
                 <p style="background-image: url('https://www.tourismthailand.org/fileadmin/upload_img/about_tat/img_1468295874.jpg'); background-repeat: no-repeat; background-position: 0 0; background-size: 100px; padding-left: 110px">
-                    Phuket features a dizzying array of accommodation options ranging from luxury hotels to family friendly beach resorts, 
+                Phuket features a dizzying array of accommodation options ranging from luxury hotels to family friendly beach resorts, 
                 secluded island villas to budget hotels. With so many types of accommodation available in Phuket, 
                 you may actually have a challenging time trying to decide which is the best to suit your needs; 
                 it may be helpful to learn about the attractions (or lack thereof) near each of the beaches in Phuket 
