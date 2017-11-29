@@ -40,31 +40,82 @@
         </div>
     </div>
 
-    <%-- <div class="row">
-        <div class="col-md-4">
+    <div class="row">
+        <%--<div class="col-md-4">
             <h2>Call for Papers</h2>
             <p>
                 ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
             A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
             </p>
             <a class="btn btn-default" href="call-for-papers.aspx">Call for papers &raquo;</a>
+        </div>--%>
+
+        <div class="col-md-6">
+            <h2>Topics</h2>
+            <div class="containter">
+                <p></p>
+                <ul>
+                    <li>
+                        <asp:Literal runat="server" Text="<%$ Resources:Resource, Area1 %>" /></li>
+                    <li>
+                        <asp:Literal runat="server" Text="<%$ Resources:Resource, Area2 %>" /></li>
+                    <li>
+                        <asp:Literal runat="server" Text="<%$ Resources:Resource, Area3 %>" /></li>
+                    <li>
+                        <asp:Literal runat="server" Text="<%$ Resources:Resource, Area4 %>" /></li>
+                    <li>
+                        <asp:Literal runat="server" Text="<%$ Resources:Resource, Area5 %>" /></li>
+                </ul>
+            </div>
         </div>
-        <div class="col-md-4">
-            <h2>Research Areas</h2>
-            <p></p>
-            <ul>
-                <li>
-                    <asp:Literal runat="server" Text="<%$ Resources:Resource, Area1 %>" /></li>
-                <li>
-                    <asp:Literal runat="server" Text="<%$ Resources:Resource, Area2 %>" /></li>
-                <li>
-                    <asp:Literal runat="server" Text="<%$ Resources:Resource, Area3 %>" /></li>
-                <li>
-                    <asp:Literal runat="server" Text="<%$ Resources:Resource, Area4 %>" /></li>
-                <li>
-                    <asp:Literal runat="server" Text="<%$ Resources:Resource, Area5 %>" /></li>
-            </ul>
+
+        <div class="col-md-6">
+            <h2>Important Dates</h2>
+            <div class="container">
+                <dl class="important-dates">
+                    <dt>
+                        <asp:Literal runat="server" Text="<%$ Resources:Resource, lbSchedule1 %>" /></dt>
+                    <dd>
+                        <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue1 %>" /></dd>
+
+                    <dt>
+                        <asp:Literal runat="server" Text="<%$ Resources:Resource, lbSchedule2 %>" /></dt>
+                    <dd>
+                        <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue2 %>" /></dd>
+
+                    <dt>
+                        <asp:Literal runat="server" Text="<%$ Resources:Resource, lbSchedule3 %>" /></dt>
+                    <dd>
+                        <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue3 %>" /></dd>
+
+                    <dt>
+                        <asp:Literal runat="server" Text="<%$ Resources:Resource, lbSchedule4 %>" /></dt>
+                    <dd>
+                        <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue4 %>" /></dd>
+
+                    <dt>
+                        <asp:Literal runat="server" Text="<%$ Resources:Resource, lbSchedule5 %>" /></dt>
+                    <dd>
+                        <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue5 %>" /></dd>
+
+                    <dt>
+                        <asp:Literal runat="server" Text="<%$ Resources:Resource, lbSchedule6 %>" /></dt>
+                    <dd>
+                        <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue6 %>" /></dd>
+
+                    <dt>
+                        <asp:Literal runat="server" Text="<%$ Resources:Resource, lbSchedule7 %>" /></dt>
+                    <dd>
+                        <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue7 %>" /></dd>
+
+                    <dt>
+                        <asp:Literal runat="server" Text="<%$ Resources:Resource, lbSchedule8 %>" /></dt>
+                    <dd>
+                        <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue8 %>" /></dd>
+                </dl>
+            </div>
         </div>
+
         <%-- <div class="col-md-4">
             <h2>Best Paper award and publication</h2>
             <p>
