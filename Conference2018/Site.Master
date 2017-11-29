@@ -16,188 +16,7 @@
 
     <%-----
     <style>
-        .navbar-inverse {
-            background: white;
-            border-color: transparent;
-        }
-
-        .navbar-brand {
-            height: 68px;
-            padding: 8px;
-        }
-
-        .jumbotron {
-            margin-top: 65px;
-            padding: 10px 20px;
-        }
-
-        img#jumbotron {
-            width: 100%;
-        }
-
-        .dropdown-menu {
-            background-color: #3b5998;
-            border-color: #1e376d;
-            margin: 0px;
-        }
-
-            .dropdown-menu li {
-                background-color: #3b5998;
-                width: 100%;
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-
-                .dropdown-menu li a {
-                    color: ghostwhite;
-                }
-
-                    .dropdown-menu li a:hover,
-                    .dropdown-menu li a:focus {
-                        background-color: inherit;
-                    }
-
-        .navbar-main,
-        .navbar-inverse .navbar-toggle,
-        .navbar-inverse .navbar-toggle:hover,
-        .navbar-inverse .navbar-toggle:focus {
-            background: #3b5998;
-        }
-
-        .navbar-main {
-            /*width: 100%;
-            margin: 0px auto;
-            padding-left: 110px;
-            padding-right: 110px;*/
-        }
-
-            .navbar-main .navbar-nav > li > a,
-            .navbar-main .navbar-nav > li > a:hover,
-            .navbar-main .navbar-nav > li > a:focus {
-                color: ghostwhite;
-                text-decoration: none;
-            }
-
-            .navbar-main .navbar-nav > li:hover,
-            .navbar-main .navbar-nav > .open > a:focus {
-                background-color: #1e376d;
-            }
-
-        @media (min-width: 768px) {
-            .dropdown:focus .dropdown-menu {
-                display: block;
-                margin-top: 0;
-                padding: 0;
-            }
-
-            .navbar-brand > a,
-            .navbar-brand > a:hover,
-            .navbar-brand > a:focus {
-                color: inherit;
-                text-decoration: none;
-            }
-
-                .navbar-brand > a,
-                .navbar-brand > a:hover,
-                .navbar-brand > a:focus {
-                    text-decoration: none;
-                    color: #0e0924;
-                }
-
-            .navbar-inverse {
-                background-color: white;
-                border-color: transparent;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .jumbotron {
-                margin-top: 30px;
-            }
-
-            .navbar-right {
-                float: right !important;
-                margin-right: -15px;
-            }
-
-            .navbar-inverse {
-                background-color: #3b5998;
-            }
-
-            .navbar-brand > a,
-            .navbar-brand > a:hover,
-            .navbar-brand > a:focus {
-                color: ghostwhite;
-                text-decoration: none;
-            }
-
-            .navbar-main {
-                padding: 0px;
-            }
-
-                .navbar-main .navbar-nav > li {
-                    margin-right: 50px;
-                }
-
-            .navbar-toggle {
-                float: right;
-            }
-
-            #psupiclogo {
-                display: none;
-            }
-
-            #psu50th {
-                /*display: none;*/
-            }
-
-            #eventtitle {
-            }
-        }
-
-
-        @media (max-width: 520px) {
-
-            .jumbotron {
-                margin-top: 10px;
-                padding: 10px;
-            }
-
-            .navbar-header {
-                /*display: block;
-                float: none !important;*/
-            }
-
-            .navbar-brand {
-                height: auto;
-            }
-
-            .navbar-right {
-                /*display: block;
-                float: none !important;*/
-            }
-
-            .navbar-toggle {
-                float: right;
-            }
-
-            #psupiclogo {
-                display: none;
-            }
-
-            #psu50th {
-                display: none;
-            }
-
-            #eventtitle {
-            }
-        }
-
-        body {
-            /*min-width: 500px;*/
-            font-size: 1.7em;
-            line-height: 1.7em;
-        }
+       
     </style>
  ---%>
 
@@ -261,8 +80,8 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Call for papers <span class="glyphicon glyphicon-triangle-bottom"></span></a>
                             <ul class="nav navbar-nav dropdown-menu">
                                 <li><a runat="server" href="call-for-papers.aspx">Call for papers</a></li>
-                                <li><a runat="server" href="call-for-papers.aspx#submission">Paper Submission</a></li>
-                                <li><a runat="server" href="call-for-papers.aspx#publication">Best paper award and publication</a></li>
+                                <li><a runat="server" href="call-for-papers.aspx#submission">Abstract Submission</a></li>
+                                <%--<li><a runat="server" href="call-for-papers.aspx#publication">Best paper award and publication</a></li>--%>
                                 <li><a runat="server" href="call-for-papers.aspx#fee">Registration Fee</a></li>
                             </ul>
                         </li>
@@ -273,7 +92,7 @@
                                 <li><a runat="server" href="important-dates.aspx#ceremony">Open ceremony</a></li>
                                 <li><a runat="server" href="important-dates.aspx#reception">Welcome reception</a></li>
                                 <li><a runat="server" href="~/">Conference session</a></li>
-                                <li><a runat="server" href="~/">Phuket signtseeing</a></li>
+                                <li><a runat="server" href="~/">Phuket sightseeing</a></li>
                                 <li><a runat="server" href="~/">Transportation service</a></li>
                             </ul>
                         </li>
@@ -294,7 +113,7 @@
             <hr />
             <footer>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <h4>Document</h4>
                         <ul>
                             <li>Manuscript Guidelines <a href="http://www.conference.phuket.psu.ac.th/conference2014/Download/manuscript_guidelines_update-1.pdf" target="_blank">PDF</a>
@@ -303,7 +122,7 @@
                             <li><a href="https://easychair.org/conferences/?conf=psupic2018" target="_blank">Submission via Eashchair</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-4">
+                  <%--  <div class="col-md-4">
                         <h4>Other</h4>
                         <ul>
                             <li><a href="https://www.google.com/maps/d/u/0/edit?mid=16S0JRzSSQZ4x_KU98dXiASLmykY&ll=7.896923548436714%2C98.37455105605125&z=15" target="_blank">View on Google Map</a></li>
@@ -312,13 +131,14 @@
                             <li><a href="" target="_blank">Recommended accommodation</a></li>
                             <li><a href="" target="_blank"></a>All about Phuket</li>
                         </ul>
-                    </div>
-                    <div class="col-md-4">
+                    </div>--%>
+                    <div class="col-md-6">
                         <h4>Link</h4>
                         <ul>
                             <li><a href="http://www.psu.ac.th" target="_blank">Prince of Songkla University (PSU)</a></li>
                             <li><a href="http://www.psu50years.psu.ac.th" target="_blank">50<sup>th</sup> Anniversary PSU</a></li>
                             <li><a href="http://www.phuket.psu.ac.th" target="_blank">PSU, Phuket Campus</a></li>
+                            <li><a href="https://www.tourismthailand.org/About-Thailand/Destination/Phuket">Phuket, Tourismthailand</a></li>
                         </ul>
                     </div>
                 </div>

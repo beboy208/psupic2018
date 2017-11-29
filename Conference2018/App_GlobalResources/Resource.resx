@@ -117,19 +117,69 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Area1" xml:space="preserve">
+  <data name="Area3" xml:space="preserve">
     <value>Hospitality and Tourism</value>
   </data>
-  <data name="Area2" xml:space="preserve">
+  <data name="Area1" xml:space="preserve">
     <value>Environmental Technology and Management</value>
   </data>
-  <data name="Area3" xml:space="preserve">
+  <data name="Area4" xml:space="preserve">
     <value>International Business</value>
   </data>
-  <data name="Area4" xml:space="preserve">
-    <value>Information Technology</value>
+  <data name="Area2" xml:space="preserve">
+    <value>Computing Theory and Technology</value>
+    <comment>old:Information Technology</comment>
   </data>
   <data name="Area5" xml:space="preserve">
-    <value>International Language and Culture Teaching</value>
+    <value>International Language and Culture</value>
+    <comment>old:nternational Language and Culture Teaching</comment>
+  </data>
+  <data name="lbSchedule1" xml:space="preserve">
+    <value>Call for Submission</value>
+  </data>
+  <data name="lbSchedule2" xml:space="preserve">
+    <value>Abstract Submission Deadline</value>
+  </data>
+  <data name="lbSchedule3" xml:space="preserve">
+    <value>Acceptance Notification</value>
+  </data>
+  <data name="lbSchedule4" xml:space="preserve">
+    <value>Camera-Ready Submission Deadline</value>
+  </data>
+  <data name="lbSchedule5" xml:space="preserve">
+    <value>Early Bird Registration and Payment Deadline</value>
+  </data>
+  <data name="lbSchedule6" xml:space="preserve">
+    <value>Regular Registration and Payment Deadline</value>
+  </data>
+  <data name="lbSchedule7" xml:space="preserve">
+    <value>Conference Dates</value>
+  </data>
+  <data name="lbSchedule8" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ScheduleValue1" xml:space="preserve">
+    <value>December 1-31, 2017</value>
+  </data>
+  <data name="ScheduleValue2" xml:space="preserve">
+    <value>January 2, 2018</value>
+  </data>
+  <data name="ScheduleValue3" xml:space="preserve">
+    <value>February 1, 2018</value>
+  </data>
+  <data name="ScheduleValue4" xml:space="preserve">
+    <value>February 15, 2018</value>
+  </data>
+  <data name="ScheduleValue5" xml:space="preserve">
+    <value>February 15, 2018</value>
+  </data>
+  <data name="ScheduleValue6" xml:space="preserve">
+    <value>February 28, 2018</value>
+  </data>
+  <data name="ScheduleValue7" xml:space="preserve">
+    <value>March 11-12, 2018</value>
+  </data>
+  <data name="ScheduleValue8" xml:space="preserve">
+    <value />
   </data>
 </root>
