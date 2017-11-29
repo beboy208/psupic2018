@@ -11,7 +11,7 @@
                 <p>
                     <%-- AIzaSyCTyBvxbNjN1tnMKpONd-r32JyZ7ACaJTs --%>
                 </p>
-                <iframe class="center-block" width="600" height="450" frameborder="0" style="border: 0"
+                <iframe class="center-block" frameborder="0" style="border: 0; width: 80%; height: 300px"
                     src="https://www.google.com/maps/embed/v1/place?q=%E0%B8%95%E0%B8%B6%E0%B8%81%E0%B8%AD%E0%B8%98%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9A%E0%B8%94%E0%B8%B5%E0%B8%A1%E0%B8%AD.%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95&key=AIzaSyCTyBvxbNjN1tnMKpONd-r32JyZ7ACaJTs" allowfullscreen></iframe>
             </div>
         </div>
