@@ -7,13 +7,17 @@
     <div class="row">
         <div class="col-md-12">
             <h2>Keynote speakers</h2>
-             <p class="tba">To Be Announced</p>
+             <div class="container">
+                <p class="tba">To Be Announced</p>
+            </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
             <h3>Guest speakers</h3>
-             <p class="tba">To Be Announced</p>
+             <div class="container">
+                <p class="tba">To Be Announced</p>
+            </div>
         </div>
     </div>
 </asp:Content>

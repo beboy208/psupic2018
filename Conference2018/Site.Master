@@ -111,7 +111,7 @@
 
             <footer>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <h4>Document</h4>
                         <ul>
                             <li>Manuscript Guidelines <a href="http://www.conference.phuket.psu.ac.th/conference2014/Download/manuscript_guidelines_update-1.pdf" target="_blank">PDF</a>
@@ -120,7 +120,7 @@
                             <li><a href="https://easychair.org/conferences/?conf=psupic2018" target="_blank">Submission via Eashchair</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-4">
+                  <%--  <div class="col-md-4">
                         <h4>Other</h4>
                         <ul>
                             <li><a href="https://www.google.com/maps/d/u/0/edit?mid=16S0JRzSSQZ4x_KU98dXiASLmykY&ll=7.896923548436714%2C98.37455105605125&z=15" target="_blank">View on Google Map</a></li>
@@ -129,13 +129,14 @@
                             <li><a href="" target="_blank">Recommended accommodation</a></li>
                             <li><a href="" target="_blank"></a>All about Phuket</li>
                         </ul>
-                    </div>
-                    <div class="col-md-4">
+                    </div>--%>
+                    <div class="col-md-6">
                         <h4>Link</h4>
                         <ul>
                             <li><a href="http://www.psu.ac.th" target="_blank">Prince of Songkla University (PSU)</a></li>
                             <li><a href="http://www.psu50years.psu.ac.th" target="_blank">50<sup>th</sup> Anniversary PSU</a></li>
                             <li><a href="http://www.phuket.psu.ac.th" target="_blank">PSU, Phuket Campus</a></li>
+                            <li><a href="https://www.tourismthailand.org/About-Thailand/Destination/Phuket">Phuket, Tourismthailand</a></li>
                         </ul>
                     </div>
                 </div>
