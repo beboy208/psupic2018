@@ -29,6 +29,24 @@ input[type="select"] {
 }
 
 
+.container.jumbotron {
+    padding: 0px 0px 0px 0px;
+    padding-left:60px;
+    padding-right:0px;
+    margin:0px 0px 0px 0px;
+    border-radius: 0px;
+ }
+
+
+.container .jumbotron, .container-fluid .jumbotron {
+    padding-right: 0px; 
+    padding-left: 0px;
+}
+
+.container .row {
+    padding-right: 0px; 
+    padding-left: 0px;
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
