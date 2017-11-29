@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumbotron">
-        <img id="jumbotron" src="imgs/jumbotron2.png"  />
+        <img id="jumbotron" src="imgs/jumbotron3.png"  />
     </div>
     <div class="row">
         <div class="col-md-12">
@@ -34,16 +34,16 @@
     <a name="submission"></a>
     <div class="row">
         <div class="col-md-12">
-            <h3>Paper submission</h3>
+            <h3>Abstract submission</h3>
             <p class="tba">To Be Announced</p>
         </div>
     </div>
-    <div class="row">
+    <%--<div class="row">
         <div class="col-md-12">
             <h3>Best paper award and publication</h3>
              <p class="tba">To Be Announced</p>
         </div>
-    </div>
+    </div>--%>
     <div class="row">
         <div class="col-md-12">
             <h3>Registration Fee</h3>

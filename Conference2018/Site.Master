@@ -77,7 +77,7 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Call for papers <span class="glyphicon glyphicon-triangle-bottom"></span></a>
                             <ul class="nav navbar-nav dropdown-menu">
                                 <li><a runat="server" href="call-for-papers.aspx">Call for papers</a></li>
-                                <li><a runat="server" href="call-for-papers.aspx#submission">Paper Submission</a></li>
+                                <li><a runat="server" href="call-for-papers.aspx#submission">Abstract Submission</a></li>
                                 <%--<li><a runat="server" href="call-for-papers.aspx#publication">Best paper award and publication</a></li>--%>
                                 <li><a runat="server" href="call-for-papers.aspx#fee">Registration Fee</a></li>
                             </ul>
