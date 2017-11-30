@@ -470,6 +470,7 @@
     <Compile Include="Startup.cs" />
     <Compile Include="UserControls\ucImportantDates.ascx.cs">
       <DependentUpon>ucImportantDates.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserControls\ucImportantDates.ascx.designer.cs">
       <DependentUpon>ucImportantDates.ascx</DependentUpon>
