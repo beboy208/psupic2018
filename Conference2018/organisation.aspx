@@ -209,7 +209,7 @@
                 rptSteering.DataBind();
             %>
             <div class="container">
-                <div class="container pc-card col-3 pc-counter-reset">
+                <div class="container pc-card col-2 pc-counter-reset">
                     <uc1:ucPCChair runat="server" ID="rptSteering" />
                 </div>
             </div>
