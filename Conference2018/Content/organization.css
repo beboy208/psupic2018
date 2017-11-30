@@ -3,14 +3,21 @@
 }
 
 .pc-card {
+    width: 100%;
 }
 
     .pc-card .pc-member {
-        width: 45%; /*for 2 columns*/
+        width: 100%;
         display: inline-block;
-        height: 120px;
+        min-height: 120px;
+        /*max-height: 170px;*/
         margin-bottom: 5px;
+        vertical-align: top;
     }
+
+        /*.pc-card .pc-member{
+            width: 45%; /*for 2 columns
+        }*/
 
         .pc-card .pc-member::before {
             counter-increment: line;
@@ -19,6 +26,14 @@
             font-size: 0px;
             margin-left: 10px;
         }
+
+    .pc-card.col-2 .pc-member {
+        width: 45%; /*for 2 columns*/
+    }
+
+    .pc-card.col-3 .pc-member {
+        width: 30%; /*for 3 columns*/
+    }
 
     .pc-card .img {
         float: left;
@@ -133,11 +148,66 @@
     }
 
     .pc-member .img.sinchai {
-        background-image: url('https://media.licdn.com/mpr/mpr/shrink_100_100/p/5/005/014/2c1/3d017b6.jpg');
+        background-image: url('../imgs/sinchai.jpg');
         background-size: 120px;
         background-position: -15px 0px;
         background-repeat: no-repeat;
     }
+
+    .pc-member .img.pensiri {
+        background-image: url('../imgs/pensiri.png');
+        background-size: 230px;
+        background-position: -42px -17px;
+        background-repeat: no-repeat;
+    }
+
+    .pc-member .img.siriwan {
+        background-image: url('../imgs/siriwan.png');
+        background-size: 200px;
+        background-position: -58px -16px;
+        background-repeat: no-repeat;
+    }
+
+    .pc-member .img.noppon {
+        background-image: url('../imgs/noppon.jpg');
+        background-size: 140px;
+        background-position: -26px 0px;
+        background-repeat: no-repeat;
+    }
+
+    .pc-member .img.chayanon {
+        background-image: url('../imgs/chayanon.jpg');
+        background-size: 120px;
+        background-position: -15px -20px;
+        background-repeat: no-repeat;
+    }
+
+    .pc-member .img.supachai {
+        background-image: url('../imgs/supachaijeangjai.jpg');
+        background-size: 180px;
+        background-position: -40px -10px;
+        background-repeat: no-repeat;
+    }
+
+    .pc-member .img.sombat {
+        background-image: url('../imgs/sombatkhruathong.jpg');
+        background-size: 160px;
+        background-position: -30px -00px;
+        background-repeat: no-repeat;
+    }
+
+@media (max-width: 1240px) {
+    .pc-card.col-3 .pc-member {
+        width: 45%;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .pc-card.col-2 .pc-member, .pc-card.col-3 .pc-member {
+        width: 100%;
+    }
+}
 
 
 @media (max-width: 600px) {
