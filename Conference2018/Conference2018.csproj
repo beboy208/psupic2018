@@ -229,6 +229,8 @@
     <Content Include="imgs\nuwan.png" />
     <Content Include="imgs\org.PNG" />
     <Content Include="imgs\prathana.png" />
+    <Content Include="imgs\PSUPIC-PSU50th-QRCode.png" />
+    <Content Include="imgs\PSUPIC-QRCode.png" />
     <Content Include="imgs\pun.png" />
     <Content Include="imgs\rattana.png" />
     <Content Include="imgs\worawut.png" />
