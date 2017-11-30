@@ -198,7 +198,7 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
-    <Content Include="call-for-papers.aspx" />
+    <Content Include="call-for-submissions.aspx" />
     <Content Include="co-orgs.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -271,6 +271,8 @@
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
     <Content Include="speakers.aspx" />
+    <Content Include="UserControls\ucImportantDates.ascx" />
+    <Content Include="UserControls\ucPCChair.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
@@ -393,12 +395,12 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="call-for-papers.aspx.cs">
-      <DependentUpon>call-for-papers.aspx</DependentUpon>
+    <Compile Include="call-for-submissions.aspx.cs">
+      <DependentUpon>call-for-submissions.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="call-for-papers.aspx.designer.cs">
-      <DependentUpon>call-for-papers.aspx</DependentUpon>
+    <Compile Include="call-for-submissions.aspx.designer.cs">
+      <DependentUpon>call-for-submissions.aspx</DependentUpon>
     </Compile>
     <Compile Include="co-orgs.aspx.cs">
       <DependentUpon>co-orgs.aspx</DependentUpon>
@@ -460,6 +462,20 @@
       <DependentUpon>speakers.aspx</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="UserControls\ucImportantDates.ascx.cs">
+      <DependentUpon>ucImportantDates.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucImportantDates.ascx.designer.cs">
+      <DependentUpon>ucImportantDates.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucPCChair.ascx.cs">
+      <DependentUpon>ucPCChair.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucPCChair.ascx.designer.cs">
+      <DependentUpon>ucPCChair.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

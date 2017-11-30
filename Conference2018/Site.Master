@@ -88,12 +88,11 @@
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Home</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Call for papers <span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Call for submissions <span class="glyphicon glyphicon-triangle-bottom"></span></a>
                             <ul class="nav navbar-nav dropdown-menu">
-                                <li><a runat="server" href="call-for-papers.aspx">Call for papers</a></li>
-                                <li><a runat="server" href="call-for-papers.aspx#submission">Abstract Submission</a></li>
-                                <%--<li><a runat="server" href="call-for-papers.aspx#publication">Best paper award and publication</a></li>--%>
-                                <li><a runat="server" href="call-for-papers.aspx#fee">Registration Fee</a></li>
+                                <li><a runat="server" href="call-for-submissions.aspx">Goals and Scope</a></li>
+                                <li><a runat="server" href="call-for-submissions.aspx#submission">Abstract Submission</a></li>
+                                <li><a runat="server" href="call-for-submissions.aspx#registration">Registration</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -109,7 +108,7 @@
                         </li>
 
                         <li><a runat="server" href="organisation.aspx">Organisation</a></li>
-                        <li><a runat="server" href="speakers.aspx">Speakers</a></li>
+                        <%--<li><a runat="server" href="speakers.aspx">Speakers</a></li>--%>
                         <li><a runat="server" href="location.aspx">Location</a></li>
                         <%--<li><a runat="server" href="co-orgs.aspx">Co-Organizers</a></li>--%>
                         <%--<li><a runat="server" href="~/">Links</a></li>--%>
@@ -124,8 +123,8 @@
             <hr />
             <footer>
                 <div class="row">
-                    <div class="col-md-6">
-                        <h4>Document</h4>
+                    <div class="col-md-4">
+                        <h4>Documents</h4>
                         <ul>
                             <li>Manuscript Guidelines <a href="http://www.conference.phuket.psu.ac.th/conference2014/Download/manuscript_guidelines_update-1.pdf" target="_blank">PDF</a>
                                 | <a href="http://www.conference.phuket.psu.ac.th/conference2014/Download/manuscript_submission_update-1.doc" target="_blank">Doc</a>
@@ -133,18 +132,18 @@
                             <li><a href="https://easychair.org/conferences/?conf=psupic2018" target="_blank">Submission via Eashchair</a></li>
                         </ul>
                     </div>
-                  <%--  <div class="col-md-4">
-                        <h4>Other</h4>
-                        <ul>
-                            <li><a href="https://www.google.com/maps/d/u/0/edit?mid=16S0JRzSSQZ4x_KU98dXiASLmykY&ll=7.896923548436714%2C98.37455105605125&z=15" target="_blank">View on Google Map</a></li>
-                            <li><a href="" target="_blank">Map to PSU, Phuket</a></li>
-                            <li><a href="" target="_blank">PSU, Phuket Diagram</a></li>
-                            <li><a href="" target="_blank">Recommended accommodation</a></li>
-                            <li><a href="" target="_blank"></a>All about Phuket</li>
-                        </ul>
-                    </div>--%>
-                    <div class="col-md-6">
-                        <h4>Link</h4>
+                    <div class="col-md-4">
+                        <h4>Contact</h4>
+                        <strong>Prince of Songkla University, Phuket Campus</strong><br />
+                        <address>
+                            80 Moo 1, Vichitsonkram Road, Kathu District, Phuket 83120<br />
+                            Email: <a href="mailto:psupic2018@phuket.psu.ac.th">psupic2018@phuket.psu.ac.th</a>
+                        </address>
+
+                    </div>
+
+                    <div class="col-md-4">
+                        <h4>Links</h4>
                         <ul>
                             <li><a href="http://www.psu.ac.th" target="_blank">Prince of Songkla University (PSU)</a></li>
                             <li><a href="http://www.psu50years.psu.ac.th" target="_blank">50<sup>th</sup> Anniversary PSU</a></li>

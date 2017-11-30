@@ -19,7 +19,7 @@ namespace Conference2018 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptGeneral;
+        protected global::Conference2018.UserControls.ucPCChair rptGeneral;
         
         /// <summary>
         /// rptSteering control.
@@ -28,16 +28,43 @@ namespace Conference2018 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptSteering;
+        protected global::Conference2018.UserControls.ucPCChair rptSteering;
         
         /// <summary>
-        /// rptPCChair control.
+        /// rptEnvPCChair control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptPCChair;
+        protected global::Conference2018.UserControls.ucPCChair rptEnvPCChair;
+        
+        /// <summary>
+        /// rptEnvPC control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Conference2018.UserControls.ucPCChair rptEnvPC;
+        
+        /// <summary>
+        /// rptComPCChair control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Conference2018.UserControls.ucPCChair rptComPCChair;
+        
+        /// <summary>
+        /// rptComPC control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Conference2018.UserControls.ucPCChair rptComPC;
         
         /// <summary>
         /// rptOrganising control.
@@ -46,6 +73,6 @@ namespace Conference2018 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptOrganising;
+        protected global::Conference2018.UserControls.ucPCChair rptOrganising;
     }
 }
