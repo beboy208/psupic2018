@@ -127,7 +127,8 @@
         </div>--%>
     </div>
 
-    <div class="row">
+ 
+     <div class="row">
         <div class="col-md-12">
             <h2>Follow us</h2>
             <div class="container">
@@ -139,4 +140,5 @@
             </div>
         </div>
     </div>
+
 </asp:Content>

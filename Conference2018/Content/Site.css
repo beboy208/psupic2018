@@ -48,6 +48,8 @@ input[type="select"] {
     padding-left: 0px;
 }
 
+
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .jumbotron {
@@ -213,12 +215,12 @@ img#jumbotron {
 
     .jumbotron {
         margin-top: 10px;
-        padding: 10px;
+        /* padding: 10px; */
     }
 
     .navbar-header {
         /*display: block;
-                float: none !important;*/
+         float: none !important;*/
     }
 
     .navbar-brand {
@@ -232,7 +234,7 @@ img#jumbotron {
 
     .navbar-toggle {
         float: right;
-    }
+       }
 
     #psupiclogo {
         display: none;
@@ -244,8 +246,6 @@ img#jumbotron {
 
     #eventtitle {
     }
-}
-
 
 p.tba {
     background-color: #d8e3f6;
