@@ -15,7 +15,7 @@
 
     <div class="row">
         <div class="col-md-12">
-            <h2>Welcome Message</h2>
+            <h2 class="page-header">Welcome Message</h2>
             <div class="container">
                 <p>
                     <strong>Prince of Songkla University (PSU)</strong> was the first and now largest university in southern Thailand, 
