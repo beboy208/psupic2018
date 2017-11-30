@@ -239,7 +239,6 @@
 
         .pc-list p {
             display: inline;
-            width: auto;
             white-space: normal;
             text-decoration: none;
         }

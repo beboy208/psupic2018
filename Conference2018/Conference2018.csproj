@@ -404,6 +404,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="call-for-submissions.aspx.cs">
       <DependentUpon>call-for-submissions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="call-for-submissions.aspx.designer.cs">
       <DependentUpon>call-for-submissions.aspx</DependentUpon>
@@ -477,6 +478,7 @@
     </Compile>
     <Compile Include="UserControls\ucPCChair.ascx.cs">
       <DependentUpon>ucPCChair.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserControls\ucPCChair.ascx.designer.cs">
       <DependentUpon>ucPCChair.ascx</DependentUpon>
