@@ -76,7 +76,7 @@
                     <div class="navbar-brand">
                         <%-- <a id="psupiclogo" runat="server" href="~/">
                             <img src="imgs/c-logo-s.png" alt="PSU PIC" /></a>--%>
-                        <a id="psu50th" runat="server" href="www.psu.ac.th">
+                        <a id="psu50th" runat="server" href="http://www.psu.ac.th">
                             <img src="imgs/50th-logo_s60.png" alt="PSU" /></a>
                         <a id="eventtitle" runat="server" href="~/">PSU PIC 2018</a>
                     </div>
@@ -129,7 +129,7 @@
                             <li>Manuscript Guidelines <a href="http://www.conference.phuket.psu.ac.th/conference2014/Download/manuscript_guidelines_update-1.pdf" target="_blank">PDF</a>
                                 | <a href="http://www.conference.phuket.psu.ac.th/conference2014/Download/manuscript_submission_update-1.doc" target="_blank">Doc</a>
                             </li>
-                            <li><a href="https://easychair.org/conferences/?conf=psupic2018" target="_blank">Submission via Eashchair</a></li>
+                            <li><a href="https://easychair.org/conferences/?conf=psupic2018" target="_blank">Submission via Easychair</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4">
