@@ -101,9 +101,9 @@
                                 <li><a runat="server" href="important-dates.aspx">Important dates</a></li>
                                 <li><a runat="server" href="important-dates.aspx#ceremony">Open ceremony</a></li>
                                 <li><a runat="server" href="important-dates.aspx#reception">Welcome reception</a></li>
-                                <li><a runat="server" href="~/">Conference session</a></li>
-                                <li><a runat="server" href="~/">Phuket sightseeing</a></li>
-                                <li><a runat="server" href="~/">Transportation service</a></li>
+                                <li><a runat="server" href="important-dates.aspx#session">Conference session</a></li>
+                                <li><a runat="server" href="important-dates.aspx#sightseeing">Phuket sightseeing</a></li>
+                                <li><a runat="server" href="important-dates.aspx#transportation">Transportation service</a></li>
                             </ul>
                         </li>
 

@@ -11,14 +11,64 @@
         <div class="col-md-12">
             <h2>Important Dates</h2>
             <div class="container">
-                <uc1:ucImportantDates runat="server" id="ucImportantDates" />
+                <uc1:ucImportantDates runat="server" ID="ucImportantDates" />
             </div>
         </div>
     </div>
+    <hr />
+
+    <a name="ceremony"></a>
     <div class="row">
         <div class="col-md-12">
-            <h3></h3>
-            <p></p>
+            <h2>Open ceremony</h2>
+            <div class="container">
+                <p class="tba">To Be Announced</p>
+            </div>
         </div>
     </div>
+    <hr />
+
+    <a name="reception"></a>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Welcome reception</h2>
+            <div class="container">
+                <p class="tba">To Be Announced</p>
+            </div>
+        </div>
+    </div>
+    <hr />
+
+    <a name="session"></a>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Conference session</h2>
+            <div class="container">
+                <p class="tba">To Be Announced</p>
+            </div>
+        </div>
+    </div>
+    <hr />
+
+    <a name="sightseeing"></a>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Phuket sightseeing</h2>
+            <div class="container">
+                <p class="tba">To Be Announced</p>
+            </div>
+        </div>
+    </div>
+    <hr />
+
+    <a name="transportation"></a>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Transportation service</h2>
+            <div class="container">
+                <p class="tba">To Be Announced</p>
+            </div>
+        </div>
+    </div>
+    <hr />
 </asp:Content>
