@@ -133,7 +133,6 @@
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Jirawat Thaenthong", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-com" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "JVoravika Wattanasoontorn", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-com" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Kwankamon Dittakan", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-com" } });
-        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Adisak Intana", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-com" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Winai Nadee", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-com" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Kanjana Thongglin", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-com" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Nattapong Tongtep", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-com" } });
@@ -207,7 +206,14 @@
         /*pc-il*/
         /*ใช้รายการเดียวกับ ib*/
 
-
+        /*organising*/
+        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Adisak Intana", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-com", "organising" } });
+        committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Apichat Heednacram", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "organising" } });
+        committees.Add(new committee { titleEnum = ctitle.Mr, name = "Arkom Wangmuang", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "organising" } });
+        committees.Add(new committee { titleEnum = ctitle.Mrs, name = "Charoen Brahmritdhi", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "organising" } });
+        committees.Add(new committee { titleEnum = ctitle.Mrs, name = "Esther Sangiamkul", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "organising" } });
+        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Jinda Sawattawee", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pcorganising" } });
+        
         return committees;
     }
 </script>
