@@ -25,10 +25,13 @@
         //ผู้ช่วยศาสตาจารย์
         [Display(Name = "Asst. Prof. Dr.")]
         AsstProfDr,
-        
+
         [Display(Name = "Asst. Dr.")]
         AsstDr,
-        
+
+        [Display(Name = "Asst.")]
+        Asst,
+
         [Display(Name = "Dr.")]
         Dr,
 
@@ -160,58 +163,50 @@
         /*pc-ht, FHT*/
         committees.Add(new committee { titleEnum = ctitle.AssocProfDr, name = "Prathana Kannaovakun", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ht" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = " Pornpisanu Promsivapallop", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ht" } });
-        committees.Add(new committee { titleEnum = ctitle.AssocProfDr, name = "Prathana Kannaovakun", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ht" } });
-        committees.Add(new committee { titleEnum = ctitle.AssocProfDr, name = "Prathana Kannaovakun", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ht" } });
-        committees.Add(new committee { titleEnum = ctitle.AssocProfDr, name = "Prathana Kannaovakun", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ht" } });
-        committees.Add(new committee { titleEnum = ctitle.AssocProfDr, name = "Prathana Kannaovakun", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ht" } });
-        committees.Add(new committee { titleEnum = ctitle.AssocProfDr, name = "Prathana Kannaovakun", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ht" } });
-        committees.Add(new committee { titleEnum = ctitle.AssocProfDr, name = "Prathana Kannaovakun", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ht" } });
-        committees.Add(new committee { titleEnum = ctitle.AssocProfDr, name = "Prathana Kannaovakun", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ht" } });
+        committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Tatiyaporn Jarumaneerat", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ht" } });
+        committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Nareeya  Weerakit", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ht" } });
+        committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Areeta Tirasattayapitak", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ht" } });
+        committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Kullada Phetvaroon", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ht" } });
+        committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Panuwat Phakdee-auksorn", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ht" } });
+        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Ilian Assenov", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ht" } });
+        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Chatchavan Wongwattanakit", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ht" } });
+        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Prateep Wetprasit", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ht" } });
+        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Aphirom Promjanya", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ht" } });
 
 
         /*pc-ib-chair*/
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Supachai Jeangjai", otherInfo = "Prince of Songkla University, Thailand<br />Tel: (+66)-7627-6293<br />Email: supachai.je(at)phuket.psu.ac.th", types = new string[] { "pc", "pc-ib", "chair" } });
 
-        /*pc-ib*/
+        /*pc-ib and pc-il, FIS*/
+        committees.Add(new committee { titleEnum = ctitle.ProfDr, name = "Ximing Yao", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        committees.Add(new committee { titleEnum = ctitle.ProfDr, name = "Shan Wei", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        committees.Add(new committee { titleEnum = ctitle.AssocProfDr, name = "Intan Hashimah Mohd. Hashim", otherInfo = "University of Science, Malaysia", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        committees.Add(new committee { titleEnum = ctitle.none, name = "Liu Chang", otherInfo = "", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        committees.Add(new committee { titleEnum = ctitle.none, name = "Han Yueqiu", otherInfo = "", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        committees.Add(new committee { titleEnum = ctitle.none, name = "Wang Dongying", otherInfo = "", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        committees.Add(new committee { titleEnum = ctitle.Prof, name = "Park Ki Chan", otherInfo = "PCollege of Business Administration, Inha University, Korea", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Lavanchawee Sujarittanonta", otherInfo = "I-Shou University International College, Taiwan", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Intan Hashimah Mohd. Hashim", otherInfo = "University of Sains Malaysia, Malaysia", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Sara Nuzhat Amin", otherInfo = "Asian University for Women, Bangladesh", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Kim Young Aih", otherInfo = "Hankuk University of Foreign Studies, Korea", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Pim de Jong", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Kesinee Chaisri", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        committees.Add(new committee { titleEnum = ctitle.Asst, name = "Sopon Supaviriyakorn", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Saranya Pathanasin", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Nattakan Dilts", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Teerathorn Lamnaokrut", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Steven Andrew Martin", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Sudrudee Bumrung", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Yupin Karanyadech", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Nuannut Khieowan", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ib", "pc-il" } });
 
 
         /*pc-il-chair*/
         committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Sombat Khruathong", otherInfo = "Prince of Songkla University, Thailand<br />Tel: (+66)-7627-6603<br/>Email: sombat.k(at)phuket.psu.ac.th", types = new string[] { "pc", "pc-il", "chair" } });
 
         /*pc-il*/
+        /*ใช้รายการเดียวกับ ib*/
 
-        /*
-        committees.Add(new committee { title = "", name = "Alban Rousset ", otherInfo = "Uni.lu, Luxembourg", types = new string[] { "pc", "pc-env" } });
-
-        
-        committees.Add(new committee { title = "", name = "Ilian Assenov", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc" } });
-        committees.Add(new committee { title = "", name = "Intan Hashimah Mohd", otherInfo = "USM, Malaysia", types = new string[] { "pc" } });
-        committees.Add(new committee { title = "", name = "Jirameth  Rungruang", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc" } });
-        committees.Add(new committee { title = "", name = "Kichan Park ", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc" } });
-        committees.Add(new committee { title = "", name = "Kwankamon Dittakan", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc" } });
-        committees.Add(new committee { title = "", name = "Lemia Louail", otherInfo = "UFAS, Algeria", types = new string[] { "pc" } });
-        committees.Add(new committee { title = "", name = "Marie Laure Betbeder", otherInfo = "UBFC, France", types = new string[] { "pc" } });
-
-
-        committees.Add(new committee {title = "", name = "Nuannut Khieowan", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc" } });
-
-        committees.Add(new committee { title = "", name = "Pornpisanu promsivapallop ", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc" } });
-        committees.Add(new committee {  title = "", name = "Sakib Jalil", otherInfo = "UCD, USA", types = new string[] { "pc" } });
-
-        committees.Add(new committee { title = "", name = "Shan Wei", otherInfo = "HEU, China", types = new string[] { "pc" } });
-
-        committees.Add(new committee {  title = "", name = "Tatiyaporn Jarumaneerat", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc" } });
-        committees.Add(new committee { title = "", name = "Werapong Kertsin", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc" } });
-        committees.Add(new committee { title = "", name = "Ximing Yao", otherInfo = "SHU, China", types = new string[] { "pc" } });
-        committees.Add(new committee {  title = "", name = "Yi Wang", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc" } });
-        */
-        /*organising*/
-        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Adisak  Intana", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "organising" } });
-        committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Apichat Heednacram", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "organising" } });
-        committees.Add(new committee { titleEnum = ctitle.Mr, name = "Arkom Wangmuang", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "organising" } });
-        committees.Add(new committee { titleEnum = ctitle.Mrs, name = "Charoen Brahmritdhi", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "organising" } });
-        committees.Add(new committee { titleEnum = ctitle.Mrs, name = "Esther Sangiamkul", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "organising" } });
-        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Jinda Sawattawee", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pcorganising" } });
 
         return committees;
     }
@@ -252,6 +247,7 @@
             </div>
         </div>
     </div>
+    <hr />
 
     <div class="row">
         <div class="col-md-12">
@@ -265,6 +261,8 @@
             </div>
         </div>
     </div>
+    <hr />
+
     <div class="row">
         <div class="col-md-12">
             <h2>Program chair</h2>
@@ -292,6 +290,7 @@
                         <uc1:ucPCChair runat="server" ID="rptEnvPC" />
                     </div>
                 </div>
+                <hr />
 
                 <%
                     var comPC = pc.Where(x => x.types.Contains("pc-com"));
@@ -313,6 +312,7 @@
                         <uc1:ucPCChair runat="server" ID="rptComPC" />
                     </div>
                 </div>
+                <hr />
 
                 <%
                     var htPC = pc.Where(x => x.types.Contains("pc-ht"));
@@ -332,9 +332,10 @@
                     </div>
                     <div class="pc-list">
                         <uc1:ucPCChair runat="server" ID="rptHTPC" />
-                        <p class="tba">To Be Announced</p>
+                        <%--<p class="tba">To Be Announced</p>--%>
                     </div>
                 </div>
+                <hr />
 
                 <%
                     var ibPC = pc.Where(x => x.types.Contains("pc-ib"));
@@ -344,44 +345,64 @@
 
                     rptIBPC.DataSource = ibPC.Except(rptIBPCChair.DataSource as IEnumerable<committee>);
                     rptIBPC.DataBind();
-                %>
 
+
+                    rptILPCChair.DataSource = pc.Where(x => x.types.Contains("pc-il") && x.types.Contains("chair"));
+                    rptILPCChair.DataBind();
+                %>
                 <h3>
-                    <asp:Literal runat="server" Text="<%$ Resources:Resource, Area4 %>" /></h3>
-                <div class="container pc-counter-reset">
-                    <div class="pc-card">
-                        <uc1:ucPCChair runat="server" ID="rptIBPCChair" />
+                    <asp:Literal runat="server" Text="<%$ Resources:Resource, Area4 %>" />
+                    and
+                    <asp:Literal runat="server" Text="<%$ Resources:Resource, Area5 %>" />
+                </h3>
+                <div class="row pc-counter-reset">
+                    <div class="col-md-6">
+                        <h4>
+                            <asp:Literal runat="server" Text="<%$ Resources:Resource, Area4 %>" /></h4>
+                        <div class="pc-card">
+                            <uc1:ucPCChair runat="server" ID="rptIBPCChair" />
+                        </div>
                     </div>
-                    <div class="pc-list">
-                        <uc1:ucPCChair runat="server" ID="rptIBPC" />
-                        <p class="tba">To Be Announced</p>
+                    <div class="col-md-6">
+                        <h4>
+                            <asp:Literal runat="server" Text="<%$ Resources:Resource, Area5 %>" /></h4>
+                        <div class="pc-card">
+                            <uc1:ucPCChair runat="server" ID="rptILPCChair" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="pc-list">
+                            <uc1:ucPCChair runat="server" ID="rptIBPC" />
+                        </div>
                     </div>
                 </div>
 
                 <%
-                    var ilPC = pc.Where(x => x.types.Contains("pc-il"));
+//var ilPC = pc.Where(x => x.types.Contains("pc-il"));
 
-                    rptILPCChair.DataSource = ilPC.Where(x => x.types.Contains("chair")); ;
-                    rptILPCChair.DataBind();
+//rptILPCChair.DataSource = ilPC.Where(x => x.types.Contains("chair")); ;
+//rptILPCChair.DataBind();
 
-                    rptILPC.DataSource = ilPC.Except(rptILPCChair.DataSource as IEnumerable<committee>);
-                    rptILPC.DataBind();
+//rptILPC.DataSource = ilPC.Except(rptILPCChair.DataSource as IEnumerable<committee>);
+//rptILPC.DataBind();
                 %>
 
-                <h3>
+                <%--<h3>
                     <asp:Literal runat="server" Text="<%$ Resources:Resource, Area5 %>" /></h3>
                 <div class="container pc-counter-reset">
-                    <div class="pc-card">
-                        <uc1:ucPCChair runat="server" ID="rptILPCChair" />
-                    </div>
+
                     <div class="pc-list">
                         <uc1:ucPCChair runat="server" ID="rptILPC" />
                         <p class="tba">To Be Announced</p>
                     </div>
-                </div>
+                </div>--%>
             </div>
         </div>
     </div>
+    <hr />
+
     <div class="row">
         <div class="col-md-12">
             <h3>Organising Committee Chairs</h3>
@@ -390,7 +411,7 @@
                 rptOrganising.DataSource = GetCommittees().Where(x => x.types.Contains("organising")).OrderBy(x => x.name);
                 rptOrganising.DataBind();
             %>
-            <div class="container pc-list" style="counter-reset: line;">
+            <div class="container pc-list pc-counter-reset">
                 <uc1:ucPCChair runat="server" ID="rptOrganising" />
             </div>
         </div>

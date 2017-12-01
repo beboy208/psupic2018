@@ -94,15 +94,6 @@ namespace Conference2018 {
         protected global::Conference2018.UserControls.ucPCChair rptIBPCChair;
         
         /// <summary>
-        /// rptIBPC control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Conference2018.UserControls.ucPCChair rptIBPC;
-        
-        /// <summary>
         /// rptILPCChair control.
         /// </summary>
         /// <remarks>
@@ -112,13 +103,13 @@ namespace Conference2018 {
         protected global::Conference2018.UserControls.ucPCChair rptILPCChair;
         
         /// <summary>
-        /// rptILPC control.
+        /// rptIBPC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Conference2018.UserControls.ucPCChair rptILPC;
+        protected global::Conference2018.UserControls.ucPCChair rptIBPC;
         
         /// <summary>
         /// rptOrganising control.

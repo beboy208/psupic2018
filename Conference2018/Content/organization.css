@@ -61,15 +61,16 @@
 }
 
     .pc-list .pc-member {
-        width: 90%;
+        width: 100%;
         display: block;
+        margin-bottom: 10px;
     }
 
         .pc-list .pc-member::before {
             counter-increment: line;
             content: counter(line) ") ";
-            display: inline-block;
-            width: 40px;
+            display: inline;
+            width: 25px;
             text-align: right;
             vertical-align: top;
         }
@@ -85,14 +86,14 @@
 
     .pc-list strong {
         display: inline-block;
-        width: 300px;
+        width: 400px;
         font-weight: normal;
         vertical-align: top;
     }
 
     .pc-list p {
         display: inline-block;
-        width: calc(100% - 305px);
+        width: calc(100% - 410px);
         text-decoration: none;
     }
 
@@ -207,10 +208,10 @@
     .pc-card.col-2 .pc-member, .pc-card.col-3 .pc-member {
         width: 100%;
     }
-}
 
 
-@media (max-width: 600px) {
+
+
 
     .pc-list {
         display: block;
@@ -218,28 +219,29 @@
     }
 
         .pc-list .content {
-            display: block;
-            width: 100%;
+            display: inline-block;
+            width: calc(100% - 30px);
         }
 
         .pc-list strong {
-            display: inline-block;
-            width: auto;
+            display: inline;
+            width: 100%;
             font-weight: normal;
             vertical-align: top;
         }
 
-        .pc-list p:before {
+        /*.pc-list p:before {
             content: " (";
         }
 
         .pc-list p:after {
             content: ")";
-        }
+        }*/
 
         .pc-list p {
-            display: inline;
+            display: block;
             white-space: normal;
             text-decoration: none;
+            width: 100%;
         }
 }
