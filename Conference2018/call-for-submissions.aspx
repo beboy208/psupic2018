@@ -24,7 +24,7 @@
                             <p></p>
                             <ul>
                                 <li>
-                                    <asp:Literal runat="server" Text="<%$ Resources:Resource, Area1 %>" /></li>
+                                   <%-- <asp:Literal runat="server" Text="<%$ Resources:Resource, Area1 %>" /></li>--%>
                                 <li>
                                     <asp:Literal runat="server" Text="<%$ Resources:Resource, Area2 %>" /></li>
                                 <li>
