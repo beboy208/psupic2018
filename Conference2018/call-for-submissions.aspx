@@ -196,7 +196,7 @@
                         <h3>Abstract submission</h3>
                         <div class="container">
                             <p class="tba">To Be Announced</p>
-                            <a href="https://easychair.org/conferences/?conf=psupic2018" class="btn btn-default" target="_blank">Submit on EasyChair</a>
+                            <%--<a href="https://easychair.org/conferences/?conf=psupic2018" class="btn btn-default" target="_blank">Submit on EasyChair</a>--%>
                         </div>
                     </div>
                 </div>
