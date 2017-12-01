@@ -21,29 +21,29 @@
                 <div class="col-md-12">
                     <h2>Welcome Message</h2>
                     <p>
-                        <strong>Prince of Songkla University (PSU)</strong> was first established in 1967 
-                    and is now the largest university in southern Thailand.
+                    <strong>Prince of Songkla University (PSU)</strong> was first established in 1967 
+                    and is now the largest university in southern Thailand. 
                     The university consists of five campuses with over 40,000 students. 
-                    PSU specialises in fields such as science, technology, health, medicine, social media, and humanities. 
-                    The Phuket campus focuses on areas supporting the local community, 
+                    PSU has a wide range of specialisms from science and technology, through health science and medicine, 
+                    to social and humanities. The Phuket campus focuses on areas supporting the local community, 
                     which are mainly related to the tourism industry and its many facets.
                     As 2018 is <strong>the 50th Anniversary of PSU</strong>, 
                     we would like to celebrate this event by inviting you to submit your extended abstract to the 
                     <strong>PSU Phuket’s International Conference (PSU PIC)</strong>.
-                    </p>
-                    <p>
-                        <strong>PSU PIC</strong>, aims to strengthen the research collaboration and networking among 
-                    international academicians, professionals, and researchers. 
+                </p>
+                <p>
+                    <strong>PSU PIC</strong> aims to strengthen the research collaboration and networking 
+                    among international academicians, professionals, and researchers. 
                     The conference will provide an international forum for presenting and discussing 
-                    the most recent research studies and innovative ideas to stimulate 
-                    the exchange of knowledge and experiences from around the world. 
-                    </p>
-                    <p>
-                        The <strong>PSU PIC 2018</strong> will be held on <a href="important-dates.aspx">March 11-12, 2018</a> in Phuket, 
+                    the most recent research studies and innovative ideas to stimulate the exchange of knowledge 
+                    and experiences from around the world. 
+                </p>
+                <p>
+                    The <strong>PSU PIC 2018</strong> will be held on <a href="important-dates.aspx">March 11-12, 2018</a> in Phuket. 
                     Phuket is a prime tourist destination with amazing natural scenery and an impressive cultural heritage. 
                     The two day conference will contain interesting speeches by famous keynote speakers and 
                     high-quality research presentations under the theme of <strong>"Creativity and Innovations for Global Development."</strong>
-                    </p>
+                </p>
                 </div>
 
             </div>

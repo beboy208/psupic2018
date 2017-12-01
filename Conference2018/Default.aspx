@@ -19,24 +19,24 @@
             <div class="container">
                 <p>
                     <strong>Prince of Songkla University (PSU)</strong> was first established in 1967 
-                    and is now the largest university in southern Thailand.
+                    and is now the largest university in southern Thailand. 
                     The university consists of five campuses with over 40,000 students. 
-                    PSU specialises in fields such as science, technology, health, medicine, social media, and humanities. 
-                    The Phuket campus focuses on areas supporting the local community, 
+                    PSU has a wide range of specialisms from science and technology, through health science and medicine, 
+                    to social and humanities. The Phuket campus focuses on areas supporting the local community, 
                     which are mainly related to the tourism industry and its many facets.
                     As 2018 is <strong>the 50th Anniversary of PSU</strong>, 
                     we would like to celebrate this event by inviting you to submit your extended abstract to the 
                     <strong>PSU Phuket’s International Conference (PSU PIC)</strong>.
                 </p>
                 <p>
-                    <strong>PSU PIC</strong>, aims to strengthen the research collaboration and networking among 
-                    international academicians, professionals, and researchers. 
+                    <strong>PSU PIC</strong> aims to strengthen the research collaboration and networking 
+                    among international academicians, professionals, and researchers. 
                     The conference will provide an international forum for presenting and discussing 
-                    the most recent research studies and innovative ideas to stimulate 
-                    the exchange of knowledge and experiences from around the world. 
+                    the most recent research studies and innovative ideas to stimulate the exchange of knowledge 
+                    and experiences from around the world. 
                 </p>
                 <p>
-                    The <strong>PSU PIC 2018</strong> will be held on <a href="important-dates.aspx">March 11-12, 2018</a> in Phuket, 
+                    The <strong>PSU PIC 2018</strong> will be held on <a href="important-dates.aspx">March 11-12, 2018</a> in Phuket. 
                     Phuket is a prime tourist destination with amazing natural scenery and an impressive cultural heritage. 
                     The two day conference will contain interesting speeches by famous keynote speakers and 
                     high-quality research presentations under the theme of <strong>"Creativity and Innovations for Global Development."</strong>
@@ -46,15 +46,6 @@
     </div>
 
     <div class="row">
-        <%--<div class="col-md-4">
-            <h2>Call for Papers</h2>
-            <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <a class="btn btn-default" href="call-for-papers.aspx">Call for papers &raquo;</a>
-        </div>--%>
-
         <div class="col-md-6">
             <h2>Topics</h2>
             <div class="containter">
