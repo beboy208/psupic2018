@@ -58,6 +58,7 @@
 
 .pc-list {
     height: auto;
+    padding-top: 30px;
 }
 
     .pc-list .pc-member {
@@ -69,7 +70,7 @@
         .pc-list .pc-member::before {
             counter-increment: line;
             content: counter(line) ") ";
-            display: inline;
+            display: inline-block;
             width: 25px;
             text-align: right;
             vertical-align: top;
