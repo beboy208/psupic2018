@@ -24,61 +24,7 @@
                         <div class="container">
                             <p></p>
                             
-                        
-                                   <button class="accordion"><asp:Literal runat="server" Text="<%$ Resources:Resource, Area1 %>" /></button>
-                                    <div class="panel">
-                                       <ul>  
-                                       <li> Environmental Science, Engineering and Technology </li>
-                                           <ul> 
-                                            <li>Atmospheric Modelling and Numerical Prediction</li>
-                                            <li>Modelling and Decision Support Tools</li>
-                                            <li>Wastewater and Sludge Treatment Technologies and Pollution Control</li>
-                                            <li>Soil Restoration/Phytoremediation</li>
-                                            <li>Air Pollution and Treatment Technologies</li>
-                                            <li>Advances in Biological, Physical and Chemical processes</li>
-                                            <li>Monitoring and Analysis of Environmental Contaminants</li>
-                                            <li>Hazardous Substances and DetectionTechniques</li>
-                                            <li>Clean Technologies and Eco-technology</li>
-                                            <li>Fate of Hazardous Substances</li>
-                                            <li>Other relevant topics</li>
-                                                </ul>
-                                          </ul>
-                                  <ul>  
-                                     <li>Environmental Management and sustainable development </li>
-                                      <ul>                    
-                                        <li>Environmental Sustainability</li>
-                                        <li>Sustainability Management/Sustainable Development</li>
-                                        <li>Life Cycle Analysis</li>
-                                        <li>Environmental Economics and Trading System</li>
-                                        <li>Global Environmental Change and Ecosystems Management</li>
-                                        <li>Climate Changes and Global Warming</li>
-                                        <li>Water Resources and Watershed/ River Basin Management</li>
-                                        <li>Water and Wastewater Management</li>
-                                        <li>Air Quality Assessment</li>
-                                        <li>Solid and Hazardous Waste Management,</li> 
-                                        <li>Waste Minimization, Recycling and Reuse</li>
-                                        <li>Disaster Prevention and Mitigation</li>
-                                        <li>Other relevant topics</li>
-                                                    </ul>    
-                                             </ul>
-     
-                                     <ul>  
-                                        <li>GIS and Remote Sensing </li>
-                                          <ul> 
-                                                <li> Applications in Natural Resources and Environmental Management</li>
-                                                <li>Applications in Urban Planning and Management</li>
-                                                <li>Applications in Agriculture and Forestry</li>
-                                                <li>Applications in Earth's Climate Change</li>
-                                                <li>Applications in Natural Hazard and Disaster</li>
-                                                <li>Applications in Biodiversity Conservation and Management</li>
-                                                <li>Applications in Coastal and Marine Management</li>
-                                                <li>Applications in Water Resource Management</li>
-                                                <li>Other relevant topics</li>
-                                            </ul>    
-                                     </ul>
-                                     </div>
-                                 
-                                 <button class="accordion"> <asp:Literal runat="server" Text="<%$ Resources:Resource, Area2 %>" /></button>
+                                  <button class="accordion"> <asp:Literal runat="server" Text="<%$ Resources:Resource, Area2 %>" /></button>
                                 <div class="panel">
                                     <ul>  
                                         <li>Software Engineering</li>
@@ -138,6 +84,60 @@
                                            </ul>    
                                      </ul>
                                  </div>
+                                
+                                   <button class="accordion"><asp:Literal runat="server" Text="<%$ Resources:Resource, Area1 %>" /></button>
+                                    <div class="panel">
+                                       <ul>  
+                                       <li> Environmental Science, Engineering and Technology </li>
+                                           <ul> 
+                                            <li>Atmospheric Modelling and Numerical Prediction</li>
+                                            <li>Modelling and Decision Support Tools</li>
+                                            <li>Wastewater and Sludge Treatment Technologies and Pollution Control</li>
+                                            <li>Soil Restoration/Phytoremediation</li>
+                                            <li>Air Pollution and Treatment Technologies</li>
+                                            <li>Advances in Biological, Physical and Chemical processes</li>
+                                            <li>Monitoring and Analysis of Environmental Contaminants</li>
+                                            <li>Hazardous Substances and DetectionTechniques</li>
+                                            <li>Clean Technologies and Eco-technology</li>
+                                            <li>Fate of Hazardous Substances</li>
+                                            <li>Other relevant topics</li>
+                                                </ul>
+                                          </ul>
+                                  <ul>  
+                                     <li>Environmental Management and sustainable development </li>
+                                      <ul>                    
+                                        <li>Environmental Sustainability</li>
+                                        <li>Sustainability Management/Sustainable Development</li>
+                                        <li>Life Cycle Analysis</li>
+                                        <li>Environmental Economics and Trading System</li>
+                                        <li>Global Environmental Change and Ecosystems Management</li>
+                                        <li>Climate Changes and Global Warming</li>
+                                        <li>Water Resources and Watershed/ River Basin Management</li>
+                                        <li>Water and Wastewater Management</li>
+                                        <li>Air Quality Assessment</li>
+                                        <li>Solid and Hazardous Waste Management,</li> 
+                                        <li>Waste Minimization, Recycling and Reuse</li>
+                                        <li>Disaster Prevention and Mitigation</li>
+                                        <li>Other relevant topics</li>
+                                                    </ul>    
+                                             </ul>
+     
+                                     <ul>  
+                                        <li>GIS and Remote Sensing </li>
+                                          <ul> 
+                                                <li> Applications in Natural Resources and Environmental Management</li>
+                                                <li>Applications in Urban Planning and Management</li>
+                                                <li>Applications in Agriculture and Forestry</li>
+                                                <li>Applications in Earth's Climate Change</li>
+                                                <li>Applications in Natural Hazard and Disaster</li>
+                                                <li>Applications in Biodiversity Conservation and Management</li>
+                                                <li>Applications in Coastal and Marine Management</li>
+                                                <li>Applications in Water Resource Management</li>
+                                                <li>Other relevant topics</li>
+                                            </ul>    
+                                     </ul>
+                                     </div>
+                                 
                                 
                                  <button class="accordion"> <asp:Literal runat="server" Text="<%$ Resources:Resource, Area3 %>" /></button>
                                 <div class="panel">
