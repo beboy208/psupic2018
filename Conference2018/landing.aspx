@@ -18,8 +18,19 @@
             </div>
 
             <div class="row">
-                <div class="col-md-6">
-                    <h2>PSU PIC 2018</h2>
+                <div class="col-md-12">
+                    <h2>Welcome Message</h2>
+                    <p>
+                        <strong>Prince of Songkla University (PSU)</strong> was first established in 1967 
+                    and is now the largest university in southern Thailand.
+                    The university consists of five campuses with over 40,000 students. 
+                    PSU specialises in fields such as science, technology, health, medicine, social media, and humanities. 
+                    The Phuket campus focuses on areas supporting the local community, 
+                    which are mainly related to the tourism industry and its many facets.
+                    As 2018 is <strong>the 50th Anniversary of PSU</strong>, 
+                    we would like to celebrate this event by inviting you to submit your extended abstract to the 
+                    <strong>PSU Phuket’s International Conference (PSU PIC)</strong>.
+                    </p>
                     <p>
                         <strong>PSU PIC</strong>, aims to strengthen the research collaboration and networking among 
                     international academicians, professionals, and researchers. 
@@ -27,7 +38,16 @@
                     the most recent research studies and innovative ideas to stimulate 
                     the exchange of knowledge and experiences from around the world. 
                     </p>
+                    <p>
+                        The <strong>PSU PIC 2018</strong> will be held on <a href="important-dates.aspx">March 11-12, 2018</a> in Phuket, 
+                    Phuket is a prime tourist destination with amazing natural scenery and an impressive cultural heritage. 
+                    The two day conference will contain interesting speeches by famous keynote speakers and 
+                    high-quality research presentations under the theme of <strong>"Creativity and Innovations for Global Development."</strong>
+                    </p>
                 </div>
+
+            </div>
+            <div class="row">
                 <div class="col-md-6">
                     <h2>Topics</h2>
                     <ul>
@@ -38,9 +58,7 @@
                         <li>International Language and Culture</li>
                     </ul>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-6">
                     <h2>Important Dates</h2>
                     <dl class="important-dates">
                         <dt style="display: inline-block">Call for Submission</dt>
@@ -64,10 +82,8 @@
                         <dt>Conference Dates</dt>
                         <dd>March 11-12, 2018</dd>
                     </dl>
+                    <strong style="color: red">Link for submission is coming soon</strong>
                 </div>
-            </div>
-            <div class="row">
-                <strong style="color: red">Link for submission is coming soon</strong>
             </div>
         </div>
         <hr />
