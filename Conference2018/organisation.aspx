@@ -17,10 +17,10 @@
 
         //รองศาสตราจารย์
         [Display(Name = "Assoc. Prof. Dr.")]
-        AssocProfDr,
+        AssocProfDr=2,
 
         [Display(Name = "Assoc. Prof. ")]
-        AssocProf,
+        AssocProf=2,
 
         //ผู้ช่วยศาสตาจารย์
         [Display(Name = "Asst. Prof. Dr.")]
@@ -201,7 +201,7 @@
 
 
         /*pc-il-chair*/
-        committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Sombat Khruathong", otherInfo = "Prince of Songkla University, Thailand<br />Tel: (+66)-7627-6603<br/>Email: sombat.k(at)phuket.psu.ac.th", types = new string[] { "pc", "pc-il", "chair" } });
+        committees.Add(new committee { titleEnum = ctitle.AssocProfDr, name = "Sombat Khruathong", otherInfo = "Prince of Songkla University, Thailand<br />Tel: (+66)-7627-6603<br/>Email: sombat.k(at)phuket.psu.ac.th", types = new string[] { "pc", "pc-il", "chair" } });
 
         /*pc-il*/
         /*ใช้รายการเดียวกับ ib*/

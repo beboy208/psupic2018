@@ -18,26 +18,28 @@
             <h2 class="page-header">Welcome Message</h2>
             <div class="container">
                 <p>
-                    <strong>Prince of Songkla University (PSU)</strong> was the first and now largest university in southern Thailand, 
-                established in 1967. The university consists of five campuses with over 40,000 students. 
-                PSU has a wide range of specialisms from science and technology, through health science, 
-                to social and humanities. Phuket campus focuses on areas supporting the local community, 
-                mainly related to the tourism industry in its many facets. 
-                As 2018 is <strong>the 50th Anniversary of PSU</strong>, to celebrate this, 
-                we are pleased to invite you to submit your extended abstract to the <strong>PSU PIC conference</strong>.
+                    <strong>Prince of Songkla University (PSU)</strong> was first established in 1967 
+                    and is now the largest university in southern Thailand.
+                    The university consists of five campuses with over 40,000 students. 
+                    PSU specialises in fields such as science, technology, health, medicine, social media, and humanities. 
+                    The Phuket campus focuses on areas supporting the local community, 
+                    which are mainly related to the tourism industry and its many facets.
+                    As 2018 is <strong>the 50th Anniversary of PSU</strong>, 
+                    we would like to celebrate this event by inviting you to submit your extended abstract to the 
+                    <strong>PSU Phuket’s International Conference (PSU PIC)</strong>.
                 </p>
                 <p>
-                    <strong>PSU PIC</strong>, the PSU Phuket International Conference, 
-                aims to strengthen the research collaboration and networking among international academicians, 
-                professionals, and researchers. The conference will provide an international forum for presenting 
-                and discussing the most recent research studies and innovative ideas 
-                while stimulating the exchange of knowledge and experience in the domain of interest from around the world.
+                    <strong>PSU PIC</strong>, aims to strengthen the research collaboration and networking among 
+                    international academicians, professionals, and researchers. 
+                    The conference will provide an international forum for presenting and discussing 
+                    the most recent research studies and innovative ideas to stimulate 
+                    the exchange of knowledge and experiences from around the world. 
                 </p>
                 <p>
                     The <strong>PSU PIC 2018</strong> will be held on <a href="important-dates.aspx">March 11-12, 2018</a> in Phuket, 
-                a prime tourist destination with amazing natural scenery and an impressive cultural old town. 
-                The two-day conference will contain interesting keynote speeches by famous speakers and 
-                high-quality research presentations under the theme of <strong>“Creativity and Innovations for Global Development.”</strong>
+                    Phuket is a prime tourist destination with amazing natural scenery and an impressive cultural heritage. 
+                    The two day conference will contain interesting speeches by famous keynote speakers and 
+                    high-quality research presentations under the theme of <strong>"Creativity and Innovations for Global Development."</strong>
                 </p>
             </div>
         </div>
@@ -59,9 +61,9 @@
                 <p></p>
                 <ul>
                     <li>
-                        <asp:Literal runat="server" Text="<%$ Resources:Resource, Area1 %>" /></li>
-                    <li>
                         <asp:Literal runat="server" Text="<%$ Resources:Resource, Area2 %>" /></li>
+                    <li>
+                        <asp:Literal runat="server" Text="<%$ Resources:Resource, Area1 %>" /></li>
                     <li>
                         <asp:Literal runat="server" Text="<%$ Resources:Resource, Area3 %>" /></li>
                     <li>
@@ -75,7 +77,7 @@
         <div class="col-md-6">
             <h2>Important Dates</h2>
             <div class="container">
-                <uc1:ucImportantDates runat="server" id="ucImportantDates" />
+                <uc1:ucImportantDates runat="server" ID="ucImportantDates" />
             </div>
         </div>
 
@@ -90,8 +92,8 @@
         </div>--%>
     </div>
 
- 
-     <div class="row">
+
+    <div class="row">
         <div class="col-md-12">
             <h2>Follow us</h2>
             <div class="container">

@@ -234,6 +234,7 @@
     <Content Include="imgs\prathana.png" />
     <Content Include="imgs\PSUPIC-PSU50th-QRCode.png" />
     <Content Include="imgs\PSUPIC-QRCode.png" />
+    <Content Include="imgs\psupic2018poster.jpg" />
     <Content Include="imgs\pun.png" />
     <Content Include="imgs\rattana.png" />
     <Content Include="imgs\sinchai.jpg" />
@@ -242,6 +243,7 @@
     <Content Include="imgs\supachaijeangjai.jpg" />
     <Content Include="imgs\worawut.png" />
     <Content Include="important-dates.aspx" />
+    <Content Include="landing.aspx" />
     <Content Include="location.aspx" />
     <Content Include="organisation.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -432,6 +434,13 @@
     </Compile>
     <Compile Include="important-dates.aspx.designer.cs">
       <DependentUpon>important-dates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="landing.aspx.cs">
+      <DependentUpon>landing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="landing.aspx.designer.cs">
+      <DependentUpon>landing.aspx</DependentUpon>
     </Compile>
     <Compile Include="location.aspx.cs">
       <DependentUpon>location.aspx</DependentUpon>
