@@ -30,16 +30,15 @@
                                 <ul>
                                     <li>Software Engineering
                                         <ul>
-                                            <li>Atmospheric Modelling and Numerical Prediction</li>
-                                            <li>Modelling and Decision Support Tools</li>
-                                            <li>Wastewater and Sludge Treatment Technologies and Pollution Control</li>
+                                            <li>Empirical software engineering</li>
+                                            <li>Formal methods</li>
+                                            <li>Requirements engineering</li>
                                             <li>Soil Restoration/Phytoremediation</li>
-                                            <li>Air Pollution and Treatment Technologies</li>
-                                            <li>Advances in Biological, Physical and Chemical processes</li>
-                                            <li>Monitoring and Analysis of Environmental Contaminants</li>
-                                            <li>Hazardous Substances and DetectionTechniques</li>
-                                            <li>Clean Technologies and Eco-technology</li>
-                                            <li>Fate of Hazardous Substances</li>
+                                            <li>Specification and modelling languages</li>
+                                            <li>Software modelling and design</li>
+                                            <li>Software testing</li>
+                                            <li>Software evolution and maintenance</li>
+                                            <li>Software verification and validation</li>
                                             <li>Other relevant topics</li>
                                         </ul>
                                     </li>
@@ -214,8 +213,14 @@
                                 at least one author will attend the conference to present the work. 
                                 Each abstract will be judged on its originality, significance, technical quality and presentation. 
                                 The abstract should be no more than two pages in length and conforming to 
-                                the formatting instructions available at this <a href="#document">Link (Extended Abstract Guidelines)</a>.
+                                the formatting instructions available below.
                             </p>
+                            <u>Extended Abstract Guidelines</u>
+                            <ul>
+                                <%--<li class="glyphicon glyphicon-download">--%>
+                                <li><a href="Downloads/PSU_PIC2018_Abstract_Template.V.1.1.pdf">.PDF format</a></li>
+                                <li><a href="Downloads/PSU_PIC2018_Abstract_Template.V.1.1.doc">.Doc format</a></li>
+                            </ul>
                             <br />
                             <h4>How to submit an abstract</h4>
                             <div class="container">
@@ -242,6 +247,7 @@
                                     <li>Fill in Authors Information, Title, Abstract and Category, Keywords then select <i>PDF</i> file and submit your paper.</li>
                                 </ol>
                             </div>
+
                             <br />
                             <h4>How to submit the camera-ready version</h4>
                             <div class="container">

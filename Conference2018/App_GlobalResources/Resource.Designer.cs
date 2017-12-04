@@ -115,7 +115,7 @@ namespace Conference2018.App_GlobalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Abstract Submission Deadline.
+        ///   Looks up a localized string similar to Extended Abstract Submission Deadline.
         /// </summary>
         public static string lbSchedule2 {
             get {

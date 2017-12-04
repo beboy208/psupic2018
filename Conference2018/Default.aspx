@@ -65,12 +65,12 @@
             </div>
         </div>
 
-       <%-- <div class="col-md-6">
+       <div class="col-md-6">
             <h2>Important Dates</h2>
             <div class="container">
                 <uc1:ucImportantDates runat="server" ID="ucImportantDates" />
             </div>
-        </div>--%>
+        </div>
 
         <%-- <div class="col-md-4">
             <h2>Best Paper award and publication</h2>
