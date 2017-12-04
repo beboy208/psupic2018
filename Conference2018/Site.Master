@@ -124,6 +124,7 @@
             <footer>
                 <div class="row">
                     <div class="col-md-4">
+                        <a name="document"></a>
                         <h4>Documents</h4>
                         <ul>
                             <li>Extended Abstract Guidelines

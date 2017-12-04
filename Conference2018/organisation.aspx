@@ -108,7 +108,7 @@
         committees.Add(new committee { titleEnum = ctitle.ProfDr, name = "Kiyota Hashimoto", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-env" } });
         committees.Add(new committee { titleEnum = ctitle.AssocProfDr, name = "Tom DeSutter", otherInfo = "Soil Science Department, North Dakota State University", types = new string[] { "pc", "pc-env" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Mohd Sham Othman", otherInfo = "Diagnostic & Applied Health Sciences, Universiti Kebangsaan Malaysia", types = new string[] { "pc", "pc-env" } });
-        committees.Add(new committee { titleEnum = ctitle.ProfDr, name = "Chatinee Boonyachai", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-env" } });
+        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Chatinee Boonyachai", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-env" } });
         committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Weerapong Keodsin", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-env" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Thanita Arreerob", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-env" } });
         committees.Add(new committee { titleEnum = ctitle.AssocProfDr, name = "Arree Choodum", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-env" } });
@@ -142,7 +142,7 @@
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Kitsiri Chochiang", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-com" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Nawanol Theera-Ampornpunt", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-com" } });
         committees.Add(new committee { titleEnum = ctitle.AsstDr, name = "Warodom Weeraphun", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-com" } });
-        committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Apichart Heednakam", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-com" } });
+        committees.Add(new committee { titleEnum = ctitle.AsstDr, name = "Apichart Heednakam", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-com" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Chakadkit Tenchaikul", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-com" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Kittisin Silanon", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-com" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Komsan Kanjanasit", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-com" } });
@@ -155,7 +155,7 @@
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Sakib Jalil", otherInfo = "University of California Davis, CA, USA", types = new string[] { "pc", "pc-com" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Lemia Louail", otherInfo = "Computer Science Department, Faculty of Sciences, University of Sétif 1, Algeria.", types = new string[] { "pc", "pc-com" } });
         committees.Add(new committee { titleEnum = ctitle.AssocProf, name = "Marie Laure Betbeder", otherInfo = "Universite de Bourgogne France-comte, France", types = new string[] { "pc", "pc-com" } });
-        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Alban Rousset", otherInfo = "University of Luxembourg", types = new string[] { "pc", "pc-com" } });
+        committees.Add(new committee { titleEnum = ctitle.none, name = "Alban Rousset", otherInfo = "University of Luxembourg", types = new string[] { "pc", "pc-com" } });
 
 
         /*pc-ht-chair*/

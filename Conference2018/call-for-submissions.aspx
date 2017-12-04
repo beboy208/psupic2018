@@ -214,7 +214,7 @@
                                 at least one author will attend the conference to present the work. 
                                 Each abstract will be judged on its originality, significance, technical quality and presentation. 
                                 The abstract should be no more than two pages in length and conforming to 
-                                the formatting instructions available at this <a href="#">Link</a>.
+                                the formatting instructions available at this <a href="#document">Link (Extended Abstract Guidelines)</a>.
                             </p>
                             <br />
                             <h4>How to submit an abstract</h4>
