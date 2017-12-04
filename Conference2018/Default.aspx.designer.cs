@@ -11,14 +11,5 @@ namespace Conference2018 {
     
     
     public partial class _Default {
-        
-        /// <summary>
-        /// ucImportantDates control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Conference2018.UserControls.ucImportantDates ucImportantDates;
     }
 }

@@ -8,8 +8,9 @@
         <div class="pc-member">
             <span class="img <%# Eval("css") %>"></span>
             <div class="content">
-                <strong><%# Eval("title") %> <%# Eval("name") %></strong>
-                <p><%# Eval("otherInfo") %></p>
+                <span class="name"><%# Eval("title") %> <%# Eval("name") %></span>
+                <span class="executive"><%# Eval("executive") %> </span>
+                <span class="otherInfo"><%# Eval("otherInfo") %></span>
             </div>
         </div>
     </ItemTemplate>

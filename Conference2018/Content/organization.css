@@ -4,6 +4,8 @@
 
 .pc-card {
     width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
     .pc-card .pc-member {
@@ -50,15 +52,21 @@
         border: 1px solid transparent;
     }
 
-    .pc-card strong {
+    .pc-card .name {
+        display: block;
+        font-weight: bold;
     }
 
-    .pc-card p {
+    .pc-card .executive {
+        display: block;
+    }
+
+    .pc-card .otherInfo {
+        display: block;
     }
 
 .pc-list {
     height: auto;
-    padding-top: 30px;
 }
 
     .pc-list .pc-member {
@@ -85,14 +93,18 @@
         width: calc(100% - 45px);
     }
 
-    .pc-list strong {
+    .pc-list .name {
         display: inline-block;
         width: 400px;
         font-weight: normal;
         vertical-align: top;
     }
 
-    .pc-list p {
+    .pc-list .executive {
+        display: none;
+    }
+
+    .pc-list .otherInfo {
         display: inline-block;
         width: calc(100% - 410px);
         text-decoration: none;
@@ -210,10 +222,6 @@
         width: 100%;
     }
 
-
-
-
-
     .pc-list {
         display: block;
         position: relative;
@@ -224,7 +232,7 @@
             width: calc(100% - 30px);
         }
 
-        .pc-list strong {
+        .pc-list .name {
             display: inline;
             width: 100%;
             font-weight: normal;
@@ -239,7 +247,11 @@
             content: ")";
         }*/
 
-        .pc-list p {
+        .pc-list .executive {
+            display: none;
+        }
+
+        .pc-list .otherInfo {
             display: block;
             white-space: normal;
             text-decoration: none;

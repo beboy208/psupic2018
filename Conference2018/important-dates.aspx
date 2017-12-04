@@ -20,7 +20,7 @@
     <a name="ceremony"></a>
     <div class="row">
         <div class="col-md-12">
-            <h2>Open ceremony</h2>
+            <h2>Open Ceremony</h2>
             <div class="container">
                 <p class="tba">To Be Announced</p>
             </div>
@@ -31,7 +31,7 @@
     <a name="reception"></a>
     <div class="row">
         <div class="col-md-12">
-            <h2>Welcome reception</h2>
+            <h2>Welcome Reception</h2>
             <div class="container">
                 <p class="tba">To Be Announced</p>
             </div>
@@ -42,7 +42,7 @@
     <a name="session"></a>
     <div class="row">
         <div class="col-md-12">
-            <h2>Conference session</h2>
+            <h2>Conference Session</h2>
             <div class="container">
                 <p class="tba">To Be Announced</p>
             </div>
@@ -53,7 +53,7 @@
     <a name="sightseeing"></a>
     <div class="row">
         <div class="col-md-12">
-            <h2>Phuket sightseeing</h2>
+            <h2>Phuket Sightseeing Tours</h2>
             <div class="container">
                 <p class="tba">To Be Announced</p>
             </div>
@@ -64,7 +64,7 @@
     <a name="transportation"></a>
     <div class="row">
         <div class="col-md-12">
-            <h2>Transportation service</h2>
+            <h2>Transportation Services</h2>
             <div class="container">
                 <p class="tba">To Be Announced</p>
             </div>

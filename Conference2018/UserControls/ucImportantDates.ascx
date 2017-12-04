@@ -1,9 +1,9 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ucImportantDates.ascx.cs" Inherits="Conference2018.UserControls.ucImportantDates" %>
 <dl class="important-dates">
-    <dt>
+   <%-- <dt>
         <asp:Literal runat="server" Text="<%$ Resources:Resource, lbSchedule1 %>" /></dt>
     <dd>
-        <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue1 %>" /></dd>
+        <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue1 %>" /></dd>--%>
 
     <dt>
         <asp:Literal runat="server" Text="<%$ Resources:Resource, lbSchedule2 %>" /></dt>

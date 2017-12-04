@@ -219,6 +219,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Downloads\PSU_PIC2018_Abstract_Template.V.1.1.doc" />
+    <Content Include="Downloads\PSU_PIC2018_Abstract_Template.V.1.1.pdf" />
     <None Include="Properties\PublishProfiles\DeployTo209.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="imgs\50th-logo_s60.png" />
