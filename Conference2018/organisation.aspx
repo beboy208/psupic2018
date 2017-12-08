@@ -108,10 +108,10 @@
         committees.Add(new committee { titleEnum = ctitle.ProfDr, name = "Kiyota Hashimoto", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-env" } });
         committees.Add(new committee { titleEnum = ctitle.AssocProfDr, name = "Tom DeSutter", otherInfo = "Soil Science Department, North Dakota State University", types = new string[] { "pc", "pc-env" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Mohd Sham Othman", otherInfo = "Diagnostic & Applied Health Sciences, Universiti Kebangsaan Malaysia", types = new string[] { "pc", "pc-env" } });
-        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Chatinee Boonyachai", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-env" } });
+        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Chantinee Boonyachai", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-env" } });
         committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Weerapong Keodsin", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-env" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Thanita Arreerob", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-env" } });
-        committees.Add(new committee { titleEnum = ctitle.AssocProfDr, name = "Arree Choodum", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-env" } });
+        committees.Add(new committee { titleEnum = ctitle.AssocProfDr, name = "Aree Choodum", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-env" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Danai Thipmanee", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-env" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Avirut Puttivongrak", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-env" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Vipawee Dummee", otherInfo = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-env" } });
@@ -281,7 +281,7 @@
 
     <div class="row">
         <div class="col-md-12">
-            <h2>Program chair</h2>
+            <h2>Program Committee</h2>
             <div class="container">
                 <p>For enquiries regarding paper submission, please contact Program Committee Chair:</p>
 

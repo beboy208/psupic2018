@@ -26,7 +26,7 @@
                     which are mainly related to the tourism industry and its many facets.
                     As 2018 is <strong>the 50th Anniversary of PSU</strong>, 
                     we would like to celebrate this event by inviting you to submit your extended abstract to the 
-                    <strong>PSU Phuket’s International Conference (PSU PIC)</strong>.
+                    <strong>PSU Phuket International Conference (PSU PIC)</strong>.
                 </p>
                 <p>
                     <strong>PSU PIC</strong> aims to strengthen the research collaboration and networking 
