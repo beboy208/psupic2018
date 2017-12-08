@@ -10,7 +10,11 @@
             <div class="content">
                 <span class="name"><%# Eval("title") %> <%# Eval("name") %></span>
                 <span class="executive"><%# Eval("executive") %> </span>
-                <span class="otherInfo"><%# Eval("otherInfo") %></span>
+                <div class="otherInfo">
+                    <span class="organization"><%# Eval("organization") %></span>
+                    <span class="phone"><%# Eval("phone") %></span>
+                    <span class="email"><%# Eval("email") %></span>
+                </div>
             </div>
         </div>
     </ItemTemplate>

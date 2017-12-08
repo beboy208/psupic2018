@@ -65,6 +65,40 @@
         display: block;
     }
 
+
+.pc-member .organization {
+    display: block;
+    width: 100%;
+}
+
+    .pc-member .organization:empty {
+        display: none;
+    }
+
+.pc-member .phone::before {
+    content: "Tel: ";
+}
+
+.pc-member .phone {
+    display: block;
+}
+
+    .pc-member .phone:empty {
+        display: none;
+    }
+
+.pc-member .email::before {
+    content: "Email: ";
+}
+
+.pc-member .email {
+    display: block;
+}
+
+    .pc-member .email:empty {
+        display: none;
+    }
+
 .pc-list {
     height: auto;
 }
@@ -108,6 +142,10 @@
         display: inline-block;
         width: calc(100% - 410px);
         text-decoration: none;
+    }
+
+    .pc-list .phone, .pc-list .email {
+        display: none;
     }
 
 .pc-member {
