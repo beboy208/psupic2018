@@ -225,6 +225,7 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="imgs\50th-logo_s60.png" />
     <Content Include="imgs\c-logo-s.png" />
+    <Content Include="imgs\call-for-contributions-edit-04%28final%29.jpg" />
     <Content Include="imgs\chayanon.jpg" />
     <Content Include="imgs\jirameth.jpg" />
     <Content Include="imgs\jumbotron.png" />
@@ -234,6 +235,7 @@
     <Content Include="imgs\nuwan.png" />
     <Content Include="imgs\org.PNG" />
     <Content Include="imgs\pensiri.png" />
+    <Content Include="imgs\poster-PSU-PIC-2018_edit-03%28final%29.jpg" />
     <Content Include="imgs\prathana.png" />
     <Content Include="imgs\PSUPIC-PSU50th-QRCode.png" />
     <Content Include="imgs\PSUPIC-QRCode.png" />
