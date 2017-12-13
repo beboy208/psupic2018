@@ -70,7 +70,7 @@ namespace Conference2018.App_GlobalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Computing Theory and Technology.
+        ///   Looks up a localized string similar to Computing Theory, Technologies and Applications.
         /// </summary>
         public static string Area2 {
             get {

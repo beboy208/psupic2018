@@ -248,6 +248,13 @@
         background-repeat: no-repeat;
     }
 
+    .pc-member .img.jirameth {
+        background-image: url('../imgs/jirameth.jpg');
+        background-size: 200px;
+        background-position: -45px -15px;
+        background-repeat: no-repeat;
+    }
+
 @media (max-width: 1240px) {
     .pc-card.col-3 .pc-member {
         width: 45%;
