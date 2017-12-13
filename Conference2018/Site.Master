@@ -4,9 +4,19 @@
 
 <html lang="en">
 <head runat="server">
+    <title>PSU PIC 2018 - <%: Page.Title %></title>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PSU PIC 2018 - <%: Page.Title %></title>
+
+    <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+    <meta property="og:url" content="http://www.conference.phuket.psu.ac.th/conference2018/" />
+    
+    <meta property="og:title" content="PSU Phuket International Conference 2018" />
+    <meta property="og:description" content="As 2018 is the 50th Anniversary of PSU, we would like to celebrate this event by inviting you to submit your extended abstract to the PSU Phuket International Conference (PSU PIC). March 11-12, 2018 in Phuket. Creativity and Innovations for Global Development." />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image" content="http://www.conference.phuket.psu.ac.th/conference2018/imgs/og.png" />
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -20,16 +30,16 @@
     </style>
  ---%>
 
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110463895-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-110463895-1');
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110463895-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-110463895-1');
+    </script>
 
 </head>
 <body>
@@ -58,7 +68,8 @@
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-right">
-                    <div id="ShareInContent_fbsharebutton" class="fb-share-button fb-like-share navbar-brand" data-type="button_count" data-href="http://www.conference.phuket.psu.ac.th" data-url="http://www.conference.phuket.psu.ac.th"></div>
+                    <div class="fb-share-button navbar-brand" data-href="http://www.conference.phuket.psu.ac.th/conference2018/" data-layout="button_count" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.conference.phuket.psu.ac.th%2Fconference2018%2F&amp;src=sdkpreparse">แชร์</a></div>
+                    <%--<div id="ShareInContent_fbsharebutton" class="fb-share-button fb-like-share navbar-brand" data-type="button_count" data-href="http://www.conference.phuket.psu.ac.th" data-url="http://www.conference.phuket.psu.ac.th"></div>--%>
                     <div class="navbar-brand">
                         <div id="ShareInContent_gplussharebutton" class="g-plus g-plus-share" data-action="share" data-annotation="bubble" data-href="http://www.conference.phuket.psu.ac.th" data-url="http://www.conference.phuket.psu.ac.th"></div>
                     </div>
@@ -162,12 +173,12 @@
         </div>
     </form>
 
-      <div id="fb-root"></div>
+    <div id="fb-root"></div>
     <script>(function (d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
