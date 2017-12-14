@@ -24,6 +24,9 @@
                 <img src="http://www.conference.phuket.psu.ac.th/conference2013/images/Diagram.jpg" class="img-responsive center-block" />
             </div>
         </div>
+        <div class="col-md-12">
+            <h2>Video Introduction to PSU Phuket Campus</h2><br />
+            <div style="margin:0 auto"><embed src="imgs/vedio.mp4" width="500" height="280"></embed></div>
     </div>
     <div class="row">
         <div class="col-md-12">

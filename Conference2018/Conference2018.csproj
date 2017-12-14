@@ -247,6 +247,7 @@
     <Content Include="imgs\siriwan.PNG" />
     <Content Include="imgs\sombatkhruathong.jpg" />
     <Content Include="imgs\supachaijeangjai.jpg" />
+    <Content Include="imgs\vedio.mp4" />
     <Content Include="imgs\worawut.png" />
     <Content Include="important-dates.aspx" />
     <Content Include="landing.aspx" />
