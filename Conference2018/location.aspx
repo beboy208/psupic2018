@@ -26,7 +26,7 @@
         </div>
         <div class="col-md-12">
             <h2>Video Introduction to PSU Phuket Campus</h2><br />
-            <div style="margin:0 auto"><embed src="imgs/vedio.mp4" width="500" height="280"></embed></div>
+            <embed src="imgs/vedio.mp4" class="center-block" style="width: 80%; height: 500px" />
     </div>
     <div class="row">
         <div class="col-md-12">
