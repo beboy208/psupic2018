@@ -111,7 +111,7 @@
        /* committees.Add(new committee { titleEnum = ctitle.AssocProfDr, name = "Tom DeSutter", organization = "Soil Science Department, North Dakota State University", types = new string[] { "pc", "pc-env" } }); */
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Mohd Sham Othman", organization = "Diagnostic & Applied Health Sciences, Universiti Kebangsaan Malaysia", types = new string[] { "pc", "pc-env" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Chantinee Boonyachai", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-env" } });
-        committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Werapong Keodsin", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-env" } });
+        committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Werapong Koedsin", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-env" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Thanita Arreerob", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-env" } });
         committees.Add(new committee { titleEnum = ctitle.AssocProfDr, name = "Aree Choodum", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-env" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Danai Thipmanee", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-env" } });
@@ -145,7 +145,7 @@
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Kitsiri Chochiang", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-com" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Nawanol Theera-Ampornpunt", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-com" } });
         committees.Add(new committee { titleEnum = ctitle.AsstDr, name = "Warodom Weeraphun", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-com" } });
-        committees.Add(new committee { titleEnum = ctitle.AsstDr, name = "Apichat Heednacram", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-com" } });
+    /*    committees.Add(new committee { titleEnum = ctitle.AsstDr, name = "Apichat Heednacram", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-com" } }); */
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Chakadkit Thaenchaikun", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-com" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Kittasil Silanon", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-com" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Komsan Kanjanasit", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-com" } });
@@ -184,18 +184,18 @@
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Jirameth Rungruang", organization = "Prince of Songkla University, Thailand", phone="(+66)-7627-6612", email="jirameth.r(at)phuket.psu.ac.th", types = new string[] { "pc", "pc-ib", "chair" } });
 
         /*pc-ib and pc-il, FIS*/
-        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Supachai Jeangjai", organization = "Prince of Songkla University, Thailand", phone="(+66)-7627-6293", email="supachai.je(at)phuket.psu.ac.th", types = new string[] { "pc", "pc-ib" } });
+       // committees.Add(new committee { titleEnum = ctitle.Dr, name = "Supachai Jeangjai", organization = "Prince of Songkla University, Thailand", phone="(+66)-7627-6293", email="supachai.je(at)phuket.psu.ac.th", types = new string[] { "pc", "pc-ib" } });
         committees.Add(new committee { titleEnum = ctitle.ProfDr, name = "Ximing Yao", organization = "Shanghai University, P.R.China", types = new string[] { "pc", "pc-ib", "pc-il" } });
         committees.Add(new committee { titleEnum = ctitle.ProfDr, name = "Shan Wei", organization = "Harbin Engineering University", types = new string[] { "pc", "pc-ib", "pc-il" } });
         committees.Add(new committee { titleEnum = ctitle.AssocProfDr, name = "Intan Hashimah Mohd. Hashim", organization = "University of Science, Malaysia", types = new string[] { "pc", "pc-ib", "pc-il" } });
-        committees.Add(new committee { titleEnum = ctitle.none, name = "Liu Chang", organization = "", types = new string[] { "pc", "pc-ib", "pc-il" } });
-        committees.Add(new committee { titleEnum = ctitle.none, name = "Han Yueqiu", organization = "", types = new string[] { "pc", "pc-ib", "pc-il" } });
-        committees.Add(new committee { titleEnum = ctitle.none, name = "Wang Dongying", organization = "", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        committees.Add(new committee { titleEnum = ctitle.Prof, name = "Liu Chang", organization = "Harbin Engineering University", email="Liuchang(at)hrbeu.edu.cn", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        committees.Add(new committee { titleEnum = ctitle.Prof, name = "Han Yueqiu", organization = "Harbin Engineering University",email="hhanyueqiu(at)hrbeu.edu.cn", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        committees.Add(new committee { titleEnum = ctitle.Prof, name = "Wang Dongying", organization = "Harbin Engineering University", email="wangdongying(at)hrbeu.edu.cn", types = new string[] { "pc", "pc-ib", "pc-il" } });
         committees.Add(new committee { titleEnum = ctitle.Prof, name = "Park Ki Chan", organization = "College of Business Administration, Inha University, Korea", types = new string[] { "pc", "pc-ib", "pc-il" } });
-        committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Lavanchawee Sujarittanonta", organization = "I-Shou University International College, Taiwan", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        //committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Lavanchawee Sujarittanonta", organization = "I-Shou University International College, Taiwan", types = new string[] { "pc", "pc-ib", "pc-il" } });
         //committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Intan Hashimah Mohd. Hashim", otherInfo = "University of Sains Malaysia, Malaysia", types = new string[] { "pc", "pc-ib", "pc-il" } });
-        committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Sara Nuzhat Amin", organization = "Asian University for Women, Bangladesh", types = new string[] { "pc", "pc-ib", "pc-il" } });
-        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Kim Young Aih", organization = "Hankuk University of Foreign Studies, Korea", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        //committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Sara Nuzhat Amin", organization = "Asian University for Women, Bangladesh", types = new string[] { "pc", "pc-ib", "pc-il" } });
+        //committees.Add(new committee { titleEnum = ctitle.Dr, name = "Kim Young Aih", organization = "Hankuk University of Foreign Studies, Korea", types = new string[] { "pc", "pc-ib", "pc-il" } });
         committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Pim de Jong", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ib", "pc-il" } });
         committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Kesinee Chaisri", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ib", "pc-il" } });
         committees.Add(new committee { titleEnum = ctitle.Asst, name = "Sopon Supaviriyakorn", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ib", "pc-il" } });
@@ -205,11 +205,11 @@
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Steven Andrew Martin", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ib", "pc-il" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Sudrudee Bumrung", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ib", "pc-il" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Yupin Karanyadech", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ib", "pc-il" } });
-        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Nuannut Khieowan", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ib", "pc-il" } });
-
+    /*    committees.Add(new committee { titleEnum = ctitle.Dr, name = "Nuannut Khieowan", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ib", "pc-il" } }); */
+        
 
         /*pc-il-chair*/
-        committees.Add(new committee { titleEnum = ctitle.AssocProfDr, name = "Sombat Khruathong", organization = "Prince of Songkla University, Thailand", phone="(+66)-7627-6603", email="sombat.k(at)phuket.psu.ac.th", types = new string[] { "pc", "pc-il", "chair" } });
+        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Nuannut Khieowan", organization = "Prince of Songkla University, Thailand", phone="(+66)-7627-6286", email="nuannut.k(at)phuket.psu.ac.th", types = new string[] { "pc", "pc-il", "chair" } });
 
         /*pc-il*/
         /*ใช้รายการเดียวกับ ib*/
@@ -220,7 +220,7 @@
         committees.Add(new committee { titleEnum = ctitle.Mr, name = "Arkom Wangmuang", organization = "Prince of Songkla University, Thailand", types = new string[] { "organising" } });
         committees.Add(new committee { titleEnum = ctitle.Mr, name = "Charoen Brahmritdhi", organization = "Prince of Songkla University, Thailand", types = new string[] { "organising" } });
         committees.Add(new committee { titleEnum = ctitle.Mrs, name = "Esther Sangiamkul", organization = "Prince of Songkla University, Thailand", types = new string[] { "organising" } });
-        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Jinda Sawattawee", organization = "Prince of Songkla University, Thailand", types = new string[] { "pcorganising" } });
+        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Jinda Sawattawee", organization = "Prince of Songkla University, Thailand", types = new string[] { "organising" } });
 
         return committees;
     }

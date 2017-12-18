@@ -255,6 +255,13 @@
         background-repeat: no-repeat;
     }
 
+    .pc-member .img.nuannut {
+        background-image: url('../imgs/nuannut.jpg');
+        background-size: 180px;
+        background-position: -48px -15px;
+        background-repeat: no-repeat;
+    }
+
 @media (max-width: 1240px) {
     .pc-card.col-3 .pc-member {
         width: 45%;
