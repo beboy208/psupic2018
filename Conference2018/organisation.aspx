@@ -163,10 +163,9 @@
 
 
         /*pc-ht-chair*/
-
+        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Chayanon Phucharoen", organization = "Prince of Songkla University, Thailand", phone="(+66)-7627-6838", email="dr.chayanonphucharoen(at)gmail.com", types = new string[] { "pc", "pc-ht", "chair" } });
 
         /*pc-ht, FHT*/
-        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Chayanon Phucharoen", organization = "Prince of Songkla University, Thailand", phone="(+66)-7627-6838", email="dr.chayanonphucharoen(at)gmail.com", types = new string[] { "pc", "pc-ht" } });
         committees.Add(new committee { titleEnum = ctitle.AssocProfDr, name = "Prathana Kannaovakun", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ht" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = " Pornpisanu Promsivapallop", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ht" } });
         committees.Add(new committee { titleEnum = ctitle.AsstProfDr, name = "Tatiyaporn Jarumaneerat", organization = "Prince of Songkla University, Thailand", types = new string[] { "pc", "pc-ht" } });
