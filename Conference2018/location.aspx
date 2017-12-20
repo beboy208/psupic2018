@@ -21,7 +21,7 @@
             <h2>PSU, Phuket diagram</h2>
             <div class="container">
                 <p></p>
-                <img src="http://www.conference.phuket.psu.ac.th/conference2013/images/Diagram.jpg" class="img-responsive center-block" />
+                <img src="./imgs/psupktmap2018.jpg" class="img-responsive center-block" />
             </div>
         </div>
         <div class="col-md-12">
