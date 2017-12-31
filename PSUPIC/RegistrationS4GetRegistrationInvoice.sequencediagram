@@ -13,7 +13,7 @@
             </referencesInternal>
             <elementDefinition Id="e25d6385-c32e-445b-8cf7-4ab986e59276" />
             <coveredLifelines>
-              <lifelineMoniker Id="faea0c8c-3151-43bf-917b-3d024da4f1c4" LastKnownName="Author" />
+              <lifelineMoniker Id="faea0c8c-3151-43bf-917b-3d024da4f1c4" LastKnownName="Author : Author" />
               <lifelineMoniker Id="078576b5-703e-42ce-9e4b-87cd80a7e7d1" LastKnownName="PSUPIC2008Registration : Page" />
             </coveredLifelines>
             <interactionUseOccurrenceSpecifications>
@@ -30,7 +30,7 @@
           <interactionUseOccurrenceSpecification Id="67181ec6-7318-41cb-a79a-839164228089" name="InteractionUseOccurrenceSpecification1">
             <elementDefinition Id="af42cc47-bd78-46a5-a82b-474dd6e61924" />
             <covered>
-              <lifelineMoniker Id="faea0c8c-3151-43bf-917b-3d024da4f1c4" LastKnownName="Author" />
+              <lifelineMoniker Id="faea0c8c-3151-43bf-917b-3d024da4f1c4" LastKnownName="Author : Author" />
             </covered>
           </interactionUseOccurrenceSpecification>
           <behaviorExecutionSpecification Id="1ce9673f-5c28-4d7e-abdb-32c8ab916ebe" name="BehaviorExecutionSpecification13">
@@ -71,7 +71,7 @@
           <messageOccurrenceSpecification Id="76a46e2d-16df-4142-b589-03c8c3011c73" name="MessageOccurrenceSpecification45">
             <elementDefinition Id="e13fa779-34b6-4285-b83f-6d92486ea04d" />
             <covered>
-              <lifelineMoniker Id="faea0c8c-3151-43bf-917b-3d024da4f1c4" LastKnownName="Author" />
+              <lifelineMoniker Id="faea0c8c-3151-43bf-917b-3d024da4f1c4" LastKnownName="Author : Author" />
             </covered>
           </messageOccurrenceSpecification>
           <behaviorExecutionSpecification Id="bcc5969a-3a5b-4821-8aac-16aa7e97aa97" name="BehaviorExecutionSpecification23">
@@ -203,7 +203,7 @@
           <messageOccurrenceSpecification Id="c2a085f5-1e81-4ca9-9013-9feb5f73425e" name="MessageOccurrenceSpecification48">
             <elementDefinition Id="243350e8-8360-4ba2-a956-8d6e57b42710" />
             <covered>
-              <lifelineMoniker Id="faea0c8c-3151-43bf-917b-3d024da4f1c4" LastKnownName="Author" />
+              <lifelineMoniker Id="faea0c8c-3151-43bf-917b-3d024da4f1c4" LastKnownName="Author : Author" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="4c00e532-1a88-4641-b036-67a29abd5d6e" name="MessageOccurrenceSpecification47">
@@ -258,7 +258,7 @@
           <messageOccurrenceSpecification Id="e46b4c17-f407-4728-b666-5d3449a2afb6" name="MessageOccurrenceSpecification87">
             <elementDefinition Id="7ec8ef3f-eec8-4eba-b5ea-bf449534d539" />
             <covered>
-              <lifelineMoniker Id="faea0c8c-3151-43bf-917b-3d024da4f1c4" LastKnownName="Author" />
+              <lifelineMoniker Id="faea0c8c-3151-43bf-917b-3d024da4f1c4" LastKnownName="Author : Author" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="99dc5114-7b37-4dbc-a778-6949c480f90e" name="MessageOccurrenceSpecification88">
@@ -451,7 +451,7 @@
           <messageOccurrenceSpecification Id="82cc292d-b421-4c4d-8672-40b06082e54b" name="MessageOccurrenceSpecification90">
             <elementDefinition Id="8ef85a68-4eb6-4ac3-856a-071be1b10e14" />
             <covered>
-              <lifelineMoniker Id="faea0c8c-3151-43bf-917b-3d024da4f1c4" LastKnownName="Author" />
+              <lifelineMoniker Id="faea0c8c-3151-43bf-917b-3d024da4f1c4" LastKnownName="Author : Author" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="22107a7f-51a1-43db-9ec6-ba17aaaf25e3" name="ExecutionOccurrenceSpecification50">
@@ -467,7 +467,7 @@
           </executionOccurrenceSpecification>
         </fragments>
         <lifelines>
-          <lifeline Id="faea0c8c-3151-43bf-917b-3d024da4f1c4" name="Author" isActor="false" lifelineDisplayName="Author">
+          <lifeline Id="faea0c8c-3151-43bf-917b-3d024da4f1c4" name="Author : Author" isActor="true" lifelineDisplayName="Author : Author">
             <elementDefinition Id="d13980f8-1048-4402-a99a-1913813cbf69" />
             <topLevelOccurrences>
               <interactionUseOccurrenceSpecificationMoniker Id="67181ec6-7318-41cb-a79a-839164228089" LastKnownName="InteractionUseOccurrenceSpecification1" />
@@ -497,6 +497,9 @@
           </lifeline>
           <lifeline Id="f40a5b46-2cf5-4a8c-8573-820a93c7fa33" name="Author : IRegistrationable&lt;Registration&gt;" isActor="false" lifelineDisplayName="Author : IRegistrationable&lt;Registration&gt;">
             <elementDefinition Id="fec2ef99-6f86-4649-a91a-3496f8945a1d" />
+            <represents>
+              <propertyMoniker Id="1cfb7903-4b92-46f0-92cb-f987df4f227a" />
+            </represents>
             <topLevelOccurrences>
               <executionOccurrenceSpecificationMoniker Id="7c06c9ba-6d2b-4da8-b980-e8dc18a54e81" LastKnownName="ExecutionOccurrenceSpecification45" />
               <executionOccurrenceSpecificationMoniker Id="f303c69e-05c3-4e49-912d-371a8cc205d7" LastKnownName="ExecutionOccurrenceSpecification46" />
@@ -633,6 +636,14 @@
             </receiveEvent>
           </message>
         </messages>
+        <ownedAttributesInternal>
+          <property Id="1cfb7903-4b92-46f0-92cb-f987df4f227a" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="386ac166-c26c-404f-94c7-3003c3036766" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7e740b43-fde2-41c1-afe9-d17b5630a73d" LastKnownName="IRegistrationable&lt;Registration&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
       </interaction>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -704,6 +715,11 @@
       <executionEvent Id="36c95117-831e-42b4-9fe2-e669a459face" name="ExecutionEvent">
         <elementDefinition Id="2f9b3a23-85f4-4f99-9986-4f3fa416633c" />
       </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7e740b43-fde2-41c1-afe9-d17b5630a73d" name="IRegistrationable&lt;Registration&gt;" isAbstract="false" isLeaf="false" cachedFullName="PSUPIC::IRegistrationable&lt;Registration&gt;">
+        <elementDefinition Id="2730c0ac-e95c-4310-9c13-26697b437474" />
+      </referencedType>
     </packageHasNamedElement>
   </packagedElements>
   <package Id="0f16f2a1-9687-4903-abca-79b6959de18f" name="PSUPIC">
