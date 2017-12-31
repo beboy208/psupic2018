@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conference2018", "Conferenc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistrationClassLibrary", "RegistrationClassLibrary\RegistrationClassLibrary.csproj", "{EC799D21-52C1-4A16-A020-33465EF0B85A}"
 EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "PSUPIC", "PSUPIC\PSUPIC.modelproj", "{F19D7C71-CFC4-462F-AF05-C2BC819A81F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EC799D21-52C1-4A16-A020-33465EF0B85A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC799D21-52C1-4A16-A020-33465EF0B85A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC799D21-52C1-4A16-A020-33465EF0B85A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F19D7C71-CFC4-462F-AF05-C2BC819A81F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F19D7C71-CFC4-462F-AF05-C2BC819A81F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F19D7C71-CFC4-462F-AF05-C2BC819A81F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F19D7C71-CFC4-462F-AF05-C2BC819A81F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

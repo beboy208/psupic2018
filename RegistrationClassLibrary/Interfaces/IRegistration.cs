@@ -8,6 +8,6 @@ namespace RegistrationClassLibrary.Interfaces
 {
     public interface IRegistration
     {
-        void Insert(Models.Registraion obj)
+        void Insert(Models.Registration obj);
     }
 }
