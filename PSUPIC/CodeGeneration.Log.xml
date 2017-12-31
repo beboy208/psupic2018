@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 14.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2017-12-31T16:32:20" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2017-12-31T16:32:20" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2017-12-31T16:32:20" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2017-12-31T16:32:20" Importance="Diagnostic" Text="ProjectPath = ..\PSUPICLib\PSUPICLib.csproj" />
+  <Message Timestamp="2017-12-31T16:32:20" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2017-12-31T16:32:20" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2017-12-31T16:32:20" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2017-12-31T16:32:20" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2017-12-31T16:32:20" Importance="Medium" Text="PSUPIC's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'PSUPIC::R2 - Verification' -  (Interaction), 'PSUPIC::R3 - Author Regist' -  (Interaction), 'PSUPIC::R4 - Get Registration Invoice' -  (Interaction), 'PSUPIC::R1 - ImportSubmission' -  (Interaction), 'PSUPIC::R5 - Remove or Upload PaymentSlip' -  (Interaction), 'PSUPIC::F1 - ValidatePayment' -  (Interaction), 'PSUPIC::SystemAdmin' -  (Class), 'PSUPIC::ImageManager' -  (Class) " />
+  <Message Timestamp="2017-12-31T16:32:21" Importance="Diagnostic" Text="'PSUPIC::R2 - Verification' -  (Interaction): no file generated because the 'AppliesToElement' method of the template 'ClassTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-12-31T16:32:21" Importance="Diagnostic" Text="'PSUPIC::R3 - Author Regist' -  (Interaction): no file generated because the 'AppliesToElement' method of the template 'ClassTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-12-31T16:32:22" Importance="Diagnostic" Text="'PSUPIC::R4 - Get Registration Invoice' -  (Interaction): no file generated because the 'AppliesToElement' method of the template 'ClassTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-12-31T16:32:22" Importance="Diagnostic" Text="'PSUPIC::R1 - ImportSubmission' -  (Interaction): no file generated because the 'AppliesToElement' method of the template 'ClassTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-12-31T16:32:22" Importance="Diagnostic" Text="'PSUPIC::R5 - Remove or Upload PaymentSlip' -  (Interaction): no file generated because the 'AppliesToElement' method of the template 'ClassTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-12-31T16:32:22" Importance="Diagnostic" Text="'PSUPIC::F1 - ValidatePayment' -  (Interaction): no file generated because the 'AppliesToElement' method of the template 'ClassTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-12-31T16:32:23" Importance="Medium" Text="'PSUPIC::SystemAdmin' -  (Class) : success (file created) - E:\MyHome\Documents\VisualStudio2015\PSUPIC2018\PSUPICLib\GeneratedCode\SystemAdmin.cs" />
+  <Message Timestamp="2017-12-31T16:32:23" Importance="Medium" Text="'PSUPIC::ImageManager' -  (Class) : success (file created) - E:\MyHome\Documents\VisualStudio2015\PSUPIC2018\PSUPICLib\GeneratedCode\ImageManager.cs" />
+  <Message Timestamp="2017-12-31T16:32:23" Importance="Diagnostic" Text="Name = InterfaceTemplate" />
+  <Message Timestamp="2017-12-31T16:32:23" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2017-12-31T16:32:23" Importance="Diagnostic" Text="ProjectPath = ..\PSUPICLib\PSUPICLib.csproj" />
+  <Message Timestamp="2017-12-31T16:32:23" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2017-12-31T16:32:23" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2017-12-31T16:32:23" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4" />
+  <Message Timestamp="2017-12-31T16:32:23" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4" />
+  <Message Timestamp="2017-12-31T16:32:23" Importance="Medium" Text="PSUPIC's Text Template Binding: 'InterfaceTemplate' will apply InterfaceTemplate.t4 to: 'PSUPIC::IRegistrationable&lt;Registration&gt;' -  (Interface), 'PSUPIC::IAuthentication&lt;Author&gt;' -  (Interface), 'PSUPIC::ISubmissionManageable' -  (Interface), 'PSUPIC::IRegistrationable&lt;Registration&gt;' -  (Interface) " />
+  <Error Timestamp="2017-12-31T16:32:23" Importance="High" Text="'PSUPIC::IRegistrationable&lt;Registration&gt;' -  (Interface) : unable to create file, Illegal characters in path. - E:\MyHome\Documents\VisualStudio2015\PSUPIC2018\PSUPICLib\GeneratedCode\IRegistrationable&lt;Registration&gt;.cs" />
+  <Message Timestamp="2017-12-31T16:32:23" Importance="Diagnostic" Text="'PSUPIC::IRegistrationable&lt;Registration&gt;' -  (Interface): no file generated because the 'AppliesToElement' method of the template 'InterfaceTemplate.t4' evaluated to false." />
+  <Error Timestamp="2017-12-31T16:32:23" Importance="High" Text="'PSUPIC::IAuthentication&lt;Author&gt;' -  (Interface) : unable to create file, Illegal characters in path. - E:\MyHome\Documents\VisualStudio2015\PSUPIC2018\PSUPICLib\GeneratedCode\IAuthentication&lt;Author&gt;.cs" />
+  <Message Timestamp="2017-12-31T16:32:23" Importance="Diagnostic" Text="'PSUPIC::IAuthentication&lt;Author&gt;' -  (Interface): no file generated because the 'AppliesToElement' method of the template 'InterfaceTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-12-31T16:32:23" Importance="Medium" Text="'PSUPIC::ISubmissionManageable' -  (Interface) : success (file created) - E:\MyHome\Documents\VisualStudio2015\PSUPIC2018\PSUPICLib\GeneratedCode\ISubmissionManageable.cs" />
+  <Error Timestamp="2017-12-31T16:32:24" Importance="High" Text="'PSUPIC::IRegistrationable&lt;Registration&gt;' -  (Interface) : unable to create file, Illegal characters in path. - E:\MyHome\Documents\VisualStudio2015\PSUPIC2018\PSUPICLib\GeneratedCode\IRegistrationable&lt;Registration&gt;.cs" />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::IRegistrationable&lt;Registration&gt;' -  (Interface): no file generated because the 'AppliesToElement' method of the template 'InterfaceTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="ProjectPath = ..\PSUPICLib\PSUPICLib.csproj" />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Medium" Text="PSUPIC's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'PSUPIC::R2 - Verification' -  (Interaction), 'PSUPIC::R3 - Author Regist' -  (Interaction), 'PSUPIC::R4 - Get Registration Invoice' -  (Interaction), 'PSUPIC::R1 - ImportSubmission' -  (Interaction), 'PSUPIC::R5 - Remove or Upload PaymentSlip' -  (Interaction), 'PSUPIC::F1 - ValidatePayment' -  (Interaction), 'PSUPIC::SystemAdmin' -  (Class), 'PSUPIC::ImageManager' -  (Class) " />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::R2 - Verification' -  (Interaction): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::R3 - Author Regist' -  (Interaction): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::R4 - Get Registration Invoice' -  (Interaction): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::R1 - ImportSubmission' -  (Interaction): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::R5 - Remove or Upload PaymentSlip' -  (Interaction): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::F1 - ValidatePayment' -  (Interaction): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::SystemAdmin' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ImageManager' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="The selection included 83 elements which were not bound to a template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC' -  (ModelStoreModel): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::' -  (SendOperationEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::' -  (ReceiveOperationEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::' -  (SendOperationEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::' -  (ReceiveOperationEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::' -  (SendOperationEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::' -  (ReceiveOperationEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="Diagnostic" Text="'PSUPIC::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2017-12-31T16:32:24" Importance="High" Text="Code generation complete. Errors: 3. Warnings: 0." />
+</Log>

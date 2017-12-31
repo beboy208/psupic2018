@@ -1,22 +1,80 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="7bce61c9-d4a5-4113-991e-9046d1c15361" name="Remove or Upload PaymentSlip" linkedPackageId="fffccc01-3412-4cfc-a12d-353b34cb014c" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="00fb3221-ca1e-4632-ad80-5ea368e443dd">
-      <profileInstance Id="4474ffae-db0a-494f-a6ea-669b3c752a86" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="ea08df55-3c91-4342-94d9-24eb9e2b25b1">
-      <profileInstance Id="d03c5fab-4ac6-4464-b429-bb88d115af1f" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="7bce61c9-d4a5-4113-991e-9046d1c15361" name="R5 - Remove or Upload PaymentSlip" linkedPackageId="fffccc01-3412-4cfc-a12d-353b34cb014c" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="ae573a79-51f7-49e9-9eeb-a214dce84e1f" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="c277aaf4-a30d-479f-b168-23faf8774435" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="b9f85056-c0c6-4335-a9c3-9951dea47f27">
+          <propertyInstance Id="8792afb1-6c6b-4ec7-9375-31a67f71193d" name="BaseName">
+            <elementDefinition Id="f3460534-38ad-4d8f-a654-bf847cd796ec" />
+          </propertyInstance>
+          <elementDefinition Id="9a045454-0096-4700-89c1-06610ef7e14f" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="8efb644a-b33a-49d2-9f2b-efe533ed5db5">
+          <propertyInstance Id="4aa7767d-fc35-46c5-a5a7-3efbbc305b43" name="ClrAttributes">
+            <elementDefinition Id="ed27d17d-16fa-4579-8aa1-2ad86f69df57" />
+          </propertyInstance>
+          <elementDefinition Id="edaf4b92-271f-4598-b28c-621535295cc6" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="7b19f99f-9cd8-4f2c-a0e4-aa3730787f33">
+          <propertyInstance Id="17a5d111-35ae-48ed-9ca1-8521f1aafe58" name="Usings">
+            <elementDefinition Id="69e09f56-2990-4927-a6e8-fccd6334e9c8" />
+          </propertyInstance>
+          <elementDefinition Id="79bcb4d5-d9c2-411d-a5e9-ae3da122e4c5" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="e2dd2772-cc1d-4e59-a174-0905a40a35eb" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="28c97757-49e7-42e0-aa6f-9cd613e75552" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="feaf0264-2456-448e-822a-ee2b4b9dc8a4">
+          <propertyInstance Id="54352f80-d18f-4bb6-aa90-2e782ba3c2a7" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="0aa085d2-63df-4f6e-a1ac-034e9151406b" />
+          </propertyInstance>
+          <elementDefinition Id="5e72d6a7-786a-439e-b3ae-acf212b7cd83" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="0d403d0b-bcc6-4c81-b290-f47676a6c7b2">
+          <propertyInstance Id="9e47cc23-9682-4f45-ba28-91cf3eec37fd" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="ccf30c76-65cd-4f8c-a380-27332b9dc507" />
+          </propertyInstance>
+          <elementDefinition Id="0247ac30-3ce0-494c-a703-047248da5534" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="729d8aa2-05c2-4e4a-9743-f1200dedf9ca">
+          <propertyInstance Id="d4aac9d7-30eb-48fe-b4c7-038f7a0e357b" name="ProjectPath" value="ClassTemplate=..\PSUPICLib\PSUPICLib.csproj|EnumTemplate=..\PSUPICLib\PSUPICLib.csproj|InterfaceTemplate=..\PSUPICLib\PSUPICLib.csproj|StructTemplate=..\PSUPICLib\PSUPICLib.csproj">
+            <elementDefinition Id="446c072b-3bf9-4eab-8be3-11dcc5029a87" />
+          </propertyInstance>
+          <elementDefinition Id="38c419f6-ef08-43b3-a50a-0553561aac82" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="6ee9ee83-845e-46ad-8ecc-e0f65d04f8a4">
+          <propertyInstance Id="f04957b2-8478-4a6b-a662-11fb74e0dfd0" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="9a7f6bce-1de5-41e8-bec0-5dff4789a46d" />
+          </propertyInstance>
+          <elementDefinition Id="c503c141-b6f6-42d7-a631-e0f263bf34ec" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="3b51244f-6093-46be-a997-08a0ccfa1f66">
+          <propertyInstance Id="fcbedd04-85ce-41b6-bd43-a013196950d3" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="0d5bd98e-bad6-4887-a75a-d889b2f081af" />
+          </propertyInstance>
+          <elementDefinition Id="f6bd00cb-0beb-4cf7-9dc3-c8135662cfb0" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d2cfd7d1-2676-4221-acfa-8896aaf18e7c">
+          <propertyInstance Id="37006820-b88d-4972-a9b1-ed30f0b43217" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="0d60e243-f8a4-4ad1-826a-4fa14f063866" />
+          </propertyInstance>
+          <elementDefinition Id="917bfee4-a3b6-48d7-90a1-6f2aff952384" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="95432aa5-e5ca-409f-9af5-e06259ff699e">
+          <propertyInstance Id="02fe2de1-7433-41ba-9ec3-5e5fc29e3c9b" name="Parameters">
+            <elementDefinition Id="c0d40238-e19e-4196-b96e-7e5a3cf3e17f" />
+          </propertyInstance>
+          <elementDefinition Id="bb6fc094-921f-4cc1-b253-c3555772702c" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
   <packagedElements>
     <packageHasNamedElement>
-      <interaction Id="cbf15aa9-7d4b-49b4-8110-a59ae2efdb3a" name="Remove or Upload PaymentSlip" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+      <interaction Id="cbf15aa9-7d4b-49b4-8110-a59ae2efdb3a" name="R5 - Remove or Upload PaymentSlip" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
         <elementDefinition Id="89f87cbd-830d-4c54-aaa7-0a57d6060899" />
         <fragments>
           <interactionUse Id="89110394-05e2-490c-af84-d5aeca9da718" name="Get Registration Invoice" referredToFile="Get Registration Invoice">
@@ -274,16 +332,16 @@
               <lifelineMoniker Id="571c4b2a-ecd2-40aa-a387-e48c012b2d56" LastKnownName="db.Registration" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="df121cc1-189f-4416-a82b-41e2e3a824ca" name="MessageOccurrenceSpecification102">
-            <elementDefinition Id="38a5e6a7-ab5f-4f39-b896-8377b628f76f" />
-            <covered>
-              <lifelineMoniker Id="571c4b2a-ecd2-40aa-a387-e48c012b2d56" LastKnownName="db.Registration" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="8bae6828-d719-411a-8c2d-ab811038bae2" name="MessageOccurrenceSpecification101">
             <elementDefinition Id="531e679f-44fb-4cfc-941b-97fb31f7a276" />
             <covered>
               <lifelineMoniker Id="8023e050-e298-40a3-a64a-566eb717c569" LastKnownName="Author : IRegistrationable&lt;Registration&gt;" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="df121cc1-189f-4416-a82b-41e2e3a824ca" name="MessageOccurrenceSpecification102">
+            <elementDefinition Id="38a5e6a7-ab5f-4f39-b896-8377b628f76f" />
+            <covered>
+              <lifelineMoniker Id="571c4b2a-ecd2-40aa-a387-e48c012b2d56" LastKnownName="db.Registration" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="e480cb8a-36a9-4d0e-bde7-66d900522f73" name="MessageOccurrenceSpecification103">
@@ -336,28 +394,28 @@
               <lifelineMoniker Id="7073f5f7-27b1-4081-a827-62bfee68f01f" LastKnownName="ImageManager" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="6ffc0ffb-e7f2-45ba-94b5-e03000cd919a" name="MessageOccurrenceSpecification106">
-            <elementDefinition Id="2c1adf87-785e-45e0-9e2f-a3e00c5807d9" />
-            <covered>
-              <lifelineMoniker Id="7073f5f7-27b1-4081-a827-62bfee68f01f" LastKnownName="ImageManager" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="bb2a7752-4fa9-44ee-a142-325e3c35f109" name="MessageOccurrenceSpecification105">
             <elementDefinition Id="464751d2-f9d2-4da4-bcb3-f5361bbfe785" />
             <covered>
               <lifelineMoniker Id="8023e050-e298-40a3-a64a-566eb717c569" LastKnownName="Author : IRegistrationable&lt;Registration&gt;" />
             </covered>
           </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="f55beba7-c2aa-471e-a47d-7d52aa26ef57" name="MessageOccurrenceSpecification108">
-            <elementDefinition Id="1bbd6a98-1889-45ef-9f25-34cbe5c530bd" />
+          <messageOccurrenceSpecification Id="6ffc0ffb-e7f2-45ba-94b5-e03000cd919a" name="MessageOccurrenceSpecification106">
+            <elementDefinition Id="2c1adf87-785e-45e0-9e2f-a3e00c5807d9" />
             <covered>
-              <lifelineMoniker Id="8023e050-e298-40a3-a64a-566eb717c569" LastKnownName="Author : IRegistrationable&lt;Registration&gt;" />
+              <lifelineMoniker Id="7073f5f7-27b1-4081-a827-62bfee68f01f" LastKnownName="ImageManager" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="5923914a-a73c-42e2-a15c-122f3ae74b2d" name="MessageOccurrenceSpecification107">
             <elementDefinition Id="71217f27-4aaf-41ad-b452-ab0457f0dfea" />
             <covered>
               <lifelineMoniker Id="7073f5f7-27b1-4081-a827-62bfee68f01f" LastKnownName="ImageManager" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="f55beba7-c2aa-471e-a47d-7d52aa26ef57" name="MessageOccurrenceSpecification108">
+            <elementDefinition Id="1bbd6a98-1889-45ef-9f25-34cbe5c530bd" />
+            <covered>
+              <lifelineMoniker Id="8023e050-e298-40a3-a64a-566eb717c569" LastKnownName="Author : IRegistrationable&lt;Registration&gt;" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="fe59a1dc-bd78-4636-b2a1-5dcd3c8c0ad9" name="ExecutionOccurrenceSpecification60">
@@ -681,9 +739,6 @@
               <executionOccurrenceSpecificationMoniker Id="550343e9-9cc6-4e20-8091-4d1f17704908" LastKnownName="ExecutionOccurrenceSpecification50" />
             </topLevelOccurrences>
           </lifeline>
-          <lifeline Id="6e899ec1-8e85-4779-8912-e1fc2aac9dd7" name="Author : ISubmissionManageable" isActor="false" lifelineDisplayName="Author : ISubmissionManageable">
-            <elementDefinition Id="18e5e591-27f0-4d51-95cc-55f4f6955fe9" />
-          </lifeline>
           <lifeline Id="8023e050-e298-40a3-a64a-566eb717c569" name="Author : IRegistrationable&lt;Registration&gt;" isActor="false" lifelineDisplayName="Author : IRegistrationable&lt;Registration&gt;">
             <elementDefinition Id="531d2030-9141-4804-8a80-5d10632da624" />
             <represents>
@@ -698,6 +753,9 @@
           </lifeline>
           <lifeline Id="7073f5f7-27b1-4081-a827-62bfee68f01f" name="ImageManager" isActor="false" lifelineDisplayName="ImageManager">
             <elementDefinition Id="963c4aa2-2615-430f-bc6e-4cda88e63593" />
+            <represents>
+              <propertyMoniker Id="a16e45ef-0c5c-4e8a-874d-f180aa94c21a" />
+            </represents>
             <topLevelOccurrences>
               <executionOccurrenceSpecificationMoniker Id="e74543d7-5a10-483f-ae9e-a706d718a51d" LastKnownName="ExecutionOccurrenceSpecification59" />
               <executionOccurrenceSpecificationMoniker Id="fe59a1dc-bd78-4636-b2a1-5dcd3c8c0ad9" LastKnownName="ExecutionOccurrenceSpecification60" />
@@ -734,7 +792,7 @@
               <messageOccurrenceSpecificationMoniker Id="d00bc54b-6a4c-4098-af54-65093ba745ac" LastKnownName="MessageOccurrenceSpecification92" />
             </receiveEvent>
           </message>
-          <message Id="2ae9d321-c169-4bef-bc14-1bee34dfac34" name="author.RemovePayment(RegistGUID)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="2ae9d321-c169-4bef-bc14-1bee34dfac34" name="RemovePayment(RegistGUID)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ RemovePayment(RegistGUID)">
             <elementDefinition Id="fe094970-e617-4115-badd-86af3ad09e21" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="e3c04821-6ce2-4762-8f87-c6ee37999135" LastKnownName="MessageOccurrenceSpecification97" />
@@ -779,7 +837,7 @@
               <messageOccurrenceSpecificationMoniker Id="bc1cf006-5ba5-4d7d-b7b7-7f5145b79d5b" LastKnownName="MessageOccurrenceSpecification104" />
             </receiveEvent>
           </message>
-          <message Id="fcb67146-76ed-4778-9871-7ff6a6b40964" name="Remove(Filename) " messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="fcb67146-76ed-4778-9871-7ff6a6b40964" name="Remove(Filename) " messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ Remove(Filename)">
             <elementDefinition Id="604d1a8c-2ea1-479a-bcff-3caff5a30fce" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="bb2a7752-4fa9-44ee-a142-325e3c35f109" LastKnownName="MessageOccurrenceSpecification105" />
@@ -833,7 +891,7 @@
               <messageOccurrenceSpecificationMoniker Id="ee11401c-e210-443d-ac31-dd0a22e4afe8" LastKnownName="MessageOccurrenceSpecification92" />
             </receiveEvent>
           </message>
-          <message Id="ac41364b-c647-4f9c-a5c0-c1c9bb5d2ebc" name="author.UploadPayment(RegistGUID, Image)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="ac41364b-c647-4f9c-a5c0-c1c9bb5d2ebc" name="UploadPayment(RegistGUID, Image)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ UploadPayment(RegistGUID, Image)">
             <elementDefinition Id="32ca2e1f-30f4-4fcc-be39-f6ffe3b35b90" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="2e050dc1-05b6-4626-b6e4-c632bcc6e07a" LastKnownName="MessageOccurrenceSpecification55" />
@@ -884,6 +942,12 @@
             <elementDefinition Id="c12d855f-d23f-4b3a-bbd8-2c94884b9e5d" />
             <type_NamedElement>
               <referencedTypeMoniker Id="e7172ee3-96fc-4b0e-bf91-5b22e3ff3312" LastKnownName="IRegistrationable&lt;Registration&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="a16e45ef-0c5c-4e8a-874d-f180aa94c21a" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e83c4098-7800-45e8-869c-34afdc3078fe" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a7039793-fde1-4ff3-acfa-a39167ab9d9a" LastKnownName="ImageManager" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -994,8 +1058,39 @@
         <elementDefinition Id="bf446ea6-7afd-4087-98ae-5c1886796805" />
       </executionEvent>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a7039793-fde1-4ff3-acfa-a39167ab9d9a" name="ImageManager" isAbstract="false" isLeaf="false" cachedFullName="PSUPIC::ImageManager">
+        <elementDefinition Id="18320b14-3f88-4d90-8594-39df3dfa3ee3" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="fffccc01-3412-4cfc-a12d-353b34cb014c" name="PSUPIC">
     <elementDefinition Id="684ad25c-ed25-4a30-ada7-8a3045196f3e" />
+    <profileInstances>
+      <packageHasProfileInstances Id="00fb3221-ca1e-4632-ad80-5ea368e443dd">
+        <profileInstance Id="4474ffae-db0a-494f-a6ea-669b3c752a86" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ea08df55-3c91-4342-94d9-24eb9e2b25b1">
+        <profileInstance Id="d03c5fab-4ac6-4464-b429-bb88d115af1f" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="6dca34c8-3c60-456e-9ec6-51f5642ed929">
+        <profileInstance Id="51592554-4814-4b80-a28b-4d6487de6743" name="CSharpProfile">
+          <elementDefinition Id="6a6b14bc-99cd-4e02-89d0-3493a742697a" />
+        </profileInstance>
+        <elementDefinition Id="3758833f-ce01-4ff1-9e3a-28a29a22c335" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="8ebaf3f1-eade-45ca-b698-d9daca3dc33d">
+        <profileInstance Id="2a43e594-3fb5-4d7e-b2b7-eda85f7d9302" name="TextTemplateBindings">
+          <elementDefinition Id="b2766e79-6ea2-4f89-80c5-10df9b0338b3" />
+        </profileInstance>
+        <elementDefinition Id="ba081833-052c-4bcd-b4b4-4301dde9c6ca" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </SequenceDesignerModel>

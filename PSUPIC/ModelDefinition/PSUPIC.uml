@@ -3,6 +3,88 @@
   dslVersion="1.0.0.0"
   Id="684ad25c-ed25-4a30-ada7-8a3045196f3e"
   name="PSUPIC" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <appliedStereotypesInternal>
+    <stereotypeInstance
+      Id="c277aaf4-a30d-479f-b168-23faf8774435"
+      name="namespace"
+      profile="CSharpProfile">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="9a045454-0096-4700-89c1-06610ef7e14f">
+          <propertyInstance
+            Id="f3460534-38ad-4d8f-a654-bf847cd796ec"
+            name="BaseName" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="edaf4b92-271f-4598-b28c-621535295cc6">
+          <propertyInstance
+            Id="ed27d17d-16fa-4579-8aa1-2ad86f69df57"
+            name="ClrAttributes" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="79bcb4d5-d9c2-411d-a5e9-ae3da122e4c5">
+          <propertyInstance
+            Id="69e09f56-2990-4927-a6e8-fccd6334e9c8"
+            name="Usings" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance
+      Id="28c97757-49e7-42e0-aa6f-9cd613e75552"
+      name="TextTemplateBindings"
+      profile="TextTemplateBindings">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="5e72d6a7-786a-439e-b3ae-acf212b7cd83">
+          <propertyInstance
+            Id="0aa085d2-63df-4f6e-a1ac-034e9151406b"
+            name="Alias"
+            value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="0247ac30-3ce0-494c-a703-047248da5534">
+          <propertyInstance
+            Id="ccf30c76-65cd-4f8c-a380-27332b9dc507"
+            name="TemplateFilePath"
+            value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="38c419f6-ef08-43b3-a50a-0553561aac82">
+          <propertyInstance
+            Id="446c072b-3bf9-4eab-8be3-11dcc5029a87"
+            name="ProjectPath"
+            value="ClassTemplate=..\PSUPICLib\PSUPICLib.csproj|EnumTemplate=..\PSUPICLib\PSUPICLib.csproj|InterfaceTemplate=..\PSUPICLib\PSUPICLib.csproj|StructTemplate=..\PSUPICLib\PSUPICLib.csproj" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="c503c141-b6f6-42d7-a631-e0f263bf34ec">
+          <propertyInstance
+            Id="9a7f6bce-1de5-41e8-bec0-5dff4789a46d"
+            name="TargetDirectory"
+            value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="f6bd00cb-0beb-4cf7-9dc3-c8135662cfb0">
+          <propertyInstance
+            Id="0d5bd98e-bad6-4887-a75a-d889b2f081af"
+            name="TargetName"
+            value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="917bfee4-a3b6-48d7-90a1-6f2aff952384">
+          <propertyInstance
+            Id="0d60e243-f8a4-4ad1-826a-4fa14f063866"
+            name="Overwrite"
+            value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="bb6fc094-921f-4cc1-b253-c3555772702c">
+          <propertyInstance
+            Id="c0d40238-e19e-4196-b96e-7e5a3cf3e17f"
+            name="Parameters" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -16,12 +98,24 @@
         Id="532ea607-fb19-44b8-8502-3351b05452be"
         name="StandardProfileL3" />
     </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="3758833f-ce01-4ff1-9e3a-28a29a22c335">
+      <profileInstance
+        Id="6a6b14bc-99cd-4e02-89d0-3493a742697a"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="ba081833-052c-4bcd-b4b4-4301dde9c6ca">
+      <profileInstance
+        Id="b2766e79-6ea2-4f89-80c5-10df9b0338b3"
+        name="TextTemplateBindings" />
+    </packageHasProfileInstances>
   </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <interaction
         Id="50b83540-2eda-4555-b89c-d2e2c2af20e0"
-        name="Verification"
+        name="R2 - Verification"
         collapseFragmentsFlag="false"
         isActiveClass="false"
         isAbstract="false"
@@ -479,6 +573,11 @@
           <messageOccurrenceSpecification
             Id="a2bd15db-f5dd-4c92-8a7b-6a3e9d04173e"
             name="MessageOccurrenceSpecification17">
+            <event>
+              <sendOperationEventMoniker
+                Id="00ae5f52-1b87-4307-8b03-48e9f1fb1083"
+                LastKnownLocation="PSUPIC.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="281744df-dc44-48ad-84a2-a17e02e147ee"
@@ -489,6 +588,11 @@
           <messageOccurrenceSpecification
             Id="256c79c1-9391-418c-a548-8f0d0aa13c0c"
             name="MessageOccurrenceSpecification18">
+            <event>
+              <receiveOperationEventMoniker
+                Id="ecc82aad-0fe2-41e5-9dbc-8824915aa7eb"
+                LastKnownLocation="PSUPIC.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="6c82d727-9af5-4e6d-b20e-2b2b650f0fa7"
@@ -771,6 +875,11 @@
             name="Author"
             isActor="false"
             lifelineDisplayName="Author">
+            <represents>
+              <propertyMoniker
+                Id="41b38de3-5987-4987-8a9f-22ab0dd2757a"
+                LastKnownLocation="PSUPIC.uml" />
+            </represents>
             <topLevelOccurrences>
               <messageOccurrenceSpecificationMoniker
                 Id="bca12a81-7ee6-4280-b49b-1e18e2714ac4"
@@ -819,6 +928,11 @@
             name="PSUPICAuthen : IAuthentication&lt;Author&gt;"
             isActor="false"
             lifelineDisplayName="PSUPICAuthen : IAuthentication&lt;Author&gt;">
+            <represents>
+              <propertyMoniker
+                Id="b39a3566-4e74-4f8e-a05f-00dd82734e32"
+                LastKnownLocation="PSUPIC.uml" />
+            </represents>
             <topLevelOccurrences>
               <executionOccurrenceSpecificationMoniker
                 Id="833e0623-1883-4d1f-8cb8-a52cd4c9d700"
@@ -945,10 +1059,11 @@
           </message>
           <message
             Id="77ad073a-466a-4eb1-8610-02dcab2d33dc"
-            name="Verify (acronym, paperID, authorEmail)"
+            name="Verify(acronym, paperID, authorEmail)"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ Verify(acronym, paperID, authorEmail)">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="a2bd15db-f5dd-4c92-8a7b-6a3e9d04173e"
@@ -1058,6 +1173,40 @@
             </receiveEvent>
           </message>
         </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="b39a3566-4e74-4f8e-a05f-00dd82734e32"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="00c79b1a-3d4c-4752-9c08-27e540dbd8b4"
+                LastKnownName="IAuthentication&lt;Author&gt;"
+                LastKnownLocation="PSUPIC.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="41b38de3-5987-4987-8a9f-22ab0dd2757a"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="23c6430c-bd88-4a15-827e-ef8e31ef8d2d"
+                LastKnownName="Author"
+                LastKnownLocation="PSUPIC.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
       </interaction>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1103,7 +1252,7 @@
     <packageHasNamedElement>
       <interaction
         Id="83036d4d-a2c5-4868-95de-41f839a22cf3"
-        name="RegistrationS2GetRegistResult"
+        name="R3 - Author Regist"
         collapseFragmentsFlag="false"
         isActiveClass="false"
         isAbstract="false"
@@ -2036,6 +2185,11 @@
           <messageOccurrenceSpecification
             Id="bf097065-5ae8-4fe2-bc77-d9952d1c645d"
             name="MessageOccurrenceSpecification28">
+            <event>
+              <receiveOperationEventMoniker
+                Id="85551ce7-acd4-4e4a-af24-db699d06d7a9"
+                LastKnownLocation="PSUPIC.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="29a3ed9b-594a-4b92-b10a-cc81ce95bb70"
@@ -2046,6 +2200,11 @@
           <messageOccurrenceSpecification
             Id="bbec6216-559e-4dc9-9a46-842f91aad484"
             name="MessageOccurrenceSpecification27">
+            <event>
+              <sendOperationEventMoniker
+                Id="0ff7e59d-3210-48fb-b125-9aae48cf4215"
+                LastKnownLocation="PSUPIC.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="eedfcef3-2786-4fa9-a6aa-ee280cfa1130"
@@ -2244,6 +2403,11 @@
             name="Author"
             isActor="false"
             lifelineDisplayName="Author">
+            <represents>
+              <propertyMoniker
+                Id="46143cad-4cb5-4f3b-a685-1d84becf3df9"
+                LastKnownLocation="PSUPIC.uml" />
+            </represents>
             <topLevelOccurrences>
               <interactionUseOccurrenceSpecificationMoniker
                 Id="f550968e-4298-416b-9529-ae57cca97468"
@@ -2300,6 +2464,11 @@
             name="Author : ISubmissionManageable"
             isActor="false"
             lifelineDisplayName="Author : ISubmissionManageable">
+            <represents>
+              <propertyMoniker
+                Id="276c14a7-a6a8-46e7-86d3-6cccead151fa"
+                LastKnownLocation="PSUPIC.uml" />
+            </represents>
             <topLevelOccurrences>
               <executionOccurrenceSpecificationMoniker
                 Id="fda7fbde-7678-4a40-8c2f-c82317640551"
@@ -2316,6 +2485,11 @@
             name="Author : IRegistrationable&lt;Registration&gt;"
             isActor="false"
             lifelineDisplayName="Author : IRegistrationable&lt;Registration&gt;">
+            <represents>
+              <propertyMoniker
+                Id="47b80282-f581-4074-bafd-a1fb4964bf0f"
+                LastKnownLocation="PSUPIC.uml" />
+            </represents>
             <topLevelOccurrences>
               <executionOccurrenceSpecificationMoniker
                 Id="4e454fa6-22b1-4c89-9677-9a42291c0cf1"
@@ -2420,7 +2594,7 @@
           </message>
           <message
             Id="3a077642-2f94-4eb0-9652-9ea9ad0dfea4"
-            name="autor.GetSubmissions(acronym)"
+            name="GetSubmissions(acronym)"
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="false">
@@ -2572,10 +2746,11 @@
           </message>
           <message
             Id="4dea2439-6da9-41ab-b445-cc473a57ba5f"
-            name="author.Registration(RegistrationObj)"
+            name="SubmitRegistration(RegistrationObj)"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ SubmitRegistration(RegistrationObj)">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="bbec6216-559e-4dc9-9a46-842f91aad484"
@@ -2666,6 +2841,56 @@
             </receiveEvent>
           </message>
         </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="276c14a7-a6a8-46e7-86d3-6cccead151fa"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="6b04d172-2595-41e6-9762-3e8bd47c60aa"
+                LastKnownName="ISubmissionManageable"
+                LastKnownLocation="PSUPIC.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="47b80282-f581-4074-bafd-a1fb4964bf0f"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="2730c0ac-e95c-4310-9c13-26697b437474"
+                LastKnownName="IRegistrationable&lt;Registration&gt;"
+                LastKnownLocation="PSUPIC.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="46143cad-4cb5-4f3b-a685-1d84becf3df9"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="23c6430c-bd88-4a15-827e-ef8e31ef8d2d"
+                LastKnownName="Author"
+                LastKnownLocation="PSUPIC.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
       </interaction>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -2711,7 +2936,7 @@
     <packageHasNamedElement>
       <interaction
         Id="facbece2-b24c-4b98-ba6b-f4c045cd380b"
-        name="Get Registration Invoice"
+        name="R4 - Get Registration Invoice"
         collapseFragmentsFlag="false"
         isActiveClass="false"
         isAbstract="false"
@@ -2796,12 +3021,12 @@
                 LastKnownName="MessageOccurrenceSpecification46"
                 LastKnownLocation="PSUPIC.uml" />
               <messageOccurrenceSpecificationMoniker
-                Id="a6e8ccf9-0be9-4e22-8975-cc98953e8aba"
-                LastKnownName="MessageOccurrenceSpecification79"
+                Id="f966650c-b6b0-4fa5-83da-622998a37bc8"
+                LastKnownName="MessageOccurrenceSpecification93"
                 LastKnownLocation="PSUPIC.uml" />
               <messageOccurrenceSpecificationMoniker
-                Id="18f57e5c-9442-46d8-bd51-5ee825484d4d"
-                LastKnownName="MessageOccurrenceSpecification82"
+                Id="3f853254-39aa-438a-b288-9a834c8b71cb"
+                LastKnownName="MessageOccurrenceSpecification96"
                 LastKnownLocation="PSUPIC.uml" />
               <messageOccurrenceSpecificationMoniker
                 Id="84dc00c2-ecf2-402a-9643-6976fc5718a0"
@@ -2848,86 +3073,96 @@
             </covered>
           </messageOccurrenceSpecification>
           <behaviorExecutionSpecification
-            Id="694f338d-db7e-4fb5-a2ad-d6570e97128e"
-            name="BehaviorExecutionSpecification23">
+            Id="6d3e6530-548c-4d61-9217-cd0e5d1ac6c7"
+            name="BehaviorExecutionSpecification27">
             <coveredLifelines>
               <lifelineMoniker
-                Id="fec2ef99-6f86-4649-a91a-3496f8945a1d"
+                Id="47f6c3d2-dfdc-4b55-a312-2d89ea92bd63"
                 LastKnownName="Author : IRegistrationable&lt;Registration&gt;"
                 LastKnownLocation="PSUPIC.uml" />
             </coveredLifelines>
             <finish>
               <executionOccurrenceSpecificationMoniker
-                Id="dc6de1a2-8ba6-4866-a323-53d1258e5baa"
-                LastKnownName="ExecutionOccurrenceSpecification46"
+                Id="e41c4dad-e60f-4cf8-9c6f-7b8ccb6fb3a0"
+                LastKnownName="ExecutionOccurrenceSpecification54"
                 LastKnownLocation="PSUPIC.uml" />
             </finish>
             <start>
               <executionOccurrenceSpecificationMoniker
-                Id="f794f387-0802-47de-abc7-5bd57349ce69"
-                LastKnownName="ExecutionOccurrenceSpecification45"
+                Id="87219eed-ef0c-470e-810a-31f3153868d9"
+                LastKnownName="ExecutionOccurrenceSpecification53"
                 LastKnownLocation="PSUPIC.uml" />
             </start>
             <nestedOccurrences>
               <messageOccurrenceSpecificationMoniker
-                Id="0ee39853-cb1d-4f4c-b2a8-1743608a4517"
-                LastKnownName="MessageOccurrenceSpecification80"
+                Id="3eb01040-5645-4f47-8eec-92505186183e"
+                LastKnownName="MessageOccurrenceSpecification94"
                 LastKnownLocation="PSUPIC.uml" />
               <messageOccurrenceSpecificationMoniker
-                Id="6ca67d76-5ae2-4f28-a710-1f3714eec51b"
-                LastKnownName="MessageOccurrenceSpecification83"
+                Id="f24b9f45-f9c0-4d55-a36d-274bd7486c98"
+                LastKnownName="MessageOccurrenceSpecification97"
                 LastKnownLocation="PSUPIC.uml" />
               <messageOccurrenceSpecificationMoniker
-                Id="572ec8b3-f7ba-4982-a39f-063432b25693"
-                LastKnownName="MessageOccurrenceSpecification86"
+                Id="dfb35ef3-8103-40fa-a691-f6da29d37bbd"
+                LastKnownName="MessageOccurrenceSpecification100"
                 LastKnownLocation="PSUPIC.uml" />
               <messageOccurrenceSpecificationMoniker
-                Id="2ab030be-1444-46d8-a63b-94009b1b3762"
-                LastKnownName="MessageOccurrenceSpecification81"
+                Id="d1ee60d2-e461-4102-83fb-2ebc0b960f96"
+                LastKnownName="MessageOccurrenceSpecification95"
                 LastKnownLocation="PSUPIC.uml" />
             </nestedOccurrences>
           </behaviorExecutionSpecification>
           <executionOccurrenceSpecification
-            Id="f794f387-0802-47de-abc7-5bd57349ce69"
-            name="ExecutionOccurrenceSpecification45">
+            Id="87219eed-ef0c-470e-810a-31f3153868d9"
+            name="ExecutionOccurrenceSpecification53">
             <event>
               <executionOccurrenceSpecificationReferencesEvent>
                 <executionEventMoniker
-                  Id="3ec296e0-ceea-4478-ac21-31c6872e29cc"
+                  Id="5b38d9e1-2fc3-4e8e-9932-f56c698b2e50"
                   LastKnownName="ExecutionEvent"
                   LastKnownLocation="PSUPIC.uml" />
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
               <lifelineMoniker
-                Id="fec2ef99-6f86-4649-a91a-3496f8945a1d"
+                Id="47f6c3d2-dfdc-4b55-a312-2d89ea92bd63"
                 LastKnownName="Author : IRegistrationable&lt;Registration&gt;"
                 LastKnownLocation="PSUPIC.uml" />
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="a6e8ccf9-0be9-4e22-8975-cc98953e8aba"
-            name="MessageOccurrenceSpecification79">
+            Id="3eb01040-5645-4f47-8eec-92505186183e"
+            name="MessageOccurrenceSpecification94">
+            <event>
+              <receiveOperationEventMoniker
+                Id="84c1ca73-3fd3-43e5-81f9-ae094397b7c2"
+                LastKnownLocation="PSUPIC.uml" />
+            </event>
             <covered>
               <lifelineMoniker
-                Id="00f132cf-24d8-4de2-b1c4-2d8df08f73ee"
-                LastKnownName="PSUPIC2008Registration : Page"
+                Id="47f6c3d2-dfdc-4b55-a312-2d89ea92bd63"
+                LastKnownName="Author : IRegistrationable&lt;Registration&gt;"
                 LastKnownLocation="PSUPIC.uml" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="0ee39853-cb1d-4f4c-b2a8-1743608a4517"
-            name="MessageOccurrenceSpecification80">
+            Id="f966650c-b6b0-4fa5-83da-622998a37bc8"
+            name="MessageOccurrenceSpecification93">
+            <event>
+              <sendOperationEventMoniker
+                Id="56dd99a5-5330-4630-a8b3-30bb862b22b5"
+                LastKnownLocation="PSUPIC.uml" />
+            </event>
             <covered>
               <lifelineMoniker
-                Id="fec2ef99-6f86-4649-a91a-3496f8945a1d"
-                LastKnownName="Author : IRegistrationable&lt;Registration&gt;"
+                Id="00f132cf-24d8-4de2-b1c4-2d8df08f73ee"
+                LastKnownName="PSUPIC2008Registration : Page"
                 LastKnownLocation="PSUPIC.uml" />
             </covered>
           </messageOccurrenceSpecification>
           <behaviorExecutionSpecification
-            Id="53c67452-b9c0-4eea-8cc7-f96d2cfc35d0"
-            name="BehaviorExecutionSpecification24">
+            Id="95f6d6c2-f202-401f-8e7c-457e5b908471"
+            name="BehaviorExecutionSpecification28">
             <coveredLifelines>
               <lifelineMoniker
                 Id="b04c5e9f-9301-4be2-87a7-acbe83ecd0a6"
@@ -2936,34 +3171,34 @@
             </coveredLifelines>
             <finish>
               <executionOccurrenceSpecificationMoniker
-                Id="7857ea86-7eb5-4adc-bd11-7858b32ea8fb"
-                LastKnownName="ExecutionOccurrenceSpecification48"
+                Id="0b644134-66e7-4d49-aa02-c40257d2ab5a"
+                LastKnownName="ExecutionOccurrenceSpecification56"
                 LastKnownLocation="PSUPIC.uml" />
             </finish>
             <start>
               <executionOccurrenceSpecificationMoniker
-                Id="cfae064a-7c30-4548-ae77-b4ee9bff9fa5"
-                LastKnownName="ExecutionOccurrenceSpecification47"
+                Id="31542def-92c1-462c-8ee1-b6e70bfa08e0"
+                LastKnownName="ExecutionOccurrenceSpecification55"
                 LastKnownLocation="PSUPIC.uml" />
             </start>
             <nestedOccurrences>
               <messageOccurrenceSpecificationMoniker
-                Id="6a88a798-780c-4f78-9f7f-3154a846ca6d"
-                LastKnownName="MessageOccurrenceSpecification84"
+                Id="090b8fb9-5059-453e-86bc-e1334ca55bbc"
+                LastKnownName="MessageOccurrenceSpecification98"
                 LastKnownLocation="PSUPIC.uml" />
               <messageOccurrenceSpecificationMoniker
-                Id="964e99ec-9352-4266-9cbe-5c5b1895e681"
-                LastKnownName="MessageOccurrenceSpecification85"
+                Id="f51b3ba1-4c2d-49e3-8a0d-c9b292e3f3ef"
+                LastKnownName="MessageOccurrenceSpecification99"
                 LastKnownLocation="PSUPIC.uml" />
             </nestedOccurrences>
           </behaviorExecutionSpecification>
           <executionOccurrenceSpecification
-            Id="cfae064a-7c30-4548-ae77-b4ee9bff9fa5"
-            name="ExecutionOccurrenceSpecification47">
+            Id="31542def-92c1-462c-8ee1-b6e70bfa08e0"
+            name="ExecutionOccurrenceSpecification55">
             <event>
               <executionOccurrenceSpecificationReferencesEvent>
                 <executionEventMoniker
-                  Id="2e30da7e-f289-4637-9945-f69453549a5b"
+                  Id="4358e588-ac2b-4262-a76e-e0b1a2267b81"
                   LastKnownName="ExecutionEvent"
                   LastKnownLocation="PSUPIC.uml" />
               </executionOccurrenceSpecificationReferencesEvent>
@@ -2976,8 +3211,18 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="6a88a798-780c-4f78-9f7f-3154a846ca6d"
-            name="MessageOccurrenceSpecification84">
+            Id="f24b9f45-f9c0-4d55-a36d-274bd7486c98"
+            name="MessageOccurrenceSpecification97">
+            <covered>
+              <lifelineMoniker
+                Id="47f6c3d2-dfdc-4b55-a312-2d89ea92bd63"
+                LastKnownName="Author : IRegistrationable&lt;Registration&gt;"
+                LastKnownLocation="PSUPIC.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="090b8fb9-5059-453e-86bc-e1334ca55bbc"
+            name="MessageOccurrenceSpecification98">
             <covered>
               <lifelineMoniker
                 Id="b04c5e9f-9301-4be2-87a7-acbe83ecd0a6"
@@ -2986,28 +3231,18 @@
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="6ca67d76-5ae2-4f28-a710-1f3714eec51b"
-            name="MessageOccurrenceSpecification83">
+            Id="dfb35ef3-8103-40fa-a691-f6da29d37bbd"
+            name="MessageOccurrenceSpecification100">
             <covered>
               <lifelineMoniker
-                Id="fec2ef99-6f86-4649-a91a-3496f8945a1d"
+                Id="47f6c3d2-dfdc-4b55-a312-2d89ea92bd63"
                 LastKnownName="Author : IRegistrationable&lt;Registration&gt;"
                 LastKnownLocation="PSUPIC.uml" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="572ec8b3-f7ba-4982-a39f-063432b25693"
-            name="MessageOccurrenceSpecification86">
-            <covered>
-              <lifelineMoniker
-                Id="fec2ef99-6f86-4649-a91a-3496f8945a1d"
-                LastKnownName="Author : IRegistrationable&lt;Registration&gt;"
-                LastKnownLocation="PSUPIC.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="964e99ec-9352-4266-9cbe-5c5b1895e681"
-            name="MessageOccurrenceSpecification85">
+            Id="f51b3ba1-4c2d-49e3-8a0d-c9b292e3f3ef"
+            name="MessageOccurrenceSpecification99">
             <covered>
               <lifelineMoniker
                 Id="b04c5e9f-9301-4be2-87a7-acbe83ecd0a6"
@@ -3016,12 +3251,12 @@
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification
-            Id="7857ea86-7eb5-4adc-bd11-7858b32ea8fb"
-            name="ExecutionOccurrenceSpecification48">
+            Id="0b644134-66e7-4d49-aa02-c40257d2ab5a"
+            name="ExecutionOccurrenceSpecification56">
             <event>
               <executionOccurrenceSpecificationReferencesEvent>
                 <executionEventMoniker
-                  Id="0c3af79e-883a-4c35-aa07-96cf7af530b4"
+                  Id="930cf271-8765-442e-9e57-19e6f8028cbc"
                   LastKnownName="ExecutionEvent"
                   LastKnownLocation="PSUPIC.uml" />
               </executionOccurrenceSpecificationReferencesEvent>
@@ -3034,8 +3269,8 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="18f57e5c-9442-46d8-bd51-5ee825484d4d"
-            name="MessageOccurrenceSpecification82">
+            Id="3f853254-39aa-438a-b288-9a834c8b71cb"
+            name="MessageOccurrenceSpecification96">
             <covered>
               <lifelineMoniker
                 Id="00f132cf-24d8-4de2-b1c4-2d8df08f73ee"
@@ -3044,29 +3279,29 @@
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="2ab030be-1444-46d8-a63b-94009b1b3762"
-            name="MessageOccurrenceSpecification81">
+            Id="d1ee60d2-e461-4102-83fb-2ebc0b960f96"
+            name="MessageOccurrenceSpecification95">
             <covered>
               <lifelineMoniker
-                Id="fec2ef99-6f86-4649-a91a-3496f8945a1d"
+                Id="47f6c3d2-dfdc-4b55-a312-2d89ea92bd63"
                 LastKnownName="Author : IRegistrationable&lt;Registration&gt;"
                 LastKnownLocation="PSUPIC.uml" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification
-            Id="dc6de1a2-8ba6-4866-a323-53d1258e5baa"
-            name="ExecutionOccurrenceSpecification46">
+            Id="e41c4dad-e60f-4cf8-9c6f-7b8ccb6fb3a0"
+            name="ExecutionOccurrenceSpecification54">
             <event>
               <executionOccurrenceSpecificationReferencesEvent>
                 <executionEventMoniker
-                  Id="4fb60f29-504a-445e-a3ae-f477f7e9a14d"
+                  Id="50d29395-c4a2-4fc0-9c9a-6c081c9a5ed7"
                   LastKnownName="ExecutionEvent"
                   LastKnownLocation="PSUPIC.uml" />
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
               <lifelineMoniker
-                Id="fec2ef99-6f86-4649-a91a-3496f8945a1d"
+                Id="47f6c3d2-dfdc-4b55-a312-2d89ea92bd63"
                 LastKnownName="Author : IRegistrationable&lt;Registration&gt;"
                 LastKnownLocation="PSUPIC.uml" />
             </covered>
@@ -3148,12 +3383,12 @@
                 LastKnownName="ExecutionOccurrenceSpecification52"
                 LastKnownLocation="PSUPIC.uml" />
               <messageOccurrenceSpecificationMoniker
-                Id="c3030124-92f4-4190-9477-318e3845763e"
-                LastKnownName="MessageOccurrenceSpecification55"
+                Id="2f7884ab-710d-41ae-a3b3-45d0a7e0f1c1"
+                LastKnownName="MessageOccurrenceSpecification101"
                 LastKnownLocation="PSUPIC.uml" />
               <messageOccurrenceSpecificationMoniker
-                Id="c80594b0-bab6-4f0b-b681-dbe0114f0a60"
-                LastKnownName="MessageOccurrenceSpecification58"
+                Id="9916b308-f496-4ea8-9053-b4153c824d34"
+                LastKnownName="MessageOccurrenceSpecification104"
                 LastKnownLocation="PSUPIC.uml" />
               <messageOccurrenceSpecificationMoniker
                 Id="7f338174-8d16-4997-b128-6da1221a05a2"
@@ -3284,86 +3519,96 @@
             </covered>
           </executionOccurrenceSpecification>
           <behaviorExecutionSpecification
-            Id="ef7f2229-44ab-457d-a1f5-159241357504"
-            name="BehaviorExecutionSpecification16">
+            Id="59d51b8a-02bd-4ba7-82ec-db59d1c7ec36"
+            name="BehaviorExecutionSpecification29">
             <coveredLifelines>
               <lifelineMoniker
-                Id="fec2ef99-6f86-4649-a91a-3496f8945a1d"
+                Id="47f6c3d2-dfdc-4b55-a312-2d89ea92bd63"
                 LastKnownName="Author : IRegistrationable&lt;Registration&gt;"
                 LastKnownLocation="PSUPIC.uml" />
             </coveredLifelines>
             <finish>
               <executionOccurrenceSpecificationMoniker
-                Id="c6836b3a-cfc9-4a83-a3be-789859d14477"
-                LastKnownName="ExecutionOccurrenceSpecification32"
+                Id="e1f5fac4-e2d2-46ac-9798-dd250740088c"
+                LastKnownName="ExecutionOccurrenceSpecification58"
                 LastKnownLocation="PSUPIC.uml" />
             </finish>
             <start>
               <executionOccurrenceSpecificationMoniker
-                Id="b8bd9b6a-95a4-478c-bc04-75516acdd6cc"
-                LastKnownName="ExecutionOccurrenceSpecification31"
+                Id="ec6db5c0-5131-4f61-9d76-606cbedb1c43"
+                LastKnownName="ExecutionOccurrenceSpecification57"
                 LastKnownLocation="PSUPIC.uml" />
             </start>
             <nestedOccurrences>
               <messageOccurrenceSpecificationMoniker
-                Id="92fa77e6-fd1c-433a-8b53-798f073ffc56"
-                LastKnownName="MessageOccurrenceSpecification56"
+                Id="675ef736-c265-49bf-810f-fa159f1717e1"
+                LastKnownName="MessageOccurrenceSpecification102"
                 LastKnownLocation="PSUPIC.uml" />
               <messageOccurrenceSpecificationMoniker
-                Id="03d51071-71ac-45d6-9de6-2f55c31f0dd8"
-                LastKnownName="MessageOccurrenceSpecification59"
+                Id="8f4e68a4-72b3-40c4-9668-78f3ee7a20fe"
+                LastKnownName="MessageOccurrenceSpecification105"
                 LastKnownLocation="PSUPIC.uml" />
               <messageOccurrenceSpecificationMoniker
-                Id="f3315588-7c63-4088-b3a8-e5bfe22f8ff5"
-                LastKnownName="MessageOccurrenceSpecification62"
+                Id="a9f4c449-6c92-4dfa-a2b0-4461c1c834fb"
+                LastKnownName="MessageOccurrenceSpecification108"
                 LastKnownLocation="PSUPIC.uml" />
               <messageOccurrenceSpecificationMoniker
-                Id="0070a29b-09a3-4349-b521-cc5b0c0c25d4"
-                LastKnownName="MessageOccurrenceSpecification57"
+                Id="e282023a-0037-495b-a2cf-2935b2befba9"
+                LastKnownName="MessageOccurrenceSpecification103"
                 LastKnownLocation="PSUPIC.uml" />
             </nestedOccurrences>
           </behaviorExecutionSpecification>
           <executionOccurrenceSpecification
-            Id="b8bd9b6a-95a4-478c-bc04-75516acdd6cc"
-            name="ExecutionOccurrenceSpecification31">
+            Id="ec6db5c0-5131-4f61-9d76-606cbedb1c43"
+            name="ExecutionOccurrenceSpecification57">
             <event>
               <executionOccurrenceSpecificationReferencesEvent>
                 <executionEventMoniker
-                  Id="507cfb06-3368-46b9-be5c-a2d26a60940e"
+                  Id="561f952d-aa1f-4239-a58c-088a21a78b36"
                   LastKnownName="ExecutionEvent"
                   LastKnownLocation="PSUPIC.uml" />
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
               <lifelineMoniker
-                Id="fec2ef99-6f86-4649-a91a-3496f8945a1d"
+                Id="47f6c3d2-dfdc-4b55-a312-2d89ea92bd63"
                 LastKnownName="Author : IRegistrationable&lt;Registration&gt;"
                 LastKnownLocation="PSUPIC.uml" />
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="c3030124-92f4-4190-9477-318e3845763e"
-            name="MessageOccurrenceSpecification55">
+            Id="675ef736-c265-49bf-810f-fa159f1717e1"
+            name="MessageOccurrenceSpecification102">
+            <event>
+              <receiveOperationEventMoniker
+                Id="08bd1bab-3559-41ff-bf35-395901dd9785"
+                LastKnownLocation="PSUPIC.uml" />
+            </event>
             <covered>
               <lifelineMoniker
-                Id="1016c400-01f4-4d4f-a285-8bda9282302c"
-                LastKnownName="PSUPIC2008RegistDetail : Page"
+                Id="47f6c3d2-dfdc-4b55-a312-2d89ea92bd63"
+                LastKnownName="Author : IRegistrationable&lt;Registration&gt;"
                 LastKnownLocation="PSUPIC.uml" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="92fa77e6-fd1c-433a-8b53-798f073ffc56"
-            name="MessageOccurrenceSpecification56">
+            Id="2f7884ab-710d-41ae-a3b3-45d0a7e0f1c1"
+            name="MessageOccurrenceSpecification101">
+            <event>
+              <sendOperationEventMoniker
+                Id="2fd187a0-84f3-4d7b-b06f-6a527d8edfe4"
+                LastKnownLocation="PSUPIC.uml" />
+            </event>
             <covered>
               <lifelineMoniker
-                Id="fec2ef99-6f86-4649-a91a-3496f8945a1d"
-                LastKnownName="Author : IRegistrationable&lt;Registration&gt;"
+                Id="1016c400-01f4-4d4f-a285-8bda9282302c"
+                LastKnownName="PSUPIC2008RegistDetail : Page"
                 LastKnownLocation="PSUPIC.uml" />
             </covered>
           </messageOccurrenceSpecification>
           <behaviorExecutionSpecification
-            Id="98035662-b7ae-4303-a7a8-dec2aadab1bb"
-            name="BehaviorExecutionSpecification17">
+            Id="bb26634c-32b9-4bdc-b3e6-0b9fcf0e4451"
+            name="BehaviorExecutionSpecification30">
             <coveredLifelines>
               <lifelineMoniker
                 Id="b04c5e9f-9301-4be2-87a7-acbe83ecd0a6"
@@ -3372,34 +3617,34 @@
             </coveredLifelines>
             <finish>
               <executionOccurrenceSpecificationMoniker
-                Id="0d6aab54-c5cf-4d0f-aa0e-1ff9530315e3"
-                LastKnownName="ExecutionOccurrenceSpecification34"
+                Id="c33ee759-3f44-49a9-b941-3b245319c0cf"
+                LastKnownName="ExecutionOccurrenceSpecification60"
                 LastKnownLocation="PSUPIC.uml" />
             </finish>
             <start>
               <executionOccurrenceSpecificationMoniker
-                Id="2f1e66df-b40b-49ca-a483-682670a6d9c4"
-                LastKnownName="ExecutionOccurrenceSpecification33"
+                Id="c92593ba-18a9-4d07-baf5-bad719a427b6"
+                LastKnownName="ExecutionOccurrenceSpecification59"
                 LastKnownLocation="PSUPIC.uml" />
             </start>
             <nestedOccurrences>
               <messageOccurrenceSpecificationMoniker
-                Id="fbf6f590-7aeb-41ea-b386-74422e998500"
-                LastKnownName="MessageOccurrenceSpecification60"
+                Id="56eba6d6-89d5-49ee-b962-068a55b47884"
+                LastKnownName="MessageOccurrenceSpecification106"
                 LastKnownLocation="PSUPIC.uml" />
               <messageOccurrenceSpecificationMoniker
-                Id="10e2768e-397f-43a2-a600-1d7fc3d1b42a"
-                LastKnownName="MessageOccurrenceSpecification61"
+                Id="d5ca2953-6641-48f5-abf7-c686cd797baa"
+                LastKnownName="MessageOccurrenceSpecification107"
                 LastKnownLocation="PSUPIC.uml" />
             </nestedOccurrences>
           </behaviorExecutionSpecification>
           <executionOccurrenceSpecification
-            Id="2f1e66df-b40b-49ca-a483-682670a6d9c4"
-            name="ExecutionOccurrenceSpecification33">
+            Id="c92593ba-18a9-4d07-baf5-bad719a427b6"
+            name="ExecutionOccurrenceSpecification59">
             <event>
               <executionOccurrenceSpecificationReferencesEvent>
                 <executionEventMoniker
-                  Id="0936594b-ac73-4929-b348-1b5409c9adaa"
+                  Id="4ddf46a4-e871-4e16-99e5-2e24abd65a75"
                   LastKnownName="ExecutionEvent"
                   LastKnownLocation="PSUPIC.uml" />
               </executionOccurrenceSpecificationReferencesEvent>
@@ -3412,8 +3657,8 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="fbf6f590-7aeb-41ea-b386-74422e998500"
-            name="MessageOccurrenceSpecification60">
+            Id="56eba6d6-89d5-49ee-b962-068a55b47884"
+            name="MessageOccurrenceSpecification106">
             <covered>
               <lifelineMoniker
                 Id="b04c5e9f-9301-4be2-87a7-acbe83ecd0a6"
@@ -3422,42 +3667,42 @@
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="03d51071-71ac-45d6-9de6-2f55c31f0dd8"
-            name="MessageOccurrenceSpecification59">
+            Id="8f4e68a4-72b3-40c4-9668-78f3ee7a20fe"
+            name="MessageOccurrenceSpecification105">
             <covered>
               <lifelineMoniker
-                Id="fec2ef99-6f86-4649-a91a-3496f8945a1d"
+                Id="47f6c3d2-dfdc-4b55-a312-2d89ea92bd63"
                 LastKnownName="Author : IRegistrationable&lt;Registration&gt;"
                 LastKnownLocation="PSUPIC.uml" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="f3315588-7c63-4088-b3a8-e5bfe22f8ff5"
-            name="MessageOccurrenceSpecification62">
-            <covered>
-              <lifelineMoniker
-                Id="fec2ef99-6f86-4649-a91a-3496f8945a1d"
-                LastKnownName="Author : IRegistrationable&lt;Registration&gt;"
-                LastKnownLocation="PSUPIC.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="10e2768e-397f-43a2-a600-1d7fc3d1b42a"
-            name="MessageOccurrenceSpecification61">
+            Id="d5ca2953-6641-48f5-abf7-c686cd797baa"
+            name="MessageOccurrenceSpecification107">
             <covered>
               <lifelineMoniker
                 Id="b04c5e9f-9301-4be2-87a7-acbe83ecd0a6"
                 LastKnownName="db.Registration"
+                LastKnownLocation="PSUPIC.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a9f4c449-6c92-4dfa-a2b0-4461c1c834fb"
+            name="MessageOccurrenceSpecification108">
+            <covered>
+              <lifelineMoniker
+                Id="47f6c3d2-dfdc-4b55-a312-2d89ea92bd63"
+                LastKnownName="Author : IRegistrationable&lt;Registration&gt;"
                 LastKnownLocation="PSUPIC.uml" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification
-            Id="0d6aab54-c5cf-4d0f-aa0e-1ff9530315e3"
-            name="ExecutionOccurrenceSpecification34">
+            Id="c33ee759-3f44-49a9-b941-3b245319c0cf"
+            name="ExecutionOccurrenceSpecification60">
             <event>
               <executionOccurrenceSpecificationReferencesEvent>
                 <executionEventMoniker
-                  Id="2f9b3a23-85f4-4f99-9986-4f3fa416633c"
+                  Id="a9279267-0e00-4218-8c52-4417649c7d7d"
                   LastKnownName="ExecutionEvent"
                   LastKnownLocation="PSUPIC.uml" />
               </executionOccurrenceSpecificationReferencesEvent>
@@ -3470,8 +3715,18 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="c80594b0-bab6-4f0b-b681-dbe0114f0a60"
-            name="MessageOccurrenceSpecification58">
+            Id="e282023a-0037-495b-a2cf-2935b2befba9"
+            name="MessageOccurrenceSpecification103">
+            <covered>
+              <lifelineMoniker
+                Id="47f6c3d2-dfdc-4b55-a312-2d89ea92bd63"
+                LastKnownName="Author : IRegistrationable&lt;Registration&gt;"
+                LastKnownLocation="PSUPIC.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9916b308-f496-4ea8-9053-b4153c824d34"
+            name="MessageOccurrenceSpecification104">
             <covered>
               <lifelineMoniker
                 Id="1016c400-01f4-4d4f-a285-8bda9282302c"
@@ -3479,44 +3734,24 @@
                 LastKnownLocation="PSUPIC.uml" />
             </covered>
           </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="0070a29b-09a3-4349-b521-cc5b0c0c25d4"
-            name="MessageOccurrenceSpecification57">
-            <covered>
-              <lifelineMoniker
-                Id="fec2ef99-6f86-4649-a91a-3496f8945a1d"
-                LastKnownName="Author : IRegistrationable&lt;Registration&gt;"
-                LastKnownLocation="PSUPIC.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
           <executionOccurrenceSpecification
-            Id="c6836b3a-cfc9-4a83-a3be-789859d14477"
-            name="ExecutionOccurrenceSpecification32">
+            Id="e1f5fac4-e2d2-46ac-9798-dd250740088c"
+            name="ExecutionOccurrenceSpecification58">
             <event>
               <executionOccurrenceSpecificationReferencesEvent>
                 <executionEventMoniker
-                  Id="3026bd49-bb44-486a-b316-d054a31f1e42"
+                  Id="202ab202-7e61-4d61-84cb-3186b1da7efd"
                   LastKnownName="ExecutionEvent"
                   LastKnownLocation="PSUPIC.uml" />
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
               <lifelineMoniker
-                Id="fec2ef99-6f86-4649-a91a-3496f8945a1d"
+                Id="47f6c3d2-dfdc-4b55-a312-2d89ea92bd63"
                 LastKnownName="Author : IRegistrationable&lt;Registration&gt;"
                 LastKnownLocation="PSUPIC.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="7f338174-8d16-4997-b128-6da1221a05a2"
-            name="MessageOccurrenceSpecification89">
-            <covered>
-              <lifelineMoniker
-                Id="1016c400-01f4-4d4f-a285-8bda9282302c"
-                LastKnownName="PSUPIC2008RegistDetail : Page"
-                LastKnownLocation="PSUPIC.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
             Id="8ef85a68-4eb6-4ac3-856a-071be1b10e14"
             name="MessageOccurrenceSpecification90">
@@ -3524,6 +3759,16 @@
               <lifelineMoniker
                 Id="d13980f8-1048-4402-a99a-1913813cbf69"
                 LastKnownName="Author : Author"
+                LastKnownLocation="PSUPIC.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7f338174-8d16-4997-b128-6da1221a05a2"
+            name="MessageOccurrenceSpecification89">
+            <covered>
+              <lifelineMoniker
+                Id="1016c400-01f4-4d4f-a285-8bda9282302c"
+                LastKnownName="PSUPIC2008RegistDetail : Page"
                 LastKnownLocation="PSUPIC.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -3552,6 +3797,11 @@
             name="Author : Author"
             isActor="true"
             lifelineDisplayName="Author : Author">
+            <represents>
+              <propertyMoniker
+                Id="65b0f25c-740e-45bc-80a9-32bc66d2370c"
+                LastKnownLocation="PSUPIC.uml" />
+            </represents>
             <topLevelOccurrences>
               <interactionUseOccurrenceSpecificationMoniker
                 Id="af42cc47-bd78-46a5-a82b-474dd6e61924"
@@ -3612,36 +3862,31 @@
             </topLevelOccurrences>
           </lifeline>
           <lifeline
-            Id="339011bc-e2da-4977-9870-e579f26a39aa"
-            name="Author : ISubmissionManageable"
-            isActor="false"
-            lifelineDisplayName="Author : ISubmissionManageable" />
-          <lifeline
-            Id="fec2ef99-6f86-4649-a91a-3496f8945a1d"
+            Id="47f6c3d2-dfdc-4b55-a312-2d89ea92bd63"
             name="Author : IRegistrationable&lt;Registration&gt;"
             isActor="false"
             lifelineDisplayName="Author : IRegistrationable&lt;Registration&gt;">
             <represents>
               <propertyMoniker
-                Id="386ac166-c26c-404f-94c7-3003c3036766"
+                Id="96aaaaf3-8956-46c2-abfa-320c88ab8482"
                 LastKnownLocation="PSUPIC.uml" />
             </represents>
             <topLevelOccurrences>
               <executionOccurrenceSpecificationMoniker
-                Id="f794f387-0802-47de-abc7-5bd57349ce69"
-                LastKnownName="ExecutionOccurrenceSpecification45"
+                Id="87219eed-ef0c-470e-810a-31f3153868d9"
+                LastKnownName="ExecutionOccurrenceSpecification53"
                 LastKnownLocation="PSUPIC.uml" />
               <executionOccurrenceSpecificationMoniker
-                Id="dc6de1a2-8ba6-4866-a323-53d1258e5baa"
-                LastKnownName="ExecutionOccurrenceSpecification46"
+                Id="e41c4dad-e60f-4cf8-9c6f-7b8ccb6fb3a0"
+                LastKnownName="ExecutionOccurrenceSpecification54"
                 LastKnownLocation="PSUPIC.uml" />
               <executionOccurrenceSpecificationMoniker
-                Id="b8bd9b6a-95a4-478c-bc04-75516acdd6cc"
-                LastKnownName="ExecutionOccurrenceSpecification31"
+                Id="ec6db5c0-5131-4f61-9d76-606cbedb1c43"
+                LastKnownName="ExecutionOccurrenceSpecification57"
                 LastKnownLocation="PSUPIC.uml" />
               <executionOccurrenceSpecificationMoniker
-                Id="c6836b3a-cfc9-4a83-a3be-789859d14477"
-                LastKnownName="ExecutionOccurrenceSpecification32"
+                Id="e1f5fac4-e2d2-46ac-9798-dd250740088c"
+                LastKnownName="ExecutionOccurrenceSpecification58"
                 LastKnownLocation="PSUPIC.uml" />
             </topLevelOccurrences>
           </lifeline>
@@ -3652,20 +3897,20 @@
             lifelineDisplayName="db.Registration">
             <topLevelOccurrences>
               <executionOccurrenceSpecificationMoniker
-                Id="cfae064a-7c30-4548-ae77-b4ee9bff9fa5"
-                LastKnownName="ExecutionOccurrenceSpecification47"
+                Id="31542def-92c1-462c-8ee1-b6e70bfa08e0"
+                LastKnownName="ExecutionOccurrenceSpecification55"
                 LastKnownLocation="PSUPIC.uml" />
               <executionOccurrenceSpecificationMoniker
-                Id="7857ea86-7eb5-4adc-bd11-7858b32ea8fb"
-                LastKnownName="ExecutionOccurrenceSpecification48"
+                Id="0b644134-66e7-4d49-aa02-c40257d2ab5a"
+                LastKnownName="ExecutionOccurrenceSpecification56"
                 LastKnownLocation="PSUPIC.uml" />
               <executionOccurrenceSpecificationMoniker
-                Id="2f1e66df-b40b-49ca-a483-682670a6d9c4"
-                LastKnownName="ExecutionOccurrenceSpecification33"
+                Id="c92593ba-18a9-4d07-baf5-bad719a427b6"
+                LastKnownName="ExecutionOccurrenceSpecification59"
                 LastKnownLocation="PSUPIC.uml" />
               <executionOccurrenceSpecificationMoniker
-                Id="0d6aab54-c5cf-4d0f-aa0e-1ff9530315e3"
-                LastKnownName="ExecutionOccurrenceSpecification34"
+                Id="c33ee759-3f44-49a9-b941-3b245319c0cf"
+                LastKnownName="ExecutionOccurrenceSpecification60"
                 LastKnownLocation="PSUPIC.uml" />
             </topLevelOccurrences>
           </lifeline>
@@ -3691,78 +3936,79 @@
             </receiveEvent>
           </message>
           <message
-            Id="b533f14b-616b-4c06-8dc1-86a3ce39e054"
-            name="author.GetRegistrations(acronym)"
+            Id="1597e2a7-0b0a-4f1c-b9f9-20b509347197"
+            name="GetRegistrations(acronym)"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ GetRegistrations(acronym)">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
-                Id="a6e8ccf9-0be9-4e22-8975-cc98953e8aba"
-                LastKnownName="MessageOccurrenceSpecification79"
+                Id="f966650c-b6b0-4fa5-83da-622998a37bc8"
+                LastKnownName="MessageOccurrenceSpecification93"
                 LastKnownLocation="PSUPIC.uml" />
             </sendEvent>
             <receiveEvent>
               <messageOccurrenceSpecificationMoniker
-                Id="0ee39853-cb1d-4f4c-b2a8-1743608a4517"
-                LastKnownName="MessageOccurrenceSpecification80"
+                Id="3eb01040-5645-4f47-8eec-92505186183e"
+                LastKnownName="MessageOccurrenceSpecification94"
                 LastKnownLocation="PSUPIC.uml" />
             </receiveEvent>
           </message>
           <message
-            Id="df85b672-354e-4808-b432-23ddc1b61142"
+            Id="fe4e8e63-8b44-4783-b0c9-65913f6de749"
             name="Query(acronym, authorEmail)"
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="false">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
-                Id="6ca67d76-5ae2-4f28-a710-1f3714eec51b"
-                LastKnownName="MessageOccurrenceSpecification83"
+                Id="f24b9f45-f9c0-4d55-a36d-274bd7486c98"
+                LastKnownName="MessageOccurrenceSpecification97"
                 LastKnownLocation="PSUPIC.uml" />
             </sendEvent>
             <receiveEvent>
               <messageOccurrenceSpecificationMoniker
-                Id="6a88a798-780c-4f78-9f7f-3154a846ca6d"
-                LastKnownName="MessageOccurrenceSpecification84"
+                Id="090b8fb9-5059-453e-86bc-e1334ca55bbc"
+                LastKnownName="MessageOccurrenceSpecification98"
                 LastKnownLocation="PSUPIC.uml" />
             </receiveEvent>
           </message>
           <message
-            Id="1ca5f999-27d7-41c2-b11a-683519d82bf5"
+            Id="22b89992-3cf0-4ddc-916a-cf44f2e4bdf4"
             name="&lt;&lt;return DataRow&gt;&gt;"
             messageKind="Complete"
             messageSort="Reply"
             createSelfMessage="false">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
-                Id="964e99ec-9352-4266-9cbe-5c5b1895e681"
-                LastKnownName="MessageOccurrenceSpecification85"
+                Id="f51b3ba1-4c2d-49e3-8a0d-c9b292e3f3ef"
+                LastKnownName="MessageOccurrenceSpecification99"
                 LastKnownLocation="PSUPIC.uml" />
             </sendEvent>
             <receiveEvent>
               <messageOccurrenceSpecificationMoniker
-                Id="572ec8b3-f7ba-4982-a39f-063432b25693"
-                LastKnownName="MessageOccurrenceSpecification86"
+                Id="dfb35ef3-8103-40fa-a691-f6da29d37bbd"
+                LastKnownName="MessageOccurrenceSpecification100"
                 LastKnownLocation="PSUPIC.uml" />
             </receiveEvent>
           </message>
           <message
-            Id="30cf742c-ec1b-41e2-881d-d164a95b26a7"
+            Id="9fad3829-5aca-489d-a417-0fd6fd1851a8"
             name="&lt;&lt;return List of RegistrationObjs&gt;&gt;"
             messageKind="Complete"
             messageSort="Reply"
             createSelfMessage="false">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
-                Id="2ab030be-1444-46d8-a63b-94009b1b3762"
-                LastKnownName="MessageOccurrenceSpecification81"
+                Id="d1ee60d2-e461-4102-83fb-2ebc0b960f96"
+                LastKnownName="MessageOccurrenceSpecification95"
                 LastKnownLocation="PSUPIC.uml" />
             </sendEvent>
             <receiveEvent>
               <messageOccurrenceSpecificationMoniker
-                Id="18f57e5c-9442-46d8-bd51-5ee825484d4d"
-                LastKnownName="MessageOccurrenceSpecification82"
+                Id="3f853254-39aa-438a-b288-9a834c8b71cb"
+                LastKnownName="MessageOccurrenceSpecification96"
                 LastKnownLocation="PSUPIC.uml" />
             </receiveEvent>
           </message>
@@ -3824,78 +4070,79 @@
             </receiveEvent>
           </message>
           <message
-            Id="c5d01d00-77ce-4498-abf7-54e0050fddd0"
-            name="author.GetRegistration(RegistGUID)"
+            Id="2e136e4a-2c64-4d88-a715-7abe9e2345c5"
+            name="GetRegistration(RegistGUID)"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ GetRegistration(RegistGUID)">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
-                Id="c3030124-92f4-4190-9477-318e3845763e"
-                LastKnownName="MessageOccurrenceSpecification55"
+                Id="2f7884ab-710d-41ae-a3b3-45d0a7e0f1c1"
+                LastKnownName="MessageOccurrenceSpecification101"
                 LastKnownLocation="PSUPIC.uml" />
             </sendEvent>
             <receiveEvent>
               <messageOccurrenceSpecificationMoniker
-                Id="92fa77e6-fd1c-433a-8b53-798f073ffc56"
-                LastKnownName="MessageOccurrenceSpecification56"
+                Id="675ef736-c265-49bf-810f-fa159f1717e1"
+                LastKnownName="MessageOccurrenceSpecification102"
                 LastKnownLocation="PSUPIC.uml" />
             </receiveEvent>
           </message>
           <message
-            Id="15edf889-9350-4748-abf7-0c011379b91a"
+            Id="4289cf39-417a-42f3-a27d-956e916c75c2"
             name="QueryBy(acronym, authorEmail, RegistGUID)"
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="false">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
-                Id="03d51071-71ac-45d6-9de6-2f55c31f0dd8"
-                LastKnownName="MessageOccurrenceSpecification59"
+                Id="8f4e68a4-72b3-40c4-9668-78f3ee7a20fe"
+                LastKnownName="MessageOccurrenceSpecification105"
                 LastKnownLocation="PSUPIC.uml" />
             </sendEvent>
             <receiveEvent>
               <messageOccurrenceSpecificationMoniker
-                Id="fbf6f590-7aeb-41ea-b386-74422e998500"
-                LastKnownName="MessageOccurrenceSpecification60"
+                Id="56eba6d6-89d5-49ee-b962-068a55b47884"
+                LastKnownName="MessageOccurrenceSpecification106"
                 LastKnownLocation="PSUPIC.uml" />
             </receiveEvent>
           </message>
           <message
-            Id="d4bfb304-8602-4333-8f84-0b11ac7fd9aa"
+            Id="8b44b01e-8500-40a4-9396-99a689e97db3"
             name="&lt;&lt;return DataRow&gt;&gt;"
             messageKind="Complete"
             messageSort="Reply"
             createSelfMessage="false">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
-                Id="10e2768e-397f-43a2-a600-1d7fc3d1b42a"
-                LastKnownName="MessageOccurrenceSpecification61"
+                Id="d5ca2953-6641-48f5-abf7-c686cd797baa"
+                LastKnownName="MessageOccurrenceSpecification107"
                 LastKnownLocation="PSUPIC.uml" />
             </sendEvent>
             <receiveEvent>
               <messageOccurrenceSpecificationMoniker
-                Id="f3315588-7c63-4088-b3a8-e5bfe22f8ff5"
-                LastKnownName="MessageOccurrenceSpecification62"
+                Id="a9f4c449-6c92-4dfa-a2b0-4461c1c834fb"
+                LastKnownName="MessageOccurrenceSpecification108"
                 LastKnownLocation="PSUPIC.uml" />
             </receiveEvent>
           </message>
           <message
-            Id="6815f4a6-0a74-42a6-9dc0-b1da9cea5eef"
+            Id="4436a464-68cf-4c58-8425-8a518a259565"
             name="&lt;&lt;return RegistrationObj&gt;&gt;"
             messageKind="Complete"
             messageSort="Reply"
             createSelfMessage="false">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
-                Id="0070a29b-09a3-4349-b521-cc5b0c0c25d4"
-                LastKnownName="MessageOccurrenceSpecification57"
+                Id="e282023a-0037-495b-a2cf-2935b2befba9"
+                LastKnownName="MessageOccurrenceSpecification103"
                 LastKnownLocation="PSUPIC.uml" />
             </sendEvent>
             <receiveEvent>
               <messageOccurrenceSpecificationMoniker
-                Id="c80594b0-bab6-4f0b-b681-dbe0114f0a60"
-                LastKnownName="MessageOccurrenceSpecification58"
+                Id="9916b308-f496-4ea8-9053-b4153c824d34"
+                LastKnownName="MessageOccurrenceSpecification104"
                 LastKnownLocation="PSUPIC.uml" />
             </receiveEvent>
           </message>
@@ -3928,11 +4175,36 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
+            isComposite="false" />
+          <property
+            Id="96aaaaf3-8956-46c2-abfa-320c88ab8482"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
             isComposite="false">
             <type_NamedElement>
               <interfaceMoniker
                 Id="2730c0ac-e95c-4310-9c13-26697b437474"
                 LastKnownName="IRegistrationable&lt;Registration&gt;"
+                LastKnownLocation="PSUPIC.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="65b0f25c-740e-45bc-80a9-32bc66d2370c"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="23c6430c-bd88-4a15-827e-ef8e31ef8d2d"
+                LastKnownName="Author"
                 LastKnownLocation="PSUPIC.uml" />
             </type_NamedElement>
           </property>
@@ -3947,26 +4219,6 @@
     <packageHasNamedElement>
       <executionEvent
         Id="1dc730a6-360d-415e-ade6-484687980c59"
-        name="ExecutionEvent" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <executionEvent
-        Id="3ec296e0-ceea-4478-ac21-31c6872e29cc"
-        name="ExecutionEvent" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <executionEvent
-        Id="4fb60f29-504a-445e-a3ae-f477f7e9a14d"
-        name="ExecutionEvent" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <executionEvent
-        Id="2e30da7e-f289-4637-9945-f69453549a5b"
-        name="ExecutionEvent" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <executionEvent
-        Id="0c3af79e-883a-4c35-aa07-96cf7af530b4"
         name="ExecutionEvent" />
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -4022,7 +4274,7 @@
     <packageHasNamedElement>
       <interaction
         Id="72b88818-a45c-46dd-a74d-e01f05325682"
-        name="ImportSubmission"
+        name="R1 - ImportSubmission"
         collapseFragmentsFlag="false"
         isActiveClass="false"
         isAbstract="false"
@@ -4228,6 +4480,11 @@
             name="SystemAdmin"
             isActor="false"
             lifelineDisplayName="SystemAdmin">
+            <represents>
+              <propertyMoniker
+                Id="3608f0f1-76e5-4157-ac23-f922f4b47ced"
+                LastKnownLocation="PSUPIC.uml" />
+            </represents>
             <topLevelOccurrences>
               <messageOccurrenceSpecificationMoniker
                 Id="88d5a52c-99e8-4da3-8eab-72f299748f84"
@@ -4335,6 +4592,24 @@
             </receiveEvent>
           </message>
         </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="3608f0f1-76e5-4157-ac23-f922f4b47ced"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="0194a683-0a6b-4203-b286-63425bb833d2"
+                LastKnownName="SystemAdmin"
+                LastKnownLocation="PSUPIC.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
       </interaction>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -4418,40 +4693,106 @@
         name="ExecutionEvent" />
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <executionEvent
-        Id="507cfb06-3368-46b9-be5c-a2d26a60940e"
-        name="ExecutionEvent" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <executionEvent
-        Id="3026bd49-bb44-486a-b316-d054a31f1e42"
-        name="ExecutionEvent" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <executionEvent
-        Id="0936594b-ac73-4929-b348-1b5409c9adaa"
-        name="ExecutionEvent" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <executionEvent
-        Id="2f9b3a23-85f4-4f99-9986-4f3fa416633c"
-        name="ExecutionEvent" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <Interface
         Id="2730c0ac-e95c-4310-9c13-26697b437474"
         name="IRegistrationable&lt;Registration&gt;"
         isAbstract="false"
         isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="391c4f48-8d7e-44a6-a111-2a74a3e4398d"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="94b9ad57-cc0d-43c2-9be8-d8af52de9c13">
+                <propertyInstance
+                  Id="f3ec6859-70a3-4223-8b80-722ece3daee2"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6e1c63e0-dcd1-41e0-9486-66d7d79b1f72">
+                <propertyInstance
+                  Id="e516263a-09f6-4efb-b50c-82dc130bc491"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a9560fcb-c6e6-48f3-8092-22c8c8885763">
+                <propertyInstance
+                  Id="f447054f-f9c6-4af5-98d0-4e9d478199e6"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c65a8a4c-ee2d-43fe-a70c-132387dc85f1">
+                <propertyInstance
+                  Id="cfcd0c63-8ef7-470d-8d19-295fc14f30c2"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
         <ownedOperations>
           <operation
             Id="0f7c6870-0989-4aa9-a6c1-2320f0a9fa4d"
-            name="author.GetRegistrations"
+            name="GetRegistrations"
             isLeaf="false"
             isStatic="false"
             isAbstract="true"
             concurrency="Sequential"
             isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9f23fdcf-f539-4f66-8a68-5470d5b15d0b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40eedfb9-1c19-4bc1-a518-cb843ea248a6">
+                    <propertyInstance
+                      Id="1b249262-1189-4fea-b330-b54d43ed802a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e7370806-04b3-4af1-b136-048540cfd5fb">
+                    <propertyInstance
+                      Id="6f1c3589-0429-4caa-bb34-6dd96e8ad675"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ea4a9db-fd88-422e-8db4-9c5f9b7ba7bc">
+                    <propertyInstance
+                      Id="5960f6ba-a5d6-466e-b8ec-ef0f89f4b5ff"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="94e8d784-30c9-4cee-8085-648d62de7773">
+                    <propertyInstance
+                      Id="fd818a91-0b89-4d1c-897b-2c0d39b43854"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="299a96e1-659c-4f2b-a9c2-37e014e722dd">
+                    <propertyInstance
+                      Id="7aad7a2b-dec8-45a0-8f09-26297ce9470e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef39304c-e56e-469a-9fce-78b0314c88e8">
+                    <propertyInstance
+                      Id="b8c9c874-9042-44fd-9597-55173f374754"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
@@ -4464,7 +4805,75 @@
           </operation>
           <operation
             Id="6b9dc895-70b7-4bfb-8de5-8a7823a08170"
-            name="author.GetRegistration"
+            name="GetRegistration"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="70d002fe-de99-48d5-8bce-38ac61a102fc"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bae55679-dcf7-4048-bb7e-4b7bb47b70bd">
+                    <propertyInstance
+                      Id="33cb955a-6786-43c0-96bd-21f605542862"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08d03cd0-3d44-490c-a1ec-544160e1f0a4">
+                    <propertyInstance
+                      Id="90cea870-a605-4be4-a1ac-a05e6e6d973e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0eae1b9-f61f-4891-91ae-d07c692f3940">
+                    <propertyInstance
+                      Id="56e00552-7ff9-4776-883f-c60252e85ec7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ad7e7d6-ff6d-4a43-bfcb-bc1f016cc635">
+                    <propertyInstance
+                      Id="93d15a19-9919-422e-b425-ce1dbc973a73"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2f5a621-f8d1-4a3b-829d-4f3ea2876358">
+                    <propertyInstance
+                      Id="0e2ed305-1dbd-46be-a2c3-c5c8fb8076ad"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f31086df-3d07-46f8-aee5-23f9c65fdbcf">
+                    <propertyInstance
+                      Id="eb05dc2a-f02e-47e3-93e1-5f43e5c51d67"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3d38a68a-e40a-441a-ab3a-0ff95e1f9f6a"
+                  name="RegistGUID"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8c658abe-97ce-4e76-9e4b-6e38105beed9"
+            name="SubmitRegistration"
             isLeaf="false"
             isStatic="false"
             isAbstract="true"
@@ -4473,8 +4882,51 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="3d38a68a-e40a-441a-ab3a-0ff95e1f9f6a"
+                  Id="a14e5b46-69a0-4c67-b1b1-7998720cc08c"
+                  name="RegistrationObj"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="029bff8a-09b6-4f60-898d-3d19ed78cb74"
+            name="RemovePayment"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="028ccf58-7df2-4fa1-bcf8-d4dea0bfb8cf"
                   name="RegistGUID"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d1b83798-ab7d-46e8-b8a1-0fb768c720cc"
+            name="UploadPayment"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="14d58181-3441-4a8f-af9a-3eadf09cb283"
+                  name="RegistGUID"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a866a1b5-4d3d-4eed-927f-73e36a81bced"
+                  name="Image"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
@@ -4486,7 +4938,7 @@
     <packageHasNamedElement>
       <interaction
         Id="89f87cbd-830d-4c54-aaa7-0a57d6060899"
-        name="Remove or Upload PaymentSlip"
+        name="R5 - Remove or Upload PaymentSlip"
         collapseFragmentsFlag="false"
         isActiveClass="false"
         isAbstract="false"
@@ -4795,6 +5247,11 @@
           <messageOccurrenceSpecification
             Id="cca43024-f901-442b-9580-854cf05dc223"
             name="MessageOccurrenceSpecification97">
+            <event>
+              <sendOperationEventMoniker
+                Id="f5523dad-567e-4e38-8063-745cd74a761c"
+                LastKnownLocation="PSUPIC.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="c3c29381-50c0-4411-bbdd-18749b37e66b"
@@ -4805,6 +5262,11 @@
           <messageOccurrenceSpecification
             Id="81e72a54-7cc2-4dfd-af37-b0b82954aea0"
             name="MessageOccurrenceSpecification98">
+            <event>
+              <receiveOperationEventMoniker
+                Id="32ecad58-34d1-4514-adbb-7f8724465a7a"
+                LastKnownLocation="PSUPIC.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="531d2030-9141-4804-8a80-5d10632da624"
@@ -4971,22 +5433,22 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="38a5e6a7-ab5f-4f39-b896-8377b628f76f"
-            name="MessageOccurrenceSpecification102">
-            <covered>
-              <lifelineMoniker
-                Id="0ddd685b-d687-4361-91d1-596c5f582d5f"
-                LastKnownName="db.Registration"
-                LastKnownLocation="PSUPIC.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="531e679f-44fb-4cfc-941b-97fb31f7a276"
             name="MessageOccurrenceSpecification101">
             <covered>
               <lifelineMoniker
                 Id="531d2030-9141-4804-8a80-5d10632da624"
                 LastKnownName="Author : IRegistrationable&lt;Registration&gt;"
+                LastKnownLocation="PSUPIC.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="38a5e6a7-ab5f-4f39-b896-8377b628f76f"
+            name="MessageOccurrenceSpecification102">
+            <covered>
+              <lifelineMoniker
+                Id="0ddd685b-d687-4361-91d1-596c5f582d5f"
+                LastKnownName="db.Registration"
                 LastKnownLocation="PSUPIC.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -5079,32 +5541,32 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
+            Id="464751d2-f9d2-4da4-bcb3-f5361bbfe785"
+            name="MessageOccurrenceSpecification105">
+            <event>
+              <sendOperationEventMoniker
+                Id="919fab0f-66c1-4e8d-a67f-ac78d1ffae72"
+                LastKnownLocation="PSUPIC.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="531d2030-9141-4804-8a80-5d10632da624"
+                LastKnownName="Author : IRegistrationable&lt;Registration&gt;"
+                LastKnownLocation="PSUPIC.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
             Id="2c1adf87-785e-45e0-9e2f-a3e00c5807d9"
             name="MessageOccurrenceSpecification106">
+            <event>
+              <receiveOperationEventMoniker
+                Id="fc1fff4f-8ee1-4cc4-aeea-fd73f8ccfc6a"
+                LastKnownLocation="PSUPIC.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="963c4aa2-2615-430f-bc6e-4cda88e63593"
                 LastKnownName="ImageManager"
-                LastKnownLocation="PSUPIC.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="464751d2-f9d2-4da4-bcb3-f5361bbfe785"
-            name="MessageOccurrenceSpecification105">
-            <covered>
-              <lifelineMoniker
-                Id="531d2030-9141-4804-8a80-5d10632da624"
-                LastKnownName="Author : IRegistrationable&lt;Registration&gt;"
-                LastKnownLocation="PSUPIC.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="1bbd6a98-1889-45ef-9f25-34cbe5c530bd"
-            name="MessageOccurrenceSpecification108">
-            <covered>
-              <lifelineMoniker
-                Id="531d2030-9141-4804-8a80-5d10632da624"
-                LastKnownName="Author : IRegistrationable&lt;Registration&gt;"
                 LastKnownLocation="PSUPIC.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -5115,6 +5577,16 @@
               <lifelineMoniker
                 Id="963c4aa2-2615-430f-bc6e-4cda88e63593"
                 LastKnownName="ImageManager"
+                LastKnownLocation="PSUPIC.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1bbd6a98-1889-45ef-9f25-34cbe5c530bd"
+            name="MessageOccurrenceSpecification108">
+            <covered>
+              <lifelineMoniker
+                Id="531d2030-9141-4804-8a80-5d10632da624"
+                LastKnownName="Author : IRegistrationable&lt;Registration&gt;"
                 LastKnownLocation="PSUPIC.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -5447,6 +5919,11 @@
           <messageOccurrenceSpecification
             Id="c9b91f22-ca04-449f-9811-050ac7969084"
             name="MessageOccurrenceSpecification55">
+            <event>
+              <sendOperationEventMoniker
+                Id="5f48f35f-c809-458f-aec7-1b5d0e93a098"
+                LastKnownLocation="PSUPIC.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="c3c29381-50c0-4411-bbdd-18749b37e66b"
@@ -5457,6 +5934,11 @@
           <messageOccurrenceSpecification
             Id="edb4d979-9fc6-494b-9fce-1c465b6945bd"
             name="MessageOccurrenceSpecification56">
+            <event>
+              <receiveOperationEventMoniker
+                Id="064bf57a-bc21-40b7-b857-57c4652aab1f"
+                LastKnownLocation="PSUPIC.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="531d2030-9141-4804-8a80-5d10632da624"
@@ -5707,11 +6189,6 @@
             </topLevelOccurrences>
           </lifeline>
           <lifeline
-            Id="18e5e591-27f0-4d51-95cc-55f4f6955fe9"
-            name="Author : ISubmissionManageable"
-            isActor="false"
-            lifelineDisplayName="Author : ISubmissionManageable" />
-          <lifeline
             Id="531d2030-9141-4804-8a80-5d10632da624"
             name="Author : IRegistrationable&lt;Registration&gt;"
             isActor="false"
@@ -5745,6 +6222,11 @@
             name="ImageManager"
             isActor="false"
             lifelineDisplayName="ImageManager">
+            <represents>
+              <propertyMoniker
+                Id="e83c4098-7800-45e8-869c-34afdc3078fe"
+                LastKnownLocation="PSUPIC.uml" />
+            </represents>
             <topLevelOccurrences>
               <executionOccurrenceSpecificationMoniker
                 Id="695d7a21-397a-4084-a58f-e3536ea2259b"
@@ -5830,10 +6312,11 @@
           </message>
           <message
             Id="fe094970-e617-4115-badd-86af3ad09e21"
-            name="author.RemovePayment(RegistGUID)"
+            name="RemovePayment(RegistGUID)"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ RemovePayment(RegistGUID)">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="cca43024-f901-442b-9580-854cf05dc223"
@@ -5928,7 +6411,8 @@
             name="Remove(Filename) "
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ Remove(Filename)">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="464751d2-f9d2-4da4-bcb3-f5361bbfe785"
@@ -6039,10 +6523,11 @@
           </message>
           <message
             Id="32ca2e1f-30f4-4fcc-be39-f6ffe3b35b90"
-            name="author.UploadPayment(RegistGUID, Image)"
+            name="UploadPayment(RegistGUID, Image)"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ UploadPayment(RegistGUID, Image)">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="c9b91f22-ca04-449f-9811-050ac7969084"
@@ -6147,6 +6632,22 @@
               <interfaceMoniker
                 Id="2730c0ac-e95c-4310-9c13-26697b437474"
                 LastKnownName="IRegistrationable&lt;Registration&gt;"
+                LastKnownLocation="PSUPIC.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e83c4098-7800-45e8-869c-34afdc3078fe"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="18320b14-3f88-4d90-8594-39df3dfa3ee3"
+                LastKnownName="ImageManager"
                 LastKnownLocation="PSUPIC.uml" />
             </type_NamedElement>
           </property>
@@ -6256,7 +6757,7 @@
     <packageHasNamedElement>
       <interaction
         Id="acde2db2-94b2-4a8f-9d2f-87866f09751b"
-        name="FinanceS1ValidatePayment"
+        name="F1 - ValidatePayment"
         collapseFragmentsFlag="false"
         isActiveClass="false"
         isAbstract="false"
@@ -6510,6 +7011,11 @@
             name="SystemAdmin"
             isActor="false"
             lifelineDisplayName="SystemAdmin">
+            <represents>
+              <propertyMoniker
+                Id="f97699c3-e64b-4aa1-be94-f185a6583c92"
+                LastKnownLocation="PSUPIC.uml" />
+            </represents>
             <topLevelOccurrences>
               <executionOccurrenceSpecificationMoniker
                 Id="5eb42f54-3d8b-4975-b1bd-34395d033726"
@@ -6616,6 +7122,24 @@
             </receiveEvent>
           </message>
         </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="f97699c3-e64b-4aa1-be94-f185a6583c92"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="0194a683-0a6b-4203-b286-63425bb833d2"
+                LastKnownName="SystemAdmin"
+                LastKnownLocation="PSUPIC.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
       </interaction>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -6637,6 +7161,802 @@
       <executionEvent
         Id="6d47891a-9edf-452b-ae30-47c1c42d1d3d"
         name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0194a683-0a6b-4203-b286-63425bb833d2"
+        name="SystemAdmin"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="7cd501db-ed6c-4e1c-b30c-bf1efc0c6bb2"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="21f054b5-648d-40c2-b4ac-76e1375ba424">
+                <propertyInstance
+                  Id="c64d5650-f75f-4775-a554-09111d01fc5d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6f155688-3c25-4dea-9bdf-5c127a390739">
+                <propertyInstance
+                  Id="41c1d907-d663-4109-bf2d-77e488b63f3f"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="606e04f6-7b13-4fb8-8e4b-28106c41d656">
+                <propertyInstance
+                  Id="45e15345-b6bc-4893-9472-11c3ff56d273"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="690a4ee1-7ce9-44ae-a0cc-248de496141d">
+                <propertyInstance
+                  Id="d3395d68-b157-435b-9df9-75cd6e04d41b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b9c857a0-700d-46c0-b020-80b9cef29ab9">
+                <propertyInstance
+                  Id="4b4839a5-d549-40d5-a572-942420a0715d"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="00c79b1a-3d4c-4752-9c08-27e540dbd8b4"
+        name="IAuthentication&lt;Author&gt;"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="146c7c3d-8d5f-45f7-84c4-7d0541907c16"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bc94df53-2552-4c6a-b170-bcd4d4128cdb">
+                <propertyInstance
+                  Id="06ce9e2b-9cfa-4231-97ef-8d790bce25f7"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="00f349d9-e1e9-4a06-b8be-e63d4c13c6c3">
+                <propertyInstance
+                  Id="42c6c57c-2749-4338-90af-0404661b5c0a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f6be792c-e5eb-4d86-8830-5d62ba19c6db">
+                <propertyInstance
+                  Id="6c726f8f-ec7b-4c20-9e52-fd87bff1dc97"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0cbbaf7e-83e9-49cc-aabf-58d67926e737">
+                <propertyInstance
+                  Id="2d3ed00f-cf9a-4005-978f-57edad5d2034"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="a9e517f1-5c60-4744-acfd-3e19f8369857"
+            name="Verify"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2bc632b8-77a7-4153-9695-e14111d0121a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7acf6874-ed67-45cc-9cfe-129a19b9d34d">
+                    <propertyInstance
+                      Id="0f2e49b0-c70e-446c-8a53-be3843dcef44"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a09d0bc5-cc85-4760-8675-fd256af18b67">
+                    <propertyInstance
+                      Id="7b471b1e-4d22-428a-a03a-036e36d5b22a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="94656643-e5b1-4bca-a3b4-46326a797491">
+                    <propertyInstance
+                      Id="4ab96b9a-9418-4927-bc31-33af86dbfb07"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5decb860-7110-4cc1-afec-02e2b353d10e">
+                    <propertyInstance
+                      Id="2de292e4-8cd7-4294-bdb9-6cc5e8edeb55"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76451c1b-e48c-47b2-9ecd-1d6d9c97cf4a">
+                    <propertyInstance
+                      Id="b521fb2f-8b22-4d83-a618-652ace1ecd98"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="27ed1fc6-2f77-45b8-ae21-08e1aa6264f8">
+                    <propertyInstance
+                      Id="742ebd5d-249f-472b-b35a-d2dffb3bd55d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1cd408c7-ec20-43ff-b3f1-bd0795faebd4"
+                  name="acronym"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6d646ba3-28d8-4fdc-a34c-640bbe6a153d"
+                  name="paperID"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7a180a1f-52bd-4f67-8f52-c7117ae9a31e"
+                  name="authorEmail"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="00ae5f52-1b87-4307-8b03-48e9f1fb1083">
+        <operation>
+          <operationMoniker
+            Id="a9e517f1-5c60-4744-acfd-3e19f8369857"
+            LastKnownName="Verify"
+            LastKnownLocation="PSUPIC.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="ecc82aad-0fe2-41e5-9dbc-8824915aa7eb">
+        <operation>
+          <operationMoniker
+            Id="a9e517f1-5c60-4744-acfd-3e19f8369857"
+            LastKnownName="Verify"
+            LastKnownLocation="PSUPIC.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="6b04d172-2595-41e6-9762-3e8bd47c60aa"
+        name="ISubmissionManageable"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="eb78faa8-d034-4c65-87ef-bb0a5ff4545f"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3c069765-da70-4b7b-9096-389ebe047d1c">
+                <propertyInstance
+                  Id="4c2b98ad-a68b-4930-b58e-d4f8586eff87"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a95b924e-d522-4451-88df-6d556db116ea">
+                <propertyInstance
+                  Id="b274ad83-fe17-4b52-beba-58169af11d1d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="745f5b72-7753-409c-b991-d1c016ba4899">
+                <propertyInstance
+                  Id="ee605610-d8f5-4198-8771-80c5620877b8"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="06e8bfc8-9ee3-4453-95fd-07d96271821c">
+                <propertyInstance
+                  Id="10eeb26a-4912-4bc3-8cf4-971b3ed7fb96"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="0f0bdecf-a688-4163-b2bf-cf6a09f30cf9"
+            name="GetSubmissions"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c728d805-4a65-4835-a13b-55267d7879e3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7a2a412-e0c1-4d2f-8f80-1389c81d3ee8">
+                    <propertyInstance
+                      Id="7255b70a-c21f-4d89-adc4-7643d316e2c5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40e81944-01ec-49b8-b9c5-d93e0541ce8d">
+                    <propertyInstance
+                      Id="f5a14b54-75f9-4be8-a622-c85fe9b58105"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="093066e4-bd59-4fc0-9ae3-8c449541be01">
+                    <propertyInstance
+                      Id="4e337ceb-7cd0-41bc-851c-48409ce5dad8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9848d59-2ab6-43c6-a65b-7580da1e105b">
+                    <propertyInstance
+                      Id="36552d96-d3a0-41ca-bd59-511e9ccb182a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5983c59c-e417-4dec-8a00-1e46a064db06">
+                    <propertyInstance
+                      Id="a8980d94-dd54-48c2-9d07-003478651d29"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49f61ef9-1c45-4502-9cda-90a93fa2cf15">
+                    <propertyInstance
+                      Id="c7e22a3a-9ae7-48ce-9ea4-eb3da15b9d6f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d4ee5a60-eb93-44bc-a347-6a2350ad4aa4"
+                  name="acronym"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="18320b14-3f88-4d90-8594-39df3dfa3ee3"
+        name="ImageManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="78b0a386-506e-4fdf-974a-9429e5493d4d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="449bab2b-5966-4b17-9c72-7a3f3327e7c3">
+                <propertyInstance
+                  Id="07fc7518-0bab-4134-9fab-be60dfb79851"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="67c1e48e-68a2-47aa-85a5-624eec3de77a">
+                <propertyInstance
+                  Id="29e49543-f503-4934-af75-9eef00583f2a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="70eab27b-24da-40aa-b686-d344171227d4">
+                <propertyInstance
+                  Id="050bc450-b016-4699-b063-224c76ff78c8"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="15a7d47d-df9c-40a1-b51f-db46f3ab3694">
+                <propertyInstance
+                  Id="d1d21880-3346-46f9-a8f7-78caacaa6cc5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a06fb5e4-b948-4675-8757-fb57aae30c81">
+                <propertyInstance
+                  Id="4d95a55e-ce2a-4ffc-8b93-2e497c37ee40"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="167be736-bb54-4d39-87c6-32607eaceda9"
+            name="Remove"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="46bf5103-9e15-4850-8c11-478962c7804b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8154101a-5fa7-45df-95b3-5947fa009540">
+                    <propertyInstance
+                      Id="3e38cb2b-350d-4fdd-83e1-8a613f93e260"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22baa982-5067-4d82-b91a-9e27abb770bd">
+                    <propertyInstance
+                      Id="78310380-7f4b-49bd-b7a3-a0569089f336"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="acffc9d2-978b-45d1-8811-388f8e3f46cb">
+                    <propertyInstance
+                      Id="df2acb76-1a24-4a0e-bacc-2e1d8a393e25"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fffce9f6-844f-460a-ac4f-dde0a66074a1">
+                    <propertyInstance
+                      Id="cad0b11f-366e-42e2-a753-cbfaf2a5293a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="38be882a-d390-4aa1-bd74-02f2fa048076">
+                    <propertyInstance
+                      Id="06fe46c1-2e53-4f7f-ba5d-714cd8034b2d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="658dcd20-4e10-43d0-af45-4dc2388889f6">
+                    <propertyInstance
+                      Id="bfaada71-3c3e-440d-9c6a-8dd16080723d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a9dc371c-a461-4d12-960e-109cd069b5fa"
+                  name="Filename"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="919fab0f-66c1-4e8d-a67f-ac78d1ffae72">
+        <operation>
+          <operationMoniker
+            Id="167be736-bb54-4d39-87c6-32607eaceda9"
+            LastKnownName="Remove"
+            LastKnownLocation="PSUPIC.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="fc1fff4f-8ee1-4cc4-aeea-fd73f8ccfc6a">
+        <operation>
+          <operationMoniker
+            Id="167be736-bb54-4d39-87c6-32607eaceda9"
+            LastKnownName="Remove"
+            LastKnownLocation="PSUPIC.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="5b38d9e1-2fc3-4e8e-9932-f56c698b2e50"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="50d29395-c4a2-4fc0-9c9a-6c081c9a5ed7"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4358e588-ac2b-4262-a76e-e0b1a2267b81"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="930cf271-8765-442e-9e57-19e6f8028cbc"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="561f952d-aa1f-4239-a58c-088a21a78b36"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="202ab202-7e61-4d61-84cb-3186b1da7efd"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4ddf46a4-e871-4e16-99e5-2e24abd65a75"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a9279267-0e00-4218-8c52-4417649c7d7d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="23c6430c-bd88-4a15-827e-ef8e31ef8d2d"
+        name="Author"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="46f8fb10-2293-4a96-b312-99650077022e">
+            <interfaceMoniker
+              Id="00c79b1a-3d4c-4752-9c08-27e540dbd8b4"
+              LastKnownName="IAuthentication&lt;Author&gt;"
+              LastKnownLocation="PSUPIC.uml" />
+          </interfaceRealization>
+          <interfaceRealization
+            Id="0c4abf24-2ffc-4770-a484-fa3e9844bfcf">
+            <interfaceMoniker
+              Id="6b04d172-2595-41e6-9762-3e8bd47c60aa"
+              LastKnownName="ISubmissionManageable"
+              LastKnownLocation="PSUPIC.uml" />
+          </interfaceRealization>
+          <interfaceRealization
+            Id="046b4a6e-e3cc-4ab8-a932-da38d5551ba1">
+            <interfaceMoniker
+              Id="2730c0ac-e95c-4310-9c13-26697b437474"
+              LastKnownName="IRegistrationable&lt;Registration&gt;"
+              LastKnownLocation="PSUPIC.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b8f9f194-d8e9-4762-a8db-537d4d4ef13f"
+            name="Verify"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d36f1301-eea5-425f-b9d4-332b621735df"
+                  name="acronym"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1f61c128-9f07-4ef1-b38a-53f90c71b355"
+                  name="paperID"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b4da2603-1eeb-4f38-87b7-b1437d493705"
+                  name="authorEmail"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="cef27f43-9ef9-4b9a-8aa2-ff50904bc0f1"
+            name="GetSubmissions"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b02bb0f4-b062-43fd-8b06-95c720240aa3"
+                  name="acronym"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7dd4f0f0-411b-4416-b32a-b7fc0c37cbd4"
+            name="GetRegistrations"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d1a41f54-5781-4c72-88ec-57452b345125"
+                  name="acronym"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e59f6ba3-305b-4a57-b310-eb6be146d732"
+            name="GetRegistration"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="12cff152-c19a-4a97-ad0e-630b3ed84cb2"
+                  name="RegistGUID"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5f051199-b71b-4143-8a21-295c998bdf33"
+            name="SubmitRegistration"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="48ab849d-7a90-4d36-ba85-7e7518b20041"
+                  name="RegistrationObj"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="96c919d3-580d-4023-a7a9-3bc6c184782c"
+            name="RemovePayment"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="49240863-0bf4-4b80-900b-8f831bb8134b"
+                  name="RegistGUID"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="98b02c1d-0af6-4e83-bc76-db287efffbe2"
+            name="UploadPayment"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3c56001e-e03b-41f6-b649-d5b35fa116f5"
+                  name="RegistGUID"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="20ee7dcf-821c-48eb-896d-738e0507f065"
+                  name="Image"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="58f5afe1-4f6d-477d-afd8-f8d39d72c5c8"
+        name="IRegistrationable&lt;Registration&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="0ff7e59d-3210-48fb-b125-9aae48cf4215">
+        <operation>
+          <operationMoniker
+            Id="8c658abe-97ce-4e76-9e4b-6e38105beed9"
+            LastKnownName="SubmitRegistration"
+            LastKnownLocation="PSUPIC.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="85551ce7-acd4-4e4a-af24-db699d06d7a9">
+        <operation>
+          <operationMoniker
+            Id="8c658abe-97ce-4e76-9e4b-6e38105beed9"
+            LastKnownName="SubmitRegistration"
+            LastKnownLocation="PSUPIC.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="2fd187a0-84f3-4d7b-b06f-6a527d8edfe4">
+        <operation>
+          <operationMoniker
+            Id="6b9dc895-70b7-4bfb-8de5-8a7823a08170"
+            LastKnownName="GetRegistration"
+            LastKnownLocation="PSUPIC.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="08bd1bab-3559-41ff-bf35-395901dd9785">
+        <operation>
+          <operationMoniker
+            Id="6b9dc895-70b7-4bfb-8de5-8a7823a08170"
+            LastKnownName="GetRegistration"
+            LastKnownLocation="PSUPIC.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="56dd99a5-5330-4630-a8b3-30bb862b22b5">
+        <operation>
+          <operationMoniker
+            Id="0f7c6870-0989-4aa9-a6c1-2320f0a9fa4d"
+            LastKnownName="GetRegistrations"
+            LastKnownLocation="PSUPIC.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="84c1ca73-3fd3-43e5-81f9-ae094397b7c2">
+        <operation>
+          <operationMoniker
+            Id="0f7c6870-0989-4aa9-a6c1-2320f0a9fa4d"
+            LastKnownName="GetRegistrations"
+            LastKnownLocation="PSUPIC.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="f5523dad-567e-4e38-8063-745cd74a761c">
+        <operation>
+          <operationMoniker
+            Id="029bff8a-09b6-4f60-898d-3d19ed78cb74"
+            LastKnownName="RemovePayment"
+            LastKnownLocation="PSUPIC.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="32ecad58-34d1-4514-adbb-7f8724465a7a">
+        <operation>
+          <operationMoniker
+            Id="029bff8a-09b6-4f60-898d-3d19ed78cb74"
+            LastKnownName="RemovePayment"
+            LastKnownLocation="PSUPIC.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="5f48f35f-c809-458f-aec7-1b5d0e93a098">
+        <operation>
+          <operationMoniker
+            Id="d1b83798-ab7d-46e8-b8a1-0fb768c720cc"
+            LastKnownName="UploadPayment"
+            LastKnownLocation="PSUPIC.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="064bf57a-bc21-40b7-b857-57c4652aab1f">
+        <operation>
+          <operationMoniker
+            Id="d1b83798-ab7d-46e8-b8a1-0fb768c720cc"
+            LastKnownName="UploadPayment"
+            LastKnownLocation="PSUPIC.uml" />
+        </operation>
+      </receiveOperationEvent>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
