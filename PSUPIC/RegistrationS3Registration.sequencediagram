@@ -790,7 +790,7 @@
               <messageOccurrenceSpecificationMoniker Id="7cdc853f-593f-4fc4-8714-2eb6876e90d9" LastKnownName="MessageOccurrenceSpecification106" />
             </receiveEvent>
           </message>
-          <message Id="2c874776-2e4f-411d-bb4a-e3d651735252" name="GetSubmissions(acronym)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="2c874776-2e4f-411d-bb4a-e3d651735252" name="GetSubmissions(acronym)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ GetSubmissions(acronym)">
             <elementDefinition Id="3a077642-2f94-4eb0-9652-9ea9ad0dfea4" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="bd6b66ac-1d88-4ec9-b6cb-95d23e900c33" LastKnownName="MessageOccurrenceSpecification33" />
@@ -1043,11 +1043,6 @@
     <packageHasNamedElement>
       <referencedType Id="8ab59ec7-7325-4929-b136-9c0c2f37ff4b" name="Author" isAbstract="false" isLeaf="false" cachedFullName="PSUPIC::Author">
         <elementDefinition Id="23c6430c-bd88-4a15-827e-ef8e31ef8d2d" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="216b5cdb-6908-4cd7-a851-b0ff76705e24" name="IRegistrationable&lt;Registration&gt;" isAbstract="false" isLeaf="false" cachedFullName="IRegistrationable&lt;Registration&gt;">
-        <elementDefinition Id="58f5afe1-4f6d-477d-afd8-f8d39d72c5c8" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>

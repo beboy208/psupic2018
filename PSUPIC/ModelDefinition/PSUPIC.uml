@@ -1647,6 +1647,11 @@
           <messageOccurrenceSpecification
             Id="c485c062-e5cd-4d98-b81c-12599405cdd0"
             name="MessageOccurrenceSpecification34">
+            <event>
+              <receiveOperationEventMoniker
+                Id="7b8bb88a-9882-4c0e-80fc-82b42b24cdce"
+                LastKnownLocation="PSUPIC.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="90bfab79-0b97-4a4a-bc2e-bbbdeae5995c"
@@ -1657,6 +1662,11 @@
           <messageOccurrenceSpecification
             Id="b7293919-1c82-4592-8f21-214f1e07aba0"
             name="MessageOccurrenceSpecification33">
+            <event>
+              <sendOperationEventMoniker
+                Id="cf50f453-de74-4174-ac92-f9835ab0c656"
+                LastKnownLocation="PSUPIC.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="eedfcef3-2786-4fa9-a6aa-ee280cfa1130"
@@ -2597,7 +2607,8 @@
             name="GetSubmissions(acronym)"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ GetSubmissions(acronym)">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="b7293919-1c82-4592-8f21-214f1e07aba0"
@@ -7844,11 +7855,6 @@
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <undefinedType
-        Id="58f5afe1-4f6d-477d-afd8-f8d39d72c5c8"
-        name="IRegistrationable&lt;Registration&gt;" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <sendOperationEvent
         Id="0ff7e59d-3210-48fb-b125-9aae48cf4215">
         <operation>
@@ -7954,6 +7960,28 @@
           <operationMoniker
             Id="d1b83798-ab7d-46e8-b8a1-0fb768c720cc"
             LastKnownName="UploadPayment"
+            LastKnownLocation="PSUPIC.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="cf50f453-de74-4174-ac92-f9835ab0c656">
+        <operation>
+          <operationMoniker
+            Id="0f0bdecf-a688-4163-b2bf-cf6a09f30cf9"
+            LastKnownName="GetSubmissions"
+            LastKnownLocation="PSUPIC.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="7b8bb88a-9882-4c0e-80fc-82b42b24cdce">
+        <operation>
+          <operationMoniker
+            Id="0f0bdecf-a688-4163-b2bf-cf6a09f30cf9"
+            LastKnownName="GetSubmissions"
             LastKnownLocation="PSUPIC.uml" />
         </operation>
       </receiveOperationEvent>

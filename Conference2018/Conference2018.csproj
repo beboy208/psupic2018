@@ -255,6 +255,7 @@
     <Content Include="landing.aspx" />
     <Content Include="location.aspx" />
     <Content Include="organisation.aspx" />
+    <Content Include="registration.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -458,7 +459,17 @@
     <Compile Include="location.aspx.designer.cs">
       <DependentUpon>location.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Author.cs" />
+    <Compile Include="Models\Emun.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Logics\IAuthentication.cs" />
+    <Compile Include="Models\Logics\IRegistrationable.cs" />
+    <Compile Include="Models\Logics\ISubmissionManageable.cs" />
+    <Compile Include="Models\Logics\PSUPICAuthentication.cs" />
+    <Compile Include="Models\Logics\RegistrationLogic.cs" />
+    <Compile Include="Models\Logics\SubmissionLogic.cs" />
+    <Compile Include="Models\Registration.cs" />
+    <Compile Include="Models\Submission.cs" />
     <Compile Include="organisation.aspx.cs">
       <DependentUpon>organisation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -471,6 +482,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="registration.aspx.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registration.aspx.designer.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -505,6 +523,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="App_LocalResources\" />
+    <Folder Include="Datasources\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App_GlobalResources\Resource.resx">
