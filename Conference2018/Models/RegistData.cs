@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Conference2018.Models
 {
-    public class Registration
+    public partial class RegistData
     {
     }
 }

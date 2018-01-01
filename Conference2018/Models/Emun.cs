@@ -7,6 +7,7 @@ namespace Conference2018.Enum
 {
     public enum Session
     {
-        Author
+        AuthorObj,
+        RegistrationID
     }
 }

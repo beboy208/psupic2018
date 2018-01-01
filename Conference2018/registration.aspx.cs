@@ -16,11 +16,11 @@ namespace Conference2018
         {
             get
             {
-                return Session[Enum.Session.Author.ToString()] as Author;
+                return Session[Enum.Session.AuthorObj.ToString()] as Author;
             }
             private set
             {
-                Session[Enum.Session.Author.ToString()] = value;
+                Session[Enum.Session.AuthorObj.ToString()] = value;
             }
         }
 
@@ -39,8 +39,8 @@ namespace Conference2018
 
         protected void btnRegist_Click(object sender, EventArgs e)
         {
-            IRegistrationable<Registration> user = PSUPICAuthor as IRegistrationable<Registration>;
-            user.SubmitRegistration(new Registration());
+            IRegistrationable<RegistData> user = PSUPICAuthor as IRegistrationable<RegistData>;
+            user.SubmitRegistration(new RegistData());
         }
     }
 }

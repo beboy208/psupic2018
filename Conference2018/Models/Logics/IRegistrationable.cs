@@ -10,5 +10,9 @@ namespace Conference2018.Models.Logics
         where T: class
     {
         void SubmitRegistration(T RegistrationObject);
+
+        void RemoveRegistration(string key);
+        
+        void UploadPaymentSlip(string key, object image);
     }
 }

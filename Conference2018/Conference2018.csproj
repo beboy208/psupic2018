@@ -462,13 +462,12 @@
     <Compile Include="Models\Author.cs" />
     <Compile Include="Models\Emun.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Logics\AuthorLogic.cs" />
     <Compile Include="Models\Logics\IAuthentication.cs" />
     <Compile Include="Models\Logics\IRegistrationable.cs" />
     <Compile Include="Models\Logics\ISubmissionManageable.cs" />
     <Compile Include="Models\Logics\PSUPICAuthentication.cs" />
-    <Compile Include="Models\Logics\RegistrationLogic.cs" />
-    <Compile Include="Models\Logics\SubmissionLogic.cs" />
-    <Compile Include="Models\Registration.cs" />
+    <Compile Include="Models\RegistData.cs" />
     <Compile Include="Models\Submission.cs" />
     <Compile Include="organisation.aspx.cs">
       <DependentUpon>organisation.aspx</DependentUpon>
