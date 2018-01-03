@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PSUPICModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Area">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ConferenceAcronym" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="AreaNameEN" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="AreaNameTH" Type="nvarchar" MaxLength="100" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Author">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SubmissionID" Type="int" />
+          <Property Name="FullName" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="AuthorOrder" Type="int" />
+          <Property Name="Organization" Type="nvarchar" MaxLength="100" />
+          <Property Name="Country" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Conference">
+          <Key>
+            <PropertyRef Name="Acronym" />
+          </Key>
+          <Property Name="Acronym" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Theme" Type="nvarchar" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar" MaxLength="500" />
+          <Property Name="Year" Type="nvarchar" MaxLength="4" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RegistInvoice">
+          <Key>
+            <PropertyRef Name="InvoiceID" />
+          </Key>
+          <Property Name="InvoiceID" Type="int" Nullable="false" />
+          <Property Name="RegistID" Type="int" Nullable="false" />
+          <Property Name="Fee" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="ReceiptNo" Type="nvarchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Registration">
+          <Key>
+            <PropertyRef Name="ReigstID" />
+          </Key>
+          <Property Name="ReigstID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SubmissionID" Type="int" Nullable="false" />
+          <Property Name="RegistTypeID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RegistrationType">
+          <Key>
+            <PropertyRef Name="RegistTypeID" />
+          </Key>
+          <Property Name="RegistTypeID" Type="int" Nullable="false" />
+          <Property Name="ConferenceAcronym" Type="nvarchar" MaxLength="20" />
+          <Property Name="RegistTypeNameTH" Type="nvarchar" MaxLength="50" />
+          <Property Name="RegistTypeNameEN" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Submission">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PCCode-Removed" Type="nvarchar" MaxLength="20" />
+          <Property Name="PaperCode" Type="nvarchar" MaxLength="10" />
+          <Property Name="Title" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Abstract" Type="nvarchar(max)" />
+          <Property Name="AreaID" Type="int" />
+          <Property Name="Note" Type="nvarchar(max)" />
+          <Property Name="IsPublished" Type="bit" Nullable="false" />
+          <Property Name="IsOral" Type="bit" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Area_Conference">
+          <End Role="Conference" Type="Self.Conference" Multiplicity="1" />
+          <End Role="Area" Type="Self.Area" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Conference">
+              <PropertyRef Name="Acronym" />
+            </Principal>
+            <Dependent Role="Area">
+              <PropertyRef Name="ConferenceAcronym" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Author_Submission">
+          <End Role="Submission" Type="Self.Submission" Multiplicity="0..1" />
+          <End Role="Author" Type="Self.Author" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Submission">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Author">
+              <PropertyRef Name="SubmissionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RegistInvoice_Registration">
+          <End Role="Registration" Type="Self.Registration" Multiplicity="1" />
+          <End Role="RegistInvoice" Type="Self.RegistInvoice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Registration">
+              <PropertyRef Name="ReigstID" />
+            </Principal>
+            <Dependent Role="RegistInvoice">
+              <PropertyRef Name="RegistID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Registration_RegistrationType">
+          <End Role="RegistrationType" Type="Self.RegistrationType" Multiplicity="1" />
+          <End Role="Registration" Type="Self.Registration" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RegistrationType">
+              <PropertyRef Name="RegistTypeID" />
+            </Principal>
+            <Dependent Role="Registration">
+              <PropertyRef Name="RegistTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Registration_Submission">
+          <End Role="Submission" Type="Self.Submission" Multiplicity="1" />
+          <End Role="Registration" Type="Self.Registration" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Submission">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Registration">
+              <PropertyRef Name="SubmissionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Submission_Area">
+          <End Role="Area" Type="Self.Area" Multiplicity="0..1" />
+          <End Role="Submission" Type="Self.Submission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Area">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Submission">
+              <PropertyRef Name="AreaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="PSUPICModelStoreContainer">
+          <EntitySet Name="Area" EntityType="Self.Area" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Author" EntityType="Self.Author" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Conference" EntityType="Self.Conference" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RegistInvoice" EntityType="Self.RegistInvoice" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Registration" EntityType="Self.Registration" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RegistrationType" EntityType="Self.RegistrationType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Submission" EntityType="Self.Submission" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Area_Conference" Association="Self.FK_Area_Conference">
+            <End Role="Conference" EntitySet="Conference" />
+            <End Role="Area" EntitySet="Area" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Author_Submission" Association="Self.FK_Author_Submission">
+            <End Role="Submission" EntitySet="Submission" />
+            <End Role="Author" EntitySet="Author" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RegistInvoice_Registration" Association="Self.FK_RegistInvoice_Registration">
+            <End Role="Registration" EntitySet="Registration" />
+            <End Role="RegistInvoice" EntitySet="RegistInvoice" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Registration_RegistrationType" Association="Self.FK_Registration_RegistrationType">
+            <End Role="RegistrationType" EntitySet="RegistrationType" />
+            <End Role="Registration" EntitySet="Registration" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Registration_Submission" Association="Self.FK_Registration_Submission">
+            <End Role="Submission" EntitySet="Submission" />
+            <End Role="Registration" EntitySet="Registration" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Submission_Area" Association="Self.FK_Submission_Area">
+            <End Role="Area" EntitySet="Area" />
+            <End Role="Submission" EntitySet="Submission" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PSUPICModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Area">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ConferenceAcronym" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AreaNameEN" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AreaNameTH" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Conference" Relationship="Self.FK_Area_Conference" FromRole="Area" ToRole="Conference" />
+          <NavigationProperty Name="Submissions" Relationship="Self.FK_Submission_Area" FromRole="Area" ToRole="Submission" />
+        </EntityType>
+        <EntityType Name="Author">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SubmissionID" Type="Int32" />
+          <Property Name="FullName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AuthorOrder" Type="Int32" />
+          <Property Name="Organization" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Submission" Relationship="Self.FK_Author_Submission" FromRole="Author" ToRole="Submission" />
+        </EntityType>
+        <EntityType Name="Conference">
+          <Key>
+            <PropertyRef Name="Acronym" />
+          </Key>
+          <Property Name="Acronym" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Theme" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Year" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Areas" Relationship="Self.FK_Area_Conference" FromRole="Conference" ToRole="Area" />
+        </EntityType>
+        <EntityType Name="RegistInvoice">
+          <Key>
+            <PropertyRef Name="InvoiceID" />
+          </Key>
+          <Property Name="InvoiceID" Type="Int32" Nullable="false" />
+          <Property Name="RegistID" Type="Int32" Nullable="false" />
+          <Property Name="Fee" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="ReceiptNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Registration" Relationship="Self.FK_RegistInvoice_Registration" FromRole="RegistInvoice" ToRole="Registration" />
+        </EntityType>
+        <EntityType Name="Registration">
+          <Key>
+            <PropertyRef Name="ReigstID" />
+          </Key>
+          <Property Name="ReigstID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SubmissionID" Type="Int32" Nullable="false" />
+          <Property Name="RegistTypeID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="RegistInvoices" Relationship="Self.FK_RegistInvoice_Registration" FromRole="Registration" ToRole="RegistInvoice" />
+          <NavigationProperty Name="RegistrationType" Relationship="Self.FK_Registration_RegistrationType" FromRole="Registration" ToRole="RegistrationType" />
+          <NavigationProperty Name="Submission" Relationship="Self.FK_Registration_Submission" FromRole="Registration" ToRole="Submission" />
+        </EntityType>
+        <EntityType Name="RegistrationType">
+          <Key>
+            <PropertyRef Name="RegistTypeID" />
+          </Key>
+          <Property Name="RegistTypeID" Type="Int32" Nullable="false" />
+          <Property Name="ConferenceAcronym" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="RegistTypeNameTH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RegistTypeNameEN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Registrations" Relationship="Self.FK_Registration_RegistrationType" FromRole="RegistrationType" ToRole="Registration" />
+        </EntityType>
+        <EntityType Name="Submission">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PCCode_Removed" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="PaperCode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Title" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Abstract" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AreaID" Type="Int32" />
+          <Property Name="Note" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IsPublished" Type="Boolean" Nullable="false" />
+          <Property Name="IsOral" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Area" Relationship="Self.FK_Submission_Area" FromRole="Submission" ToRole="Area" />
+          <NavigationProperty Name="Authors" Relationship="Self.FK_Author_Submission" FromRole="Submission" ToRole="Author" />
+          <NavigationProperty Name="Registrations" Relationship="Self.FK_Registration_Submission" FromRole="Submission" ToRole="Registration" />
+        </EntityType>
+        <Association Name="FK_Area_Conference">
+          <End Role="Conference" Type="Self.Conference" Multiplicity="1" />
+          <End Role="Area" Type="Self.Area" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Conference">
+              <PropertyRef Name="Acronym" />
+            </Principal>
+            <Dependent Role="Area">
+              <PropertyRef Name="ConferenceAcronym" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Submission_Area">
+          <End Role="Area" Type="Self.Area" Multiplicity="0..1" />
+          <End Role="Submission" Type="Self.Submission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Area">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Submission">
+              <PropertyRef Name="AreaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Author_Submission">
+          <End Role="Submission" Type="Self.Submission" Multiplicity="0..1" />
+          <End Role="Author" Type="Self.Author" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Submission">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Author">
+              <PropertyRef Name="SubmissionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RegistInvoice_Registration">
+          <End Role="Registration" Type="Self.Registration" Multiplicity="1" />
+          <End Role="RegistInvoice" Type="Self.RegistInvoice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Registration">
+              <PropertyRef Name="ReigstID" />
+            </Principal>
+            <Dependent Role="RegistInvoice">
+              <PropertyRef Name="RegistID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Registration_RegistrationType">
+          <End Role="RegistrationType" Type="Self.RegistrationType" Multiplicity="1" />
+          <End Role="Registration" Type="Self.Registration" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RegistrationType">
+              <PropertyRef Name="RegistTypeID" />
+            </Principal>
+            <Dependent Role="Registration">
+              <PropertyRef Name="RegistTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Registration_Submission">
+          <End Role="Submission" Type="Self.Submission" Multiplicity="1" />
+          <End Role="Registration" Type="Self.Registration" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Submission">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Registration">
+              <PropertyRef Name="SubmissionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="PSUPICEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Areas" EntityType="Self.Area" />
+          <EntitySet Name="Authors" EntityType="Self.Author" />
+          <EntitySet Name="Conferences" EntityType="Self.Conference" />
+          <EntitySet Name="RegistInvoices" EntityType="Self.RegistInvoice" />
+          <EntitySet Name="Registrations" EntityType="Self.Registration" />
+          <EntitySet Name="RegistrationTypes" EntityType="Self.RegistrationType" />
+          <EntitySet Name="Submissions" EntityType="Self.Submission" />
+          <AssociationSet Name="FK_Area_Conference" Association="Self.FK_Area_Conference">
+            <End Role="Conference" EntitySet="Conferences" />
+            <End Role="Area" EntitySet="Areas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Submission_Area" Association="Self.FK_Submission_Area">
+            <End Role="Area" EntitySet="Areas" />
+            <End Role="Submission" EntitySet="Submissions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Author_Submission" Association="Self.FK_Author_Submission">
+            <End Role="Submission" EntitySet="Submissions" />
+            <End Role="Author" EntitySet="Authors" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RegistInvoice_Registration" Association="Self.FK_RegistInvoice_Registration">
+            <End Role="Registration" EntitySet="Registrations" />
+            <End Role="RegistInvoice" EntitySet="RegistInvoices" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Registration_RegistrationType" Association="Self.FK_Registration_RegistrationType">
+            <End Role="RegistrationType" EntitySet="RegistrationTypes" />
+            <End Role="Registration" EntitySet="Registrations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Registration_Submission" Association="Self.FK_Registration_Submission">
+            <End Role="Submission" EntitySet="Submissions" />
+            <End Role="Registration" EntitySet="Registrations" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PSUPICModelStoreContainer" CdmEntityContainer="PSUPICEntities">
+          <EntitySetMapping Name="Areas">
+            <EntityTypeMapping TypeName="PSUPICModel.Area">
+              <MappingFragment StoreEntitySet="Area">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ConferenceAcronym" ColumnName="ConferenceAcronym" />
+                <ScalarProperty Name="AreaNameEN" ColumnName="AreaNameEN" />
+                <ScalarProperty Name="AreaNameTH" ColumnName="AreaNameTH" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Authors">
+            <EntityTypeMapping TypeName="PSUPICModel.Author">
+              <MappingFragment StoreEntitySet="Author">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="SubmissionID" ColumnName="SubmissionID" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="AuthorOrder" ColumnName="AuthorOrder" />
+                <ScalarProperty Name="Organization" ColumnName="Organization" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Conferences">
+            <EntityTypeMapping TypeName="PSUPICModel.Conference">
+              <MappingFragment StoreEntitySet="Conference">
+                <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Theme" ColumnName="Theme" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Year" ColumnName="Year" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RegistInvoices">
+            <EntityTypeMapping TypeName="PSUPICModel.RegistInvoice">
+              <MappingFragment StoreEntitySet="RegistInvoice">
+                <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+                <ScalarProperty Name="RegistID" ColumnName="RegistID" />
+                <ScalarProperty Name="Fee" ColumnName="Fee" />
+                <ScalarProperty Name="ReceiptNo" ColumnName="ReceiptNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Registrations">
+            <EntityTypeMapping TypeName="PSUPICModel.Registration">
+              <MappingFragment StoreEntitySet="Registration">
+                <ScalarProperty Name="ReigstID" ColumnName="ReigstID" />
+                <ScalarProperty Name="SubmissionID" ColumnName="SubmissionID" />
+                <ScalarProperty Name="RegistTypeID" ColumnName="RegistTypeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RegistrationTypes">
+            <EntityTypeMapping TypeName="PSUPICModel.RegistrationType">
+              <MappingFragment StoreEntitySet="RegistrationType">
+                <ScalarProperty Name="RegistTypeID" ColumnName="RegistTypeID" />
+                <ScalarProperty Name="ConferenceAcronym" ColumnName="ConferenceAcronym" />
+                <ScalarProperty Name="RegistTypeNameTH" ColumnName="RegistTypeNameTH" />
+                <ScalarProperty Name="RegistTypeNameEN" ColumnName="RegistTypeNameEN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Submissions">
+            <EntityTypeMapping TypeName="PSUPICModel.Submission">
+              <MappingFragment StoreEntitySet="Submission">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PCCode_Removed" ColumnName="PCCode-Removed" />
+                <ScalarProperty Name="PaperCode" ColumnName="PaperCode" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Abstract" ColumnName="Abstract" />
+                <ScalarProperty Name="AreaID" ColumnName="AreaID" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="IsPublished" ColumnName="IsPublished" />
+                <ScalarProperty Name="IsOral" ColumnName="IsOral" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -30,8 +30,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,12 +51,79 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Datasources\Area.cs">
+      <DependentUpon>PSUPIC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datasources\Author.cs">
+      <DependentUpon>PSUPIC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datasources\Conference.cs">
+      <DependentUpon>PSUPIC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datasources\PSUPIC.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PSUPIC.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datasources\PSUPIC.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PSUPIC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datasources\PSUPIC.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PSUPIC.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Datasources\RegistInvoice.cs">
+      <DependentUpon>PSUPIC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datasources\Registration.cs">
+      <DependentUpon>PSUPIC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datasources\RegistrationType.cs">
+      <DependentUpon>PSUPIC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datasources\Submission.cs">
+      <DependentUpon>PSUPIC.tt</DependentUpon>
+    </Compile>
     <Compile Include="GeneratedCode\ImageManager.cs" />
     <Compile Include="GeneratedCode\ISubmissionManageable.cs" />
     <Compile Include="GeneratedCode\SystemAdmin.cs" />
+    <Compile Include="Interfaces\IRegistration.cs" />
+    <Compile Include="Interfaces\ISubmission.cs" />
+    <Compile Include="Models\Registration.cs" />
+    <Compile Include="Models\Submission.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EntityDeploy Include="Datasources\PSUPIC.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PSUPIC.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="App.Config" />
+    <None Include="Datasources\PSUPIC.edmx.diagram">
+      <DependentUpon>PSUPIC.edmx</DependentUpon>
+    </None>
+    <None Include="Models\ModelClassDiagram.cd" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Datasources\PSUPIC.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>PSUPIC.Context.cs</LastGenOutput>
+      <DependentUpon>PSUPIC.edmx</DependentUpon>
+    </Content>
+    <Content Include="Datasources\PSUPIC.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PSUPIC.edmx</DependentUpon>
+      <LastGenOutput>PSUPIC.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
