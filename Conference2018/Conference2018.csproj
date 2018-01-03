@@ -525,7 +525,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PSUPICLib\PSUPICLib.csproj">
-      <Project>{A9109961-58F7-484C-8BEB-94DA8CFBC86F}</Project>
+      <Project>{a9109961-58f7-484c-8beb-94da8cfbc86f}</Project>
       <Name>PSUPICLib</Name>
     </ProjectReference>
   </ItemGroup>

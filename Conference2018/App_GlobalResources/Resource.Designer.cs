@@ -187,11 +187,29 @@ namespace Conference2018.App_GlobalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string ScheduleValue1Old {
+            get {
+                return ResourceManager.GetString("ScheduleValue1Old", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to January 15, 2018.
         /// </summary>
         public static string ScheduleValue2 {
             get {
                 return ResourceManager.GetString("ScheduleValue2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to January 2, 2018.
+        /// </summary>
+        public static string ScheduleValue2Old {
+            get {
+                return ResourceManager.GetString("ScheduleValue2Old", resourceCulture);
             }
         }
         
@@ -205,11 +223,29 @@ namespace Conference2018.App_GlobalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string ScheduleValue3Old {
+            get {
+                return ResourceManager.GetString("ScheduleValue3Old", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to February 15, 2018.
         /// </summary>
         public static string ScheduleValue4 {
             get {
                 return ResourceManager.GetString("ScheduleValue4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string ScheduleValue4Old {
+            get {
+                return ResourceManager.GetString("ScheduleValue4Old", resourceCulture);
             }
         }
         
@@ -223,11 +259,29 @@ namespace Conference2018.App_GlobalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string ScheduleValue5Old {
+            get {
+                return ResourceManager.GetString("ScheduleValue5Old", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to February 28, 2018.
         /// </summary>
         public static string ScheduleValue6 {
             get {
                 return ResourceManager.GetString("ScheduleValue6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string ScheduleValue6Old {
+            get {
+                return ResourceManager.GetString("ScheduleValue6Old", resourceCulture);
             }
         }
         
@@ -243,9 +297,27 @@ namespace Conference2018.App_GlobalResources {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
+        public static string ScheduleValue7Old {
+            get {
+                return ResourceManager.GetString("ScheduleValue7Old", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
         public static string ScheduleValue8 {
             get {
                 return ResourceManager.GetString("ScheduleValue8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string ScheduleValue8Old {
+            get {
+                return ResourceManager.GetString("ScheduleValue8Old", resourceCulture);
             }
         }
     }

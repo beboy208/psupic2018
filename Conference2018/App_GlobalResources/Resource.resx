@@ -182,4 +182,28 @@
   <data name="ScheduleValue8" xml:space="preserve">
     <value />
   </data>
+  <data name="ScheduleValue1Old" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ScheduleValue2Old" xml:space="preserve">
+    <value>January 2, 2018</value>
+  </data>
+  <data name="ScheduleValue3Old" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ScheduleValue4Old" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ScheduleValue5Old" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ScheduleValue6Old" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ScheduleValue7Old" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ScheduleValue8Old" xml:space="preserve">
+    <value />
+  </data>
 </root>

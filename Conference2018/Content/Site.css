@@ -211,6 +211,12 @@ p.tba {
     padding-left: 10px;
 }
 
+.important-dates dd span.oldDate { 
+    color: red;
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
 .reg-fee {
     display: table-row;
 }

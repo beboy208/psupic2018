@@ -8,9 +8,22 @@
     <dt>
         <asp:Literal runat="server" Text="<%$ Resources:Resource, lbSchedule2 %>" /></dt>
     <dd>
-        <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue2 %>" /></dd>
+        <% if (!string.IsNullOrWhiteSpace(Resources.Resource.ScheduleValue2Old)) {%>
+            <span class="glyphicon glyphicon-info-sign"></span>
+            <span class="oldDate">
+                <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue2Old %>" />
+            </span>
+        <% }%>
+        <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue2 %>" />
+    </dd>
 
     <dt>
+        <% if (!string.IsNullOrWhiteSpace(Resources.Resource.ScheduleValue3Old)) {%>
+            <span class="glyphicon glyphicon-info-sign"></span>
+            <span class="oldDate">
+                <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue2Old %>" />
+            </span>
+        <% }%>
         <asp:Literal runat="server" Text="<%$ Resources:Resource, lbSchedule3 %>" /></dt>
     <dd>
         <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue3 %>" /></dd>
