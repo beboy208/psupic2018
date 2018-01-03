@@ -1,5 +1,6 @@
-﻿using Conference2018.Models;
-using Conference2018.Models.Logics;
+﻿using PSUPICLib;
+using PSUPICLib.Interfaces;
+using PSUPICLib.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +30,9 @@ namespace Conference2018
             var email = txtAuthorEmail.Text;
             var paperID = txtPaperID.Text;
 
-            PSUPICAuthor = (new PSUPICAuthentication()).Verify(PSUPICAcronym, email, paperID);
+            IAuthentication<Author> security = new PSUPICAuthentication();
+
+            PSUPICAuthor = security.Verify(PSUPICAcronym, email, paperID);
         }
 
         protected void btnLogout_Click(object sender, EventArgs e)
@@ -39,8 +42,8 @@ namespace Conference2018
 
         protected void btnRegist_Click(object sender, EventArgs e)
         {
-            IRegistrationable<RegistData> user = PSUPICAuthor as IRegistrationable<RegistData>;
-            user.SubmitRegistration(new RegistData());
+            IRegistrationable<Registration> user = PSUPICAuthor as IRegistrationable<Registration>;
+            user.SubmitRegistration(new Registration());
         }
     }
 }

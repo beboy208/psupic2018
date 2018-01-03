@@ -90,8 +90,12 @@
     <Compile Include="GeneratedCode\ImageManager.cs" />
     <Compile Include="GeneratedCode\ISubmissionManageable.cs" />
     <Compile Include="GeneratedCode\SystemAdmin.cs" />
-    <Compile Include="Interfaces\IRegistration.cs" />
-    <Compile Include="Interfaces\ISubmission.cs" />
+    <Compile Include="Models\Logics\AuthorLogic.cs" />
+    <Compile Include="Interfaces\IAuthentication.cs" />
+    <Compile Include="Interfaces\IRegistrationable.cs" />
+    <Compile Include="Interfaces\ISubmissionManageable.cs" />
+    <Compile Include="Models\Logics\PSUPICAuthentication.cs" />
+    <Compile Include="Models\PSUPICAuthentication.cs" />
     <Compile Include="Models\Registration.cs" />
     <Compile Include="Models\Submission.cs" />
     <Compile Include="Models\User.cs" />
@@ -124,6 +128,7 @@
       <LastGenOutput>PSUPIC.cs</LastGenOutput>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

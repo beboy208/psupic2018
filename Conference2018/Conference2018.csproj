@@ -459,16 +459,8 @@
     <Compile Include="location.aspx.designer.cs">
       <DependentUpon>location.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Models\Author.cs" />
     <Compile Include="Models\Emun.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\Logics\AuthorLogic.cs" />
-    <Compile Include="Models\Logics\IAuthentication.cs" />
-    <Compile Include="Models\Logics\IRegistrationable.cs" />
-    <Compile Include="Models\Logics\ISubmissionManageable.cs" />
-    <Compile Include="Models\Logics\PSUPICAuthentication.cs" />
-    <Compile Include="Models\RegistData.cs" />
-    <Compile Include="Models\Submission.cs" />
     <Compile Include="organisation.aspx.cs">
       <DependentUpon>organisation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -523,12 +515,19 @@
     <Folder Include="App_Data\" />
     <Folder Include="App_LocalResources\" />
     <Folder Include="Datasources\" />
+    <Folder Include="Lib\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App_GlobalResources\Resource.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PSUPICLib\PSUPICLib.csproj">
+      <Project>{A9109961-58F7-484C-8BEB-94DA8CFBC86F}</Project>
+      <Name>PSUPICLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

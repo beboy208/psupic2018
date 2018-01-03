@@ -1,5 +1,4 @@
-﻿using PSUPICLib.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace PSUPICLib.Interfaces
 {
-    public interface ISubmission
+    public interface IAuthentication<T>
     {
-        Submission GetSubmissions(string conferenceID);
+        T Verify(string acronym, string authorEmail, string paperID);
     }
 }

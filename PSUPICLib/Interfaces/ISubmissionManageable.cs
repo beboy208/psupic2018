@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace PSUPICLib.Interfaces
 {
-    public interface IRegistration
+    public interface ISubmissionManageable<T>
+        where T: class
     {
-        void Insert(Models.Registration obj);
+        IEnumerable<T> GetSubmissions(string acronym);
     }
 }

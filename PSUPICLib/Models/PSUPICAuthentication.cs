@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
+using PSUPICLib.Models;
 
 namespace PSUPICLib.Models
 {
-    public class Registration
+    public partial class PSUPICAuthentication
     {
-        public int ID { get; set; }
-
-        public string ConferenceID { get; set; }
+       
     }
 }

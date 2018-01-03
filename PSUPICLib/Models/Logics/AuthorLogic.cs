@@ -1,13 +1,14 @@
-﻿using Conference2018.Models.Logics;
+﻿
+using PSUPICLib.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Conference2018.Models
+namespace PSUPICLib.Models
 {
     public partial class Author :
-        IRegistrationable<RegistData>,
+        IRegistrationable<Registration>,
         ISubmissionManageable<Submission>
     {
        
@@ -16,8 +17,8 @@ namespace Conference2018.Models
         {
             List<Submission> submissions = new List<Submission>();
 
-            submissions.Add(new Submission() { Acronym = acronym, PaperID = "1" });
-            submissions.Add(new Submission() { Acronym = acronym, PaperID = "3" });
+            submissions.Add(new Submission() { Acronym = acronym, ID = "1" });
+            submissions.Add(new Submission() { Acronym = acronym, ID = "3" });
 
 
             return submissions;
@@ -28,7 +29,7 @@ namespace Conference2018.Models
             
         }
 
-        public void SubmitRegistration(RegistData RegistrationObject)
+        public void SubmitRegistration(Registration RegistrationObject)
         {
             
         }

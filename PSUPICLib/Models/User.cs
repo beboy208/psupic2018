@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace PSUPICLib.Models
 {
-    public class User
+    public partial class User
     {
         public string ID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string email { get; set;}
+        public string Email { get; set;}
         public string Organization { get; set; }
         public string Country { get; set; }
     }
 
 
-    public class Author: User
+    public partial class Author: User
     {
 
     }
 
-    public class ProgramCommittee: User
+    public partial class ProgramCommittee: User
     {
         public bool IsChair { get; set; }
     }

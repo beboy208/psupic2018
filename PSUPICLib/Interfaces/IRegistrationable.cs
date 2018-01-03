@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Conference2018.Models.Logics
+namespace PSUPICLib.Interfaces
 {
     public interface IRegistrationable<T>
         where T: class
