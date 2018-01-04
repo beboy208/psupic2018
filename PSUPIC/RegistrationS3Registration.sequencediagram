@@ -83,6 +83,13 @@
               <behaviorExecutionSpecificationMoniker Id="f0a4ff40-dd2a-49b7-9103-e067174a5bfe" LastKnownName="BehaviorExecutionSpecification27" />
             </annotatedElements>
           </comment>
+          <comment Id="cb29d57b-161e-4290-a626-23b8f535f6c9">
+            <elementDefinition Id="91e68a1d-283a-4859-adf0-9723999c0c08" />
+            <body>Done</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker Id="b3e85b50-7a77-4119-bcb1-014108a971ca" LastKnownName="BehaviorExecutionSpecification10" />
+            </annotatedElements>
+          </comment>
         </ownedCommentsInternal>
         <elementDefinition Id="83036d4d-a2c5-4868-95de-41f839a22cf3" />
         <fragments>
@@ -826,7 +833,7 @@
               <messageOccurrenceSpecificationMoniker Id="b194a97c-f4d1-4a4b-b0a4-fe6cdb7a3732" LastKnownName="MessageOccurrenceSpecification36" />
             </receiveEvent>
           </message>
-          <message Id="f3151658-6c37-4705-b2c4-6c3f69ff650e" name="if (Submissions.count &gt; 0) RegistrationPanel.Visible = true" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true">
+          <message Id="f3151658-6c37-4705-b2c4-6c3f69ff650e" name="if (Submissions.count &gt; 0 &amp;&amp; !outOfDate) RegistrationPanel.Visible = true" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true">
             <elementDefinition Id="6075d206-b9bb-4055-a962-08abca704397" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="be56f783-4f17-4f84-984b-d8ff80699733" LastKnownName="MessageOccurrenceSpecification97" />

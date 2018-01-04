@@ -121,6 +121,12 @@
         isAbstract="false"
         isLeaf="false"
         isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="d82f3180-40e7-43d8-bd60-75946078f020">
+            <body>Done</body>
+          </comment>
+        </ownedCommentsInternal>
         <fragments>
           <behaviorExecutionSpecification
             Id="90315aee-b91b-4573-886a-a371b55834b2"
@@ -571,21 +577,6 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="a2bd15db-f5dd-4c92-8a7b-6a3e9d04173e"
-            name="MessageOccurrenceSpecification17">
-            <event>
-              <sendOperationEventMoniker
-                Id="00ae5f52-1b87-4307-8b03-48e9f1fb1083"
-                LastKnownLocation="PSUPIC.uml" />
-            </event>
-            <covered>
-              <lifelineMoniker
-                Id="281744df-dc44-48ad-84a2-a17e02e147ee"
-                LastKnownName="PSUPIC2008Registration : Page"
-                LastKnownLocation="PSUPIC.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="256c79c1-9391-418c-a548-8f0d0aa13c0c"
             name="MessageOccurrenceSpecification18">
             <event>
@@ -597,6 +588,21 @@
               <lifelineMoniker
                 Id="6c82d727-9af5-4e6d-b20e-2b2b650f0fa7"
                 LastKnownName="PSUPICAuthen : IAuthentication&lt;Author&gt;"
+                LastKnownLocation="PSUPIC.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a2bd15db-f5dd-4c92-8a7b-6a3e9d04173e"
+            name="MessageOccurrenceSpecification17">
+            <event>
+              <sendOperationEventMoniker
+                Id="00ae5f52-1b87-4307-8b03-48e9f1fb1083"
+                LastKnownLocation="PSUPIC.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="281744df-dc44-48ad-84a2-a17e02e147ee"
+                LastKnownName="PSUPIC2008Registration : Page"
                 LastKnownLocation="PSUPIC.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -709,22 +715,22 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="992d2fae-395b-4e7e-ba04-86912cae36a8"
-            name="MessageOccurrenceSpecification19">
-            <covered>
-              <lifelineMoniker
-                Id="6c82d727-9af5-4e6d-b20e-2b2b650f0fa7"
-                LastKnownName="PSUPICAuthen : IAuthentication&lt;Author&gt;"
-                LastKnownLocation="PSUPIC.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="00ab38cd-d018-4442-96e8-095329e2845d"
             name="MessageOccurrenceSpecification20">
             <covered>
               <lifelineMoniker
                 Id="281744df-dc44-48ad-84a2-a17e02e147ee"
                 LastKnownName="PSUPIC2008Registration : Page"
+                LastKnownLocation="PSUPIC.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="992d2fae-395b-4e7e-ba04-86912cae36a8"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="6c82d727-9af5-4e6d-b20e-2b2b650f0fa7"
+                LastKnownName="PSUPICAuthen : IAuthentication&lt;Author&gt;"
                 LastKnownLocation="PSUPIC.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -1266,6 +1272,16 @@
               <behaviorExecutionSpecificationMoniker
                 Id="5d4a09ca-c3d7-43e7-8ab5-a34e1bba74dc"
                 LastKnownName="BehaviorExecutionSpecification27"
+                LastKnownLocation="PSUPIC.uml" />
+            </annotatedElements>
+          </comment>
+          <comment
+            Id="91e68a1d-283a-4859-adf0-9723999c0c08">
+            <body>Done</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker
+                Id="a9eb3500-5a80-4812-ac7e-2126b00165ef"
+                LastKnownName="BehaviorExecutionSpecification10"
                 LastKnownLocation="PSUPIC.uml" />
             </annotatedElements>
           </comment>
@@ -2681,7 +2697,7 @@
           </message>
           <message
             Id="6075d206-b9bb-4055-a962-08abca704397"
-            name="if (Submissions.count &gt; 0) RegistrationPanel.Visible = true"
+            name="if (Submissions.count &gt; 0 &amp;&amp; !outOfDate) RegistrationPanel.Visible = true"
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="true">
@@ -2953,6 +2969,18 @@
         isAbstract="false"
         isLeaf="false"
         isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="7b264053-6b99-412d-8836-35daed77a6c8">
+            <body>Done</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker
+                Id="6d3e6530-548c-4d61-9217-cd0e5d1ac6c7"
+                LastKnownName="BehaviorExecutionSpecification27"
+                LastKnownLocation="PSUPIC.uml" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
         <fragments>
           <interactionUse
             Id="e25d6385-c32e-445b-8cf7-4ab986e59276"

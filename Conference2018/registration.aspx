@@ -2,8 +2,8 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <%
-        bool _isAuthened = (PSUPICAuthor != null);
-        verifyPanel.Visible = !_isAuthened;
+        bool isAuthened = (PSUPICAuthor != null);
+        verifyPanel.Visible = !isAuthened;
     %>
     <div id="verifyPanel" runat="server" class="row" style="margin-top: 70px;">
         <div class="col-md-12">
@@ -22,7 +22,7 @@
     </div>
 
     <%
-        authorPanel.Visible = _isAuthened;
+        authorPanel.Visible = isAuthened;
     %>
     <div id="authorPanel" runat="server" class="row" style="margin-top: 70px;">
         <div class="col-md-12">
@@ -44,7 +44,7 @@
     </div>
 
     <%
-        if (_isAuthened)
+        if (isAuthened)
         {
             var regists = GetAuthorRegistrations();
 
@@ -78,7 +78,19 @@
 
 
     <%
-        registPanel.Visible = _isAuthened;
+        string lastDateOfRegStr = "January 3, 2018"; //Resources.Resource.Schedule6Value;
+
+        DateTime lastDateOfReg = DateTime.ParseExact(lastDateOfRegStr, "MMMM d, yyyy", System.Globalization.CultureInfo.CurrentCulture);
+        bool outOfDate = (DateTime.Now.Date > lastDateOfReg.Date);
+
+        if (isAuthened && !outOfDate)
+        {
+            registPanel.Visible = true;
+        }
+        else
+        {
+            registPanel.Visible = false;
+        }
     %>
     <div id="registPanel" runat="server" class="row">
         <div class="col-md-12">

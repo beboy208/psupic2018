@@ -75,6 +75,15 @@
   <packagedElements>
     <packageHasNamedElement>
       <interaction Id="123a9498-25f9-484d-a3f1-82619bd1e060" name="R4 - Get Registration Invoice" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <ownedCommentsInternal>
+          <comment Id="dd7df48a-1dba-4d2e-a770-e33c7e29d246">
+            <elementDefinition Id="7b264053-6b99-412d-8836-35daed77a6c8" />
+            <body>Done</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker Id="85c57912-67b9-4ffb-9e65-169fd11d47fc" LastKnownName="BehaviorExecutionSpecification27" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
         <elementDefinition Id="facbece2-b24c-4b98-ba6b-f4c045cd380b" />
         <fragments>
           <interactionUse Id="291c0448-917a-4d95-9f22-7f7db80f4cae" name="Verification" referredToFile="Verification">

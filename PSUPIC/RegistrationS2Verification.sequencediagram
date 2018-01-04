@@ -75,6 +75,12 @@
   <packagedElements>
     <packageHasNamedElement>
       <interaction Id="6dafed64-c857-4606-98d4-5e30f95ad056" name="R2 - Verification" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <ownedCommentsInternal>
+          <comment Id="543beb84-4694-4202-8b3b-ccdfb1daa8c8">
+            <elementDefinition Id="d82f3180-40e7-43d8-bd60-75946078f020" />
+            <body>Done</body>
+          </comment>
+        </ownedCommentsInternal>
         <elementDefinition Id="50b83540-2eda-4555-b89c-d2e2c2af20e0" />
         <fragments>
           <behaviorExecutionSpecification Id="0365c0af-a8d2-4b67-a700-b55189419bd1" name="BehaviorExecutionSpecification20">
@@ -316,16 +322,16 @@
               <lifelineMoniker Id="45ac203d-b2a2-4417-91f6-7c60db44d880" LastKnownName="PSUPICAuthen : IAuthentication&lt;Author&gt;" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="c64147f7-13fe-40d6-8008-11e3c0de0107" name="MessageOccurrenceSpecification17">
-            <elementDefinition Id="a2bd15db-f5dd-4c92-8a7b-6a3e9d04173e" />
-            <covered>
-              <lifelineMoniker Id="04ba8634-af76-41bc-b38f-a1b643d8181e" LastKnownName="PSUPIC2008Registration : Page" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="6dbc7733-b897-49d1-89f8-28ebd42f4b84" name="MessageOccurrenceSpecification18">
             <elementDefinition Id="256c79c1-9391-418c-a548-8f0d0aa13c0c" />
             <covered>
               <lifelineMoniker Id="45ac203d-b2a2-4417-91f6-7c60db44d880" LastKnownName="PSUPICAuthen : IAuthentication&lt;Author&gt;" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="c64147f7-13fe-40d6-8008-11e3c0de0107" name="MessageOccurrenceSpecification17">
+            <elementDefinition Id="a2bd15db-f5dd-4c92-8a7b-6a3e9d04173e" />
+            <covered>
+              <lifelineMoniker Id="04ba8634-af76-41bc-b38f-a1b643d8181e" LastKnownName="PSUPIC2008Registration : Page" />
             </covered>
           </messageOccurrenceSpecification>
           <behaviorExecutionSpecification Id="0c415cc3-68cc-401b-b42c-b7c303827da4" name="BehaviorExecutionSpecification7">
@@ -390,16 +396,16 @@
               <lifelineMoniker Id="ecc3a777-e284-4b5f-87e1-c47afb555f41" LastKnownName="db.Submission" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="9847f143-2308-492e-8d6c-7dff65ecbb71" name="MessageOccurrenceSpecification19">
-            <elementDefinition Id="992d2fae-395b-4e7e-ba04-86912cae36a8" />
-            <covered>
-              <lifelineMoniker Id="45ac203d-b2a2-4417-91f6-7c60db44d880" LastKnownName="PSUPICAuthen : IAuthentication&lt;Author&gt;" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="1986dad4-f7f4-4c01-b67f-28a6f7f3364e" name="MessageOccurrenceSpecification20">
             <elementDefinition Id="00ab38cd-d018-4442-96e8-095329e2845d" />
             <covered>
               <lifelineMoniker Id="04ba8634-af76-41bc-b38f-a1b643d8181e" LastKnownName="PSUPIC2008Registration : Page" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="9847f143-2308-492e-8d6c-7dff65ecbb71" name="MessageOccurrenceSpecification19">
+            <elementDefinition Id="992d2fae-395b-4e7e-ba04-86912cae36a8" />
+            <covered>
+              <lifelineMoniker Id="45ac203d-b2a2-4417-91f6-7c60db44d880" LastKnownName="PSUPICAuthen : IAuthentication&lt;Author&gt;" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="a0cb9a7a-341a-45a4-b383-d0c4a901ee7f" name="ExecutionOccurrenceSpecification10">
