@@ -12,23 +12,23 @@ namespace PSUPICLib.Models
 
         public Author Verify(string acronym, string authorEmail, string paperNumber)
         {
-            var submission = _db.Submissions.Where(s => s.PaperCode == paperNumber).FirstOrDefault();
+            var submission = _db.Submissions.Include("Authors").Include("Area")
+                .Where(s => s.Area.ConferenceAcronym == acronym &&
+                            s.PaperCode == paperNumber).FirstOrDefault();
             if (submission != null)
             {
-                var auth = _db.Authors.Where(a => a.Email == authorEmail && a.SubmissionID == submission.Id).FirstOrDefault();
-
+                var author = submission.Authors.Where(a => a.Email == authorEmail).FirstOrDefault();
+                if (author != null)
+                    return new Author()
+                    {
+                        ID = author.Id.ToString(),
+                        Country = author.Country,
+                        Email = author.Email,
+                        FullName = author.FullName,
+                        Organization = author.Organization
+                    };
             }
-
-            Author author = null;
-
-            author = new Author()
-            {
-                Email = authorEmail
-
-            };
-
-
-            return author;
+            return null;
         }
     }
 }

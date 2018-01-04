@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PSUPICLib.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,8 @@ namespace PSUPICLib.Interfaces
     public interface IRegistrationable<T>
         where T: class
     {
+        IEnumerable<T> GetRegistrations(string acronym);
+
         void SubmitRegistration(T RegistrationObject);
 
         void RemoveRegistration(string key);

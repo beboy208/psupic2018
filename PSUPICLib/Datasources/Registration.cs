@@ -14,18 +14,12 @@ namespace PSUPICLib.Datasources
     
     public partial class Registration
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Registration()
-        {
-            this.RegistInvoices = new HashSet<RegistInvoice>();
-        }
-    
-        public int ReigstID { get; set; }
+        public int RegistID { get; set; }
         public int SubmissionID { get; set; }
         public int RegistTypeID { get; set; }
+        public string ManyFields { get; set; }
+        public Nullable<decimal> Fee { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<RegistInvoice> RegistInvoices { get; set; }
         public virtual RegistrationType RegistrationType { get; set; }
         public virtual Submission Submission { get; set; }
     }

@@ -28,9 +28,8 @@ namespace PSUPICLib.Datasources
         public virtual DbSet<Area> Areas { get; set; }
         public virtual DbSet<Author> Authors { get; set; }
         public virtual DbSet<Conference> Conferences { get; set; }
-        public virtual DbSet<RegistInvoice> RegistInvoices { get; set; }
-        public virtual DbSet<Registration> Registrations { get; set; }
         public virtual DbSet<RegistrationType> RegistrationTypes { get; set; }
         public virtual DbSet<Submission> Submissions { get; set; }
+        public virtual DbSet<Registration> Registrations { get; set; }
     }
 }

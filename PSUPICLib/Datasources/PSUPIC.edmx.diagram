@@ -8,17 +8,15 @@
         <EntityTypeShape EntityType="PSUPICModel.Area" Width="1.5" PointX="3" PointY="2.625" IsExpanded="true" />
         <EntityTypeShape EntityType="PSUPICModel.Author" Width="1.5" PointX="7.5" PointY="2.5" IsExpanded="true" />
         <EntityTypeShape EntityType="PSUPICModel.Conference" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="PSUPICModel.RegistInvoice" Width="1.5" PointX="12.75" PointY="2.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="PSUPICModel.Registration" Width="1.5" PointX="10.5" PointY="2.75" IsExpanded="true" />
         <EntityTypeShape EntityType="PSUPICModel.RegistrationType" Width="1.5" PointX="8.25" PointY="7.875" IsExpanded="true" />
         <EntityTypeShape EntityType="PSUPICModel.Submission" Width="1.5" PointX="5.25" PointY="2.125" IsExpanded="true" />
         <AssociationConnector Association="PSUPICModel.FK_Area_Conference" ManuallyRouted="false" />
         <AssociationConnector Association="PSUPICModel.FK_Submission_Area" ManuallyRouted="false" />
         <AssociationConnector Association="PSUPICModel.FK_Author_Submission" ManuallyRouted="false" />
-        <AssociationConnector Association="PSUPICModel.FK_RegistInvoice_Registration" ManuallyRouted="false" />
-        <AssociationConnector Association="PSUPICModel.FK_Registration_RegistrationType" ManuallyRouted="false" />
-        <AssociationConnector Association="PSUPICModel.FK_Registration_Submission" ManuallyRouted="false" />
-      </Diagram>
+        <EntityTypeShape EntityType="PSUPICModel.Registration" Width="1.5" PointX="10.5" PointY="4.75" />
+        <AssociationConnector Association="PSUPICModel.FK_Registration_RegistrationType" />
+        <AssociationConnector Association="PSUPICModel.FK_Registration_Submission" />
+        </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

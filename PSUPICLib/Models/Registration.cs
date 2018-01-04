@@ -9,6 +9,10 @@ namespace PSUPICLib.Models
     {
         public int ID { get; set; }
 
-        public string ConferenceID { get; set; }
+        public string SubmissionID { get; set; }
+
+        public string OtherFields { get; set; }
+
+        public decimal Fee { get; set; }
     }
 }

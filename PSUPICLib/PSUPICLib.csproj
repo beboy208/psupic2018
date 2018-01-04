@@ -75,9 +75,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PSUPIC.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Datasources\RegistInvoice.cs">
-      <DependentUpon>PSUPIC.tt</DependentUpon>
-    </Compile>
     <Compile Include="Datasources\Registration.cs">
       <DependentUpon>PSUPIC.tt</DependentUpon>
     </Compile>

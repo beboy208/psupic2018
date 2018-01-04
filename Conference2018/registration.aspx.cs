@@ -32,7 +32,12 @@ namespace Conference2018
 
             IAuthentication<Author> security = new PSUPICAuthentication();
 
-            PSUPICAuthor = security.Verify(PSUPICAcronym, email, paperID);
+            var author = security.Verify(PSUPICAcronym, email, paperID);
+
+            if (author == null)
+                txtLoginError.Visible = true;
+
+            PSUPICAuthor = author;
         }
 
         protected void btnLogout_Click(object sender, EventArgs e)
@@ -44,6 +49,12 @@ namespace Conference2018
         {
             IRegistrationable<Registration> user = PSUPICAuthor as IRegistrationable<Registration>;
             user.SubmitRegistration(new Registration());
+        }
+
+        protected IEnumerable<Registration> GetAuthorRegistrations()
+        {
+            IRegistrationable<Registration> user = PSUPICAuthor as IRegistrationable<Registration>;
+            return user.GetRegistrations(PSUPICAcronym);
         }
     }
 }

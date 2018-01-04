@@ -49,6 +49,15 @@ namespace Conference2018 {
         protected global::System.Web.UI.WebControls.Button btnVerify;
         
         /// <summary>
+        /// txtLoginError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label txtLoginError;
+        
+        /// <summary>
         /// authorPanel control.
         /// </summary>
         /// <remarks>
@@ -74,6 +83,15 @@ namespace Conference2018 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl invoicePanel;
+        
+        /// <summary>
+        /// gvRegist control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvRegist;
         
         /// <summary>
         /// registPanel control.

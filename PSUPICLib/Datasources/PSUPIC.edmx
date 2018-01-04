@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="PSUPICModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="PSUPICModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Area">
           <Key>
             <PropertyRef Name="ID" />
@@ -37,22 +37,15 @@
           <Property Name="Description" Type="nvarchar" MaxLength="500" />
           <Property Name="Year" Type="nvarchar" MaxLength="4" Nullable="false" />
         </EntityType>
-        <EntityType Name="RegistInvoice">
-          <Key>
-            <PropertyRef Name="InvoiceID" />
-          </Key>
-          <Property Name="InvoiceID" Type="int" Nullable="false" />
-          <Property Name="RegistID" Type="int" Nullable="false" />
-          <Property Name="Fee" Type="decimal" Precision="18" Scale="2" Nullable="false" />
-          <Property Name="ReceiptNo" Type="nvarchar" MaxLength="20" />
-        </EntityType>
         <EntityType Name="Registration">
           <Key>
-            <PropertyRef Name="ReigstID" />
+            <PropertyRef Name="RegistID" />
           </Key>
-          <Property Name="ReigstID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RegistID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="SubmissionID" Type="int" Nullable="false" />
           <Property Name="RegistTypeID" Type="int" Nullable="false" />
+          <Property Name="ManyFields" Type="nchar" MaxLength="10" />
+          <Property Name="Fee" Type="decimal" Precision="18" Scale="2" />
         </EntityType>
         <EntityType Name="RegistrationType">
           <Key>
@@ -101,18 +94,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_RegistInvoice_Registration">
-          <End Role="Registration" Type="Self.Registration" Multiplicity="1" />
-          <End Role="RegistInvoice" Type="Self.RegistInvoice" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Registration">
-              <PropertyRef Name="ReigstID" />
-            </Principal>
-            <Dependent Role="RegistInvoice">
-              <PropertyRef Name="RegistID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_Registration_RegistrationType">
           <End Role="RegistrationType" Type="Self.RegistrationType" Multiplicity="1" />
           <End Role="Registration" Type="Self.Registration" Multiplicity="*" />
@@ -153,7 +134,6 @@
           <EntitySet Name="Area" EntityType="Self.Area" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Author" EntityType="Self.Author" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Conference" EntityType="Self.Conference" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="RegistInvoice" EntityType="Self.RegistInvoice" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Registration" EntityType="Self.Registration" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="RegistrationType" EntityType="Self.RegistrationType" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Submission" EntityType="Self.Submission" Schema="dbo" store:Type="Tables" />
@@ -164,10 +144,6 @@
           <AssociationSet Name="FK_Author_Submission" Association="Self.FK_Author_Submission">
             <End Role="Submission" EntitySet="Submission" />
             <End Role="Author" EntitySet="Author" />
-          </AssociationSet>
-          <AssociationSet Name="FK_RegistInvoice_Registration" Association="Self.FK_RegistInvoice_Registration">
-            <End Role="Registration" EntitySet="Registration" />
-            <End Role="RegistInvoice" EntitySet="RegistInvoice" />
           </AssociationSet>
           <AssociationSet Name="FK_Registration_RegistrationType" Association="Self.FK_Registration_RegistrationType">
             <End Role="RegistrationType" EntitySet="RegistrationType" />
@@ -182,8 +158,7 @@
             <End Role="Submission" EntitySet="Submission" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="PSUPICModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -223,27 +198,6 @@
           <Property Name="Year" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Areas" Relationship="Self.FK_Area_Conference" FromRole="Conference" ToRole="Area" />
         </EntityType>
-        <EntityType Name="RegistInvoice">
-          <Key>
-            <PropertyRef Name="InvoiceID" />
-          </Key>
-          <Property Name="InvoiceID" Type="Int32" Nullable="false" />
-          <Property Name="RegistID" Type="Int32" Nullable="false" />
-          <Property Name="Fee" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
-          <Property Name="ReceiptNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="Registration" Relationship="Self.FK_RegistInvoice_Registration" FromRole="RegistInvoice" ToRole="Registration" />
-        </EntityType>
-        <EntityType Name="Registration">
-          <Key>
-            <PropertyRef Name="ReigstID" />
-          </Key>
-          <Property Name="ReigstID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="SubmissionID" Type="Int32" Nullable="false" />
-          <Property Name="RegistTypeID" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="RegistInvoices" Relationship="Self.FK_RegistInvoice_Registration" FromRole="Registration" ToRole="RegistInvoice" />
-          <NavigationProperty Name="RegistrationType" Relationship="Self.FK_Registration_RegistrationType" FromRole="Registration" ToRole="RegistrationType" />
-          <NavigationProperty Name="Submission" Relationship="Self.FK_Registration_Submission" FromRole="Registration" ToRole="Submission" />
-        </EntityType>
         <EntityType Name="RegistrationType">
           <Key>
             <PropertyRef Name="RegistTypeID" />
@@ -252,7 +206,7 @@
           <Property Name="ConferenceAcronym" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="RegistTypeNameTH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="RegistTypeNameEN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="Registrations" Relationship="Self.FK_Registration_RegistrationType" FromRole="RegistrationType" ToRole="Registration" />
+          <NavigationProperty Name="Registrations" Relationship="PSUPICModel.FK_Registration_RegistrationType" FromRole="RegistrationType" ToRole="Registration" />
         </EntityType>
         <EntityType Name="Submission">
           <Key>
@@ -269,7 +223,7 @@
           <Property Name="IsOral" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="Area" Relationship="Self.FK_Submission_Area" FromRole="Submission" ToRole="Area" />
           <NavigationProperty Name="Authors" Relationship="Self.FK_Author_Submission" FromRole="Submission" ToRole="Author" />
-          <NavigationProperty Name="Registrations" Relationship="Self.FK_Registration_Submission" FromRole="Submission" ToRole="Registration" />
+          <NavigationProperty Name="Registrations" Relationship="PSUPICModel.FK_Registration_Submission" FromRole="Submission" ToRole="Registration" />
         </EntityType>
         <Association Name="FK_Area_Conference">
           <End Role="Conference" Type="Self.Conference" Multiplicity="1" />
@@ -307,48 +261,10 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_RegistInvoice_Registration">
-          <End Role="Registration" Type="Self.Registration" Multiplicity="1" />
-          <End Role="RegistInvoice" Type="Self.RegistInvoice" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Registration">
-              <PropertyRef Name="ReigstID" />
-            </Principal>
-            <Dependent Role="RegistInvoice">
-              <PropertyRef Name="RegistID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Registration_RegistrationType">
-          <End Role="RegistrationType" Type="Self.RegistrationType" Multiplicity="1" />
-          <End Role="Registration" Type="Self.Registration" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="RegistrationType">
-              <PropertyRef Name="RegistTypeID" />
-            </Principal>
-            <Dependent Role="Registration">
-              <PropertyRef Name="RegistTypeID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Registration_Submission">
-          <End Role="Submission" Type="Self.Submission" Multiplicity="1" />
-          <End Role="Registration" Type="Self.Registration" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Submission">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Registration">
-              <PropertyRef Name="SubmissionID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="PSUPICEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Areas" EntityType="Self.Area" />
           <EntitySet Name="Authors" EntityType="Self.Author" />
           <EntitySet Name="Conferences" EntityType="Self.Conference" />
-          <EntitySet Name="RegistInvoices" EntityType="Self.RegistInvoice" />
-          <EntitySet Name="Registrations" EntityType="Self.Registration" />
           <EntitySet Name="RegistrationTypes" EntityType="Self.RegistrationType" />
           <EntitySet Name="Submissions" EntityType="Self.Submission" />
           <AssociationSet Name="FK_Area_Conference" Association="Self.FK_Area_Conference">
@@ -363,19 +279,52 @@
             <End Role="Submission" EntitySet="Submissions" />
             <End Role="Author" EntitySet="Authors" />
           </AssociationSet>
-          <AssociationSet Name="FK_RegistInvoice_Registration" Association="Self.FK_RegistInvoice_Registration">
-            <End Role="Registration" EntitySet="Registrations" />
-            <End Role="RegistInvoice" EntitySet="RegistInvoices" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Registration_RegistrationType" Association="Self.FK_Registration_RegistrationType">
+          <EntitySet Name="Registrations" EntityType="PSUPICModel.Registration" />
+          <AssociationSet Name="FK_Registration_RegistrationType" Association="PSUPICModel.FK_Registration_RegistrationType">
             <End Role="RegistrationType" EntitySet="RegistrationTypes" />
             <End Role="Registration" EntitySet="Registrations" />
           </AssociationSet>
-          <AssociationSet Name="FK_Registration_Submission" Association="Self.FK_Registration_Submission">
+          <AssociationSet Name="FK_Registration_Submission" Association="PSUPICModel.FK_Registration_Submission">
             <End Role="Submission" EntitySet="Submissions" />
             <End Role="Registration" EntitySet="Registrations" />
           </AssociationSet>
-        </EntityContainer>
+          </EntityContainer>
+        <EntityType Name="Registration">
+          <Key>
+            <PropertyRef Name="RegistID" />
+          </Key>
+          <Property Name="RegistID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SubmissionID" Type="Int32" Nullable="false" />
+          <Property Name="RegistTypeID" Type="Int32" Nullable="false" />
+          <Property Name="ManyFields" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Fee" Type="Decimal" Precision="18" Scale="2" />
+          <NavigationProperty Name="RegistrationType" Relationship="PSUPICModel.FK_Registration_RegistrationType" FromRole="Registration" ToRole="RegistrationType" />
+          <NavigationProperty Name="Submission" Relationship="PSUPICModel.FK_Registration_Submission" FromRole="Registration" ToRole="Submission" />
+        </EntityType>
+        <Association Name="FK_Registration_RegistrationType">
+          <End Type="PSUPICModel.RegistrationType" Role="RegistrationType" Multiplicity="1" />
+          <End Type="PSUPICModel.Registration" Role="Registration" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RegistrationType">
+              <PropertyRef Name="RegistTypeID" />
+            </Principal>
+            <Dependent Role="Registration">
+              <PropertyRef Name="RegistTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Registration_Submission">
+          <End Type="PSUPICModel.Submission" Role="Submission" Multiplicity="1" />
+          <End Type="PSUPICModel.Registration" Role="Registration" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Submission">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Registration">
+              <PropertyRef Name="SubmissionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -417,25 +366,6 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="RegistInvoices">
-            <EntityTypeMapping TypeName="PSUPICModel.RegistInvoice">
-              <MappingFragment StoreEntitySet="RegistInvoice">
-                <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
-                <ScalarProperty Name="RegistID" ColumnName="RegistID" />
-                <ScalarProperty Name="Fee" ColumnName="Fee" />
-                <ScalarProperty Name="ReceiptNo" ColumnName="ReceiptNo" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Registrations">
-            <EntityTypeMapping TypeName="PSUPICModel.Registration">
-              <MappingFragment StoreEntitySet="Registration">
-                <ScalarProperty Name="ReigstID" ColumnName="ReigstID" />
-                <ScalarProperty Name="SubmissionID" ColumnName="SubmissionID" />
-                <ScalarProperty Name="RegistTypeID" ColumnName="RegistTypeID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="RegistrationTypes">
             <EntityTypeMapping TypeName="PSUPICModel.RegistrationType">
               <MappingFragment StoreEntitySet="RegistrationType">
@@ -458,6 +388,17 @@
                 <ScalarProperty Name="Note" ColumnName="Note" />
                 <ScalarProperty Name="IsPublished" ColumnName="IsPublished" />
                 <ScalarProperty Name="IsOral" ColumnName="IsOral" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Registrations">
+            <EntityTypeMapping TypeName="PSUPICModel.Registration">
+              <MappingFragment StoreEntitySet="Registration">
+                <ScalarProperty Name="Fee" ColumnName="Fee" />
+                <ScalarProperty Name="ManyFields" ColumnName="ManyFields" />
+                <ScalarProperty Name="RegistTypeID" ColumnName="RegistTypeID" />
+                <ScalarProperty Name="SubmissionID" ColumnName="SubmissionID" />
+                <ScalarProperty Name="RegistID" ColumnName="RegistID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
