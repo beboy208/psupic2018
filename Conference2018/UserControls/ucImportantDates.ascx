@@ -1,55 +1,32 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ucImportantDates.ascx.cs" Inherits="Conference2018.UserControls.ucImportantDates" %>
 <dl class="important-dates">
-   <%-- <dt>
-        <asp:Literal runat="server" Text="<%$ Resources:Resource, lbSchedule1 %>" /></dt>
-    <dd>
-        <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue1 %>" /></dd>--%>
+    <%
+        System.Resources.ResourceManager rm = new System.Resources.ResourceManager(typeof(Resources.Resource));
+        string[] dateStrings = { "Schedule2", "Schedule3", "Schedule4", "Schedule5",
+                           "Schedule6", "Schedule7"};
 
+        foreach (var d in dateStrings)
+        {
+            var label = rm.GetString(string.Format("{0}LB", d));
+    %>
     <dt>
-        <asp:Literal runat="server" Text="<%$ Resources:Resource, lbSchedule2 %>" /></dt>
+        <%= label %></dt>
     <dd>
-        <% if (!string.IsNullOrWhiteSpace(Resources.Resource.ScheduleValue2Old)) {%>
-            <span class="glyphicon glyphicon-info-sign"></span>
-            <span class="oldDate">
-                <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue2Old %>" />
-            </span>
-        <% }%>
-        <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue2 %>" />
+        <% 
+            var oldDate = rm.GetString(string.Format("{0}ValueOld", d));
+            if (!string.IsNullOrWhiteSpace(oldDate))
+            {%>
+        <span class="glyphicon glyphicon-info-sign"></span>
+        <span class="oldDate">
+            <%= oldDate %>
+        </span>
+        <% }
+            var dateValue = rm.GetString(string.Format("{0}Value", d));
+        %>
+        <%= dateValue %>
     </dd>
 
-    <dt>
-        <% if (!string.IsNullOrWhiteSpace(Resources.Resource.ScheduleValue3Old)) {%>
-            <span class="glyphicon glyphicon-info-sign"></span>
-            <span class="oldDate">
-                <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue2Old %>" />
-            </span>
-        <% }%>
-        <asp:Literal runat="server" Text="<%$ Resources:Resource, lbSchedule3 %>" /></dt>
-    <dd>
-        <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue3 %>" /></dd>
-
-    <dt>
-        <asp:Literal runat="server" Text="<%$ Resources:Resource, lbSchedule4 %>" /></dt>
-    <dd>
-        <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue4 %>" /></dd>
-
-    <dt>
-        <asp:Literal runat="server" Text="<%$ Resources:Resource, lbSchedule5 %>" /></dt>
-    <dd>
-        <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue5 %>" /></dd>
-
-    <dt>
-        <asp:Literal runat="server" Text="<%$ Resources:Resource, lbSchedule6 %>" /></dt>
-    <dd>
-        <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue6 %>" /></dd>
-
-    <dt>
-        <asp:Literal runat="server" Text="<%$ Resources:Resource, lbSchedule7 %>" /></dt>
-    <dd>
-        <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue7 %>" /></dd>
-
-   <%-- <dt>
-        <asp:Literal runat="server" Text="<%$ Resources:Resource, lbSchedule8 %>" /></dt>
-    <dd>
-        <asp:Literal runat="server" Text="<%$ Resources:Resource, ScheduleValue8 %>" /></dd>--%>
+    <%
+        }
+    %>
 </dl>

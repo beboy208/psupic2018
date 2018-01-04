@@ -134,76 +134,76 @@
     <value>International Language and Culture</value>
     <comment>old:nternational Language and Culture Teaching</comment>
   </data>
-  <data name="lbSchedule1" xml:space="preserve">
+  <data name="Schedule1LB" xml:space="preserve">
     <value>Call for Submission</value>
   </data>
-  <data name="lbSchedule2" xml:space="preserve">
+  <data name="Schedule2LB" xml:space="preserve">
     <value>Extended Abstract Submission Deadline</value>
   </data>
-  <data name="lbSchedule3" xml:space="preserve">
+  <data name="Schedule3LB" xml:space="preserve">
     <value>Acceptance Notification</value>
   </data>
-  <data name="lbSchedule4" xml:space="preserve">
+  <data name="Schedule4LB" xml:space="preserve">
     <value>Camera-Ready Submission Deadline</value>
   </data>
-  <data name="lbSchedule5" xml:space="preserve">
+  <data name="Schedule5LB" xml:space="preserve">
     <value>Early Bird Registration and Payment Deadline</value>
   </data>
-  <data name="lbSchedule6" xml:space="preserve">
+  <data name="Schedule6LB" xml:space="preserve">
     <value>Regular Registration and Payment Deadline</value>
   </data>
-  <data name="lbSchedule7" xml:space="preserve">
+  <data name="Schedule7LB" xml:space="preserve">
     <value>Conference Dates</value>
   </data>
-  <data name="lbSchedule8" xml:space="preserve">
+  <data name="Schedule8LB" xml:space="preserve">
     <value />
   </data>
-  <data name="ScheduleValue1" xml:space="preserve">
+  <data name="Schedule1Value" xml:space="preserve">
     <value>December 1-31, 2017</value>
   </data>
-  <data name="ScheduleValue2" xml:space="preserve">
+  <data name="Schedule2Value" xml:space="preserve">
     <value>January 15, 2018</value>
   </data>
-  <data name="ScheduleValue3" xml:space="preserve">
+  <data name="Schedule3Value" xml:space="preserve">
     <value>February 1, 2018</value>
   </data>
-  <data name="ScheduleValue4" xml:space="preserve">
+  <data name="Schedule4Value" xml:space="preserve">
     <value>February 15, 2018</value>
   </data>
-  <data name="ScheduleValue5" xml:space="preserve">
+  <data name="Schedule5Value" xml:space="preserve">
     <value>February 15, 2018</value>
   </data>
-  <data name="ScheduleValue6" xml:space="preserve">
+  <data name="Schedule6Value" xml:space="preserve">
     <value>February 28, 2018</value>
   </data>
-  <data name="ScheduleValue7" xml:space="preserve">
+  <data name="Schedule7Value" xml:space="preserve">
     <value>March 11-12, 2018</value>
   </data>
-  <data name="ScheduleValue8" xml:space="preserve">
+  <data name="Schedule8Value" xml:space="preserve">
     <value />
   </data>
-  <data name="ScheduleValue1Old" xml:space="preserve">
+  <data name="Schedule1ValueOld" xml:space="preserve">
     <value />
   </data>
-  <data name="ScheduleValue2Old" xml:space="preserve">
+  <data name="Schedule2ValueOld" xml:space="preserve">
     <value>January 2, 2018</value>
   </data>
-  <data name="ScheduleValue3Old" xml:space="preserve">
+  <data name="Schedule3ValueOld" xml:space="preserve">
     <value />
   </data>
-  <data name="ScheduleValue4Old" xml:space="preserve">
+  <data name="Schedule4ValueOld" xml:space="preserve">
     <value />
   </data>
-  <data name="ScheduleValue5Old" xml:space="preserve">
+  <data name="Schedule5ValueOld" xml:space="preserve">
     <value />
   </data>
-  <data name="ScheduleValue6Old" xml:space="preserve">
+  <data name="Schedule6ValueOld" xml:space="preserve">
     <value />
   </data>
-  <data name="ScheduleValue7Old" xml:space="preserve">
+  <data name="Schedule7ValueOld" xml:space="preserve">
     <value />
   </data>
-  <data name="ScheduleValue8Old" xml:space="preserve">
+  <data name="Schedule8ValueOld" xml:space="preserve">
     <value />
   </data>
 </root>

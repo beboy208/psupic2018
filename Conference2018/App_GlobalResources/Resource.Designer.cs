@@ -108,216 +108,216 @@ namespace Conference2018.App_GlobalResources {
         /// <summary>
         ///   Looks up a localized string similar to Call for Submission.
         /// </summary>
-        public static string lbSchedule1 {
+        public static string Schedule1LB {
             get {
-                return ResourceManager.GetString("lbSchedule1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Extended Abstract Submission Deadline.
-        /// </summary>
-        public static string lbSchedule2 {
-            get {
-                return ResourceManager.GetString("lbSchedule2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Acceptance Notification.
-        /// </summary>
-        public static string lbSchedule3 {
-            get {
-                return ResourceManager.GetString("lbSchedule3", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Camera-Ready Submission Deadline.
-        /// </summary>
-        public static string lbSchedule4 {
-            get {
-                return ResourceManager.GetString("lbSchedule4", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Early Bird Registration and Payment Deadline.
-        /// </summary>
-        public static string lbSchedule5 {
-            get {
-                return ResourceManager.GetString("lbSchedule5", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Regular Registration and Payment Deadline.
-        /// </summary>
-        public static string lbSchedule6 {
-            get {
-                return ResourceManager.GetString("lbSchedule6", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Conference Dates.
-        /// </summary>
-        public static string lbSchedule7 {
-            get {
-                return ResourceManager.GetString("lbSchedule7", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
-        public static string lbSchedule8 {
-            get {
-                return ResourceManager.GetString("lbSchedule8", resourceCulture);
+                return ResourceManager.GetString("Schedule1LB", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to December 1-31, 2017.
         /// </summary>
-        public static string ScheduleValue1 {
+        public static string Schedule1Value {
             get {
-                return ResourceManager.GetString("ScheduleValue1", resourceCulture);
+                return ResourceManager.GetString("Schedule1Value", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
-        public static string ScheduleValue1Old {
+        public static string Schedule1ValueOld {
             get {
-                return ResourceManager.GetString("ScheduleValue1Old", resourceCulture);
+                return ResourceManager.GetString("Schedule1ValueOld", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Extended Abstract Submission Deadline.
+        /// </summary>
+        public static string Schedule2LB {
+            get {
+                return ResourceManager.GetString("Schedule2LB", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to January 15, 2018.
         /// </summary>
-        public static string ScheduleValue2 {
+        public static string Schedule2Value {
             get {
-                return ResourceManager.GetString("ScheduleValue2", resourceCulture);
+                return ResourceManager.GetString("Schedule2Value", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to January 2, 2018.
         /// </summary>
-        public static string ScheduleValue2Old {
+        public static string Schedule2ValueOld {
             get {
-                return ResourceManager.GetString("ScheduleValue2Old", resourceCulture);
+                return ResourceManager.GetString("Schedule2ValueOld", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Acceptance Notification.
+        /// </summary>
+        public static string Schedule3LB {
+            get {
+                return ResourceManager.GetString("Schedule3LB", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to February 1, 2018.
         /// </summary>
-        public static string ScheduleValue3 {
+        public static string Schedule3Value {
             get {
-                return ResourceManager.GetString("ScheduleValue3", resourceCulture);
+                return ResourceManager.GetString("Schedule3Value", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
-        public static string ScheduleValue3Old {
+        public static string Schedule3ValueOld {
             get {
-                return ResourceManager.GetString("ScheduleValue3Old", resourceCulture);
+                return ResourceManager.GetString("Schedule3ValueOld", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Camera-Ready Submission Deadline.
+        /// </summary>
+        public static string Schedule4LB {
+            get {
+                return ResourceManager.GetString("Schedule4LB", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to February 15, 2018.
         /// </summary>
-        public static string ScheduleValue4 {
+        public static string Schedule4Value {
             get {
-                return ResourceManager.GetString("ScheduleValue4", resourceCulture);
+                return ResourceManager.GetString("Schedule4Value", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
-        public static string ScheduleValue4Old {
+        public static string Schedule4ValueOld {
             get {
-                return ResourceManager.GetString("ScheduleValue4Old", resourceCulture);
+                return ResourceManager.GetString("Schedule4ValueOld", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Early Bird Registration and Payment Deadline.
+        /// </summary>
+        public static string Schedule5LB {
+            get {
+                return ResourceManager.GetString("Schedule5LB", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to February 15, 2018.
         /// </summary>
-        public static string ScheduleValue5 {
+        public static string Schedule5Value {
             get {
-                return ResourceManager.GetString("ScheduleValue5", resourceCulture);
+                return ResourceManager.GetString("Schedule5Value", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
-        public static string ScheduleValue5Old {
+        public static string Schedule5ValueOld {
             get {
-                return ResourceManager.GetString("ScheduleValue5Old", resourceCulture);
+                return ResourceManager.GetString("Schedule5ValueOld", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Regular Registration and Payment Deadline.
+        /// </summary>
+        public static string Schedule6LB {
+            get {
+                return ResourceManager.GetString("Schedule6LB", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to February 28, 2018.
         /// </summary>
-        public static string ScheduleValue6 {
+        public static string Schedule6Value {
             get {
-                return ResourceManager.GetString("ScheduleValue6", resourceCulture);
+                return ResourceManager.GetString("Schedule6Value", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
-        public static string ScheduleValue6Old {
+        public static string Schedule6ValueOld {
             get {
-                return ResourceManager.GetString("ScheduleValue6Old", resourceCulture);
+                return ResourceManager.GetString("Schedule6ValueOld", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Conference Dates.
+        /// </summary>
+        public static string Schedule7LB {
+            get {
+                return ResourceManager.GetString("Schedule7LB", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to March 11-12, 2018.
         /// </summary>
-        public static string ScheduleValue7 {
+        public static string Schedule7Value {
             get {
-                return ResourceManager.GetString("ScheduleValue7", resourceCulture);
+                return ResourceManager.GetString("Schedule7Value", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
-        public static string ScheduleValue7Old {
+        public static string Schedule7ValueOld {
             get {
-                return ResourceManager.GetString("ScheduleValue7Old", resourceCulture);
+                return ResourceManager.GetString("Schedule7ValueOld", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
-        public static string ScheduleValue8 {
+        public static string Schedule8LB {
             get {
-                return ResourceManager.GetString("ScheduleValue8", resourceCulture);
+                return ResourceManager.GetString("Schedule8LB", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
-        public static string ScheduleValue8Old {
+        public static string Schedule8Value {
             get {
-                return ResourceManager.GetString("ScheduleValue8Old", resourceCulture);
+                return ResourceManager.GetString("Schedule8Value", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Schedule8ValueOld {
+            get {
+                return ResourceManager.GetString("Schedule8ValueOld", resourceCulture);
             }
         }
     }
