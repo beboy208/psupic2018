@@ -16,7 +16,7 @@
                 <img src="http://www.conference.phuket.psu.ac.th/conference2018/imgs/jumbotron2.png"
                     style="width: 100%" />
             </div>
-
+            
             <div class="row">
                 <div class="col-md-12">
                     <h2>Welcome Message</h2>

@@ -85,6 +85,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -222,6 +224,18 @@
     <Content Include="Downloads\PSU_PIC2018_Abstract_Template.V.1.1.doc" />
     <Content Include="Downloads\PSU_PIC2018_Abstract_Template.V.1.1.pdf" />
     <None Include="Properties\PublishProfiles\DeployTo209.pubxml" />
+    <Content Include="Lib\PSUPKTProvider.dll" />
+    <Content Include="login.aspx" />
+    <Content Include="registration\default.aspx" />
+    <Content Include="reports\submission.aspx" />
+    <Content Include="reports\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="registration\Web.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="imgs\50th-logo_s60.png" />
     <Content Include="imgs\c-logo-s.png" />
@@ -255,7 +269,7 @@
     <Content Include="landing.aspx" />
     <Content Include="location.aspx" />
     <Content Include="organisation.aspx" />
-    <Content Include="registration.aspx" />
+    <Content Include="registration\registration.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -292,11 +306,19 @@
     <Content Include="speakers.aspx" />
     <Content Include="UserControls\ucImportantDates.ascx" />
     <Content Include="UserControls\ucPCChair.ascx" />
-    <Content Include="Web.config" />
+    <None Include="Web References\th.ac.psu.passport\authentication.disco" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <None Include="Web References\th.ac.psu.passport\authentication.wsdl" />
+    <Content Include="Web References\th.ac.psu.passport\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -459,6 +481,13 @@
     <Compile Include="location.aspx.designer.cs">
       <DependentUpon>location.aspx</DependentUpon>
     </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Models\Emun.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="organisation.aspx.cs">
@@ -474,12 +503,32 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource.resx</DependentUpon>
     </Compile>
-    <Compile Include="registration.aspx.cs">
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="PSUMemberShipProvider.cs" />
+    <Compile Include="registration\registration.aspx.cs">
       <DependentUpon>registration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="registration.aspx.designer.cs">
+    <Compile Include="registration\registration.aspx.designer.cs">
       <DependentUpon>registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="registration\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registration\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reports\submission.aspx.cs">
+      <DependentUpon>submission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reports\submission.aspx.designer.cs">
+      <DependentUpon>submission.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -510,12 +559,16 @@
     <Compile Include="UserControls\ucPCChair.ascx.designer.cs">
       <DependentUpon>ucPCChair.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Web References\th.ac.psu.passport\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="App_LocalResources\" />
     <Folder Include="Datasources\" />
-    <Folder Include="Lib\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App_GlobalResources\Resource.resx">
@@ -528,6 +581,25 @@
       <Project>{a9109961-58f7-484c-8beb-94da8cfbc86f}</Project>
       <Name>PSUPICLib</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://passport.psu.ac.th/authentication/authentication.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\th.ac.psu.passport\</RelPath>
+      <UpdateFromURL>https://passport.psu.ac.th/authentication/authentication.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Conference2018_th_ac_psu_passport_Authentication</CachedSettingsPropName>
+    </WebReferenceUrl>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

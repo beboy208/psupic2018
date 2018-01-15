@@ -8,7 +8,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Conference2018
+namespace Conference2018.registration
 {
     public partial class registration : System.Web.UI.Page
     {

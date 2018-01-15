@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Conference2018 {
+namespace Conference2018.registration {
     
     
     public partial class registration {

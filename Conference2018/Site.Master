@@ -12,7 +12,7 @@
     <!-- You can use Open Graph tags to customize link previews.
     Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
     <meta property="og:url" content="http://www.conference.phuket.psu.ac.th/conference2018/" />
-    
+
     <meta property="og:title" content="PSU Phuket International Conference 2018" />
     <meta property="og:description" content="As 2018 is the 50th Anniversary of PSU, we would like to celebrate this event by inviting you to submit your extended abstract to the PSU Phuket International Conference (PSU PIC). March 11-12, 2018 in Phuket. Creativity and Innovations for Global Development." />
     <meta property="og:image:type" content="image/png" />
@@ -44,6 +44,7 @@
 </head>
 <body>
     <form runat="server">
+      
         <asp:ScriptManager runat="server">
             <Scripts>
                 <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
@@ -88,7 +89,7 @@
                         <%-- <a id="psupiclogo" runat="server" href="~/">
                             <img src="imgs/c-logo-s.png" alt="PSU PIC" /></a>--%>
                         <a id="psu50th" runat="server" href="http://www.psu.ac.th">
-                            <img src="imgs/50th-logo_s60.png" alt="PSU" /></a>
+                            <img src="~/imgs/50th-logo_s60.png" alt="PSU" runat="server" /></a>
                         <a id="eventtitle" runat="server" href="~/">PSU PIC 2018</a>
                     </div>
                 </div>
@@ -131,6 +132,9 @@
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
+            Username: <%: Context.User.Identity.GetUserName()  %> 
+            <asp:LoginStatus ID="LoginStatus1" runat="server"  LogoutText="Log out"/>
+            <asp:LoginView ID="LoginView1" runat="server"></asp:LoginView>
             <hr />
             <footer>
                 <div class="row">
@@ -139,12 +143,12 @@
                         <h4>Documents</h4>
                         <ul>
                             <li>Extended Abstract Guidelines
-                                <a href="Downloads/PSU_PIC2018_Abstract_Template.V.1.1.pdf" target="_blank">PDF</a>
-                                | <a href="Downloads/PSU_PIC2018_Abstract_Template.V.1.1.doc" target="_blank">Doc</a>
+                                <a href="~/Downloads/PSU_PIC2018_Abstract_Template.V.1.1.pdf" runat="server" target="_blank">PDF</a>
+                                | <a href="~/Downloads/PSU_PIC2018_Abstract_Template.V.1.1.doc" runat="server" target="_blank">Doc</a>
                             </li>
                             <li><a href="https://easychair.org/conferences/?conf=psupic2018" target="_blank">Submission via Easychair</a></li>
-                            <li><a href="imgs/poster-PSU-PIC-2018_edit-03(final).jpg" target="_blank">Poster</a></li>
-                            <li><a href="imgs/call-for-contributions-edit-04(final).jpg" target="_blank">Call for Contributions</a></li>
+                            <li><a href="~/imgs/poster-PSU-PIC-2018_edit-03(final).jpg" runat="server" target="_blank">Poster</a></li>
+                            <li><a href="~/imgs/call-for-contributions-edit-04(final).jpg" runat="server" target="_blank">Call for Contributions</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4">

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Registration" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="registration.aspx.cs" Inherits="Conference2018.registration" %>
+﻿<%@ Page Title="Registration" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="registration.aspx.cs" Inherits="Conference2018.registration.registration" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <%
@@ -36,7 +36,7 @@
                         <%= PSUPICAuthor.Country %>
                     </div>
                     <div class="col-md-2">
-                        <asp:Button ID="btnLogout" runat="server" CssClass="btn btn-default" Text="Logout" OnClick="btnLogout_Click" />
+                        <asp:Button ID="btnLogout" runat="server" CssClass="btn btn-default" Text="Change Account" OnClick="btnLogout_Click" />
                     </div>
                 </div>
             </div>

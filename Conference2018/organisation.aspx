@@ -158,7 +158,7 @@
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Sakib Jalil", organization = "University of California Davis, CA, USA", types = new string[] { "pc", "pc-com" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Lemia Louail", organization = "Computer Science Department, Faculty of Sciences, University of Sétif 1, Algeria.", types = new string[] { "pc", "pc-com" } });
         committees.Add(new committee { titleEnum = ctitle.AssocProf, name = "Marie Laure Betbeder", organization = "Universite de Bourgogne France-comte, France", types = new string[] { "pc", "pc-com" } });
-        committees.Add(new committee { titleEnum = ctitle.none, name = "Alban Rousset", organization = "University of Luxembourg", types = new string[] { "pc", "pc-com" } });
+        committees.Add(new committee { titleEnum = ctitle.Dr, name = "Alban Rousset", organization = "FSTC, University of Luxembourg, Luxembourg", types = new string[] { "pc", "pc-com" } });
         committees.Add(new committee { titleEnum = ctitle.Dr, name = "Michael Poppleton", organization = "University of Southampton, UK", types = new string[] { "pc", "pc-com" } });
 
 
