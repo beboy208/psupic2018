@@ -132,9 +132,9 @@
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-            Username: <%: Context.User.Identity.GetUserName()  %> 
+           <%-- Username: <%: Context.User.Identity.GetUserName()  %> 
             <asp:LoginStatus ID="LoginStatus1" runat="server"  LogoutText="Log out"/>
-            <asp:LoginView ID="LoginView1" runat="server"></asp:LoginView>
+            <asp:LoginView ID="LoginView1" runat="server"></asp:LoginView>--%>
             <hr />
             <footer>
                 <div class="row">
