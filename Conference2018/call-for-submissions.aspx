@@ -272,24 +272,39 @@
                         <h3>Registration</h3>
                         <div class="container">
                             <p></p>
-                            <h4>Refistration Fee</h4>
+                            <h4>Registration Fee</h4>
+                            <p><font color="#FF0000">** The registration fee excludes any transfer or exchange rate fee.</font></p>
                             <div class="container">
-                                <div class="reg-fee">
-                                    <span class="type">Early Bird Registration</span>
-                                    <span class="fee">$200</span>
-                                    <span class="note">(Deadline February 15, 2018)</span>
-                                </div>
-                                <div class="reg-fee">
-                                    <span class="type">Regular Registration</span>
-                                    <span class="fee">$250</span>
-                                    <span class="note">(Deadline February 28, 2018)</span>
-                                </div>
-                                <div class="reg-fee">
-                                    <span class="type">Late/On-site Registration</span>
-                                    <span class="fee">$300</span>
-                                    <span class="note"></span>
-                                </div>
+          <table align="left" cellspacing="10" cellpadding="5" border="1">
+    <tbody>
+      <tr>
+        <th width="20%" valign="top" bgcolor="#d8e3f6"><p align="center"><strong>Type</strong></p></th>
+        <th width="25%" valign="top" bgcolor="#d8e3f6"><p align="center"><strong>Period</strong></p></th>
+        <th width="40%" valign="top" bgcolor="#d8e3f6"><p align="center"><strong>Price</strong></p></th>
+      </tr>
+      <tr>
+        <td width="20%" valign="top"><p>&nbsp; Early Bird Registration </p></td>
+        <td width="25%" valign="top"><p>&nbsp; February 1-15, 2018<strong> </strong></p></td>
+        <td width="40%" valign="top"><p>&nbsp; 6,600THB / 200 US$ per person<font color="#FF0000">** </font> </p></td>
+      </tr>
+      <tr>
+        <td width="20%" valign="top"><p>&nbsp; Regular Registration </p></td>
+        <td width="25%" valign="top"><p>&nbsp; February 16-28, 2018 </p></td>
+        <td width="40%" valign="top"><p>&nbsp; 8,200THB / 250 US$ per person<font color="#FF0000">** </font> </p></td>
+      </tr>
+      <tr>
+        <td width="20%" valign="top"><p>&nbsp; Late/On-site Registration</p></td>
+        <td width="25%" valign="top"><p>&nbsp; March 1-12, 2018</p></td>
+        <td width="40%" valign="top"><p>&nbsp; 10,000THB / 300 US$ per person<font color="#FF0000">** </font> </p></td>
+      </tr>
+      <tr>
+        <td width="20%" valign="top"><p>&nbsp; Accompanying Person(s):</p></td>
+        <td colspan="2" width="65%" valign="top"><p>&nbsp;5,000THB / 150 US$ per person<font color="#FF0000">** </font><strong> </strong></p></td>
+      </tr>
+    </tbody>
+  </table>
                             </div>
+ <br />
                             <h4>Payment Method</h4>
                             <div class="container">
                                 <p class="tba">To Be Announced</p>
