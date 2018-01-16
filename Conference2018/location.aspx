@@ -74,10 +74,24 @@
                                 </table>
 
                                 <p><strong>Roomrate</strong></p>
-                                <p>- Standard room is THB 1,000/night/room (with set breakfast)</p>
-                                <p>- Deluxe double room is THB 1,500/night/room (with set breakfast) </p>
-                                <p>- Deluxe twin room is THB 1,700/night/room (with set breakfast)</p>
-                                <p>- Suite room is THB 2,000/night/room (with set breakfast) </p>
+                                <table style="width: 80%">
+                                    <tr>
+                                        <td style="width: 30%">Standard Room</td>
+                                        <td style="width: 70%">1,000/night/room (with set breakfast)</td>
+                                    </tr>
+                                    <tr style="background-color: #edeef8">
+                                        <td>Deluxe Double Room</td>
+                                        <td>1,500/night/room (with set breakfast)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Deluxe Twin Room</td>
+                                        <td>1,700/night/room (with set breakfast)</td>
+                                    </tr>
+                                    <tr style="background-color: #edeef8">
+                                        <td>Suite Room</td>
+                                        <td>2,000/night/room (with set breakfast)</td>
+                                    </tr>
+                                </table>
                             </div>
                         </li>
                         <li>
@@ -93,26 +107,32 @@ Discover an extraordinary interior decoration like no others in Phuket island wi
                                 <p><strong>Hotel Address:</strong> 42 Montri Rd. Muang, Phuket 83000 Thailand </p>
                                 <p><strong>Travel Distance:</strong>  7.0 Kms. to PSU</p>
 
-                                 <table>
+                                <table>
                                     <tr>
                                         <td><strong>Contact: </strong></td>
-                                        <td>Tel +(66) 76 211 044<br />                                        </td>
+                                        <td>Tel +(66) 76 211 044<br />
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td></td>
                                         <td>Fax +(66) 76 319 017</td>
                                     </tr>
-                                     <tr>
+                                    <tr>
                                         <td></td>
                                         <td>E-mail: <a href="mailto:info@pearlhotel.co.th">info@pearlhotel.co.th</a></td>
                                     </tr>
                                     <tr>
                                         <td></td>
-                                        <td>Website:  <a href="http://www.arecaresort.com">www. arecaresort.com</a></td>
+                                        <td>Website: <a href="http://www.arecaresort.com">www.arecaresort.com</a></td>
                                     </tr>
                                 </table>
                                 <p><strong>Roomrate</strong></p>
-                                <p>Pearl Room  1,500 THB /night/room  * Inclusive of Breakfast</p>
+                                <table style="width: 80%">
+                                    <tr>
+                                        <td style="width: 30%">Pearl Room</td>
+                                        <td style="width: 70%">1,500 THB/night/room  *Inclusive of Breakfast</td>
+                                    </tr>
+                                </table>
                             </div>
                         </li>
                         <li>
@@ -142,7 +162,7 @@ Discover an extraordinary interior decoration like no others in Phuket island wi
                                 <table style="width: 80%">
                                     <tr>
                                         <td style="width: 30%" rowspan="2">Deluxe Room (single /double)</td>
-                                        <td style="width: 80%">2,200 THB /night/room * Inclusive of  Breakfast</td>
+                                        <td style="width: 70%">2,200 THB /night/room * Inclusive of  Breakfast</td>
                                     </tr>
                                     <tr>
                                         <td>2,000 THB /night/room  * None Inclusive of Breakfast </td>
