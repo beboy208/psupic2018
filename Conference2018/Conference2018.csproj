@@ -212,6 +212,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Downloads\ReviewForm.txt" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -223,6 +224,8 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Downloads\PSU_PIC2018_Abstract_Template.V.1.1.doc" />
     <Content Include="Downloads\PSU_PIC2018_Abstract_Template.V.1.1.pdf" />
+    <Content Include="Downloads\ReviewForm.docx" />
+    <Content Include="Downloads\ReviewForm.pdf" />
     <None Include="Properties\PublishProfiles\DeployTo209.pubxml" />
     <Content Include="Lib\PSUPKTProvider.dll" />
     <Content Include="login.aspx" />

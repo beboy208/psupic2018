@@ -1,0 +1,51 @@
+submission	:
+title		:
+authors		:
+pc_member	:
+
+----------------------------------------
+
+Overall evaluation (*)
+<!--
+    == 3 strong accept
+    == 2 accept
+    == 1 weak accept
+    == 0 borderline paper
+    == -1 weak reject
+    == -2 reject
+    == -3 strong reject
+-->
+Score		:
+
+
+<!--
+    == Please provide a detailed review, including a justification for your
+    == scores. Both the score and the review text are required.
+-->
+Comment		:	
+
+
+
+
+
+----------------------------------------
+Reviewer's confidence (*).
+<!--
+    == 5 (expert)
+    == 4 (high)
+    == 3 (medium)
+    == 2 (low)
+    == 1 (none)
+-->
+Score		:
+
+
+<!--
+    == If you wish to add any remarks intended only for PC members please
+    == write them below. These remarks will only be seen by the PC members
+    == having access to reviews for this submission. They will not be sent
+    == to the authors. This field is optional.
+    -->
+Remark		:
+
+
