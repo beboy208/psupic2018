@@ -103,9 +103,9 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Call for submissions <span class="glyphicon glyphicon-triangle-bottom"></span></a>
                             <ul class="nav navbar-nav dropdown-menu">
                                 <li><a runat="server" href="call-for-submissions.aspx">Goals and Scope</a></li>
-                                <li><a runat="server" href="call-for-submissions.aspx#submission">Abstract Submission</a></li>
-                                <li><a runat="server" href="call-for-submissions.aspx#camera">Camera-ready Submission</a></li>
-                                <li><a runat="server" href="call-for-submissions.aspx#registration">Registration</a></li>
+                                <li><a runat="server" href="abstract.aspx">Abstract Submission</a></li>
+                                <li><a runat="server" href="camera.aspx">Camera-ready Submission</a></li>
+                                <li><a runat="server" href="regist.aspx">Registration</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">

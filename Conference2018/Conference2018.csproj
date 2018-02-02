@@ -185,6 +185,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="abstract.aspx" />
     <Content Include="Account\AddPhoneNumber.aspx" />
     <Content Include="Account\Confirm.aspx" />
     <Content Include="Account\Forgot.aspx" />
@@ -201,6 +202,7 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="call-for-submissions.aspx" />
+    <Content Include="camera.aspx" />
     <Content Include="co-orgs.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -229,6 +231,7 @@
     <None Include="Properties\PublishProfiles\DeployTo209.pubxml" />
     <Content Include="Lib\PSUPKTProvider.dll" />
     <Content Include="login.aspx" />
+    <Content Include="regist.aspx" />
     <Content Include="registration\default.aspx" />
     <Content Include="reports\submission.aspx" />
     <Content Include="reports\Web.config">
@@ -331,6 +334,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="abstract.aspx.cs">
+      <DependentUpon>abstract.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="abstract.aspx.designer.cs">
+      <DependentUpon>abstract.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Account\AddPhoneNumber.aspx.cs">
       <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -447,6 +457,13 @@
     <Compile Include="call-for-submissions.aspx.designer.cs">
       <DependentUpon>call-for-submissions.aspx</DependentUpon>
     </Compile>
+    <Compile Include="camera.aspx.cs">
+      <DependentUpon>camera.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="camera.aspx.designer.cs">
+      <DependentUpon>camera.aspx</DependentUpon>
+    </Compile>
     <Compile Include="co-orgs.aspx.cs">
       <DependentUpon>co-orgs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -513,6 +530,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="PSUMemberShipProvider.cs" />
+    <Compile Include="regist.aspx.cs">
+      <DependentUpon>regist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="regist.aspx.designer.cs">
+      <DependentUpon>regist.aspx</DependentUpon>
+    </Compile>
     <Compile Include="registration\registration.aspx.cs">
       <DependentUpon>registration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
