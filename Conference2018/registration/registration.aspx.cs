@@ -1,6 +1,4 @@
-﻿using PSUPICLib;
-using PSUPICLib.Interfaces;
-using PSUPICLib.Models;
+﻿using Conference2018.Datasources;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,17 +25,17 @@ namespace Conference2018.registration
 
         protected void btnVerify_Click(object sender, EventArgs e)
         {
-            var email = txtAuthorEmail.Text;
-            var paperID = txtPaperID.Text;
+            //var email = txtAuthorEmail.Text;
+            //var paperID = txtPaperID.Text;
 
-            IAuthentication<Author> security = new PSUPICAuthentication();
+            //IAuthentication<Author> security = new PSUPICAuthentication();
 
-            var author = security.Verify(PSUPICAcronym, email, paperID);
+            //var author = security.Verify(PSUPICAcronym, email, paperID);
 
-            if (author == null)
-                txtLoginError.Visible = true;
+            //if (author == null)
+            //    txtLoginError.Visible = true;
 
-            PSUPICAuthor = author;
+            //PSUPICAuthor = author;
         }
 
         protected void btnLogout_Click(object sender, EventArgs e)
@@ -47,14 +45,14 @@ namespace Conference2018.registration
 
         protected void btnRegist_Click(object sender, EventArgs e)
         {
-            IRegistrationable<Registration> user = PSUPICAuthor as IRegistrationable<Registration>;
-            user.SubmitRegistration(new Registration());
+            //IRegistrationable<Registration> user = PSUPICAuthor as IRegistrationable<Registration>;
+            //user.SubmitRegistration(new Registration());
         }
 
-        protected IEnumerable<Registration> GetAuthorRegistrations()
-        {
-            IRegistrationable<Registration> user = PSUPICAuthor as IRegistrationable<Registration>;
-            return user.GetRegistrations(PSUPICAcronym);
-        }
+        //protected IEnumerable<Registration> GetAuthorRegistrations()
+        //{
+        //    //IRegistrationable<Registration> user = PSUPICAuthor as IRegistrationable<Registration>;
+        //    //return user.GetRegistrations(PSUPICAcronym);
+        //}
     }
 }

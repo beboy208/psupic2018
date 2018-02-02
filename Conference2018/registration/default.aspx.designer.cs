@@ -13,21 +13,21 @@ namespace Conference2018.registration {
     public partial class _default {
         
         /// <summary>
-        /// LoginName1 control.
+        /// Login1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LoginName LoginName1;
+        protected global::System.Web.UI.WebControls.Login Login1;
         
         /// <summary>
-        /// LoginStatus1 control.
+        /// gvSubmission control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LoginStatus LoginStatus1;
+        protected global::System.Web.UI.WebControls.GridView gvSubmission;
     }
 }

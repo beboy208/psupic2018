@@ -11,7 +11,37 @@ namespace Conference2018.registration
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            gvSubmission.Visible = false;
+            if (Session["AuthorEmail"] != null)
+                loadSubmission(Session["AuthorEmail"].ToString());
 
+        }
+
+        protected void Login1_LoggedIn(object sender, EventArgs e)
+        {
+            var loginControl = (sender as Login);
+            if (loginControl != null)
+            {
+                Session["AuthorEmail"] = loginControl.UserName;
+            }
+        }
+
+        private void loadSubmission(string autherEmail)
+        {
+            IQueryable<Datasources.Submission> submissions = null;
+
+            using (Datasources.PSUPICEntities1 db = new Datasources.PSUPICEntities1())
+            {
+                submissions = from s in db.Submissions
+                              join u in db.Authors on s.Id equals u.SubmissionID
+                              join a in db.Areas on s.AreaID equals a.ID
+                              where a.ConferenceAcronym == "PSUPIC2018"
+                              select s;
+
+                gvSubmission.DataSource = submissions.ToList();
+                gvSubmission.DataBind();
+                gvSubmission.Visible = true;
+            }
         }
     }
 }

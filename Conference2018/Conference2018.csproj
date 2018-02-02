@@ -86,6 +86,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
@@ -214,6 +215,16 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Datasources\PSUPIC.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PSUPIC.edmx</DependentUpon>
+      <LastGenOutput>PSUPIC.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Datasources\PSUPIC.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PSUPIC.edmx</DependentUpon>
+      <LastGenOutput>PSUPIC.cs</LastGenOutput>
+    </Content>
     <Content Include="Downloads\ReviewForm.txt" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -228,6 +239,13 @@
     <Content Include="Downloads\PSU_PIC2018_Abstract_Template.V.1.1.pdf" />
     <Content Include="Downloads\ReviewForm.docx" />
     <Content Include="Downloads\ReviewForm.pdf" />
+    <EntityDeploy Include="Datasources\PSUPIC.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PSUPIC.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Datasources\PSUPIC.edmx.diagram">
+      <DependentUpon>PSUPIC.edmx</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\DeployTo209.pubxml" />
     <Content Include="Lib\PSUPKTProvider.dll" />
     <Content Include="login.aspx" />
@@ -450,6 +468,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="BLLs\PSUPIC2018MembershipProvider.cs" />
     <Compile Include="call-for-submissions.aspx.cs">
       <DependentUpon>call-for-submissions.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -470,6 +489,33 @@
     </Compile>
     <Compile Include="co-orgs.aspx.designer.cs">
       <DependentUpon>co-orgs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Datasources\Area.cs">
+      <DependentUpon>PSUPIC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datasources\Author.cs">
+      <DependentUpon>PSUPIC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datasources\Conference.cs">
+      <DependentUpon>PSUPIC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datasources\PSUPIC.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PSUPIC.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datasources\PSUPIC.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PSUPIC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datasources\PSUPIC.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PSUPIC.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Datasources\Submission.cs">
+      <DependentUpon>PSUPIC.tt</DependentUpon>
     </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
@@ -511,6 +557,8 @@
     </Compile>
     <Compile Include="Models\Emun.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\PSUPIC2018DbContext.cs" />
+    <Compile Include="Models\UserAccount.cs" />
     <Compile Include="organisation.aspx.cs">
       <DependentUpon>organisation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -596,19 +644,12 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="App_LocalResources\" />
-    <Folder Include="Datasources\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App_GlobalResources\Resource.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PSUPICLib\PSUPICLib.csproj">
-      <Project>{a9109961-58f7-484c-8beb-94da8cfbc86f}</Project>
-      <Name>PSUPICLib</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -628,6 +669,9 @@
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>Conference2018_th_ac_psu_passport_Authentication</CachedSettingsPropName>
     </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
