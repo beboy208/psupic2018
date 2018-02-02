@@ -6,9 +6,9 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <h3>Camera-ready Submission</h3>
+            <h2>Camera-ready Submission</h2>
             <div class="container">
-                <h4>How to submit the camera-ready version</h4>
+                <h3>How to submit the camera-ready version</h3>
                 <div class="container">
                     <ol>
                         <li>Go to the on-line submission system Easy Chair for PSU PIC 2018 <a href="https://easychair.org/conferences/?conf=psupic2018" target="_blank">https://easychair.org/conferences/?conf=psupic2018</a>

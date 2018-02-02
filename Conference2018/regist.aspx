@@ -6,9 +6,9 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <h3>Registration</h3>
+            <h2>Registration</h2>
             <div class="container">
-                <h4>Registration Fee</h4>
+                <h3>Registration Fee</h3>
                 <p style="color: red">** The registration fee excludes any transfer or exchange rate fee.</p>
                 <div class="container">
                     <table align="left" cellspacing="10" cellpadding="5" border="1">
@@ -69,7 +69,7 @@
                     </table>
                 </div>
                 <br />
-                <h4>Payment Method</h4>
+                <h3>Payment Method</h3>
                 <div class="container">
                     <ol>
                         <li>All participants are required to register and settle the registration fee by February 28, 2018.</li>

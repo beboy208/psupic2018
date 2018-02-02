@@ -6,7 +6,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <h3>Abstract Submission</h3>
+            <h2>Abstract Submission</h2>
             <div class="container">
                 <p>
                     We would like to invite you to submit an extended abstract to present at the conference. 
@@ -23,7 +23,7 @@
                     <li><a href="Downloads/PSU_PIC2018_Abstract_Template.V.1.1.doc">.Doc format</a></li>
                 </ul>
                 <br />
-                <h4>How to submit an abstract</h4>
+                <h3>How to submit an abstract</h3>
                 <div class="container">
                     <p>
                         <strong>PSU Phuket International Conference 2018 (PSU PIC 2018)</strong> utilises the <strong>EasyChair conference system</strong>
@@ -48,7 +48,6 @@
                         <li>Fill in Authors Information, Title, Abstract and Category, Keywords then select <i>PDF</i> file and submit your paper.</li>
                     </ol>
                 </div>
-
             </div>
         </div>
     </div>
