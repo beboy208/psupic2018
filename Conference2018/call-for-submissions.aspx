@@ -248,17 +248,25 @@
                                 </ol>
                             </div>
 
-                            <br />
+                        </div>
+                    </div>
+                </div>
+                <a name="camera"></a>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Camera-ready Submission</h3>
+                        <div class="container">
                             <h4>How to submit the camera-ready version</h4>
                             <div class="container">
                                 <ol>
                                     <li>Go to the on-line submission system Easy Chair for PSU PIC 2018 <a href="https://easychair.org/conferences/?conf=psupic2018" target="_blank">https://easychair.org/conferences/?conf=psupic2018</a>
-                                        and log-in using your EasyChair account (this should be the same account you have used to submit the initial paper proposal).</li>
-                                    <li>Click on the <strong>"Proceedings"</strong> menu item at the top of the page.</li>
-                                    <li>Click on the paper ID that you want to submit. This will take you to the individual paper page that contains all the details of the paper.</li>
-                                    <li>Click on the <strong>"Upload new version"</strong> menu on the right corner to submit the final version.</li>
+                                        and log-in using your EasyChair account (this should be the same account you have used to submit the initial paper).</li>
+                                    <li>Click on the role link as <strong>"Proceedings author (Camera-Ready Submission)"</strong></li>
+                                    <li>Click on the <strong>"My Papers"</strong> menu item at the top of the page.</li>
+                                    <li>Click on the paper ID"that you want to submit. This will take you to the individual paper page that contains all the details of the paper. 
+                                        Click on the <strong>"Update new version"</strong> menu on the right corner to submit the camera ready version. 
                                     <li>At the bottom of the page, browse to find your PDF files. Then press <strong>"Submit a New Version"</strong> button. 
-                                        We <i>do not require</i> the signed copyright form for this conference.</li>
+                                        We <u>do not require</u> the signed copyright form for this conference.</li>
                                 </ol>
                             </div>
                             <%-- <p class="tba">To Be Announced</p>--%>
@@ -266,6 +274,8 @@
                         </div>
                     </div>
                 </div>
+
+
                 <a name="registration"></a>
                 <div class="row">
                     <div class="col-md-12">
@@ -334,7 +344,31 @@
                             <br />
                             <h4>Payment Method</h4>
                             <div class="container">
-                                <p class="tba">To Be Announced</p>
+                                <ol>
+                                    <li>All participants are required to register and settle the registration fee by February 28, 2018.</li>
+                                    <li>The registration fees are net rates excluding any transfer or exchange rate fee.</li>
+                                    <li>The registration fee is non-refundable for any cancellation.</li>
+                                    <li>Accepted extended abstract paper that are registered without payment settlement will not be published in the proceedings.</li>
+                                    <li>The registration fee must be settled to the following accounts.
+                                        <div  class="container">
+                                            <ul>
+                                                <li><strong>Bank:</strong> Siam Commercial Bank, Prince of Songkla University, Phuket Campus Branch.</li>
+                                                <li><strong>Account name:</strong> Prince of Songkla University Account.</li>
+                                                <li><strong>Account No.:</strong> 857-200562-3</li>
+                                                <li><strong>Telex No.:</strong> 20455 SIAMFX TH</li>
+                                                <li><strong>Swift Code:</strong> SICOTHBK</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ol>
+                                <strong>Remarks</strong>
+                                <ol>
+                                    <li>After completing the payment, please email the payment transfer document to 
+                                        <a href="mailto:pannee.pe@phuket.psu.ac.th">Ms. Pannee Phetlum</a>
+                                        Email: <a href="mailto:pannee.pe@phuket.psu.ac.th">pannee.pe(at)phuket.psu.ac.th</a>
+                                    </li>
+                                    <li>The original registration form and the payment transfer document are required to present upon registration at the conference venue.</li>
+                                </ol>
                             </div>
                         </div>
                     </div>

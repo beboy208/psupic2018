@@ -104,6 +104,7 @@
                             <ul class="nav navbar-nav dropdown-menu">
                                 <li><a runat="server" href="call-for-submissions.aspx">Goals and Scope</a></li>
                                 <li><a runat="server" href="call-for-submissions.aspx#submission">Abstract Submission</a></li>
+                                <li><a runat="server" href="call-for-submissions.aspx#camera">Camera-ready Submission</a></li>
                                 <li><a runat="server" href="call-for-submissions.aspx#registration">Registration</a></li>
                             </ul>
                         </li>
