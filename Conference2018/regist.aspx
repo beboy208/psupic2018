@@ -8,6 +8,18 @@
         <div class="col-md-12">
             <h2>Registration</h2>
             <div class="container">
+
+                <!-- Regist Button -->
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <a href="https://docs.google.com/forms/d/18lqoMzvRs-6awH_DkqEjz0yenBRQzVp41R4IwQ_nxF4/edit?ts=5a76729d"
+                            class="btn btn-primary btn-lg center-block"
+                            style="padding: 15px 5px; font-size: 1.5em;"
+                            target="_blank">Register Here</a>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
                 <h3>Registration Fee</h3>
                 <p style="color: red">** The registration fee excludes any transfer or exchange rate fee.</p>
                 <div class="container">
