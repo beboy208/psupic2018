@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="regist.aspx.cs" Inherits="Conference2018.regist" %>
+﻿<%@ Page Title="Registration" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="regist.aspx.cs" Inherits="Conference2018.regist" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumbotron">
@@ -91,9 +91,15 @@
                         <li>The registration fee must be settled to the following accounts.
                                         <div class="container">
                                             <ul>
-                                                <li><strong>Bank:</strong> Siam Commercial Bank, Prince of Songkla University, Phuket Campus Branch.</li>
+                                                <%-- <li><strong>Bank:</strong>Siam Commercial Bank, Prince of Songkla University, Phuket Campus.</li>
                                                 <li><strong>Account name:</strong> Prince of Songkla University Account.</li>
                                                 <li><strong>Account No.:</strong> 857-200562-3</li>
+                                                <li><strong>Telex No.:</strong> 20455 SIAMFX TH</li>
+                                                <li><strong>Swift Code:</strong> SICOTHBK</li>--%>
+
+                                                <li><strong>Bank:</strong> The Siam Commercial Bank PCL., Prince of Songkla University (Phuket) Sub Branch.</li>
+                                                <li><strong>Account Name:</strong> PSU PHUKET CA</li>
+                                                <li><strong>Account No.:</strong> 857-3-00006-6</li>
                                                 <li><strong>Telex No.:</strong> 20455 SIAMFX TH</li>
                                                 <li><strong>Swift Code:</strong> SICOTHBK</li>
                                             </ul>
