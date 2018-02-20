@@ -85,6 +85,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.ServiceModel" />
@@ -202,6 +203,7 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="authors.aspx" />
     <Content Include="call-for-submissions.aspx" />
     <Content Include="camera.aspx" />
     <Content Include="co-orgs.aspx" />
@@ -247,6 +249,44 @@
       <DependentUpon>PSUPIC.edmx</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\DeployTo209.pubxml" />
+    <Content Include="imgs\authors\qrcode\psupic2018018.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018026.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018034.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018042.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018050.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018068.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018076.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018084.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018092.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018100.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018118.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018126.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018134.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018142.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018150.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018168.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018176.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018184.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018192.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018200.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018218.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018226.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018234.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018242.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018250.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018268.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018276.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018284.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018292.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018300.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018318.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018326.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018334.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018342.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018350.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018368.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018376.png" />
+    <Content Include="imgs\authors\qrcode\psupic2018384.png" />
     <Content Include="Lib\PSUPKTProvider.dll" />
     <Content Include="login.aspx" />
     <Content Include="regist.aspx" />
@@ -468,7 +508,16 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="authors.aspx.cs">
+      <DependentUpon>authors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="authors.aspx.designer.cs">
+      <DependentUpon>authors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BLLs\AuthorBLL.cs" />
     <Compile Include="BLLs\PSUPIC2018MembershipProvider.cs" />
+    <Compile Include="Services\REST.cs" />
     <Compile Include="call-for-submissions.aspx.cs">
       <DependentUpon>call-for-submissions.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

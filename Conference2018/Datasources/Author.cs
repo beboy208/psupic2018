@@ -21,6 +21,8 @@ namespace Conference2018.Datasources
         public Nullable<int> AuthorOrder { get; set; }
         public string Organization { get; set; }
         public string Country { get; set; }
+        public string QRCodePath { get; set; }
+        public string Code { get; set; }
     
         public virtual Submission Submission { get; set; }
     }
