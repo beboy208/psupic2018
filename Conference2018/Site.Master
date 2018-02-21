@@ -119,7 +119,7 @@
                                 <li><a runat="server" href="important-dates.aspx#transportation">Transportation service</a></li>
                             </ul>
                         </li>
-                        <li><a runat="server" href="guildelines.aspx">Presenter Guilelines</a></li>
+                        <li><a runat="server" href="guildelines.aspx">Presenter Guidelines</a></li>
                         <li><a runat="server" href="organisation.aspx">Organisation</a></li>
                         <%--<li><a runat="server" href="speakers.aspx">Speakers</a></li>--%>
                         <li><a runat="server" href="location.aspx">Location</a></li>
