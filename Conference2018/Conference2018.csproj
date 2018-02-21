@@ -249,6 +249,7 @@
       <DependentUpon>PSUPIC.edmx</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\DeployTo209.pubxml" />
+    <Content Include="guildelines.aspx" />
     <Content Include="imgs\authors\qrcode\psupic2018018.png" />
     <Content Include="imgs\authors\qrcode\psupic2018026.png" />
     <Content Include="imgs\authors\qrcode\psupic2018034.png" />
@@ -517,6 +518,13 @@
     </Compile>
     <Compile Include="BLLs\AuthorBLL.cs" />
     <Compile Include="BLLs\PSUPIC2018MembershipProvider.cs" />
+    <Compile Include="guildelines.aspx.cs">
+      <DependentUpon>guildelines.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="guildelines.aspx.designer.cs">
+      <DependentUpon>guildelines.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Services\REST.cs" />
     <Compile Include="call-for-submissions.aspx.cs">
       <DependentUpon>call-for-submissions.aspx</DependentUpon>

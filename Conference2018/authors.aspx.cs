@@ -24,12 +24,12 @@ namespace Conference2018
                 }
                 else
                 {
-                    submissionIDs = submissions2018.Select(s => s.Id).ToList();
+                   // submissionIDs = submissions2018.Select(s => s.Id).ToList();
                 }
 
                 
 
-                var authors = db.Authors.Where(a => a.QRCodePath.ToLower().Contains(authorCode.ToLower()));
+                //var authors = db.Authors.Where(a => a.QRCodePath.ToLower().Contains(authorCode.ToLower()));
 
 
                 var submissions2018 = db.Submissions.Where(s => s.Area.ConferenceAcronym.ToLower() == "psupic2018");
@@ -38,7 +38,7 @@ namespace Conference2018
                 
 
                 //Find author by submissionID
-                var authors = db.Authors.Where(au => au.SubmissionID.HasValue && submissionIDs.Contains(au.SubmissionID.Value));
+                //var authors = db.Authors.Where(au => au.SubmissionID.HasValue && submissionIDs.Contains(au.SubmissionID.Value));
 
                 var a = Conference2018.Services.REST.GetFromTA("api/{0}/events/{1}/attendees/{attendeeID}");
                 //var author2018 = db.Authors.
