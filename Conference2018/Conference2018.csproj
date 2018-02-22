@@ -203,6 +203,7 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="attendance.aspx" />
     <Content Include="authors.aspx" />
     <Content Include="call-for-submissions.aspx" />
     <Content Include="camera.aspx" />
@@ -509,6 +510,13 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="attendance.aspx.cs">
+      <DependentUpon>attendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="attendance.aspx.designer.cs">
+      <DependentUpon>attendance.aspx</DependentUpon>
+    </Compile>
     <Compile Include="authors.aspx.cs">
       <DependentUpon>authors.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -518,6 +526,7 @@
     </Compile>
     <Compile Include="BLLs\AuthorBLL.cs" />
     <Compile Include="BLLs\PSUPIC2018MembershipProvider.cs" />
+    <Compile Include="Datasources\PSUPKTTimeAttendance.cs" />
     <Compile Include="guildelines.aspx.cs">
       <DependentUpon>guildelines.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -525,6 +534,7 @@
     <Compile Include="guildelines.aspx.designer.cs">
       <DependentUpon>guildelines.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\TimeAttendanceModel.cs" />
     <Compile Include="Services\REST.cs" />
     <Compile Include="call-for-submissions.aspx.cs">
       <DependentUpon>call-for-submissions.aspx</DependentUpon>

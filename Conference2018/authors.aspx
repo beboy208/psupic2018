@@ -14,7 +14,7 @@
     <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
-<body style="padding-top: 80px; min-width: 400px">
+<body style="padding-top: 80px;">
     <div class="navbar navbar-fixed-top" style="background-color: #3b5998">
         <div class="navbar-header">
             <div class="navbar-brand">
