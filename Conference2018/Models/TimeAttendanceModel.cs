@@ -26,10 +26,12 @@ namespace Conference2018.Models
 
     public class Attendee
     {
+        public string ID { get; set; }
         public string Code { get; set; }
-        public string Name { get; set; }
+        public string FullName { get; set; }
         public string Email { get; set; }
-        public string Tel { get; set; }
-        public bool IsWalkIn { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Address { get; set; }
+        public bool IsWalkInAttendee { get; set; }
     }
 }
