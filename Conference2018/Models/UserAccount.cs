@@ -18,7 +18,8 @@ namespace Conference2018.Models
         public string ID { get; set; }
         public string FullName { get; set; }
         public string Email { get; set; }
+        public string Organization { get; set; }
+        public string Country { get; set; }
         public string QRCodePath { get; set; }
-        public List<int> PaperIDs { get; set; }
     }
 }
