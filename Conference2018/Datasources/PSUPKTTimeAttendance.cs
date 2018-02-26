@@ -17,9 +17,9 @@ namespace Conference2018.Datasources
     public class PSUPKTTimeAttendance
     {
         string _server = "http://192.168.192.209:8089/"; //ที่ตั้งของ Service
-        string _applicationID = "p$up1c2018"; //รหัส Application ของ PSUPIC2018
+        string _applicationID = "p$up1c"; //รหัส Application ของ Partner: PSUPIC
         string _eventID = "cc11f90bc1e14291a228afa3762db417";
-        int _schID = 1; //หมายเลข Schedule ในฐาน ซึ่งเป็นของ eventID ข้างต้น
+        int _schID = 1; //หมายเลข Schedule ในฐานของ Event นี้
         string _caller = "nontapon.r"; //ตัวแทนเรียก ทำหน้าที่เป็น MemberPartner
 
         HttpClient _client = new HttpClient();
@@ -91,61 +91,67 @@ namespace Conference2018.Datasources
         }
 
 
+        /// <summary>
+        /// Get Attendee by Code (no exception)
+        /// </summary>
+        /// <param name="attendeeCode"></param>
+        /// <returns></returns>
         public Attendee GetAttendee(string attendeeCode)
         {
-
-            var response = callService(string.Format("api/{0}/events/{1}/attendees?code={2}", _caller, _eventID, attendeeCode));
-            if (response == null)
-                return null;
-
-            var result = response.Select(x => new Attendee()
+            Attendee result = null;
+            try
             {
-                ID = x["ID"].Value<string>(),
-                Address = x["Address"].Value<string>(),
-                Code = x["Code"].Value<string>(),
-                Email = x["Email"].Value<string>(),
-                FullName = x["FullName"].Value<string>(),
-                IsWalkInAttendee = x["IsWalkInAttendee"].Value<bool>(),
-                PhoneNumber = x["PhoneNumber"].Value<string>()
-            }).FirstOrDefault();
+                var response = callService(string.Format("api/{0}/events/{1}/attendees?code={2}", _caller, _eventID, attendeeCode));
+                if (response == null)
+                    return null;
+
+                result = response.Select(x => new Attendee()
+                {
+                    ID = x["ID"].Value<string>(),
+                    Address = x["Address"].Value<string>(),
+                    Code = x["Code"].Value<string>(),
+                    Email = x["Email"].Value<string>(),
+                    FullName = x["FullName"].Value<string>(),
+                    IsWalkInAttendee = x["IsWalkInAttendee"].Value<bool>(),
+                    PhoneNumber = x["PhoneNumber"].Value<string>()
+                }).FirstOrDefault();
+            }
+            catch (Exception) { }
 
             return result;
-
-
-            //var response = callService(string.Format("api/{0}/events/{1}/attendees", _caller, _eventID));
-            //if (response == null)
-            //    return null;
-
-            //var result = response.Where(x => x["Code"].Value<string>() == attendeeCode)
-            //             .Select(x => new Attendee()
-            //             {
-            //                 Address = x["Address"].Value<string>(),
-            //                 Code = x["Code"].Value<string>(),
-            //                 Email = x["Email"].Value<string>(),
-            //                 FullName = x["FullName"].Value<string>(),
-            //                 IsWalkInAttendee = x["IsWalkInAttendee"].Value<bool>(),
-            //                 PhoneNumber = x["PhoneNumber"].Value<string>()
-            //             }).FirstOrDefault();
-
-            //return result;
-
         }
 
-        public void PostAttendee(Attendee attendee)
+        /// <summary>
+        /// Insert attendee (no excpetion)
+        /// </summary>
+        /// <param name="attendee"></param>
+        /// <returns></returns>
+        public bool PostAttendee(Attendee attendee)
         {
-            string requestUri = string.Format("api/{0}/events/{1}/attendees", _caller, _eventID);
-            var response = _client.PostAsJsonAsync(requestUri, attendee).Result;
-            response.EnsureSuccessStatusCode();
+            bool result;
+            try
+            {
+                string requestUri = string.Format("api/{0}/events/{1}/attendees", _caller, _eventID);
+                var response = _client.PostAsJsonAsync(requestUri, attendee).Result;
+                response.EnsureSuccessStatusCode();
+                result = true;
+            }
+            catch (Exception)
+            {
+                result = false;
+            }
+
+            return result;
         }
 
-        public void checkInAttendance(string attendeeID)
+        public Tuple<bool, DateTime> checkInAttendance(string attendeeID)
         {
-
+            return new Tuple<bool, DateTime>(true, DateTime.Now);
         }
 
-        public void checkOutAttendance(string attendeeID)
+        public Tuple<bool, DateTime> checkOutAttendance(string attendeeID)
         {
-
+            return new Tuple<bool, DateTime>(true, DateTime.Now);
         }
 
         //void InsertAttendance(Attendance )

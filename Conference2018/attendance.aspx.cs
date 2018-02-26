@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Conference2018.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,51 +14,48 @@ namespace Conference2018
 
         protected void Page_Load(object sender, EventArgs e)
         {
-           
-            
+
+
         }
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            try
-            {
-                _ta.PostAttendee(new Models.Attendee()
-                {
-                    Code = txtCode.Text,
-                    Email = txtEmail.Text,
-                    FullName = txtName.Text,
-                    PhoneNumber = string.IsNullOrWhiteSpace(txtPhone.Text) ? null : txtPhone.Text,
-                    Address = string.IsNullOrWhiteSpace(txtAddress.Text) ? null : txtAddress.Text,
-                    IsWalkInAttendee = true,
-                });
-            }
-            catch (Exception)
-            {
-                //Do notting, prevent insert failed, ex: duplicated code
-            }
-
-
-            var result = _ta.GetAttendee(txtCode.Text);
-            if (result == null)
-            {
-                //Insert Failed
-            } else
-            {
-                //Insert Success, then check in
-                _ta.checkInAttendance(result.ID);
-            }
-
-
-
-
-            //_ta.PostAttendee(new Models.Attendee()
+            //InsertAttendee(new Models.Attendee()
             //{
             //    Code = "nontapon.r",
             //    Email = "x@x.com",
+            //    FullName = "Nontapon Rattanapittayporn",
             //    IsWalkInAttendee = true,
-            //    FullName = "Name",
             //    PhoneNumber = "9999999"
             //});
+
+            _ta.PostAttendee(new Models.Attendee()
+            {
+                Code = txtCode.Text,
+                Email = txtEmail.Text,
+                FullName = txtName.Text,
+                PhoneNumber = string.IsNullOrWhiteSpace(txtPhone.Text) ? null : txtPhone.Text,
+                Address = string.IsNullOrWhiteSpace(txtAddress.Text) ? null : txtAddress.Text,
+                IsWalkInAttendee = true,
+            });
+
+            //Attendee should be found after inserted or existed 
+            var attendee = _ta.GetAttendee(txtCode.Text);
+            if (attendee == null)
+            {
+                //attendee not found in this situration mean Insert Failed
+                dangerAlert.Visible = true;
+                dangerAlert.InnerText = string.Format("Registration failed for Attendee {0}", txtCode.Text) + Environment.NewLine;
+            }
+            else
+            {
+                var checkIn = _ta.checkInAttendance(attendee.ID);
+                successAlert.Visible = true;
+                successAlert.InnerText = string.Format("{0} {1}checked-in on {1}",
+                    txtName.Text,
+                    checkIn.Item1 ? "" : "already ",
+                    checkIn.Item2.ToString("MM dd, yyyy hh:mm"));
+            }
         }
     }
 }

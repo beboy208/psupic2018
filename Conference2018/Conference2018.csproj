@@ -569,7 +569,6 @@
       <DependentUpon>guildelines.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\TimeAttendanceModel.cs" />
-    <Compile Include="Services\REST.cs" />
     <Compile Include="call-for-submissions.aspx.cs">
       <DependentUpon>call-for-submissions.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

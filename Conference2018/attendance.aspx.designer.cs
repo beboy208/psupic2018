@@ -13,6 +13,24 @@ namespace Conference2018 {
     public partial class attendance {
         
         /// <summary>
+        /// successAlert control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl successAlert;
+        
+        /// <summary>
+        /// dangerAlert control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dangerAlert;
+        
+        /// <summary>
         /// lbCode control.
         /// </summary>
         /// <remarks>
