@@ -242,6 +242,8 @@
     <Content Include="call-for-submissions.aspx" />
     <Content Include="camera.aspx" />
     <Content Include="co-orgs.aspx" />
+    <Content Include="conference-programme.aspx" />
+    <Content Include="conference-sessions.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -560,6 +562,20 @@
     </Compile>
     <Compile Include="BLLs\AuthorBLL.cs" />
     <Compile Include="BLLs\PSUPIC2018MembershipProvider.cs" />
+    <Compile Include="conference-programme.aspx.cs">
+      <DependentUpon>conference-programme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="conference-programme.aspx.designer.cs">
+      <DependentUpon>conference-programme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="conference-sessions.aspx.cs">
+      <DependentUpon>conference-sessions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="conference-sessions.aspx.designer.cs">
+      <DependentUpon>conference-sessions.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Datasources\PSUPKTTimeAttendance.cs" />
     <Compile Include="guildelines.aspx.cs">
       <DependentUpon>guildelines.aspx</DependentUpon>

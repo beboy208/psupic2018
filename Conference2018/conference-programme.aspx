@@ -14,13 +14,13 @@
                         <tbody>
                             <tr valign="top"><th colspan="3" bgcolor="#d8e3f6" valign="top"><p align="center"><strong>Sunday 11 March 2018</strong></p></th></tr>
                             <tr>
-                                <th width="20%" valign="top" bgcolor="#999">
+                                <th width="20%" valign="top" style="background-color: lightgray">
                                     <p align="center"><strong>Time</strong></p>
                                 </th>
-                                <th width="35%" valign="top" bgcolor="#999">
+                                <th width="35%" valign="top" style="background-color: lightgray">
                                     <p align="center"><strong>PSU PIC 2018 Conference</strong></p>
                                 </th>
-                                <th width="30%" valign="top" bgcolor="#999">
+                                <th width="30%" valign="top" style="background-color: lightgray">
                                     <p align="center"><strong>5CIs Workshop of Shanghai University</strong></p>
                                 </th>
                             </tr>
@@ -73,13 +73,13 @@
                         <tbody>
                             <tr valign="top"><th colspan="3" bgcolor="#d8e3f6" valign="top"><p align="center"><strong>Monday 12 March 2018</strong></p></th></tr>
                             <tr>
-                                <th width="20%" valign="top" bgcolor="#999">
+                                <th width="20%" valign="top" style="background-color: lightgray">
                                     <p align="center"><strong>Time</strong></p>
                                 </th>
-                                <th width="35%" valign="top" bgcolor="#999">
+                                <th width="35%" valign="top" style="background-color: lightgray">
                                     <p align="center"><strong>PSU PIC 2018 Conference</strong></p>
                                 </th>
-                                <th width="30%" valign="top" bgcolor="#999">
+                                <th width="30%" valign="top" style="background-color: lightgray">
                                     <p align="center"><strong>5CIs Workshop of Shanghai University</strong></p>
                                 </th>
                             </tr>
