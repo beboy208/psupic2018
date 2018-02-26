@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="conference-programme.aspx.cs" Inherits="Conference2018.ConferenceProgramme" %>
+﻿<%@ Page Title="Conference Programme" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="conference-programme.aspx.cs" Inherits="Conference2018.ConferenceProgramme" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumbotron">
         <img id="jumbotron" src="imgs/jumbotron3.png" />
@@ -13,14 +13,14 @@
                     <table align="left" cellspacing="10" cellpadding="5" border="1">
                         <tbody>
                             <tr valign="top"><th colspan="3" bgcolor="#d8e3f6" valign="top"><p align="center"><strong>Sunday 11 March 2018</strong></p></th></tr>
-                            <tr>
-                                <th width="20%" valign="top" style="background-color: lightgray">
+                            <tr style="background-color: darkgray">
+                                <th width="20%" valign="top">
                                     <p align="center"><strong>Time</strong></p>
                                 </th>
-                                <th width="35%" valign="top" style="background-color: lightgray">
+                                <th width="35%" valign="top">
                                     <p align="center"><strong>PSU PIC 2018 Conference</strong></p>
                                 </th>
-                                <th width="30%" valign="top" style="background-color: lightgray">
+                                <th width="30%" valign="top">
                                     <p align="center"><strong>5CIs Workshop of Shanghai University</strong></p>
                                 </th>
                             </tr>
@@ -72,14 +72,14 @@
                <table align="left" cellspacing="10" cellpadding="5" border="1">
                         <tbody>
                             <tr valign="top"><th colspan="3" bgcolor="#d8e3f6" valign="top"><p align="center"><strong>Monday 12 March 2018</strong></p></th></tr>
-                            <tr>
-                                <th width="20%" valign="top" style="background-color: lightgray">
+                            <tr style="background-color: darkgray">
+                                <th width="20%" valign="top">
                                     <p align="center"><strong>Time</strong></p>
                                 </th>
-                                <th width="35%" valign="top" style="background-color: lightgray">
+                                <th width="35%" valign="top">
                                     <p align="center"><strong>PSU PIC 2018 Conference</strong></p>
                                 </th>
-                                <th width="30%" valign="top" style="background-color: lightgray">
+                                <th width="30%" valign="top">
                                     <p align="center"><strong>5CIs Workshop of Shanghai University</strong></p>
                                 </th>
                             </tr>
@@ -107,11 +107,11 @@
                                     <p>&nbsp; Group Photo </p>
                                 </td>
                              </tr>
-                            <tr>
-                                <td width="20%" valign="top" bgcolor="#ccc">
+                            <tr style="background-color: lightgray">
+                                <td width="20%" valign="top" >
                                     <p>&nbsp; <strong>10.15-10.30 </strong></p>
                                 </td>
-                                <td colspan="2" width="65%" valign="top" bgcolor="#ccc">
+                                <td colspan="2" width="65%" valign="top" >
                                     <p>&nbsp; <strong>Refreshment Break </strong></p>
                                 </td>
                              </tr>
@@ -153,11 +153,11 @@
                             </tr>
 
 
-                            <tr>
-                                <td width="20%" valign="top" bgcolor="#ccc">
+                            <tr style="background-color: lightgray">
+                                <td width="20%" valign="top" >
                                     <p>&nbsp; <strong> 12.00-13.00</strong></p>
                                 </td>
-                                <td colspan="2" width="65%" valign="top" bgcolor="#ccc">
+                                <td colspan="2" width="65%" valign="top" >
                                     <p>&nbsp;<strong> Lunch at the CAMPUS, Building 2 </strong></p>
                                 </td>
                              </tr>
@@ -204,11 +204,11 @@ Room: 5103A, 1st Floor, Building 5A
                             </tr>
 
 
-                            <tr>
-                                <td width="20%" valign="top" bgcolor="#ccc">
+                            <tr style="background-color: lightgray">
+                                <td width="20%" valign="top">
                                     <p>&nbsp;<strong> 14.30-15.00</strong></p>
                                 </td>
-                                <td colspan="2" width="65%" valign="top" bgcolor="#ccc">
+                                <td colspan="2" width="65%" valign="top">
                                     <p>&nbsp; <strong>Refreshment Break</strong></p>
                                 </td>
                              </tr>

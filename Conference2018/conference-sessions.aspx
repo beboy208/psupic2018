@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="conference-sessions.aspx.cs" Inherits="Conference2018.ConferenceSessions" %>
+﻿<%@ Page Title="Conference Sessions" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="conference-sessions.aspx.cs" Inherits="Conference2018.ConferenceSessions" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumbotron">
         <img id="jumbotron" src="imgs/jumbotron3.png" />
