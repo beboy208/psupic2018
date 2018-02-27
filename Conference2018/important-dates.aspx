@@ -15,9 +15,10 @@
             </div>
         </div>
     </div>
+    
+    <%----
     <hr />
 
-    <%----
     <a name="ceremony"></a>
     <div class="row">
         <div class="col-md-12">
@@ -50,7 +51,7 @@
         </div>
     </div>
     <hr />
----%>
+
     <a name="sightseeing"></a>
     <div class="row">
         <div class="col-md-12">
@@ -71,4 +72,5 @@
             </div>
         </div>
     </div>
+    --%>
 </asp:Content>
