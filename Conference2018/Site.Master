@@ -44,7 +44,7 @@
 </head>
 <body>
     <form runat="server">
-      
+
         <asp:ScriptManager runat="server">
             <Scripts>
                 <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
@@ -105,34 +105,37 @@
                                 <li><a runat="server" href="call-for-submissions.aspx">Goals and Scope</a></li>
                                 <li><a runat="server" href="abstract.aspx">Abstract Submission</a></li>
                                 <li><a runat="server" href="camera.aspx">Camera-ready Submission</a></li>
-                                <li><a runat="server" href="regist.aspx">Registration</a></li>
+                                <%--<li><a runat="server" href="regist.aspx">Registration</a></li>--%>
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Important dates <span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Schedules<span class="glyphicon glyphicon-triangle-bottom"></span></a>
                             <ul class="nav navbar-nav dropdown-menu">
                                 <li><a runat="server" href="important-dates.aspx">Important dates</a></li>
-                      <%---          <li><a runat="server" href="important-dates.aspx#ceremony">Open ceremony</a></li> 
-                                <li><a runat="server" href="important-dates.aspx#reception">Welcome reception</a></li>
-                                <li><a runat="server" href="important-dates.aspx#session">Conference session</a></li> ---%>
-                                <li><a runat="server" href="important-dates.aspx#sightseeing">Phuket sightseeing</a></li>
-                                <li><a runat="server" href="important-dates.aspx#transportation">Transportation service</a></li>
+                                <li><a runat="server" href="conference-programme.aspx">Conference Programme</a></li>
+                                <li><a runat="server" href="conference-sessions.aspx">Conference Sessions</a></li>
+                                <li><a runat="server" href="sightseeing.aspx">Phuket sightseeing</a></li>
+                                <%--<li><a runat="server" href="important-dates.aspx#transportation">Transportation service</a></li>--%>
                             </ul>
                         </li>
-                        <li class="dropdown">
+                        <li><a runat="server" href="regist.aspx">Registration</a></li>
+                        <%--<li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Conference Programme <span class="glyphicon glyphicon-triangle-bottom"></span></a>
                             <ul class="nav navbar-nav dropdown-menu">
                                 <li><a runat="server" href="conference-programme.aspx">Conference Programme</a></li>
                                 <li><a runat="server" href="conference-sessions.aspx">Conference Sessions</a></li> 
                             </ul>
-                        </li>
+                        </li>--%>
                         <li><a runat="server" href="guildelines.aspx">Presenter Guilelines</a></li>
+
                         <li><a runat="server" href="organisation.aspx">Organisation</a></li>
-                        <%--<li><a runat="server" href="speakers.aspx">Speakers</a></li>--%>
-                        <li><a runat="server" href="location.aspx">Location</a></li>
-                        <%--<li><a runat="server" href="co-orgs.aspx">Co-Organizers</a></li>--%>
-                        <%--<li><a runat="server" href="~/">Links</a></li>--%>
-                         
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Info.<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                            <ul class="nav navbar-nav dropdown-menu">
+                                <li><a runat="server" href="location.aspx">Conference Venue</a></li>
+                                <li><a runat="server" href="accommodation.aspx">Accommodation</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -141,7 +144,7 @@
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-           <%-- Username: <%: Context.User.Identity.GetUserName()  %> 
+            <%-- Username: <%: Context.User.Identity.GetUserName()  %> 
             <asp:LoginStatus ID="LoginStatus1" runat="server"  LogoutText="Log out"/>
             <asp:LoginView ID="LoginView1" runat="server"></asp:LoginView>--%>
             <hr />

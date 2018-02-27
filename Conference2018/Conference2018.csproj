@@ -222,6 +222,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="abstract.aspx" />
+    <Content Include="accommodation.aspx" />
     <Content Include="Account\AddPhoneNumber.aspx" />
     <Content Include="Account\Confirm.aspx" />
     <Content Include="Account\Forgot.aspx" />
@@ -437,6 +438,13 @@
     </Compile>
     <Compile Include="abstract.aspx.designer.cs">
       <DependentUpon>abstract.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="accommodation.aspx.cs">
+      <DependentUpon>accommodation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="accommodation.aspx.designer.cs">
+      <DependentUpon>accommodation.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\AddPhoneNumber.aspx.cs">
       <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
