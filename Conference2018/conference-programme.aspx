@@ -48,7 +48,7 @@
                             </tr>
                             <tr>
                          <td width="35%" valign="top">
-                                    <p>&nbsp; Phuket Sightseeing Tour</p>
+                                    <p>&nbsp; <a href="sightseeing.aspx">Phuket Sightseeing Tour</a></p>
                                 </td>
  
                             </tr>
@@ -93,15 +93,21 @@
                              </tr>
                             <tr>
                                 <td width="20%" valign="top">
-                                    <p>&nbsp; 09.00-10.00 </p>
+                                    <p>&nbsp; 09.00-10.10 </p>
                                 </td>
                                 <td colspan="2" width="65%" valign="top">
                                     <p>&nbsp; Opening Ceremony of the 50th PSU Anniversary Celebration and PSU Phuket International Conference at Chao-Fah Meeting Room, 5th Floor, Building 7 </p>
+                                    <ul>
+                                        <li>Welcome Remarks</li>
+                                        <li>Briefing Remarks</li>
+                                        <li>Opening Remarks</li>
+                                        <li>Opening Ceremony & Performance</li>
+                                    </ul>
                                 </td>
                              </tr>
                             <tr>
                                 <td width="20%" valign="top">
-                                    <p>&nbsp; 10.00-10.15 </p>
+                                    <p>&nbsp; 10.10-10.15 </p>
                                 </td>
                                 <td colspan="2" width="65%" valign="top">
                                     <p>&nbsp; Group Photo </p>

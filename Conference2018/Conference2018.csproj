@@ -405,6 +405,7 @@
     <Content Include="default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="sightseeing.aspx" />
     <Content Include="Site.Master" />
     <Content Include="speakers.aspx" />
     <Content Include="UserControls\ucImportantDates.ascx" />
@@ -721,6 +722,13 @@
     </Compile>
     <Compile Include="reports\submission.aspx.designer.cs">
       <DependentUpon>submission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sightseeing.aspx.cs">
+      <DependentUpon>sightseeing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sightseeing.aspx.designer.cs">
+      <DependentUpon>sightseeing.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
