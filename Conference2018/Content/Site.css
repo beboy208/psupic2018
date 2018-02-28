@@ -49,11 +49,11 @@ input[type="select"] {
 
 .container .row1 {
     padding: 40px 40px 40px 40px;
-    margin:20px 20px 20px 20px;
-    background-color:#f2f2f2;
+    margin: 20px 20px 20px 20px;
+    background-color: #f2f2f2;
 }
 
-.page-header{
+.page-header {
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     border-color: rgba(0,0,0,.05);
@@ -76,21 +76,21 @@ button.accordion {
     transition: 0.4s;
 }
 
-button.accordion.active, button.accordion:hover {
-    background-color: #29447b;
-}
+    button.accordion.active, button.accordion:hover {
+        background-color: #29447b;
+    }
 
-button.accordion:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
+    button.accordion:after {
+        content: '\002B';
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
 
-button.accordion.active:after {
-    content: "\2212";
-}
+    button.accordion.active:after {
+        content: "\2212";
+    }
 
 div.panel {
     padding: 0 18px;
@@ -211,7 +211,13 @@ p.tba {
     padding-left: 10px;
 }
 
-.important-dates dd span.oldDate { 
+    /*.important-dates dd span.oldDate {
+        color: red;
+        text-decoration: line-through;
+        margin-right: 5px;
+    }*/
+
+span.redThrough {
     color: red;
     text-decoration: line-through;
     margin-right: 5px;
@@ -336,7 +342,7 @@ p.tba {
 
     .navbar-toggle {
         float: right;
-       }
+    }
 
     #psupiclogo {
         display: none;
@@ -375,28 +381,45 @@ p.tba {
 
 
 blockquote {
-  background: #f9f9f9;
-  border-left: 10px solid #09C;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
+    background: #f9f9f9;
+    border-left: 10px solid #09C;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
 }
-blockquote:before {
-  color: #09C;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
+
+    blockquote:before {
+        color: #09C;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
+    }
+
+    blockquote::after {
+        color: #09C;
+        content: close-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
+    }
+
+    blockquote p {
+        display: inline;
+    }
+
+table.table-bordered {
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
-blockquote::after {
-  color: #09C;
-  content: close-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-blockquote p {
-  display: inline;
-}
+
+    table.table-bordered > thead > tr > th {
+        border: 1px solid black;
+    }
+
+    table.table-bordered > tbody > tr > td {
+        border: 1px solid black;
+    }

@@ -23,8 +23,8 @@
                 <h3>Registration Fee</h3>
                 <p style="color: red">** The registration fee excludes any transfer or exchange rate fee.</p>
                 <div class="container">
-                    <table align="left" cellspacing="10" cellpadding="5" border="1">
-                        <tbody>
+                    <table class="table table-bordered">
+                        <thead>
                             <tr>
                                 <th width="20%" valign="top" bgcolor="#d8e3f6">
                                     <p align="center"><strong>Type</strong></p>
@@ -36,42 +36,53 @@
                                     <p align="center"><strong>Price</strong></p>
                                 </th>
                             </tr>
+                        </thead>
+                        <tbody>
+
                             <tr>
                                 <td width="20%" valign="top">
-                                    <p>&nbsp; Early Bird Registration </p>
+                                    <p> Early Bird Registration </p>
                                 </td>
                                 <td width="25%" valign="top">
-                                    <p>&nbsp; February 1-15, 2018<strong> </strong></p>
+                                    <p> February 1-15, 2018<strong> </strong></p>
                                 </td>
                                 <td width="40%" valign="top">
-                                    <p>&nbsp; 6,600THB / 200 US$ per person<font color="#FF0000">** </font> </p>
+                                    <p> 6,600THB / 200 US$ per person<font color="#FF0000">** </font> </p>
                                 </td>
                             </tr>
                             <tr>
                                 <td width="20%" valign="top">
-                                    <p>&nbsp; Regular Registration </p>
+                                    <p> Regular Registration </p>
                                 </td>
                                 <td width="25%" valign="top">
-                                    <p>&nbsp; February 16-28, 2018 </p>
+                                    <p>
+                                        <span class="glyphicon glyphicon-info-sign"></span>
+                                        <span class="redThrough">February 16-28, 2018</span><br />
+                                        <span>February 16 - March 10, 2018</span>
+                                    </p>
                                 </td>
                                 <td width="40%" valign="top">
-                                    <p>&nbsp; 8,200THB / 250 US$ per person<font color="#FF0000">** </font> </p>
+                                    <p> 8,200THB / 250 US$ per person<font color="#FF0000">** </font> </p>
                                 </td>
                             </tr>
                             <tr>
                                 <td width="20%" valign="top">
-                                    <p>&nbsp; Late/On-site Registration</p>
+                                    <p> Late/On-site Registration</p>
                                 </td>
                                 <td width="25%" valign="top">
-                                    <p>&nbsp; March 1-12, 2018</p>
+                                    <p>
+                                        <span class="glyphicon glyphicon-info-sign"></span>
+                                        <span class="redThrough">March 1-12, 2018</span><br />
+                                        <span>March 11-12, 2018</span>
+                                    </p>
                                 </td>
                                 <td width="40%" valign="top">
-                                    <p>&nbsp; 10,000THB / 300 US$ per person<font color="#FF0000">** </font> </p>
+                                    <p> 10,000THB / 300 US$ per person<font color="#FF0000">** </font> </p>
                                 </td>
                             </tr>
                             <tr>
                                 <td width="20%" valign="top">
-                                    <p>&nbsp; Accompanying Person(s):</p>
+                                    <p> Accompanying Person(s):</p>
                                 </td>
                                 <td colspan="2" width="65%" valign="top">
                                     <p>&nbsp;5,000THB / 150 US$ per person<font color="#FF0000">** </font><strong> </strong></p>

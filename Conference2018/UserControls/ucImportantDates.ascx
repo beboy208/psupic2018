@@ -17,7 +17,7 @@
             if (!string.IsNullOrWhiteSpace(oldDate))
             {%>
         <span class="glyphicon glyphicon-info-sign"></span>
-        <span class="oldDate">
+        <span class="redThrough">
             <%= oldDate %>
         </span>
         <% }

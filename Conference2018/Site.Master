@@ -130,7 +130,7 @@
 
                         <li><a runat="server" href="organisation.aspx">Organisation</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Info.<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Location<span class="glyphicon glyphicon-triangle-bottom"></span></a>
                             <ul class="nav navbar-nav dropdown-menu">
                                 <li><a runat="server" href="location.aspx">Conference Venue</a></li>
                                 <li><a runat="server" href="accommodation.aspx">Accommodation</a></li>
