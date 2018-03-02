@@ -34,32 +34,31 @@
                     <tbody>
                         <tr>
                             <td valign="top">
-                                <p align="center"><strong>12:00 pm</strong></p>
+                                <p align="center"><strong>12:00</strong></p>
                             </td>
                             <td valign="top">
                                 <p align="left">
                                     Departure from hotel as the following:
                                 </p>
                                 <ul>
-                                    <li>1<sub>st</sub> pick-up point: Pearl Hotel (12:00 pm)</li>
-                                    <li>2<sub>nd</sub> nd pick-up point: Areca Resort and Spa/Baan Maksong Resort and Spa (time: TBC)</li>
-                                    <li>3<sub>rd</sub> rd pick-up point: PSU Lodge (time: TBC)</li>
+                                    <li>1<sup>st</sup> pick-up point: Pearl Hotel (12:00 pm)</li>
+                                    <li>2<sup>nd</sup> pick-up point: Areca Resort and Spa/Baan Maksong Resort and Spa (time: TBC)</li>
+                                    <li>3<sup>rd</sup> pick-up point: PSU Lodge (time: TBC)</li>
                                 </ul>
                             </td>
                             <td valign="top">
                                 <p align="left">
                                 <p>
-                                    Departure times from the 2<sub>nd</sub> and 3<sub>rd</sub> pick-up points will
-depend on traffic conditions.
+                                    Departure times from the 2<sup>nd</sup> and 3<sup>rd</sup> pick-up points will depend on traffic conditions.
                                 </p>
                             </td>
                         </tr>
                         <tr>
                             <td valign="top">
-                                <p align="center"><strong>1:00 pm</strong></p>
+                                <p align="center"><strong>13:00</strong></p>
                             </td>
                             <td valign="top">
-                                <p align="left">Meeting point: 1<sub>st</sub> floor, President’s Office Building</p>
+                                <p align="left">Meeting point: 1<sup>st</sup> floor, President’s Office Building</p>
                             </td>
                             <td valign="top">
                                 <p align="left"></p>
@@ -67,7 +66,7 @@ depend on traffic conditions.
                         </tr>
                         <tr>
                             <td valign="top">
-                                <p align="center"><strong>1:15 pm</strong></p>
+                                <p align="center"><strong>13:15</strong></p>
                             </td>
                             <td valign="top">
                                 <p align="left">PSU campus tour (2 groups, 10-15 minutes at each place)</p>
@@ -84,17 +83,17 @@ depend on traffic conditions.
                         </tr>
                         <tr>
                             <td valign="top">
-                                <p align="center"><strong>1:45 pm</strong></p>
+                                <p align="center"><strong>13:45</strong></p>
                             </td>
                             <td valign="top">
                                 <p align="left">
-                                    Depart from PSU Phuket (Meeting point: 1<sub>st</sub> floor, President’s Office Building)
+                                    Depart from PSU Phuket (Meeting point: 1<sup>st</sup> floor, President’s Office Building)
                                 </p>
                             </td>
                         </tr>
                         <tr>
                             <td valign="top">
-                                <p align="center"><strong>2:15-3:00 pm</strong></p>
+                                <p align="center"><strong>14:15-15:00</strong></p>
                             </td>
                             <td valign="top">
                                 <p align="left">Arrive at Wat Chalong (Chalong Temple)</p>
@@ -112,12 +111,12 @@ depend on traffic conditions.
                         </tr>
                         <tr>
                             <td valign="top">
-                                <p align="center"><strong>3:05 pm </strong></p>
+                                <p align="center"><strong>15:05</strong></p>
                             </td>
                             <td valign="top">
                                 <p align="left">Depart from Wat Chalong to Nai Harn Beach</p>
                             </td>
-                            <td valign="top">
+                            <td valign="top" rowspan="2">
                                 <p align="center">
                                     <img src="imgs/Winmill1-Ruangrat.jpg" width="50%" />
                                 </p>
@@ -126,16 +125,15 @@ depend on traffic conditions.
                         </tr>
                         <tr>
                             <td valign="top">
-                                <p align="center"><strong>4:00-4:45 pm </strong></p>
+                                <p align="center"><strong>16:00-16:45</strong></p>
                             </td>
                             <td valign="top">
                                 <p align="left">Arrive at Nai Harn Beach (approx. 45 mins. tour)</p>
                             </td>
-
                         </tr>
                         <tr>
                             <td valign="top">
-                                <p align="center"><strong>4:50 pm</strong></p>
+                                <p align="center"><strong>16:50</strong></p>
                             </td>
                             <td valign="top">
                                 <p align="left">Depart from Nai Harn Beach to Promthep Cape</p>
@@ -153,7 +151,7 @@ depend on traffic conditions.
                         </tr>
                         <tr>
                             <td valign="top">
-                                <p align="center"><strong>5:15-6:00 pm </strong></p>
+                                <p align="center"><strong>17:15-18:00</strong></p>
                             </td>
                             <td valign="top">
                                 <p align="left">Arrive at Promthep Cape (approx. 45 mins. tour)</p>
@@ -161,7 +159,7 @@ depend on traffic conditions.
                         </tr>
                         <tr>
                             <td valign="top">
-                                <p align="center"><strong>6:05 pm</strong></p>
+                                <p align="center"><strong>18:05</strong></p>
                             </td>
                             <td valign="top">
                                 <p align="left">Depart from Promthep Cape</p>
@@ -172,7 +170,7 @@ depend on traffic conditions.
                         </tr>
                         <tr>
                             <td valign="top">
-                                <p align="center"><strong>6:45-7:45 pm</strong></p>
+                                <p align="center"><strong>18:45-20:00</strong></p>
                             </td>
                             <td valign="top">
                                 <p align="left">Dinner at Phuket Fish Market Restaurant</p>
@@ -183,10 +181,10 @@ depend on traffic conditions.
                         </tr>
                         <tr>
                             <td valign="top">
-                                <p align="center"><strong>8:05 pm</strong></p>
+                                <p align="center"><strong>20:05 pm</strong></p>
                             </td>
                             <td valign="top">
-                                <p align="left">Depart to Ta Laad Yai Walking Street</p>
+                                <p align="left">Depart from the restaurant to Ta Laad Yai Walking Street</p>
                             </td>
                             <td valign="top" rowspan="2">
                                 <p align="center">
@@ -200,7 +198,7 @@ depend on traffic conditions.
                         </tr>
                         <tr>
                             <td valign="top">
-                                <p align="center"><strong>8:30 pm</strong></p>
+                                <p align="center"><strong>20:30</strong></p>
                             </td>
                             <td valign="top">
                                 <p align="left">Arrive at Ta Laad Yai Walking Street (Phuket Town)</p>
@@ -209,28 +207,22 @@ depend on traffic conditions.
                         </tr>
                         <tr>
                             <td valign="top">
-                                <p align="center"><strong>9:30 pm</strong></p>
+                                <p align="center"><strong>21:30</strong></p>
                             </td>
-                            <td valign="top">
+                            <td valign="top" colspan="2">
                                 <p align="left">Depart from Phuket Town</p>
-                            </td>
-                            <td valign="top">
-                                <p align="left"></p>
                             </td>
                         </tr>
                         <tr>
                             <td valign="top">
                                 <p align="center">
-                                    <strong>10:00 pm
+                                    <strong>22:00
                                     <br>
                                         (approx.)</strong>
                                 </p>
                             </td>
-                            <td valign="top">
+                            <td valign="top" colspan="2">
                                 <p align="left">Return to hotels</p>
-                            </td>
-                            <td valign="top">
-                                <p align="left"></p>
                             </td>
                         </tr>
                     </tbody>
