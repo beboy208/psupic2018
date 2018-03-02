@@ -51,6 +51,8 @@
                                     12.00 Pickup from Pearl Hotel in Phuket City, and<br />
                                     <span class="glyphicon glyphicon-time"></span>
                                     12.15 from Areca Resort &amp; Spa
+                                    <br />
+                                    Note: 3 minute walk from PSU Lodge to Buliding 7
                                 </p>
                             </td>
                         </tr>
@@ -95,11 +97,14 @@
                             </td>
                             <td valign="top">
                                 <p>
+                                    <span style="color: red">Note: for those who do NOT join the Sightseeing Tour</span><br />
                                     <span class="glyphicon glyphicon-time"></span>
                                     18.00 Pickup from Pearl Hotel in Phuket City, and<br />
                                     <span class="glyphicon glyphicon-time"></span>
-                                    18.15 from Areca Resort &amp; Spa (<span style="color: red">for those who do NOT
-join the Sightseeing Tour</span>)	
+                                    18.15 from Areca Resort &amp; Spa
+                                    <br />
+                                    <span class="glyphicon glyphicon-time"></span>
+                                    18.20 from PSU Lodge
                                 </p>
                             </td>
                         </tr>
@@ -171,7 +176,8 @@ join the Sightseeing Tour</span>)
                                     <span class="glyphicon glyphicon-time"></span>
                                     7.30 Pickup from Pearl Hotel in Phuket City, and<br />
                                     <span class="glyphicon glyphicon-time"></span>
-                                    7.45 from Areca Resort &amp; Spa
+                                    7.45 from Areca Resort &amp; Spa<br />
+                                    Note: 3 minute walk from PSU Lodge to Buliding 7
                                 </p>
                             </td>
                         </tr>
