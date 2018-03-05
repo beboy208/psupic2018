@@ -15,7 +15,7 @@
                     <div class="container">
                         <blockquote style="color: red">
                             Please check your presentation time and room in the conference program.<br>
-                            Please arrive at the room 10 minutes before your session starts and introduce youself to the session chair.
+                            Please arrive at the room 10 minutes before your session starts and introduce yourself to the session chair.
                         </blockquote>
                     </div>
 
