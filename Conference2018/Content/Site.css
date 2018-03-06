@@ -211,7 +211,7 @@ p.tba {
     padding-left: 10px;
 }
 
-    /*.important-dates dd span.oldDate {
+/*.important-dates dd span.oldDate {
         color: red;
         text-decoration: line-through;
         margin-right: 5px;
@@ -423,3 +423,12 @@ table.table-bordered {
     table.table-bordered > tbody > tr > td {
         border: 1px solid black;
     }
+
+
+table.paper-ref p.paper strong {
+    font-style: normal;
+}
+
+table.paper-ref p.paper {
+    font-style: italic;
+}

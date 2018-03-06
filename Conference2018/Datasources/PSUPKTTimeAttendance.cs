@@ -16,7 +16,7 @@ namespace Conference2018.Datasources
     /// </summary>
     public class PSUPKTTimeAttendance
     {
-        string _server = "http://192.168.192.209:8089/"; //ที่ตั้งของ Service
+        string _server = "https://tas.phuket.psu.ac.th"; //ที่ตั้งของ Service
         string _applicationID = "p$up1c"; //รหัส Application ของ Partner: PSUPIC
         string _eventID = "cc11f90bc1e14291a228afa3762db417";
         int _schID = 1; //หมายเลข Schedule ในฐานของ Event นี้
@@ -146,30 +146,24 @@ namespace Conference2018.Datasources
 
         public Tuple<bool, DateTime> checkInAttendance(string attendeeID)
         {
-            bool result;
+           // bool result = false;
             try
             {
                 string requestUri = string.Format("api/{0}/events/{1}/schedules/{2}/checkIn/{3}?when={4}", 
                     _caller, _eventID, _schID, attendeeID, DateTime.Now);
                 var response = _client.PostAsync(requestUri, null).Result;
                 response.EnsureSuccessStatusCode();
-                result = true;
+                return new Tuple<bool, DateTime>(true, DateTime.Now);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                result = false;
+                throw ex;
             }
-
-            return null;
-
-            return new Tuple<bool, DateTime>(true, DateTime.Now);
         }
 
         public Tuple<bool, DateTime> checkOutAttendance(string attendeeID)
         {
             return new Tuple<bool, DateTime>(true, DateTime.Now);
         }
-
-        //void InsertAttendance(Attendance )
     }
 }

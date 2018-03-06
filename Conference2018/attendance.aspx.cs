@@ -39,22 +39,22 @@ namespace Conference2018
                 IsWalkInAttendee = true,
             });
 
-            //Attendee should be found after inserted or existed 
+            //Attendee should be found after inserted
             var attendee = _ta.GetAttendee(txtCode.Text);
             if (attendee == null)
             {
-                //attendee not found in this situration mean Insert Failed
+                //attendee not found in this situation mean Insert Failed
                 dangerAlert.Visible = true;
-                dangerAlert.InnerText = string.Format("Registration failed for Attendee {0}", txtCode.Text) + Environment.NewLine;
+                dangerAlert.InnerText = string.Format("Registration failed for Attendee {0} {1}", txtCode.Text, txtName.Text) + Environment.NewLine;
             }
             else
             {
                 var checkIn = _ta.checkInAttendance(attendee.ID);
                 successAlert.Visible = true;
-                successAlert.InnerText = string.Format("{0} {1}checked-in on {1}",
+                successAlert.InnerText = string.Format("{0} {1} checked-in on {1}",
                     txtName.Text,
                     checkIn.Item1 ? "" : "already ",
-                    checkIn.Item2.ToString("MM dd, yyyy hh:mm"));
+                    checkIn.Item2.ToString("MM dd, yyyy HH:mm"));
             }
         }
     }
