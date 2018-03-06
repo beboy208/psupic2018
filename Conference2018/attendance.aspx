@@ -6,7 +6,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <h3>Self registration.</h3>
+            <h3>Walkin Registration</h3>
             <div id="successAlert" class="alert alert-success" runat="server" visible="false">
             </div>
             <div id="dangerAlert" class="alert alert-danger" runat="server" visible="false">

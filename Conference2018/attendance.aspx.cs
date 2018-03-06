@@ -32,6 +32,7 @@ namespace Conference2018
             _ta.AddAttendee(new Models.Attendee()
             {
                 Code = txtCode.Text,
+                CitizenID = txtCode.Text,
                 Email = txtEmail.Text,
                 FullName = txtName.Text,
                 PhoneNumber = string.IsNullOrWhiteSpace(txtPhone.Text) ? null : txtPhone.Text,
@@ -49,13 +50,40 @@ namespace Conference2018
             }
             else
             {
-                var checkIn = _ta.checkInAttendance(attendee.ID);
-                successAlert.Visible = true;
-                successAlert.InnerText = string.Format("{0} {1} checked-in on {1}",
-                    txtName.Text,
-                    checkIn.Item1 ? "" : "already ",
-                    checkIn.Item2.ToString("MM dd, yyyy HH:mm"));
+                try
+                {
+                    //checkInAttendance(model) will update Attendee.
+                    attendee.FullName = txtName.Text;
+                    attendee.Email = txtEmail.Text;
+                    attendee.FullName = txtName.Text;
+                    attendee.PhoneNumber = string.IsNullOrWhiteSpace(txtPhone.Text) ? null : txtPhone.Text;
+                    attendee.Address = string.IsNullOrWhiteSpace(txtAddress.Text) ? null : txtAddress.Text;
+
+                    var checkIn = _ta.checkInAttendance(attendee);
+                    successAlert.Visible = true;
+                    successAlert.InnerText = string.Format("{0} {1} checked-in on {2}",
+                        txtName.Text,
+                        checkIn.Item1 ? "" : "already ",
+                        checkIn.Item2.ToString("MM dd, yyyy HH:mm"));
+                }
+                catch (Exception ex)
+                {
+                    dangerAlert.Visible = true;
+                    dangerAlert.InnerText = ex.Message;
+                }
+
+                clearForm();
             }
+        }
+
+        private void clearForm()
+        {
+            txtAddress.Text = "";
+            txtCode.Text = "";
+            txtEmail.Text = "";
+            txtName.Text = "";
+            txtPhone.Text = "";
+            txtCode.Focus();
         }
     }
 }

@@ -144,16 +144,59 @@ namespace Conference2018.Datasources
             return result;
         }
 
+        public Tuple<bool, DateTime> checkInAttendance(Attendee attendee)
+        {
+            try
+            {
+                if (attendee == null)
+                    throw new ArgumentNullException("attendee");
+
+                DateTime when = DateTime.Now;
+               
+                string requestUri = string.Format("api/{0}/events/{1}/schedules/{2}/checkIn?when={3}",
+                    _caller, _eventID, _schID, when);
+                //var response = _client.PostAsync(requestUri, null).Result;
+                var response = _client.PostAsJsonAsync(requestUri, attendee).Result;
+                //response.EnsureSuccessStatusCode();
+                if (response.IsSuccessStatusCode)
+                    return new Tuple<bool, DateTime>(true, when);
+                else
+                {
+
+                    var errMsg = response.Content.ReadAsStringAsync().Result;
+                    dynamic value = JsonConvert.DeserializeObject(errMsg);
+                    string msg = value.Message;
+                    throw new Exception(msg);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public Tuple<bool, DateTime> checkInAttendance(string attendeeID)
         {
            // bool result = false;
             try
             {
+                DateTime when = DateTime.Now;
+                //string requestUriCheckAttendance = string.Format("api/{0}/events/{1}/schedules/{2}/attendances/",
+                
                 string requestUri = string.Format("api/{0}/events/{1}/schedules/{2}/checkIn/{3}?when={4}", 
-                    _caller, _eventID, _schID, attendeeID, DateTime.Now);
+                    _caller, _eventID, _schID, attendeeID, when);
                 var response = _client.PostAsync(requestUri, null).Result;
-                response.EnsureSuccessStatusCode();
-                return new Tuple<bool, DateTime>(true, DateTime.Now);
+                //response.EnsureSuccessStatusCode();
+                if (response.IsSuccessStatusCode)
+                    return new Tuple<bool, DateTime>(true, when);
+                else
+                {
+                    
+                    var errMsg = response.Content.ReadAsStringAsync().Result;
+                    dynamic value = JsonConvert.DeserializeObject(errMsg);
+                    string msg = value.Message;
+                    throw new Exception(msg);
+                }
             }
             catch (Exception ex)
             {
