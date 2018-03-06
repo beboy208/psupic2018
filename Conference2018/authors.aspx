@@ -42,6 +42,7 @@
                     <strong>Code:</strong> <%= author.ID %><br />
                     <strong>Name:</strong> <%= author.FullName %><br />
                     <strong>Email:</strong> <%= author.Email %><br />
+                    <strong>Organization:</strong> <%= author.Organization %><br />
                     <%
                         //Get author submissions
                         var db = new Conference2018.Datasources.PSUPICEntities1();
