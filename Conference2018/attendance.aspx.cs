@@ -29,7 +29,7 @@ namespace Conference2018
             //    PhoneNumber = "9999999"
             //});
 
-            _ta.PostAttendee(new Models.Attendee()
+            _ta.AddAttendee(new Models.Attendee()
             {
                 Code = txtCode.Text,
                 Email = txtEmail.Text,

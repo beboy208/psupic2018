@@ -126,7 +126,7 @@ namespace Conference2018.Datasources
         /// </summary>
         /// <param name="attendee"></param>
         /// <returns></returns>
-        public bool PostAttendee(Attendee attendee)
+        public bool AddAttendee(Attendee attendee)
         {
             bool result;
             try
@@ -146,6 +146,22 @@ namespace Conference2018.Datasources
 
         public Tuple<bool, DateTime> checkInAttendance(string attendeeID)
         {
+            bool result;
+            try
+            {
+                string requestUri = string.Format("api/{0}/events/{1}/schedules/{2}/checkIn/{3}?when={4}", 
+                    _caller, _eventID, _schID, attendeeID, DateTime.Now);
+                var response = _client.PostAsync(requestUri, null).Result;
+                response.EnsureSuccessStatusCode();
+                result = true;
+            }
+            catch (Exception)
+            {
+                result = false;
+            }
+
+            return null;
+
             return new Tuple<bool, DateTime>(true, DateTime.Now);
         }
 
