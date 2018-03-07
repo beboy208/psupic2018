@@ -15,7 +15,7 @@
                         <h3 style="text-align: center">Parallel Conference Session 1</h3>
                         <div class="clearfix" style="font-weight:bold">
                             <p style="float: left">Monday 12 March 2018</p>
-                            <p style="float: right">Room: PSU PIC 1</p>
+                            <p style="float: right">Room: PSU PIC 1, 3<sup>rd</sup> Floor, Building 7</p>
                         </div>
                     </div>
                     <div class="session-sch" style="margin-top: 30px;">
@@ -176,13 +176,13 @@ chemiluminescence method
                         </table>
                     </div>
                 </div>
-
-                <div id="session2" style="border: 1px solid lightgray; padding: 35px 20px; margin-bottom: 30px;">
+                <a name="session2"></a>
+                <div id="session2" style="border: 1px solid lightgray; padding: 120px 20px 30px 20px; margin-bottom: 50px;">
                     <div class="session-head">
                         <h3 style="text-align: center">Parallel Conference Session 2</h3>
                         <div class="clearfix" style="font-weight:bold">
                             <p style="float: left">Monday 12 March 2018</p>
-                            <p style="float: right">Room: PSU PIC 2</p>
+                            <p style="float: right">Room: PSU PIC 2, 3<sup>rd</sup> Floor, Building 7</p>
                         </div>
                     </div>
                     <div class="session-sch" style="margin-top: 30px;">
@@ -330,13 +330,13 @@ Darussalam
                         </table>
                     </div>
                 </div>
-
-                <div id="session3" style="border: 1px solid lightgray; padding: 35px 20px; margin-bottom: 30px;">
+                <a name="session3"></a>
+                <div id="session3" style="border: 1px solid lightgray; padding: 120px 20px 30px 20px; margin-bottom: 50px;">
                     <div class="session-head">
                         <h3 style="text-align: center">Parallel Conference Session 3</h3>
                         <div class="clearfix" style="font-weight:bold">
                             <p style="float: left">Monday 12 March 2018</p>
-                            <p style="float: right">Room: PSU PIC 3</p>
+                            <p style="float: right">Room: PSU PIC 3, 3<sup>rd</sup> Floor, Building 7</p>
                         </div>
                     </div>
                     <div class="session-sch" style="margin-top: 30px;">

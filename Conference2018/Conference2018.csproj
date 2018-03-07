@@ -332,6 +332,7 @@
     <Content Include="imgs\OldTown-Internet.jpg" />
     <Content Include="imgs\Promthep1-Ruangrat.jpg" />
     <Content Include="imgs\psu.jpg" />
+    <Content Include="imgs\qrcode\qr-code-WalkInRegistration.png" />
     <Content Include="imgs\Winmill1-Ruangrat.jpg" />
     <Content Include="imgs\ลานพระบิดา.jpg" />
     <Content Include="Lib\PSUPKTProvider.dll" />

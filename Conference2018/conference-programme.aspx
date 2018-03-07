@@ -52,7 +52,7 @@
                                     <span class="glyphicon glyphicon-time"></span>
                                     12.15 from Areca Resort &amp; Spa
                                     <br />
-                                    Note: 3 minute walk from PSU Lodge to Buliding 7
+                                    Note: 3 minute walk from PSU Lodge to Building 7
                                 </p>
                             </td>
                         </tr>
@@ -177,7 +177,7 @@
                                     7.30 Pickup from Pearl Hotel in Phuket City, and<br />
                                     <span class="glyphicon glyphicon-time"></span>
                                     7.45 from Areca Resort &amp; Spa<br />
-                                    Note: 3 minute walk from PSU Lodge to Buliding 7
+                                    Note: 3 minute walk from PSU Lodge to Building 7
                                 </p>
                             </td>
                         </tr>
@@ -267,7 +267,8 @@
                         <tr>
                             <td valign="top">
                                 <p>
-                                    <strong>Parallel Session 1:</strong>
+                                    <a href="conference-sessions.aspx">
+                                        <strong>Parallel Session 1:</strong></a>
                                     <br />
                                     Computing Theory, Technologies and Applications 
                                     <br />
@@ -283,7 +284,8 @@
                         <tr>
                             <td valign="top">
                                 <p>
-                                    <strong>Parallel Session 2:</strong>
+                                    <a href="conference-sessions.aspx#session2">
+                                        <strong>Parallel Session 2:</strong></a>
                                     <br />
                                     Hospitality and Tourism
                                     <br />
@@ -298,7 +300,8 @@
                         <tr>
                             <td valign="top">
                                 <p>
-                                    <strong>Parallel Session 3:</strong><br />
+                                    <a href="conference-sessions.aspx#session3">
+                                        <strong>Parallel Session 3:</strong></a><br />
                                     International Language and Culture
                                 </p>
                             </td>
