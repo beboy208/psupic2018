@@ -174,8 +174,7 @@
     <value>February 15, 2018</value>
   </data>
   <data name="Schedule6Value" xml:space="preserve">
-    <value>February 28, 2018</value>
-    <comment>March 10, 2018</comment>
+    <value>March 10, 2018</value>
   </data>
   <data name="Schedule7Value" xml:space="preserve">
     <value>March 11-12, 2018</value>
@@ -199,7 +198,7 @@
     <value />
   </data>
   <data name="Schedule6ValueOld" xml:space="preserve">
-    <value />
+    <value>February 28, 2018</value>
   </data>
   <data name="Schedule7ValueOld" xml:space="preserve">
     <value />

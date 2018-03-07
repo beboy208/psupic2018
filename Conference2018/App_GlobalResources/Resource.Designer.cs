@@ -250,7 +250,7 @@ namespace Conference2018.App_GlobalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to February 28, 2018.
+        ///   Looks up a localized string similar to March 10, 2018.
         /// </summary>
         public static string Schedule6Value {
             get {
@@ -259,7 +259,7 @@ namespace Conference2018.App_GlobalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to February 28, 2018.
         /// </summary>
         public static string Schedule6ValueOld {
             get {
