@@ -32,6 +32,16 @@ namespace Conference2018.Datasources
             _client.DefaultRequestHeaders.Add("ApplicationID", _applicationID);
         }
 
+        public void SetWorkingScheduleID(int scheduleID)
+        {
+            _schID = scheduleID;
+        }
+
+        public int GetWorkingScheduleID()
+        {
+            return _schID;
+        }
+
         private JToken callService(string path)
         {
             string result = null;
@@ -63,9 +73,9 @@ namespace Conference2018.Datasources
         }
 
 
-        public Models.EventSchedule GetFirstSchedule()
+        public Models.EventSchedule GetWorkingSchedule()
         {
-            return GetSchedules().First();
+            return GetSchedules().Where(s => s.ID == _schID).FirstOrDefault();
         }
 
         public IEnumerable<Models.EventSchedule> GetSchedules()
@@ -144,7 +154,12 @@ namespace Conference2018.Datasources
             return result;
         }
 
-        public Tuple<bool, DateTime> checkInAttendance(Attendee attendee)
+        public enum CheckInStatusEnum
+        {
+            successed, already, failed
+        }
+
+        public Tuple<CheckInStatusEnum, string, DateTime> checkInAttendance(Attendee attendee)
         {
             try
             {
@@ -152,38 +167,40 @@ namespace Conference2018.Datasources
                     throw new ArgumentNullException("attendee");
 
                 DateTime when = DateTime.Now;
-               
+
                 string requestUri = string.Format("api/{0}/events/{1}/schedules/{2}/checkIn?when={3}",
                     _caller, _eventID, _schID, when);
                 //var response = _client.PostAsync(requestUri, null).Result;
                 var response = _client.PostAsJsonAsync(requestUri, attendee).Result;
                 //response.EnsureSuccessStatusCode();
                 if (response.IsSuccessStatusCode)
-                    return new Tuple<bool, DateTime>(true, when);
+                    return new Tuple<CheckInStatusEnum, string, DateTime>( CheckInStatusEnum.successed, "" , when);
                 else
                 {
-
                     var errMsg = response.Content.ReadAsStringAsync().Result;
                     dynamic value = JsonConvert.DeserializeObject(errMsg);
-                    string msg = value.Message;
+                    string msg = value.Message ;
+                    if (msg.Contains("already"))
+                        return new Tuple<CheckInStatusEnum, string, DateTime>(CheckInStatusEnum.already, msg, when);
+
                     throw new Exception(msg);
                 }
             }
             catch (Exception ex)
             {
-                throw ex;
+                return new Tuple<CheckInStatusEnum, string, DateTime>(CheckInStatusEnum.failed, ex.Message, DateTime.Now);
             }
         }
 
         public Tuple<bool, DateTime> checkInAttendance(string attendeeID)
         {
-           // bool result = false;
+            // bool result = false;
             try
             {
                 DateTime when = DateTime.Now;
                 //string requestUriCheckAttendance = string.Format("api/{0}/events/{1}/schedules/{2}/attendances/",
-                
-                string requestUri = string.Format("api/{0}/events/{1}/schedules/{2}/checkIn/{3}?when={4}", 
+
+                string requestUri = string.Format("api/{0}/events/{1}/schedules/{2}/checkIn/{3}?when={4}",
                     _caller, _eventID, _schID, attendeeID, when);
                 var response = _client.PostAsync(requestUri, null).Result;
                 //response.EnsureSuccessStatusCode();
@@ -191,7 +208,7 @@ namespace Conference2018.Datasources
                     return new Tuple<bool, DateTime>(true, when);
                 else
                 {
-                    
+
                     var errMsg = response.Content.ReadAsStringAsync().Result;
                     dynamic value = JsonConvert.DeserializeObject(errMsg);
                     string msg = value.Message;

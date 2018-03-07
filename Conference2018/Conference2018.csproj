@@ -420,6 +420,7 @@
     <Content Include="UserControls\ucImportantDates.ascx" />
     <Content Include="UserControls\ucPCChair.ascx" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Site2.Master" />
     <None Include="Web References\th.ac.psu.passport\authentication.disco" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -752,6 +753,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
     </Compile>
     <Compile Include="speakers.aspx.cs">
       <DependentUpon>speakers.aspx</DependentUpon>

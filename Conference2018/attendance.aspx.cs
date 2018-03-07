@@ -10,12 +10,22 @@ namespace Conference2018
 {
     public partial class attendance : System.Web.UI.Page
     {
-        Datasources.PSUPKTTimeAttendance _ta = new Datasources.PSUPKTTimeAttendance();
+        int schID = 1;
+        protected Datasources.PSUPKTTimeAttendance _ta = new Datasources.PSUPKTTimeAttendance();
 
-        protected void Page_Load(object sender, EventArgs e)
+        public void Page_Load()
         {
+            successAlert.Visible = false;
+            dangerAlert.Visible = false;
 
+            if (Request.QueryString["schID"] != null)
+            {
+                int sid = schID;
+                int.TryParse(Request.QueryString["schID"].ToString(), out sid);
+                schID = sid;
+            }
 
+            _ta.SetWorkingScheduleID(schID);
         }
 
         protected void btnSubmit_Click(object sender, EventArgs e)
@@ -60,11 +70,18 @@ namespace Conference2018
                     attendee.Address = string.IsNullOrWhiteSpace(txtAddress.Text) ? null : txtAddress.Text;
 
                     var checkIn = _ta.checkInAttendance(attendee);
-                    successAlert.Visible = true;
-                    successAlert.InnerText = string.Format("{0} {1} checked-in on {2}",
-                        txtName.Text,
-                        checkIn.Item1 ? "" : "already ",
-                        checkIn.Item2.ToString("MM dd, yyyy HH:mm"));
+
+                    if (checkIn.Item1 == Datasources.PSUPKTTimeAttendance.CheckInStatusEnum.failed)
+                        throw new Exception(checkIn.Item2);
+                    else
+                    {
+                        successAlert.Visible = true;
+                        successAlert.InnerText = string.Format("Attendee {0} {1} {2}checked-in on {3}",
+                            txtCode.Text,
+                            txtName.Text,
+                            checkIn.Item1 == Datasources.PSUPKTTimeAttendance.CheckInStatusEnum.already ? "already " : "",
+                            checkIn.Item1 == Datasources.PSUPKTTimeAttendance.CheckInStatusEnum.already ? checkIn.Item2.Split(new[] { " on " }, StringSplitOptions.None)[1].ToString() : checkIn.Item3.ToString("MMMM dd, yyyy HH:mm"));
+                    }
                 }
                 catch (Exception ex)
                 {
