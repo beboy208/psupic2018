@@ -102,5 +102,10 @@ namespace Conference2018
             txtPhone.Text = "";
             txtCode.Focus();
         }
+
+        protected void txtCode_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

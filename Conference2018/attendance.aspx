@@ -27,6 +27,9 @@
                 <asp:HiddenField ID="hdfScheduleDescription" runat="server" />
                 <asp:Label ID="txtScheduleDescription" runat="server" />
             </div>
+            <div class="alert alert-warning">
+                Undergraduate student please register with officer at registration point.
+            </div>
             <div id="successAlert" class="alert alert-success" runat="server" visible="false">
             </div>
             <div id="dangerAlert" class="alert alert-danger" runat="server" visible="false">
@@ -35,7 +38,8 @@
                 <asp:Panel ID="registForm" runat="server">
                     <div class="form-group">
                         <asp:Label ID="lbCode" runat="server" AssociatedControlID="txtCode">PSUPassport/CitizenID</asp:Label>
-                        <asp:TextBox ID="txtCode" runat="server" CssClass="form-control" placeholder="Required"></asp:TextBox>
+                        <asp:TextBox ID="txtCode" runat="server" CssClass="form-control" placeholder="Required" 
+                            OnTextChanged="txtCode_TextChanged" AutoPostBack="true"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Required" ForeColor="Red"
                             ControlToValidate="txtCode" Display="Dynamic"></asp:RequiredFieldValidator>
                     </div>
