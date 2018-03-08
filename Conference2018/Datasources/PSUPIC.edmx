@@ -53,6 +53,27 @@
           <Property Name="IsPublished" Type="bit" Nullable="false" />
           <Property Name="IsOral" Type="bit" Nullable="false" />
         </EntityType>
+        <EntityType Name="VIPMember">
+          <Key>
+            <PropertyRef Name="VIPCode" />
+          </Key>
+          <Property Name="VIPCode" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="ConferenceAcronym" Type="nvarchar" MaxLength="20" />
+          <Property Name="VIPFullName" Type="nvarchar" MaxLength="100" />
+          <Property Name="VIPTypeID" Type="nvarchar" MaxLength="5" />
+          <Property Name="VIPDescription" Type="nvarchar" MaxLength="200" />
+          <Property Name="VIPMission" Type="nvarchar" MaxLength="100" />
+          <Property Name="VIPOrder" Type="int" Nullable="false" />
+          <Property Name="VIPQRCodePath" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="VIPType">
+          <Key>
+            <PropertyRef Name="VIPTypeID" />
+          </Key>
+          <Property Name="VIPTypeID" Type="nvarchar" MaxLength="5" Nullable="false" />
+          <Property Name="VIPTypeNameTH" Type="nvarchar" MaxLength="30" />
+          <Property Name="VIPTypeNameEN" Type="nvarchar" MaxLength="30" />
+        </EntityType>
         <Association Name="FK_Area_Conference">
           <End Role="Conference" Type="Self.Conference" Multiplicity="1" />
           <End Role="Area" Type="Self.Area" Multiplicity="*" />
@@ -89,11 +110,37 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_VIPMember_Conference">
+          <End Role="Conference" Type="Self.Conference" Multiplicity="0..1" />
+          <End Role="VIPMember" Type="Self.VIPMember" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Conference">
+              <PropertyRef Name="Acronym" />
+            </Principal>
+            <Dependent Role="VIPMember">
+              <PropertyRef Name="ConferenceAcronym" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VIPMember_VIPType">
+          <End Role="VIPType" Type="Self.VIPType" Multiplicity="0..1" />
+          <End Role="VIPMember" Type="Self.VIPMember" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VIPType">
+              <PropertyRef Name="VIPTypeID" />
+            </Principal>
+            <Dependent Role="VIPMember">
+              <PropertyRef Name="VIPTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="PSUPICModelStoreContainer">
           <EntitySet Name="Area" EntityType="Self.Area" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Author" EntityType="Self.Author" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Conference" EntityType="Self.Conference" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Submission" EntityType="Self.Submission" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VIPMember" EntityType="Self.VIPMember" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VIPType" EntityType="Self.VIPType" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_Area_Conference" Association="Self.FK_Area_Conference">
             <End Role="Conference" EntitySet="Conference" />
             <End Role="Area" EntitySet="Area" />
@@ -105,6 +152,14 @@
           <AssociationSet Name="FK_Submission_Area" Association="Self.FK_Submission_Area">
             <End Role="Area" EntitySet="Area" />
             <End Role="Submission" EntitySet="Submission" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VIPMember_Conference" Association="Self.FK_VIPMember_Conference">
+            <End Role="Conference" EntitySet="Conference" />
+            <End Role="VIPMember" EntitySet="VIPMember" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VIPMember_VIPType" Association="Self.FK_VIPMember_VIPType">
+            <End Role="VIPType" EntitySet="VIPType" />
+            <End Role="VIPMember" EntitySet="VIPMember" />
           </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -148,6 +203,7 @@
           <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
           <Property Name="Year" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Areas" Relationship="Self.FK_Area_Conference" FromRole="Conference" ToRole="Area" />
+          <NavigationProperty Name="VIPMembers" Relationship="PSUPICModel.FK_VIPMember_Conference" FromRole="Conference" ToRole="VIPMember" />
         </EntityType>
         <Association Name="FK_Area_Conference">
           <End Role="Conference" Type="Self.Conference" Multiplicity="1" />
@@ -177,6 +233,16 @@
           <AssociationSet Name="FK_Author_Submission" Association="PSUPICModel.FK_Author_Submission">
             <End Role="Submission" EntitySet="Submissions" />
             <End Role="Author" EntitySet="Authors" />
+          </AssociationSet>
+          <EntitySet Name="VIPMembers" EntityType="PSUPICModel.VIPMember" />
+          <EntitySet Name="VIPTypes" EntityType="PSUPICModel.VIPType" />
+          <AssociationSet Name="FK_VIPMember_Conference" Association="PSUPICModel.FK_VIPMember_Conference">
+            <End Role="Conference" EntitySet="Conferences" />
+            <End Role="VIPMember" EntitySet="VIPMembers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VIPMember_VIPType" Association="PSUPICModel.FK_VIPMember_VIPType">
+            <End Role="VIPType" EntitySet="VIPTypes" />
+            <End Role="VIPMember" EntitySet="VIPMembers" />
           </AssociationSet>
         </EntityContainer>
         <EntityType Name="Submission">
@@ -216,6 +282,54 @@
             </Principal>
             <Dependent Role="Author">
               <PropertyRef Name="SubmissionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="VIPMember">
+          <Key>
+            <PropertyRef Name="VIPCode" />
+          </Key>
+          <Property Name="VIPCode" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ConferenceAcronym" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="VIPFullName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="VIPTypeID" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="VIPDescription" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="VIPMission" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="VIPOrder" Type="Int32" Nullable="false" />
+          <Property Name="VIPQRCodePath" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Conference" Relationship="PSUPICModel.FK_VIPMember_Conference" FromRole="VIPMember" ToRole="Conference" />
+          <NavigationProperty Name="VIPType" Relationship="PSUPICModel.FK_VIPMember_VIPType" FromRole="VIPMember" ToRole="VIPType" />
+        </EntityType>
+        <EntityType Name="VIPType">
+          <Key>
+            <PropertyRef Name="VIPTypeID" />
+          </Key>
+          <Property Name="VIPTypeID" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="VIPTypeNameTH" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="VIPTypeNameEN" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="VIPMembers" Relationship="PSUPICModel.FK_VIPMember_VIPType" FromRole="VIPType" ToRole="VIPMember" />
+        </EntityType>
+        <Association Name="FK_VIPMember_Conference">
+          <End Type="PSUPICModel.Conference" Role="Conference" Multiplicity="0..1" />
+          <End Type="PSUPICModel.VIPMember" Role="VIPMember" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Conference">
+              <PropertyRef Name="Acronym" />
+            </Principal>
+            <Dependent Role="VIPMember">
+              <PropertyRef Name="ConferenceAcronym" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VIPMember_VIPType">
+          <End Type="PSUPICModel.VIPType" Role="VIPType" Multiplicity="0..1" />
+          <End Type="PSUPICModel.VIPMember" Role="VIPMember" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VIPType">
+              <PropertyRef Name="VIPTypeID" />
+            </Principal>
+            <Dependent Role="VIPMember">
+              <PropertyRef Name="VIPTypeID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -274,6 +388,29 @@
                 <ScalarProperty Name="PaperCode" ColumnName="PaperCode" />
                 <ScalarProperty Name="PCCode_Removed" ColumnName="PCCode-Removed" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VIPMembers">
+            <EntityTypeMapping TypeName="PSUPICModel.VIPMember">
+              <MappingFragment StoreEntitySet="VIPMember">
+                <ScalarProperty Name="VIPQRCodePath" ColumnName="VIPQRCodePath" />
+                <ScalarProperty Name="VIPOrder" ColumnName="VIPOrder" />
+                <ScalarProperty Name="VIPMission" ColumnName="VIPMission" />
+                <ScalarProperty Name="VIPDescription" ColumnName="VIPDescription" />
+                <ScalarProperty Name="VIPTypeID" ColumnName="VIPTypeID" />
+                <ScalarProperty Name="VIPFullName" ColumnName="VIPFullName" />
+                <ScalarProperty Name="ConferenceAcronym" ColumnName="ConferenceAcronym" />
+                <ScalarProperty Name="VIPCode" ColumnName="VIPCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VIPTypes">
+            <EntityTypeMapping TypeName="PSUPICModel.VIPType">
+              <MappingFragment StoreEntitySet="VIPType">
+                <ScalarProperty Name="VIPTypeNameEN" ColumnName="VIPTypeNameEN" />
+                <ScalarProperty Name="VIPTypeNameTH" ColumnName="VIPTypeNameTH" />
+                <ScalarProperty Name="VIPTypeID" ColumnName="VIPTypeID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

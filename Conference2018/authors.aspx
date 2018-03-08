@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head runat="server">
-    <title>PSU PIC 2018 - Author</title>
+    <title>PSU PIC 2018 - Authors</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <asp:PlaceHolder runat="server">
@@ -44,7 +44,7 @@
                     <strong>Email:</strong> <%= author.Email %><br />
                     <strong>Organization:</strong> <%= author.Organization %><br />
                     <%
-                        //Get author submissions
+                        //Get author submissions, เอาด่วนๆ จริงๆ ควรไปสร้างเป็นข้อมูลใน ViewModel
                         var db = new Conference2018.Datasources.PSUPICEntities1();
                         var subIDs = db.Authors.Where(au => au.Code == author.ID && au.SubmissionID.HasValue).Select(au => au.SubmissionID);
                         var submissions = db.Submissions.Where(sub => subIDs.Contains(sub.Id));
@@ -80,7 +80,8 @@
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th>Name</th>
+                            <%--<th>Code</th>--%>
+                            <th style="min-width: 200px; width: 30%">Name</th>
                             <th>Email</th>
                             <th>Organization</th>
                             <th>Country</th>
@@ -93,12 +94,13 @@
                             {
                         %>
                         <tr>
+                            <%--<td><%= author.ID %></td>--%>
                             <td><%= author.FullName %></td>
                             <td><%= author.Email %></td>
                             <td><%= author.Organization %></td>
                             <td><%= author.Country %></td>
                             <td>
-                                <a href="./authors?code=<%= author.ID %>"
+                                <a href="?code=<%= author.ID %>"
                                     class="btn btn-primary">
                                     <span class="glyphicon glyphicon-qrcode"></span>
                                 </a>

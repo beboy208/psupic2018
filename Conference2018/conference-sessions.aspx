@@ -161,7 +161,7 @@ chemiluminescence method
                                         <p>16.15-16.30</p>
                                     </td>
                                     <td valign="top">
-                                        <p class="paper"><strong>Kengo Fukae, Norimichi Takenaka:</strong> Application of NH3 passive sampler for soil</p>
+                                        <p class="paper"><strong>Kengo Fukae, Norimichi Takenaka:</strong>Application of  NH3 passive sampler for soil air</p>
                                     </td>
                                 </tr>
                                 <tr>

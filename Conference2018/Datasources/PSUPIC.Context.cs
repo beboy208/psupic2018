@@ -29,5 +29,7 @@ namespace Conference2018.Datasources
         public virtual DbSet<Author> Authors { get; set; }
         public virtual DbSet<Conference> Conferences { get; set; }
         public virtual DbSet<Submission> Submissions { get; set; }
+        public virtual DbSet<VIPMember> VIPMembers { get; set; }
+        public virtual DbSet<VIPType> VIPTypes { get; set; }
     }
 }

@@ -327,12 +327,57 @@
     <Content Include="imgs\authors\qrcode\psupic2018376.png" />
     <Content Include="imgs\authors\qrcode\psupic2018384.png" />
     <Content Include="imgs\authors\qrcode\psupic2018392.png" />
-    <Content Include="imgs\authors\qrcode\psupic2018400.png" />
     <Content Include="imgs\Chalong-Temple-Internet.jpg" />
     <Content Include="imgs\OldTown-Internet.jpg" />
     <Content Include="imgs\Promthep1-Ruangrat.jpg" />
     <Content Include="imgs\psu.jpg" />
     <Content Include="imgs\qrcode\qr-code-WalkInRegistration.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g418.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g426.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g434.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g442.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g450.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g468.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g476.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g484.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g492.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g500.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g518.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g526.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g534.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g542.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g550.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g568.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g576.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g584.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g592.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g600.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g618.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g626.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g634.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g642.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g650.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018g668.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018k400.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018k842.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018v676.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018v684.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018v692.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018v700.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018v718.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018v726.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018v734.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018v742.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018v750.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018v768.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018v776.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018v784.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018v792.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018v800.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018v818.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018v826.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018v834.png" />
+    <Content Include="imgs\vips\qrcode\psupic2018v850.png" />
     <Content Include="imgs\Winmill1-Ruangrat.jpg" />
     <Content Include="imgs\ลานพระบิดา.jpg" />
     <Content Include="Lib\PSUPKTProvider.dll" />
@@ -423,6 +468,7 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Site2.Master" />
     <None Include="Web References\th.ac.psu.passport\authentication.disco" />
+    <Content Include="vips.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -596,6 +642,12 @@
       <DependentUpon>conference-sessions.aspx</DependentUpon>
     </Compile>
     <Compile Include="Datasources\PSUPKTTimeAttendance.cs" />
+    <Compile Include="Datasources\VIPMember.cs">
+      <DependentUpon>PSUPIC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datasources\VIPType.cs">
+      <DependentUpon>PSUPIC.tt</DependentUpon>
+    </Compile>
     <Compile Include="guildelines.aspx.cs">
       <DependentUpon>guildelines.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -783,6 +835,13 @@
     </Compile>
     <Compile Include="UserControls\ucPCChair.ascx.designer.cs">
       <DependentUpon>ucPCChair.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vips.aspx.cs">
+      <DependentUpon>vips.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vips.aspx.designer.cs">
+      <DependentUpon>vips.aspx</DependentUpon>
     </Compile>
     <Compile Include="Web References\th.ac.psu.passport\Reference.cs">
       <AutoGen>True</AutoGen>

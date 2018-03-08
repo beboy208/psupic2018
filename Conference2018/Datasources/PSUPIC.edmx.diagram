@@ -5,13 +5,17 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="f85903cefd674b159e6c84f59dfd1eba" Name="Diagram1">
-        <EntityTypeShape EntityType="PSUPICModel.Area" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="PSUPICModel.Author" Width="1.5" PointX="5.5" PointY="4.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="PSUPICModel.Conference" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PSUPICModel.Area" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PSUPICModel.Author" Width="1.5" PointX="7.5" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PSUPICModel.Conference" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
         <AssociationConnector Association="PSUPICModel.FK_Area_Conference" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="PSUPICModel.Submission" Width="1.5" PointX="3" PointY="4.125" />
+        <EntityTypeShape EntityType="PSUPICModel.Submission" Width="1.5" PointX="5.25" PointY="4.625" />
         <AssociationConnector Association="PSUPICModel.FK_Submission_Area" />
         <AssociationConnector Association="PSUPICModel.FK_Author_Submission" />
+        <EntityTypeShape EntityType="PSUPICModel.VIPMember" Width="1.5" PointX="3" PointY="0.75" />
+        <EntityTypeShape EntityType="PSUPICModel.VIPType" Width="1.5" PointX="5.625" PointY="1.625" />
+        <AssociationConnector Association="PSUPICModel.FK_VIPMember_Conference" />
+        <AssociationConnector Association="PSUPICModel.FK_VIPMember_VIPType" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

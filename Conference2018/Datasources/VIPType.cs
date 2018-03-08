@@ -12,23 +12,18 @@ namespace Conference2018.Datasources
     using System;
     using System.Collections.Generic;
     
-    public partial class Conference
+    public partial class VIPType
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Conference()
+        public VIPType()
         {
-            this.Areas = new HashSet<Area>();
             this.VIPMembers = new HashSet<VIPMember>();
         }
     
-        public string Acronym { get; set; }
-        public string Title { get; set; }
-        public string Theme { get; set; }
-        public string Description { get; set; }
-        public string Year { get; set; }
+        public string VIPTypeID { get; set; }
+        public string VIPTypeNameTH { get; set; }
+        public string VIPTypeNameEN { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Area> Areas { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<VIPMember> VIPMembers { get; set; }
     }
