@@ -13,14 +13,41 @@
                 <div id="session1" style="border: 1px solid lightgray; padding: 35px 20px; margin-bottom: 30px;">
                     <div class="session-head">
                         <h3 style="text-align: center">Parallel Conference Session 1</h3>
-                        <div class="clearfix" style="font-weight:bold">
-                            <p style="float: left">Monday 12 March 2018</p>
-                            <p style="float: right">Room: PSU PIC 1, 3<sup>rd</sup> Floor, Building 7</p>
+                        <div class="clearfix">
+                            <p style="float: left; font-weight: bold">Monday 12 March 2018</p>
+                            <p style="float: right">
+                                <strong>Room:</strong> PSU PIC 1<br />
+                                <span>3<sup>rd</sup> Floor, Building 7</span>
+                            </p>
                         </div>
                     </div>
                     <div class="session-sch" style="margin-top: 30px;">
-                        <strong>Session Chair: Dr. Kittasil Silanon</strong>
-                        <br>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-4">
+                                    <strong>Session Chair: </strong>
+                                </div>
+                                <div class="col-md-10 col-sm-8">
+                                    Dr. Kittasil Silanon
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-4 text-nowrap">
+                                    <strong>Session Secretary: </strong>
+                                </div>
+                                <div class="col-md-10 col-sm-8">
+                                    Miss Voranuch Yanasakd
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-4">
+                                    <strong>Time Keeper: </strong>
+                                </div>
+                                <div class="col-md-10 col-sm-8">
+                                    Mr. Sophal Chan
+                                </div>
+                            </div>
+                        </div>
                         <table class="table table-bordered paper-ref">
                             <thead>
                                 <tr valign="top">
@@ -93,9 +120,34 @@ Sunyoung Han:</strong> Construction of SDN Testbed on KOREN and ThaiREN
                                 </tr>
                             </tbody>
                         </table>
-
-                        <strong>Session Chair: Dr. Thanita Areerob</strong>
-                        <br>
+                    </div>
+                    <div class="session-sch" style="margin-top: 30px;">
+                        <div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-4">
+                                    <strong>Session Chair: </strong>
+                                </div>
+                                <div class="col-md-10 col-sm-8">
+                                    Dr. Thanita Areerob
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-4 text-nowrap">
+                                    <strong>Session Secretary: </strong>
+                                </div>
+                                <div class="col-md-10 col-sm-8">
+                                    Miss  Jitlada Asujin
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-4">
+                                    <strong>Time Keeper: </strong>
+                                </div>
+                                <div class="col-md-10 col-sm-8">
+                                    Mr. Sophal Chan
+                                </div>
+                            </div>
+                        </div>
                         <table class="table table-bordered paper-ref">
                             <tbody>
                                 <tr>
@@ -176,18 +228,46 @@ chemiluminescence method
                         </table>
                     </div>
                 </div>
+
                 <a name="session2"></a>
                 <div id="session2" style="border: 1px solid lightgray; padding: 120px 20px 30px 20px; margin-bottom: 50px;">
                     <div class="session-head">
                         <h3 style="text-align: center">Parallel Conference Session 2</h3>
-                        <div class="clearfix" style="font-weight:bold">
-                            <p style="float: left">Monday 12 March 2018</p>
-                            <p style="float: right">Room: PSU PIC 2, 3<sup>rd</sup> Floor, Building 7</p>
+                        <div class="clearfix">
+                            <p style="float: left; font-weight: bold">Monday 12 March 2018</p>
+                            <p style="float: right">
+                                <strong>Room:</strong> PSU PIC 2<br />
+                                <span>3<sup>rd</sup> Floor, Building 7</span>
+                            </p>
                         </div>
                     </div>
                     <div class="session-sch" style="margin-top: 30px;">
-                        <strong>Session Chair: Dr. Chayanon Phucharoen</strong>
-                        <br>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-4">
+                                    <strong>Session Chair: </strong>
+                                </div>
+                                <div class="col-md-10 col-sm-8">
+                                    Dr. Chayanon Phucharoen
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-4 text-nowrap">
+                                    <strong>Session Secretary: </strong>
+                                </div>
+                                <div class="col-md-10 col-sm-8">
+                                    Miss Tanyarat Runju
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-4">
+                                    <strong>Time Keeper: </strong>
+                                </div>
+                                <div class="col-md-10 col-sm-8">
+                                    Miss Myatlay Phyu
+                                </div>
+                            </div>
+                        </div>
                         <table class="table table-bordered paper-ref">
                             <thead>
                                 <tr valign="top">
@@ -265,9 +345,34 @@ Darussalam
                                 </tr>
                             </tbody>
                         </table>
-
-                        <strong>Session Chair: Asst. Prof. Dr. Nareeya Weerakit</strong>
-                        <br>
+                    </div>
+                    <div class="session-sch" style="margin-top: 30px;">
+                        <div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-4">
+                                    <strong>Session Chair: </strong>
+                                </div>
+                                <div class="col-md-10 col-sm-8">
+                                    Asst. Prof. Dr. Nareeya Weerakit
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-4 text-nowrap">
+                                    <strong>Session Secretary: </strong>
+                                </div>
+                                <div class="col-md-10 col-sm-8">
+                                    Miss Nareerat Chandang
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-4">
+                                    <strong>Time Keeper: </strong>
+                                </div>
+                                <div class="col-md-10 col-sm-8">
+                                    Miss Myatlay Phyu
+                                </div>
+                            </div>
+                        </div>
                         <table class="table table-bordered paper-ref">
                             <thead>
                                 <tr valign="top">
@@ -275,15 +380,6 @@ Darussalam
                                         <p><strong>Topic: International Language and Culture</strong></p>
                                     </th>
                                 </tr>
-                                <%---         <tr style="background-color: darkgray">
-                            <th width="20%" valign="top">
-                                <p align="center"><strong>Time</strong></p>
-                            </th>
-                            <th width="80%" valign="top">
-                                <p align="center"><strong>PSU PIC 2018 Conference</strong></p>
-                            </th>
-                        </tr>
-                  ---%>
                             </thead>
                             <tbody>
                                 <tr>
@@ -330,18 +426,46 @@ Darussalam
                         </table>
                     </div>
                 </div>
+
                 <a name="session3"></a>
                 <div id="session3" style="border: 1px solid lightgray; padding: 120px 20px 30px 20px; margin-bottom: 50px;">
                     <div class="session-head">
                         <h3 style="text-align: center">Parallel Conference Session 3</h3>
-                        <div class="clearfix" style="font-weight:bold">
-                            <p style="float: left">Monday 12 March 2018</p>
-                            <p style="float: right">Room: PSU PIC 3, 3<sup>rd</sup> Floor, Building 7</p>
+                        <div class="clearfix">
+                            <p style="float: left; font-weight: bold">Monday 12 March 2018</p>
+                            <p style="float: right">
+                                <strong>Room:</strong> PSU PIC 3<br />
+                                <span>3<sup>rd</sup> Floor, Building 7</span>
+                            </p>
                         </div>
                     </div>
                     <div class="session-sch" style="margin-top: 30px;">
-                        <strong>Session Chair: Mr. I Kadek Purnawan</strong>
-                        <br>
+                       <div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-4">
+                                    <strong>Session Chair: </strong>
+                                </div>
+                                <div class="col-md-10 col-sm-8">
+                                    Mr. I Kadek Purnawan
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-4 text-nowrap">
+                                    <strong>Session Secretary: </strong>
+                                </div>
+                                <div class="col-md-10 col-sm-8">
+                                    Miss Rattana Maimahad
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-4">
+                                    <strong>Time Keeper: </strong>
+                                </div>
+                                <div class="col-md-10 col-sm-8">
+                                    Miss Kyilei Wai
+                                </div>
+                            </div>
+                        </div>
                         <table class="table table-bordered paper-ref">
                             <thead>
                                 <tr valign="top">
@@ -349,15 +473,6 @@ Darussalam
                                         <p><strong>Topic: International Language and Culture</strong></p>
                                     </th>
                                 </tr>
-                                <%---        <tr style="background-color: darkgray">
-                            <th width="20%" valign="top">
-                                <p align="center"><strong>Time</strong></p>
-                            </th>
-                            <th width="80%" valign="top">
-                                <p align="center"><strong>PSU PIC 2018 Conference</strong></p>
-                            </th>
-                        </tr>
-                  ---%>
                             </thead>
                             <tbody>
                                 <tr>
@@ -425,26 +540,35 @@ Inderpal Virdee:</strong> Graduates Employment Status with International Chinese
                                 </tr>
                             </tbody>
                         </table>
-
-                        <strong>Session Chair: Mr. Robert Habibi</strong>
-                        <br>
+                    </div>
+                    <div class="session-sch" style="margin-top: 30px;">
+                        <div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-4">
+                                    <strong>Session Chair: </strong>
+                                </div>
+                                <div class="col-md-10 col-sm-8">
+                                    Mr. Robert Habibi
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-4 text-nowrap">
+                                    <strong>Session Secretary: </strong>
+                                </div>
+                                <div class="col-md-10 col-sm-8">
+                                    Miss Rattana Maimahad
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-4">
+                                    <strong>Time Keeper: </strong>
+                                </div>
+                                <div class="col-md-10 col-sm-8">
+                                    Miss Kyilei Wai
+                                </div>
+                            </div>
+                        </div>
                         <table class="table table-bordered paper-ref">
-                            <thead>
-                                <%---          <tr valign="top">
-                            <th colspan="4" bgcolor="#d8e3f6" valign="top">
-                                <p><strong>Topic: Environmental Technology and Management</strong></p>
-                            </th>
-                        </tr>
-                      <tr style="background-color: darkgray">
-                            <th width="20%" valign="top">
-                                <p align="center"><strong>Time</strong></p>
-                            </th>
-                            <th width="80%" valign="top">
-                                <p align="center"><strong>PSU PIC 2018 Conference</strong></p>
-                            </th>
-                        </tr>
-                  ---%>
-                            </thead>
                             <tbody>
                                 <tr>
                                     <td width="15%" valign="top">

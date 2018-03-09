@@ -46,6 +46,7 @@
             %>
             <div id="authors" class="center-block">
                 <h3>VIPs</h3>
+                <a href="authors.aspx" class="btn btn-secondary" style="margin-top: -40px; float: right">&lt; Authors</a>
                 <!-- Render แบบ Card --> 
                 <!--
                 <%

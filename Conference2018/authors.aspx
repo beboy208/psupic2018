@@ -37,6 +37,7 @@
                         var author = authors.First();
             %>
             <div id="QRCode">
+                <%--<a href="authors.aspx">&lt; Back</a>--%>
                 <img src="<%= authors[0].QRCodePath %>" class="center-block" style="width: 60%; max-width: 300px" />
                 <div class="center-block" style="width: 80%">
                     <strong>Code:</strong> <%= author.ID %><br />
@@ -77,6 +78,7 @@
             %>
             <div id="authors" class="center-block">
                 <h3>Authors</h3>
+                <a href="vips.aspx" class="btn btn-secondary" style="margin-top: -40px; float: right">VIPs &gt;</a>
                 <table class="table table-striped">
                     <thead>
                         <tr>
