@@ -1,7 +1,9 @@
 ﻿using Conference2018.Models;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -12,6 +14,7 @@ namespace Conference2018
     {
         int schID = 1;
         protected Datasources.PSUPKTTimeAttendance _ta = new Datasources.PSUPKTTimeAttendance();
+        protected Datasources.PSUWebAPI _psuAPI = new Datasources.PSUWebAPI();
 
         public void Page_Load()
         {
@@ -105,7 +108,26 @@ namespace Conference2018
 
         protected void txtCode_TextChanged(object sender, EventArgs e)
         {
+            string code = txtCode.Text.Trim();
 
+            btnSubmit.Enabled = true;
+            if (Regex.IsMatch(code, @"^\d+$")) //assume this code can be student
+            {
+                var std = _psuAPI.GetStudentByID(code);
+                if (std != null)
+                {
+                    txtName.Text = string.Format("{0} {1} {2}",
+                        std["Title"]["ShortTitleEN"].Value<string>(),
+                        std["FirstNameEN"].Value<string>(),
+                        std["LastNameEN"].Value<string>());
+                    
+                    if (std["StillStudent"].Value<bool>() &&
+                        std["StudyLevel"]["NameTH"].Value<string>() == "ปริญญาตรี")
+                        btnSubmit.Enabled = false;
+
+                    txtEmail.Focus();
+                }
+            }
         }
     }
 }
