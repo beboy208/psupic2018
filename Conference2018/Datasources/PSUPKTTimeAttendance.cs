@@ -16,7 +16,7 @@ namespace Conference2018.Datasources
     /// </summary>
     public class PSUPKTTimeAttendance
     {
-        string _server = "https://tas.phuket.psu.ac.th"; //ที่ตั้งของ Service
+        string _server = "https://tas-service.phuket.psu.ac.th"; //ที่ตั้งของ Service
         string _applicationID = "p$up1c"; //รหัส Application ของ Partner: PSUPIC
         string _eventID = "cc11f90bc1e14291a228afa3762db417";
         int _schID = 1; //หมายเลข Schedule ในฐานของ Event นี้
@@ -126,7 +126,9 @@ namespace Conference2018.Datasources
                     PhoneNumber = x["PhoneNumber"].Value<string>()
                 }).FirstOrDefault();
             }
-            catch (Exception) { }
+            catch (Exception ex) {
+
+            }
 
             return result;
         }

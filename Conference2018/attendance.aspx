@@ -7,7 +7,7 @@
             var sch = _ta.GetWorkingSchedule();
             if (sch != null)
             {
-                hdfScheduleDescription.Value = string.Format("{0} is available on {1} - {2}",
+                hdfScheduleDescription.Value = string.Format("{0} schedule is available on {1} - {2}",
                     sch.Title, sch.From.ToString("MMMM dd, yyyy HH:mm"), sch.To.ToString("MMMM dd, yyyy HH:mm"));
             }
             else
