@@ -286,6 +286,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Properties\PublishProfiles\DeployTo204.pubxml" />
     <None Include="Properties\PublishProfiles\DeployTo209.pubxml" />
     <Content Include="guildelines.aspx" />
     <Content Include="imgs\authors\qrcode\psupic2018018.png" />

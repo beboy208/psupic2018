@@ -13,7 +13,7 @@ namespace Conference2018.Datasources
         HttpClient _client = new HttpClient();
         readonly string uname = "psupic";
         readonly string passwd = "p$up1c";
-        readonly string server = "https://api-phuket.psu.ac.th/";
+        readonly string server = "https://api2.phuket.psu.ac.th/";
 
         JToken _accessTokenTmp = null; //Use in function RequestToken only
 
